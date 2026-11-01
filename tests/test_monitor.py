@@ -14,6 +14,15 @@ def rows(ps):
              'limitation': 'Tentative fixture limitation', 'gap': 'Speculative fixture gap'} for p in ps]
 
 
+def synthesis(ps):
+    refs = [ps[0]['id']]
+    return {'trends': [{'finding': 'Fixture trend', 'uncertainty': 'Abstract only', 'evidence_ids': refs}],
+            'comparisons': [{'comparison': 'Fixture comparison', 'limitation': 'Not controlled', 'evidence_ids': refs}],
+            'ideas': [{**{k: 'Untested fixture hypothesis' for k in ['question', 'hypothesis', 'method', 'datasets',
+                'baselines', 'metrics', 'compute', 'risk', 'novelty_check', 'priority_rationale']},
+                'evidence_ids': refs} for _ in range(2)]}
+
+
 def test_stable_versions():
     assert monitor.stable_id('2601.00001v2') == monitor.stable_id('2601.00001v1')
     assert monitor.stable_id('cs/9901001v3') == 'cs/9901001'
@@ -24,7 +33,7 @@ def test_two_runs_deduplicate_and_no_call_when_empty(tmp_path):
     calls = []
     def rank(ps, *args):
         calls.append(1)
-        return rows(ps), {}
+        return rows(ps), {}, synthesis(ps)
     state = tmp_path / 'state.json'
     result = monitor.run(state, tmp_path / 'first', discover=lambda _: papers(), rank=rank)
     assert result['selected'] == 6
@@ -47,12 +56,13 @@ def test_invalid_model_ids_rejected():
 
 def test_small_window_and_failed_model_does_not_mark_seen(tmp_path):
     state = tmp_path / 'state.json'
-    monitor.run(state, tmp_path / 'small', discover=lambda _: papers(2), rank=lambda ps,*_: (rows(ps), {}))
+    monitor.run(state, tmp_path / 'small', discover=lambda _: papers(2), rank=lambda ps,*_: (rows(ps), {}, synthesis(ps)))
     assert 'Fewer than five' in (tmp_path / 'small/weekly-digest.md').read_text()
     def fail(*args): raise RuntimeError('fixture failure')
     before = state.read_text()
     with pytest.raises(RuntimeError): monitor.run(state, tmp_path / 'bad', discover=lambda _: papers(8), rank=fail)
-    assert state.read_text() == before
+    assert monitor.read_state(state)['seen'] == json.loads(before)['seen']
+    assert len(monitor.read_state(state)['papers']) == 8
 
 
 def test_fail_closed_budget_and_pricing(tmp_path, monkeypatch):
@@ -113,7 +123,7 @@ def test_one_request_and_usage_retained_on_bad_response(tmp_path, monkeypatch):
     def create(**kw):
         calls.append(kw)
         assert kw['response_format']['json_schema']['strict']
-        assert kw['max_completion_tokens']==3500
+        assert kw['max_completion_tokens']==6500
         return SimpleNamespace(choices=[SimpleNamespace(finish_reason='stop',message=SimpleNamespace(content='{"papers":[]}'))],
             usage=SimpleNamespace(prompt_tokens=100,completion_tokens=10))
     def client(**kw):
@@ -134,10 +144,48 @@ def test_one_request_and_usage_retained_on_bad_response(tmp_path, monkeypatch):
 @pytest.mark.parametrize('stamp,expected',[
     ('2026-07-06T13:00:00+00:00',True),('2026-07-06T14:00:00+00:00',False),
     ('2026-11-02T14:00:00+00:00',True),('2026-11-02T13:00:00+00:00',False),
-    ('2026-11-03T14:00:00+00:00',True),
-    ('2026-11-07T14:00:00+00:00',True)])
+    ('2026-11-03T14:00:00+00:00',False),
+    ('2026-11-07T14:00:00+00:00',False)])
 def test_new_york_schedule_across_dst(stamp,expected):
     from datetime import datetime
     from research_agent.schedule import should_monitor
     assert should_monitor('schedule',datetime.fromisoformat(stamp)) is expected
     assert should_monitor('workflow_dispatch',datetime.fromisoformat(stamp))
+
+
+def test_research_proposals_must_cite_selected_evidence():
+    selected = rows(papers())
+    data = synthesis(papers())
+    assert len(monitor.validate_synthesis(data, selected)['ideas']) == 2
+    data['ideas'][0]['evidence_ids'] = ['invented']
+    with pytest.raises(ValueError, match='unknown'):
+        monitor.validate_synthesis(data, selected)
+    data = synthesis(papers())
+    del data['ideas'][0]['compute']
+    with pytest.raises(ValueError, match='Incomplete'):
+        monitor.validate_synthesis(data, selected)
+
+
+def test_library_history_and_literal_search(tmp_path):
+    from research_agent.library import sync, search
+    state = {'papers': {'2601.00000': papers(1)[0]}, 'history': {'first': {'ideas': ['fixture']}}}
+    db = tmp_path/'library.sqlite'
+    sync(state, db)
+    sync(state, db)
+    assert len(search(db, 'Fixture')) == 1
+    assert search(db, "%' OR 1=1 --") == []
+    import sqlite3
+    with sqlite3.connect(db) as conn:
+        assert conn.execute('SELECT count(*) FROM research_runs').fetchone()[0] == 1
+
+
+def test_report_and_portable_history_include_proposals(tmp_path):
+    state_path = tmp_path/'state.json'
+    monitor.run(state_path,tmp_path/'report',discover=lambda _:papers(),
+        rank=lambda ps,*args:(rows(ps), {}, synthesis(ps)),run_id='research')
+    state = monitor.read_state(state_path)
+    assert len(state['history']['research']['synthesis']['ideas']) == 2
+    assert len(state['papers']) == 6
+    text = (tmp_path/'report/weekly-digest.md').read_text()
+    assert 'awaiting human review' in text and 'No experiment or publication is authorized' in text
+    assert (tmp_path/'library.sqlite').exists()
