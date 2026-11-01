@@ -1,0 +1,75 @@
+{
+  "gaps": [
+    {
+      "question": "How can vision-language-action models be adapted to efficiently generalize across diverse autonomous driving vehicle configurations and novel unseen driving scenarios without extensive retraining?",
+      "evidence_ids": [
+        "2511.19912v1"
+      ],
+      "limitation": "The paper reports strong generalization but does not fully address adaptation across diverse vehicle setups and unseen scenarios beyond their consolidated datasets and benchmarks."
+    },
+    {
+      "question": "What is the impact of 3D spatial reasoning and counterfactual scenario generation on improving the decision-making robustness of autonomous driving vision-language models compared to traditional 2D question-answering approaches?",
+      "evidence_ids": [
+        "2504.04348v2"
+      ],
+      "limitation": "Although 3D understanding and counterfactual reasoning are proposed and shown beneficial, comprehensive quantitative comparisons specifically isolating these factors versus 2D QA methods remain limited."
+    },
+    {
+      "question": "How do different Chain-of-Thought (CoT) reasoning implementations and progressive multimodal reasoning methods compare in terms of improving numerical reasoning accuracy and causal reasoning robustness in real-time autonomous driving applications?",
+      "evidence_ids": [
+        "2412.15208v2",
+        "2511.22532v1",
+        "2602.21952v1"
+      ],
+      "limitation": "Different CoT approaches are explored (explicit, implicit, progressive), but head-to-head comparisons of their efficiency, inference speed, and reasoning accuracy under real-time constraints are lacking."
+    }
+  ],
+  "hypotheses": [
+    {
+      "statement": "Introducing progressive multimodal Chain-of-Thought reasoning with aligned multimodal training data and reinforcement fine-tuning significantly improves the numerical and causal reasoning accuracy of vision-language models in autonomous driving compared to static textual CoT methods.",
+      "evidence_ids": [
+        "2602.21952v1",
+        "2511.22532v1"
+      ],
+      "speculation": "Progressive multimodal reasoning approximates human-like thinking by bridging semantic and physical spaces, potentially outperforming static text-only CoT approaches in reasoning tasks.",
+      "dataset": "nuScenes, Bench2Drive",
+      "baseline": "Textual Chain-of-Thought based VLMs (e.g., CoT4AD)",
+      "metric": "Numerical reasoning accuracy, causal reasoning accuracy, open-loop and closed-loop driving task performance",
+      "test": "Evaluate VLMs on benchmarks like nuScenes Q&A and Bench2Drive with both static textual CoT and progressive multimodal CoT models",
+      "compute": "Pilot: small frozen backbone with 12-16GB VRAM, ~100 GPU-hours single seed for fine-tuning and evaluation; Full: end-to-end finetuning with ~80GB VRAM GPUs, ~1000 GPU-hours across 3 seeds; Assumes multi-modal input preprocessing and RL fine-tuning steps."
+    },
+    {
+      "statement": "A lightweight multi-frame vision-language model requiring at least 10x less memory and FLOPs while maintaining or improving language-based reasoning performance can enable efficient real-time autonomous driving question answering without sacrificing interpretability.",
+      "evidence_ids": [
+        "2403.19838v2"
+      ],
+      "speculation": "Efficient architectures with multi-frame inputs can reduce computational demand and enable deployment on resource-constrained autonomous vehicles.",
+      "dataset": "DriveLM dataset",
+      "baseline": "Existing large LLM-based VLMs for autonomous driving question answering",
+      "metric": "CIDEr, ROUGE-L, inference speed, memory usage",
+      "test": "Compare model memory usage, FLOPs, inference time, and language-based QA metrics on DriveLM with multi-frame lightweight model vs. large model baselines",
+      "compute": "Pilot: small frozen vision encoder + lightweight LLM head, 8-12GB VRAM, ~20 GPU-hours single seed; Full: fine-tuning with 40GB VRAM GPU, ~200 GPU-hours across 3 seeds; Assumes multi-frame input batching and low-latency inference."
+    },
+    {
+      "statement": "Vision-language-action models leveraging explicit multi-stage structured reasoning with task-specific reward models and reinforcement learning fine-tuning outperform large general-purpose LLMs (e.g., GPT-4o) in behavior reasoning and decision consistency under complex or corrupted driving conditions.",
+      "evidence_ids": [
+        "2505.20665v2"
+      ],
+      "speculation": "Structured reasoning over perception, prediction, planning, and behavior with fine-grained rewards better captures the complexities of autonomous driving than monolithic large LLMs.",
+      "dataset": "Public autonomous driving benchmarks with complex scenarios (e.g., DriveLM Q&A benchmark)",
+      "baseline": "ChatGPT/GPT-4o or general vision-language models without structured reinforcement signal fine-tuning",
+      "metric": "Behavior reasoning accuracy, stage-wise reasoning consistency, robustness under corrupted inputs",
+      "test": "Evaluate cross-task reasoning VLM against GPT-4o and other baselines on benchmark datasets under normal and corrupted scenario conditions.",
+      "compute": "Pilot: frozen vision backbone and language model head with ~16GB VRAM, ~50 GPU-hours single seed for RL fine-tuning and evaluation; Full: end-to-end tuning with ~80GB VRAM GPUs, ~800 GPU-hours across 3 seeds; Assumes availability of task-specific reward models and RL loop."
+    }
+  ],
+  "model_usage": {
+    "model": "gpt-4.1-mini",
+    "prompt_tokens": 4381,
+    "completion_tokens": 1059,
+    "estimated_cost_usd": 0.0034468000000000003,
+    "conservative_request_estimate_usd": 0.013147200000000001,
+    "budget_usd": 0.1,
+    "pricing_note": "Assumed USD/1M tokens: input 0.40, output 1.60; confirm provider billing."
+  }
+}
