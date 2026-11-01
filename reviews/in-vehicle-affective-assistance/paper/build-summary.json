@@ -3,5 +3,7 @@
   "selected_references": 24,
   "tables": 3,
   "format": "generic single-column article; numbered sections and numeric natbib references",
+  "readable_markdown_references": 24,
+  "standalone_tex_verified": true,
   "submission_ready": false
 }

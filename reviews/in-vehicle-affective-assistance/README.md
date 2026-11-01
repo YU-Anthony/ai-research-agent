@@ -1,3 +1,7 @@
+## Reference-complete reading versions
+
+Read [paper/paper.md#references](paper/paper.md#references) for the complete 24-entry list, or the [PDF](paper/paper.pdf). [paper-standalone.tex](paper/paper-standalone.tex) embeds the bibliography and compiles with XeLaTeX alone. The separate paper-input.md file is build input, not the finished reading version.
+
 ## Research-paper format
 
 A compiled [PDF](paper/paper.pdf) and editable [LaTeX source](paper/paper.tex) are available in [paper/](paper/README.md). The neutral single-column article uses standard numbered sections, table captions and numeric BibTeX citations. It is not an official venue template, and author information remains pending confirmation. The visible working-draft status and review limitations have been preserved.
