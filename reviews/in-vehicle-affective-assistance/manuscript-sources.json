@@ -1,0 +1,122 @@
+{
+  "S1": {
+    "id": "2004.02481v1",
+    "role": "non_generative_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S2": {
+    "id": "2406.09777v1",
+    "role": "non_generative_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S3": {
+    "id": "2402.11853v2",
+    "role": "non_generative_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S4": {
+    "id": "2508.08101v1",
+    "role": "generative_core",
+    "depth": "targeted_fulltext"
+  },
+  "S5": {
+    "id": "2510.25421v2",
+    "role": "generative_core",
+    "depth": "targeted_fulltext"
+  },
+  "S6": {
+    "id": "2601.15034v1",
+    "role": "generative_core",
+    "depth": "targeted_fulltext"
+  },
+  "S7": {
+    "id": "2608.06378v1",
+    "role": "generative_core",
+    "depth": "targeted_fulltext"
+  },
+  "S8": {
+    "id": "2606.22706v1",
+    "role": "generative_core",
+    "depth": "targeted_fulltext"
+  },
+  "S9": {
+    "id": "2403.09135v1",
+    "role": "generative_core",
+    "depth": "targeted_fulltext"
+  },
+  "S10": {
+    "id": "2602.15569v2",
+    "role": "generative_core",
+    "depth": "targeted_fulltext"
+  },
+  "S11": {
+    "id": "2607.16181v1",
+    "role": "generative_core",
+    "depth": "targeted_fulltext"
+  },
+  "S12": {
+    "id": "2601.19421v1",
+    "role": "non_generative_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S13": {
+    "id": "2609.12503v1",
+    "role": "non_generative_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S14": {
+    "id": "2311.07469v2",
+    "role": "evaluation_method_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S15": {
+    "id": "2504.01248v1",
+    "role": "evaluation_method_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S16": {
+    "id": "2609.35812v1",
+    "role": "evaluation_method_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S17": {
+    "id": "2601.22027v1",
+    "role": "evaluation_method_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "S18": {
+    "id": "2609.19630v1",
+    "role": "evaluation_method_comparator",
+    "depth": "targeted_fulltext"
+  },
+  "R1": {
+    "id": "2003.13731v2",
+    "role": "review_comparator",
+    "depth": "targeted_fulltext_or_html"
+  },
+  "R2": {
+    "id": "2110.00472v1",
+    "role": "review_comparator",
+    "depth": "targeted_fulltext_or_html"
+  },
+  "R3": {
+    "id": "2412.08005v1",
+    "role": "review_comparator",
+    "depth": "targeted_fulltext_or_html"
+  },
+  "R4": {
+    "id": "2605.06439v1",
+    "role": "review_comparator",
+    "depth": "abstract_only"
+  },
+  "R5": {
+    "id": "2101.02082v1",
+    "role": "review_comparator",
+    "depth": "targeted_fulltext_or_html"
+  },
+  "R6": {
+    "id": "2408.09046v1",
+    "role": "review_comparator",
+    "depth": "targeted_fulltext_or_html"
+  }
+}

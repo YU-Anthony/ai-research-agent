@@ -1,3 +1,7 @@
+## Full working manuscript
+
+The drafted article is now in **[manuscript.md](manuscript.md)**, with a [Chinese abstract/reading guide](manuscript-zh-notes.md), a selected-source [BibTeX bibliography](manuscript-references.bib), [source registry](manuscript-sources.json) and [author-review checklist](manuscript-checklist.md). `draft.md` and `draft-v2.md` remain earlier research notes. Run `python reviews/in-vehicle-affective-assistance/validate_manuscript.py` to check citation integrity. The manuscript is not submission-ready: automated citation checks do not substitute for complete retrieval, human verification or novelty assessment.
+
 ## Latest expansion
 
 The first-round pilot below is preserved as history. **Read [draft-v2.md](draft-v2.md) and [synthesis-update.md](synthesis-update.md) for the current synthesis.** New material includes expanded search/evidence/screening/audit files, study-family notes, resource-access checks and a priority screening queue. Current coded evidence is 18 publication records across distinct roles, not 18 independent driver trials. Whole-search metadata counts are not included-study counts. All human verification and broad-database completeness claims remain pending.
