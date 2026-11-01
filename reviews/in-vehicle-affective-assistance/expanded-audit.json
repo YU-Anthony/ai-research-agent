@@ -1,0 +1,32 @@
+{
+  "status": "expanded_pilot_not_submission_ready",
+  "original_pilot_preserved": true,
+  "new_queries": 6,
+  "queries_total": 9,
+  "new_returned_records": 205,
+  "returned_records_all_searches": 265,
+  "unique_search_ids": 230,
+  "records_with_review_seeds": 233,
+  "coded_original_studies": 18,
+  "coded_roles": {
+    "non_generative_comparator": 5,
+    "generative_core": 8,
+    "evaluation_method_comparator": 5
+  },
+  "screening_decisions": {
+    "review_comparator": 6,
+    "primary_or_historical_comparator": 13,
+    "exclude_from_pilot": 33,
+    "adjacent_context": 3,
+    "pending_fulltext": 7,
+    "method_comparator": 5,
+    "not_screened": 152,
+    "priority_pending_fulltext": 14
+  },
+  "new_pdfs_retrieved": 12,
+  "database_search_complete": false,
+  "human_verification_complete": false,
+  "paid_model_calls": 0,
+  "experiments_run": 0,
+  "publications_submitted": 0
+}

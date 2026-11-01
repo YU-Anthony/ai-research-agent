@@ -18,3 +18,9 @@ All rows are provisional single-agent, targeted-full-text extractions. "No" mean
 - `verification_status`: human verification remains pending; no inter-rater agreement was measured.
 
 Future extraction should add modality synchronization, supervision provenance, state/need/preference distinctions, intervention timing/opt-out, sample-family overlap, deployment latency, missingness, release/license/access status and funding. The current CSV does not claim all these fields are fully coded.
+
+## Second-round additions
+
+expanded-evidence-map.csv adds ten publication records while retaining the first eight. `evaluation_method_comparator` is a separate scope role for factual/dialogue/agent benchmarks; these rows are not direct support-efficacy trials. `not_extracted` differs from `no`: it marks a measurement requiring further checking. One historical comparator studies automated-vehicle passengers; its setting/limitations must accompany any use of its findings. Samples of annotators, survey respondents, conversations and reference scenarios must never be added as if they were drivers in one trial.
+
+The four-layer synthesis (content, interaction, human state, driving/task) is a proposed organizational tool. It is not a validated scale or automatic appraisal score. Source agreement can validate a bounded construct while leaving downstream transfer untested. Human verification remains pending for both rounds.

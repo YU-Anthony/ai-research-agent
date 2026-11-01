@@ -34,6 +34,46 @@ def validate(root):
     return report
 
 
+def validate_expansion(root):
+    root=Path(root)
+    records=json.loads((root/'expanded-records.json').read_text())
+    by_id={p['id']:p for p in records}
+    if len(by_id)!=len(records) or len({p['id'].split('v')[0] for p in records})!=len(records):
+        raise ValueError('Duplicate expanded identifier')
+    for p in records:
+        if p['url']!='https://arxiv.org/abs/'+p['id']:
+            raise ValueError('Expanded reference mismatch')
+    screening=list(csv.DictReader((root/'expanded-screening.csv').open()))
+    evidence=list(csv.DictReader((root/'expanded-evidence-map.csv').open()))
+    if len(screening)!=len(records) or {r['id'] for r in screening}!=set(by_id):
+        raise ValueError('Expanded screening coverage mismatch')
+    coded={r['id'] for r in screening if r['expanded_decision'] in ('method_comparator','primary_or_historical_comparator')}
+    if len(evidence)!=len(coded) or {r['id'] for r in evidence}!=coded:
+        raise ValueError('Expanded coding count mismatch')
+    for r in evidence:
+        if r['url']!=by_id[r['id']]['url'] or not r['source_locator'] or not r['limitations']:
+            raise ValueError('Expanded evidence traceability error')
+        if 'human_check_pending' not in r['verification_status']:
+            raise ValueError('Unsupported verification claim')
+    audit=json.loads((root/'expanded-audit.json').read_text())
+    if audit['records_with_review_seeds']!=len(records) or audit['coded_original_studies']!=len(evidence):
+        raise ValueError('Expanded audit total mismatch')
+    if audit['coded_roles']!=dict(Counter(r['scope_role'] for r in evidence)):
+        raise ValueError('Expanded role count mismatch')
+    if audit['screening_decisions']!=dict(Counter(r['expanded_decision'] for r in screening)):
+        raise ValueError('Expanded decision count mismatch')
+    logs=[json.loads((root/name).read_text()) for name in ('search-log.json','expanded-search-log.json')]
+    retrieved=[p for log in logs for q in log.values() for p in q['records']]
+    if len(retrieved)!=audit['returned_records_all_searches'] or len({p['id'].split('v')[0] for p in retrieved})!=audit['unique_search_ids']:
+        raise ValueError('Expanded retrieval/dedup mismatch')
+    if audit['database_search_complete'] or audit['human_verification_complete']:
+        raise ValueError('Completion claims need independent verification')
+    return {'status':'integrity_checks_passed','candidate_records':len(records),'coded_publications':len(evidence),
+            'human_verification':'pending','systematic_search_complete':False,'submission_ready':False}
+
+
 if __name__=='__main__':
-    result=validate(Path(__file__).parent)
+    root=Path(__file__).parent
+    result={'pilot':validate(root)}
+    if (root/'expanded-audit.json').exists():result['expansion']=validate_expansion(root)
     print(json.dumps(result,indent=2))

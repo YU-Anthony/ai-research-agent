@@ -57,3 +57,13 @@ Stop/reframe if a recent review already provides the same evaluation taxonomy an
 ## Outputs and authorization
 
 Deliver a checked bibliography, transparent screening record, evidence/codebook tables, overlap analysis, manuscript draft and candidate experiment questions. No new driver study, real-world intervention, paid experiment, manuscript submission or aiXiv posting is authorized. The final manuscript requires explicit human review and submission approval.
+
+## Expansion amendment v0.2 (exploratory, not retroactive preregistration)
+
+A second round adds six search families and targeted full texts. Preserve the first-round log and ledger rather than rewriting them as if these queries had been planned initially. New logs include page offsets and truncation/exhaustion observations. Several broad queries hit a two-page resource cap and produced substantial irrelevant transport/engineering records; the final search requires refinement against known eligible seeds and exhaustive database exports where feasible.
+
+Separate three original-study strata: (a) generative support studies, (b) historical/non-generative context studies including passenger policy comparisons, (c) automated-evaluation methods used only to inform measurement validity. Recognition-only and tool benchmarks must not be counted as human support interventions. Exact final scope remains a human-review decision.
+
+Add occupant role, source of reference judgments, natural vs artificial modality pairing, simulated users, and dialogue-loop vs physical-driving-loop distinctions. A passenger VR experiment must not be described as an active-driver distraction trial. A human annotator agreement study must not be described as observed emotional improvement. Register all `not_extracted` fields as extraction work, not proof of non-reporting.
+
+The working manuscript is now draft-v2.md. The first draft remains a historical pilot artifact. After remaining-source access is restored, validate new query formulations, search the additional databases and check recent dedicated reviews before claiming novelty or coverage.

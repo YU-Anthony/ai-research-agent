@@ -1,0 +1,86 @@
+[
+  {
+    "arxiv_id": "2403.09135",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2403.09135",
+    "sha256": "d03fa56d8d3652fc8e06470e37490f05f2aed80fe5b5eba5fb48086d752dbfec"
+  },
+  {
+    "arxiv_id": "2601.19421",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2601.19421",
+    "sha256": "112e87c63a57f49a201a7301c027bb1a5e9aebc90eb2eadf1cfb7b08a55177e0"
+  },
+  {
+    "arxiv_id": "2609.12503",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2609.12503",
+    "sha256": "8a22cb1893486d51c2e08dd826c40f8c34142620861dbcc9b3f7e683943736ec"
+  },
+  {
+    "arxiv_id": "2602.15569",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2602.15569",
+    "sha256": "ff1bb36a045714be45aa4f80dc0c2bd5bf851d1386d23663e766bd0903445583"
+  },
+  {
+    "arxiv_id": "2311.07469",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2311.07469",
+    "sha256": "aac9d6ab72088b15c98cc81475e02162d450cfe7d40ece378d7f864fbb630d35"
+  },
+  {
+    "arxiv_id": "2504.01248",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2504.01248",
+    "sha256": "6de7d5639387f30a633488abde34060950820952f0f106c685b241d4a7ba8968"
+  },
+  {
+    "arxiv_id": "2609.35812",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2609.35812",
+    "sha256": "bc2ca1c692755cba0cedcfb1881c734e6968755a88e14137494442dfbd54dc4b"
+  },
+  {
+    "arxiv_id": "2607.16181",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2607.16181",
+    "sha256": "3a517903ec978bef5206982198f60a5a7b1c7b530c8aa5bcaa97485f414d5d8a"
+  },
+  {
+    "arxiv_id": "2408.09046",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2408.09046",
+    "sha256": "2bd04dd9141bbd27578d3a871b79f0769d2f576ae144b74a4308efdd990440d1"
+  },
+  {
+    "arxiv_id": "2601.22027",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2601.22027",
+    "sha256": "7f60844096874dc04d7fd1ed7a9d0296d1820947c54a822862c23079eacbbebe"
+  },
+  {
+    "arxiv_id": "2609.19630",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2609.19630",
+    "sha256": "13417e63e12dd25a677262ddd32d8a48374e0a01a3bfd44b283078192a610b3b"
+  },
+  {
+    "arxiv_id": "2101.02082",
+    "http_status": 200,
+    "pdf_retrieved": true,
+    "requested_url": "https://export.arxiv.org/pdf/2101.02082",
+    "sha256": "d6ee66edf45d5cf187d39e2d80bd13f123860b6654a7c48e93153cf8cda8b96c"
+  }
+]

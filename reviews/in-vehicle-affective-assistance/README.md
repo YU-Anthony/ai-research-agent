@@ -1,3 +1,7 @@
+## Latest expansion
+
+The first-round pilot below is preserved as history. **Read [draft-v2.md](draft-v2.md) and [synthesis-update.md](synthesis-update.md) for the current synthesis.** New material includes expanded search/evidence/screening/audit files, study-family notes, resource-access checks and a priority screening queue. Current coded evidence is 18 publication records across distinct roles, not 18 independent driver trials. Whole-search metadata counts are not included-study counts. All human verification and broad-database completeness claims remain pending.
+
 # Generative in-vehicle support assistants: pilot evidence map
 
 **Status: first review milestone, not a completed systematic review and not submission-ready.** No new participants, experiments, paid model calls or public submissions were involved.
