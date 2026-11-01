@@ -1,0 +1,560 @@
+[
+  {
+    "id": "2610.40002v1",
+    "title": "How Much Should a VLA Trust Its Reasoning? Step-Level Guidance as a Measured Action-Value Function",
+    "abstract": "Reasoning vision-language-action (VLA) policies write a reasoning trace and then decode the action from it. A wrong trace yields a wrong action, and even a correct-looking trace can mislead the plan. Existing remedies ask whether the reasoning is right. We ask how strongly it should steer. CoC-CFG applies classifier-free guidance between the policy's context and the same context without the reasoning span. One weight per Euler step attenuates or amplifies the reasoning, and w=1 recovers the original policy. We treat the choice of this weight as a Markov decision process whose action values are measured, not bootstrapped. With the expert frozen and the noise fixed, applying a weight for one step and finishing the plan under the current controller returns that weight's value exactly. Q-adaptive guidance fits these values with small critics and improves the controller conservatively. In the Alpasim driving simulator it outperforms every fixed weight and online RL (SAC, GRPO) in open loop, and in closed loop it passes 262 of 300 scenes, against 252 for the original policy. On held-out frames of the Waymo end-to-end driving benchmark, its first three stages outperform every fixed weight, four adaptive-guidance methods, SAC and GRPO. On the hidden test set, a frozen Alpamayo 1.5 with rule-based camera and vehicle conversions and Q-adaptive guidance sets a new state of the art among published methods: 8.135159 rater feedback score, against 8.079 for the best published method.",
+    "authors": [
+      "Dabin Seo",
+      "Eunhyek Joa"
+    ],
+    "published": "2026-10-29T13:20:35Z",
+    "updated": "2026-10-29T13:20:35Z",
+    "url": "https://arxiv.org/abs/2610.40002v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433239+00:00"
+  },
+  {
+    "id": "2610.39547v1",
+    "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
+    "abstract": "Learning-enabled cyber-physical systems (CPS), including autonomous vehicles and UAVs, increasingly incorporate foundation models, yet fragmented assurance practices provide insufficient support for system-level guarantees. We argue that restoring engineering control across stochastic neural, symbolic, and physical boundaries requires a shift from model-centric evaluation to system-level assurance. We introduce the Foundation Model Assurance Stack, connecting three directions: (i) neuro-symbolic architectures that constrain foundation models through explicit symbolic world models, reasoning layers, and interfaces; (ii) semantically grounded, conformance-based testing that combines formal specifications and symbolic world models with foundation-model-assisted specification mining, scenario generation, and test synthesis; and (iii) compositional verification and runtime assurance that target formally tractable components and interfaces through modular contracts, equivalence checking, verified synthesis, uncertainty-aware reasoning, and runtime monitoring and enforcement. Symbolic abstractions establish assurance boundaries between stochastic learning and formal reasoning, connecting testing, verification, and runtime evidence across the system lifecycle. Foundation models serve as constrained assistants whose outputs are independently checked wherever correctness can be formally specified. We identify research challenges in specification engineering, abstraction fidelity, evidence composition, and lifecycle certification, and outline a staged agenda toward trustworthy, deployable, and certifiable learning-enabled CPS.",
+    "authors": [
+      "Xi Zheng",
+      "Ivan Ruchkin",
+      "Hong Jin Kang",
+      "Tevfik Bultan",
+      "Vijay Ganesh",
+      "Taylor T. Johnson",
+      "Ziyang Li",
+      "Lei Ma",
+      "Aloysius K. Mok",
+      "Daniel Neider",
+      "Ruzica Piskac",
+      "Nalini Venkatasubramanian",
+      "Simon Thompson",
+      "Sanjoy Baruah"
+    ],
+    "published": "2026-10-29T07:48:59Z",
+    "updated": "2026-10-29T07:48:59Z",
+    "url": "https://arxiv.org/abs/2610.39547v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433291+00:00"
+  },
+  {
+    "id": "2610.39226v1",
+    "title": "Beyond Direct Imaging: Quantum Measurement Design for Small-Target Detection in UAV Hyperspectral Sensing",
+    "abstract": "Small mineral patches can be spectrally distinct yet difficult to detect when diffraction mixes their light with the surrounding rock. Conventional hyperspectral detectors analyze recorded intensities, leaving an opportunity to recover target evidence through the optical measurement itself. We develop a quantum-assisted framework for exploiting this opportunity in prospective unmanned aerial vehicle (UAV) hyperspectral sensing. A common radiometric and diffraction model describes direct imaging and spatial-mode measurements of the same light. The theory identifies target changes that survive background fitting and explains when mode measurements retain more detection information. It quantifies losses from mode mismatch and unresolved outputs, linking the quantum benchmark to finite receiver design. A common-basis result identifies when material spectra can share a spatial measurement at fixed geometry. An adaptive receiver uses an imaging pilot to select candidate modes and combines both stages in a full-region presence test. Simulations based on measured mineral spectra and published UAV acquisition scales demonstrate gains over complete direct imaging at a shared active-exposure budget, including pilot cost and optical loss. At matched empirical 1\\% region-level false alarms, detection increases from 62.95\\% to 69.65\\% for a representative target. Paired analysis supports gains with registration uncertainty and, separately, under controlled nonuniform backgrounds. Calibrated mode errors reveal where measurement losses weaken or reverse the benefit. These results connect background identifiability to receiver choices and their operating conditions. They provide a framework for designing spatial measurements alongside spectral channels to detect small material features.",
+    "authors": [
+      "Qipeng Qian",
+      "Jialiang Jin",
+      "Shihao Wang",
+      "Yuntao Qian"
+    ],
+    "published": "2026-10-29T02:45:44Z",
+    "updated": "2026-10-29T02:45:44Z",
+    "url": "https://arxiv.org/abs/2610.39226v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433378+00:00"
+  },
+  {
+    "id": "2610.37269v1",
+    "title": "Personal preference or system role? Battery swapping among UK electric vehicle users",
+    "abstract": "Battery swapping replaces a depleted EV battery with a charged one, reducing waiting time and enabling off-peak charging. Evidence on acceptance, however, remains concentrated in Asian markets, and most studies examine individual adoption intentions. This study asks whether current UK EV users judge swapping differently as a purchase option and as a technology for the transport system. Using Behavioural Reasoning Theory, an integrated choice and latent variable model, and latent class analysis, we analyse perceived usefulness, energy-system concerns, practical barriers, and satisfaction with current charging. Usefulness and energy-system concerns relate more strongly to expectations about the system. Battery compatibility and station coverage relate more strongly to personal preference, while spare battery costs relate to expectations about network viability. User groups differ in how they balance benefits, barriers, and satisfaction with existing charging. Policy should address driver barriers and network viability as distinct but connected priorities.",
+    "authors": [
+      "Janak Parmar",
+      "Huseyin Ayan",
+      "Dilum Dissanayake",
+      "Margaret Bell"
+    ],
+    "published": "2026-10-27T14:02:09Z",
+    "updated": "2026-10-27T14:02:09Z",
+    "url": "https://arxiv.org/abs/2610.37269v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433412+00:00"
+  },
+  {
+    "id": "2610.35062v1",
+    "title": "PushAround: Collaborative Path Clearing via Physics-Informed Hybrid Search",
+    "abstract": "Large vehicles in cluttered environments are often blocked by movable obstacles, motivating mobile robot teams to clear traversable corridors. Navigation Among Movable Obstacles (NAMO) approaches often abstract obstacle displacements while neglecting robot dimensions, obstacle mass, contact geometry and forces, yielding physically infeasible plans. PushAround is a physics-informed hybrid search that couples geometric connectivity reasoning with short-horizon simulation to construct executable clearing plans. Repeated W-clearance connectivity graph (WCCG) queries expose frontier gaps requiring widening and rank them by estimated downstream costs. The search generates direct or recursive pushing candidates, selecting obstacles, directions, contacts and forces, and admits physics-evaluated candidates. Numerical experiments validate WCCG against standard connectivity checks and demonstrate scaling to denser clutter and teams of up to four robots, with robustness to simulated execution-side physical-parameter mismatch.",
+    "authors": [
+      "Zili Tang",
+      "Zongyuan Li",
+      "Zishao Qiao",
+      "Meng Guo"
+    ],
+    "published": "2026-10-26T09:08:16Z",
+    "updated": "2026-10-26T09:08:16Z",
+    "url": "https://arxiv.org/abs/2610.35062v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433479+00:00"
+  },
+  {
+    "id": "2610.35038v1",
+    "title": "Revealing Imaging Characteristics of Thermal Wakes from Underwater Vehicles Without Cooling-Water Discharge",
+    "abstract": "Small uncrewed underwater vehicles are proliferating and threaten maritime security, yet evade sonar and magnetic sensors built for larger submarines. Infrared thermal wakes, generated by hydrodynamic displacement that modulates the cold-skin layer, offer a non-acoustic, non-magnetic alternative even without cooling-water discharge. Existing studies, however, rely on idealized simulations that fail to capture real-world backgrounds, offering limited guidance for target-background discrimination. We establish AVP-IR-Wake, the first large-scale, real-world, physically diverse benchmark of 161,485 frames collected over three years. We show that thermal wakes are extended structures of discrete vortices, violating the compactness assumption of conventional targets. We reveal local indistinguishability: individual wake vortices are statistically identical to wind-induced background vortices in temporal, frequency, and sparse domains, sharing low-frequency information and long-range correlations. This challenges the assumptions of compact, transient, high-frequency targets in conventional detection. Yet we establish global morphological separability: although locally inseparable, the wake as a whole is organized by vehicle trajectory, whereas background clutter is organized by wind-driven thermal fronts. This explains why representative detectors fail and shows that reliable detection must shift from local feature extraction to global trajectory-constrained physical modeling. Because the cold-skin layer varies globally and seasonally, forecasting wake observability will require integrating physical oceanography and atmospheric science, linking underwater surveillance to the changing ocean surface.",
+    "authors": [
+      "Guoyi Zhang",
+      "Yanjin Du",
+      "Guangsheng Xu",
+      "Zhengyao Zhao",
+      "Siyang Chen",
+      "Jingjing Gao",
+      "Yuezheng Zhou",
+      "Yiyang Wu",
+      "Bin Wu",
+      "Tongsu Zhang",
+      "Lejia Ye",
+      "Donghe Wang",
+      "Jie Wang",
+      "Kaiye Hu",
+      "Zhipeng Ren",
+      "Han Wang",
+      "Boo Cheong Khoo",
+      "Xiangpeng Xu",
+      "Xiaohu Zhang"
+    ],
+    "published": "2026-10-26T08:52:12Z",
+    "updated": "2026-10-26T08:52:12Z",
+    "url": "https://arxiv.org/abs/2610.35038v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433574+00:00"
+  },
+  {
+    "id": "2610.34668v1",
+    "title": "Hierarchical Task Network planning in the Goal Lifecycle",
+    "abstract": "Goal reasoning (GR) is the process by which intelligent agents continually reason about the goals they are pursuing, which may lead to goal change, for instance when opportunities arise, or when events cause discrepancies among expected and actual outcomes of actions planned to achieve goals. In this paper we investigate whether Hierarchical Task Network (HTN) planning can provide a uniform implementation of the Goal Lifecycle, a flexible process model for goal reasoning in dynamic environments. The Goal Lifecycle progressively refines goals by adding constraints to them through a series of strategies (e.g., {\\it formulate, select, expand}) and uses other strategies (e.g., {\\it defer, re-expand, repair}) to resolve the current goal when an event impacts it. We present a novel GR agent architecture that employs HTN planning in this Goal Lifecycle. In addition to using HTN planning for the \\textit{expand} and \\textit{re-expand} strategies, as is frequently done in GR and planning research, we also use it in the \\textit{formulate} strategy, to obtain a uniform planning approach that provides several benefits (e.g., the possibility to formulate new goals in view of achieving higher level overarching goals). We also explain how we use an enhanced HTN action representation to process discrepancies among expected and actual action outcomes that can trigger the transition from one goal to another. Finally, we empirically demonstrate that our GR architecture enables simulated autonomous vehicles to adaptively conduct missions in dynamic environments.",
+    "authors": [
+      "Paola Rizzo",
+      "Hector Munoz-Avila",
+      "David W. Aha"
+    ],
+    "published": "2026-10-26T01:01:22Z",
+    "updated": "2026-10-26T01:01:22Z",
+    "url": "https://arxiv.org/abs/2610.34668v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433723+00:00"
+  },
+  {
+    "id": "2610.34650v1",
+    "title": "Dream to Assist: Intent-Conditioned World Models for Shared Vehicle Control",
+    "abstract": "Assistive agents in shared-control settings face a dual challenge: acting proactively to align with the human's intentions while remaining legible enough for the human to comprehend and fluently respond in real time. We present Dream2Assist, a model-based reinforcement learning framework for tightly-coupled shared decision making that addresses both sides of this challenge. Our approach extends a recurrent state-space world model with intent inference, enabling an assistive policy trained via fictitious co-play to anticipate and support discrete human objectives without overriding human agency. Beyond the computational framework, we describe the full deployment pipeline needed to translate a world-model-based policy into a safe, human-centered system in a resource-efficient way. Crucially, we address the sim-to-real-human gap via policy down-selection and reward restructuring within an iterative human-machine interface design. We validate the framework through three human-subjects studies and a preliminary on-vehicle deployment spanning two qualitatively distinct domains: high-speed racing (N=30) and urban driving with richer intent structure (N=10). Our results demonstrate that intent conditioning yields measurable improvements in torque alignment and collision rate. We surface key design insights and practices for deploying learning-based assistive agents in safety-critical, real-time human-robot teaming.",
+    "authors": [
+      "Jonathan DeCastro",
+      "Thomas Balch",
+      "Emily Sumner",
+      "Deepak Gopinath",
+      "Laporsha Dees",
+      "Patricio Reyes Gomez",
+      "Elliot Weiss",
+      "Megan Applegate-Kenton",
+      "Todd Rowell",
+      "John Leonard",
+      "Avinash Balachandran",
+      "Guy Rosman"
+    ],
+    "published": "2026-10-26T00:28:48Z",
+    "updated": "2026-10-26T00:28:48Z",
+    "url": "https://arxiv.org/abs/2610.34650v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433769+00:00"
+  },
+  {
+    "id": "2610.35964v1",
+    "title": "A Hyper-Logical View on Multi-Agent Path Planning",
+    "abstract": "Multi-Agent Path Planning (MAPP) requires collision-free paths for multiple agents. MAPP has numerous real-life applications, including the navigation of automated vehicles, and has therefore many variants considering different constraints, requirements, and objectives. For each such variant, a new algorithmic treatment is often developed. This paper takes a complementary, specification-centered view: we show that many MAPP variants can be modeled in HyperLTL, a temporal logic that reasons about multiple paths and their evolution through time, and in its omega-regular extension HyperQPTL. The contribution is not a claim that current hyperproperty model checkers replace specialized MAPP solvers. Rather, the hyper-logical view gives a unified language for comparing MAPP variants, adding cross-agent constraints, expressing optimality, and connecting MAPP to verification, explanation, and causality techniques for hyperproperties.",
+    "authors": [
+      "Hadar Frenkel",
+      "Dor Atzmon"
+    ],
+    "published": "2026-10-25T13:31:33Z",
+    "updated": "2026-10-25T13:31:33Z",
+    "url": "https://arxiv.org/abs/2610.35964v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433796+00:00"
+  },
+  {
+    "id": "2610.33915v1",
+    "title": "Human-Aware Agentic Driving: Rethinking Driver State, Trust, and Intervention",
+    "abstract": "Agentic driving brings goal-directed reasoning, memory, tools, and adaptive interaction into automated vehicles. A vehicle can clarify a request, explain a maneuver, or prepare a driver to take control, then adapt its next action to the response. These capabilities make the vehicle an active participant in shaping the human behavior it observes. We examine how agentic interaction affects driver-state inference, trust and reliance, and human intervention in conditional automation. Established findings on attention, takeover prediction, trust-aware planning, and adaptive warnings provide useful foundations, but their applicability depends on how observations are elicited and how assistance changes the driving task. We distinguish what remains applicable, what changes under flexible interaction, and what remains unresolved across these three areas. The analysis identifies three research priorities: establishing the effects of interventions, jointly designing interaction and driving policies, and maintaining useful adaptation across repeated use and system changes. Progress should be measured through driver comprehension, appropriate reliance, and the ability to perform the required driving action in time.",
+    "authors": [
+      "Lu Feng"
+    ],
+    "published": "2026-10-24T21:03:32Z",
+    "updated": "2026-10-24T21:03:32Z",
+    "url": "https://arxiv.org/abs/2610.33915v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433822+00:00"
+  },
+  {
+    "id": "2610.33758v1",
+    "title": "Road Infrastructure Perception for Autonomous Driving: Taxonomy, Representations, Tasks, and Challenges",
+    "abstract": "Road infrastructure perception is a fundamental component of autonomous driving, as it recovers the structured road elements that define roadway geometry, delimit operational space, and encode traffic regulations. Although individual tasks such as lane detection, drivable-space estimation, traffic-sign recognition, and online map construction have been extensively studied, the field remains fragmented across task definitions, sensing assumptions, output representations, datasets, and evaluation protocols. This survey provides a function-oriented synthesis of road infrastructure perception. We first clarify its scope and organize existing studies into three complementary categories: geometric-structural, functional-spatial, and regulatory-semantic infrastructure. Based on this taxonomy, we review sensing modalities, scene representations, representative methods, benchmarks, and evaluation protocols, emphasizing the field's evolution from image-space recognition toward metric, vectorized, topology-aware, occupancy-based, and rule-grounded scene modeling. We further examine how representation choices affect evaluation and downstream usability, revealing limitations of current benchmarks in relation reasoning, temporal consistency, robustness, and planning-oriented assessment. Finally, we discuss open challenges and future directions toward unified infrastructure representation, open-environment generalization, relation- and rule-aware reasoning, and downstream-oriented evaluation. By connecting tasks, representations, and evaluation under a common functional framework, this survey aims to establish road infrastructure perception as a coherent foundation for map-compatible and behavior-relevant autonomous-driving scene understanding.",
+    "authors": [
+      "Guoyang Zhao",
+      "Weiqing Qi",
+      "Kai Zhang",
+      "Zhihai Bi",
+      "Tianshuai Hu",
+      "Zeying Gong",
+      "Dezong Zhao",
+      "Jun Ma"
+    ],
+    "published": "2026-10-24T16:01:13Z",
+    "updated": "2026-10-24T16:01:13Z",
+    "url": "https://arxiv.org/abs/2610.33758v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433859+00:00"
+  },
+  {
+    "id": "2610.32612v1",
+    "title": "DriveOSS: Dataset and Benchmark for 3D Anomaly Segmentation and Open-set Semantic Segmentation in Autonomous Driving",
+    "abstract": "Recent advances in 3D semantic segmentation have significantly improved scene understanding in autonomous driving. However, existing methods are typically developed under a closed-set assumption and evaluated under standard driving conditions, where all categories are known in advance. In real-world driving, autonomous vehicles inevitably encounter previously unseen objects, making closed-set perception insufficient for safe deployment. To address this challenge, we introduce DriveOSS, which, to the best of our knowledge, is the first real-world multimodal dataset and benchmark specifically designed for 3D anomaly segmentation and open-set semantic segmentation. It contains 12,661 synchronized and annotated frames captured using six surround-view RGB cameras, a 128-beam LiDAR, and a GPS/IMU unit. The dataset comprises 52 real-world driving scenes collected under clear, nighttime, cloudy, rainy, and snowy conditions and is organized into ID (in-distribution) and OOD (out-of-distribution) subsets. The ID scenes contain only known classes and are used for training, whereas the OOD scenes additionally contain unknown objects annotated as the outlier class and are used for validation and testing. Extensive experiments show that unseen objects remain a major challenge for current 3D perception systems. The dataset, benchmark protocols, and code are available at https://github.com/chrisyan/DriveOSS.",
+    "authors": [
+      "Zhiran Yan",
+      "Savankumar Bhanderi",
+      "Sourabh Lolge",
+      "Rui Song",
+      "Girdharbhai Paneliya",
+      "Shiva Agrawal",
+      "Gordon Elger"
+    ],
+    "published": "2026-10-23T13:33:39Z",
+    "updated": "2026-10-23T13:33:39Z",
+    "url": "https://arxiv.org/abs/2610.32612v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433894+00:00"
+  },
+  {
+    "id": "2610.31898v1",
+    "title": "StateBridge: Phase- and Track-Grounded Reasoning for Synthetic-to-Real Traffic Video Captioning and VQA",
+    "abstract": "Traffic safety videos provide rich evidence for understanding interactions between pedestrians and vehicles, but synthetic-to-real evaluation makes this setting challenging because models must learn from simulated scenes and generalize to real-world traffic. In this work, we present StateBridge, a traffic video-language framework designed to operate under this synthetic-only training protocol. Our approach uses phase-aware clip construction, pedestrian and vehicle track summaries, and structured prompts to ground vision-language models in stable traffic evidence rather than appearance alone. We fine-tune public vision-language models on synthetic captioning and visual question answering examples, then combine their outputs through fact-locked caption fusion and evidence-diverse VQA consensus to improve consistency across actor roles, behavioral phases, and question types. StateBridge achieves an official S2 score of 55.4679 on AI City Challenge 2026 Track 2 using only synthetic training data. These results demonstrate the effectiveness of structured evidence transfer for traffic safety captioning and visual question answering.",
+    "authors": [
+      "Blessing Agyei Kyem",
+      "Richard Dzinyela",
+      "Joshua Kofi Asamoah",
+      "Eugene Denteh",
+      "Andrews Danyo",
+      "Solomon Owusu-Ansah",
+      "Dickson Gyimah Asiedu",
+      "Armstrong Aboah"
+    ],
+    "published": "2026-10-22T20:52:22Z",
+    "updated": "2026-10-22T20:52:22Z",
+    "url": "https://arxiv.org/abs/2610.31898v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.433968+00:00"
+  },
+  {
+    "id": "2610.31835v1",
+    "title": "SAGE: A hybrid vision-language and geometry framework for work-zone pathway prediction under temporary traffic control",
+    "abstract": "Temporary traffic control redirects vehicles through work zones, requiring automated vehicles to connect an interpretation of the visible devices to a continuous passing path. Geometric predictors can provide several plausible paths, yet selecting the one consistent with the temporary control remains difficult. We propose SAGE (Semantic-to-Action Grounded Execution), a read-decide-execute-check framework that separates path construction, path preference, and control compliance within a shared candidate space. The central idea is to use a vision-language model's (VLM's) trajectory as a preference over intact geometric candidates. A role-decoupled generator constructs the candidates, and rank fusion combines each candidate's geometric score with its agreement with the VLM trajectory. Supervision structured around the Manual on Uniform Traffic Control Devices (MUTCD) trains SAGE-VLM to state the lane status and hazard side before its passage decision and trajectory. The predicted hazard side enters image-space predicates derived from MUTCD provisions, which support a final intervention bounded in score and displacement. On 2,306 real-world ROADWork validation episodes, the candidates include a path within 10 px of the human demonstration in 87% of episodes, yet selection regret accounts for 53% of the geometric ranker's error. SAGE reduces average and final displacement errors by 8.3% and 12.0% relative to the ranker, mostly in the far field, and hard-constraint violations by 37%. The trajectory opinion improves all four tested generator-selector combinations. SAGE is comparable to state-of-the-art VLM modules in accuracy, with a faster-responding VLM, and outperforms four other adapted driving VLMs in displacement error and safety measures. Project page: https://hhjj233.github.io/SAGE-page/.",
+    "authors": [
+      "Jiaxi Liu",
+      "Keshu Wu",
+      "Weizhe Tang",
+      "Bofeng Cao",
+      "Sikai Chen",
+      "Xiaopeng Li",
+      "Steven T. Parker",
+      "Bin Ran"
+    ],
+    "published": "2026-10-22T19:14:17Z",
+    "updated": "2026-10-22T19:14:17Z",
+    "url": "https://arxiv.org/abs/2610.31835v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434009+00:00"
+  },
+  {
+    "id": "2610.31029v1",
+    "title": "AERIAL: Mission-Aware LLM Selection for Language-Driven UAV Control in Flying Networks",
+    "abstract": "Unmanned Aerial Vehicles (UAVs) in Flying Networks (FNs) increasingly require mechanisms to translate high-level natural language objectives into executable missions. Although Large Language Models (LLMs) have demonstrated the feasibility of language-driven UAV control, existing approaches typically rely on static model configurations and overlook mission-aware performance variability. This paper presents AERIAL, a benchmark-driven framework for adaptive LLM selection in hybrid edge-cloud UAV control. AERIAL separates systematic model benchmarking from mission execution, deriving empirical scenario-model mappings and applying them at runtime for mission-aware selection. Evaluation across 720 automated simulation runs spanning navigation, spatial reasoning, and algorithm invocation revealed significant performance variability depending on scenario-model pairing. A case study integrating AERIAL with a FNs placement algorithm further validated the framework's ability to interface with domain-specific optimization modules through natural language. These results validate the effectiveness of AERIAL's adaptive model selection in improving reliability and operational robustness for autonomous UAV control in FNs.",
+    "authors": [
+      "Diana Nunes",
+      "Ricardo Amorim",
+      "Pedro Ribeiro",
+      "André Coelho",
+      "Rui Campos"
+    ],
+    "published": "2026-10-22T10:05:43Z",
+    "updated": "2026-10-22T10:05:43Z",
+    "url": "https://arxiv.org/abs/2610.31029v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434039+00:00"
+  },
+  {
+    "id": "2610.30609v1",
+    "title": "KinoUAV: A Benchmark for Safe and Stable UAV Vision-Language Navigation with Kinodynamic Modeling",
+    "abstract": "Unmanned aerial vehicles (UAVs) have recently emerged as important remote sensing platforms, and UAV navigation has shown great potential in remote sensing applications. However, existing methods do not explicitly incorporate kinodynamic modeling or safety distances into trajectory generation, resulting in high absolute yaw rates, frequent collisions, and low navigation success rates, which limit safety and motion stability. To address this challenge, we introduce KinoUAV, a kinodynamic benchmark comprising a dataset and KinoUAV-Agent. First, we develop a hierarchical kinodynamic trajectory generation pipeline that drives UAV through acceleration actions. It uses waypoint chains from global planning and generates trajectories segment by segment under velocity, acceleration, and jerk constraints, reducing oscillations and improving trajectory stability. Furthermore, we introduce directional free-space distance (DFD) labels into the constructed dataset to describe the available clearance for safe motion decisions. The proposed KinoUAV-Agent predicts DFDs and uses them to generate safe actions, decoupling perception from action decision-making. This design enables autonomous obstacle avoidance and improves navigation safety. The benchmark incorporates the proposed Cruise-Seek task, in which the UAV first enters the target region and then searches for the target, reducing the difficulty of target search and improving navigation success. Experiments on KinoUAV show that KinoUAV-Agent outperforms existing methods, achieving the highest success rate while maintaining lower absolute yaw rates and collision rates. These results demonstrate the effectiveness of kinodynamic modeling for safe and stable UAV navigation.",
+    "authors": [
+      "Chenyao Yang",
+      "Peijin Wang",
+      "Yingchao Feng",
+      "Wenhui Diao"
+    ],
+    "published": "2026-10-22T02:16:48Z",
+    "updated": "2026-10-22T02:16:48Z",
+    "url": "https://arxiv.org/abs/2610.30609v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434113+00:00"
+  },
+  {
+    "id": "2610.28120v1",
+    "title": "PointForward V2: Point-Aligned Interaction for Feedforward Driving Reconstruction",
+    "abstract": "Feedforward reconstruction of dynamic driving scenes requires integrating observations across multiple views and time steps into a coherent 3D representation. PointForward established state-of-the-art feedforward driving reconstruction by lifting image observations into sparse 3D queries, demonstrating the effectiveness of point-aligned scene representations. However, these queries are largely processed independently, limiting information exchange across space and time, while direct global attention among tens of thousands of point queries is computationally prohibitive. In this work, we present \\textbf{PointForward V2}, which advances point-aligned representation to point-aligned interaction. Our key idea is to mediate query interaction through compact, scene-structured registers. For the static background, frame-wise Static Scene Registers compress point information, communicate across frames, and propagate the aggregated context back to the queries. For each dynamic instance, queries from different frames are aligned in an object-centric canonical space and interact through instance-specific Dynamic Instance Registers. We further employ 4D positional encoding that combines aligned spatial coordinates with original timestamps, enabling spatially aligned yet temporally distinguishable interactions. In this way, PointForward V2 enables scalable spatio-temporal reasoning directly among lifted 3D queries without dense global attention. Experiments on Waymo, nuScenes, and Argoverse 2 demonstrate state-of-the-art performance across large-scale driving benchmarks.",
+    "authors": [
+      "Xianqi Wang",
+      "Cheng Chi",
+      "Yuechuan Pu",
+      "Hongcheng Luo",
+      "Junda Cheng",
+      "Guang Chen",
+      "Hangjun Ye",
+      "Bing Wang",
+      "Xin Yang"
+    ],
+    "published": "2026-10-20T12:30:21Z",
+    "updated": "2026-10-20T12:30:21Z",
+    "url": "https://arxiv.org/abs/2610.28120v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434153+00:00"
+  },
+  {
+    "id": "2610.27509v1",
+    "title": "Complete Street Design informed by Multi-Agent Simulation",
+    "abstract": "Objectives: Complete Street design is currently guided largely by qualitative principles despite the increasing complexity of multimodal urban traffic. This paper develops a microscopic simulation framework for quantitatively evaluating alternative street designs by explicitly representing heterogeneous road users, including Autonomous Vehicles (AVs), Connected Vehicles (CVs), Human-Driven Vehicles (HDVs), pick-up and drop-off (PUDO) services, and micromobility users. The framework jointly evaluates mobility and safety within a unified testbed. Methods:The framework enriches microscopic simulation with behavioral models for heterogeneous road users. It explicitly captures lateral movements, parking maneuvers, pedestrian crossings and jaywalking, and shared-lane bicycle and scooter interactions. Safety is quantified using a conflict severity measure grounded in collision physics, while candidate street layouts are optimized using a genetic algorithm. Findings: Applied to a segment of Belmont Avenue in Chicago, Illinois, the framework shows that dedicated bicycle lanes reduce conflict severity at the expense of vehicular throughput. Increasing AV penetration mitigates congestion by reducing traffic shockwaves while improving interactions with pedestrians relative to CVs and HDVs. The optimization framework efficiently identifies Pareto-efficient street layouts that balance mobility and safety. Novelty: The proposed framework integrates heterogeneous behavioral modeling, physics-based conflict assessment, stochastic performance evaluation, and design optimization within a single quantitative framework for Complete Street design. Practical Applications: The framework provides transportation planners with a predictive virtual testbed for evaluating street designs and quantifying the tradeoff between mobility and safety before implementation.",
+    "authors": [
+      "Sharika J. Hegde",
+      "Amirmohammad Khakpour",
+      "Pedram Beigi",
+      " Yu",
+      " Nie",
+      "Hani S. Mahmassani"
+    ],
+    "published": "2026-10-20T02:23:07Z",
+    "updated": "2026-10-20T02:23:07Z",
+    "url": "https://arxiv.org/abs/2610.27509v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434192+00:00"
+  },
+  {
+    "id": "2610.26528v1",
+    "title": "A Semantic Knowledge Graph Construction Pipeline for Vehicle Intention Prediction in nuScenes",
+    "abstract": "Knowledge graphs (KGs) are increasingly used in autonomous driving (AD) to make traffic scene entities and relations explicit for prediction and reasoning. Existing traffic-scene KGs, however, primarily emphasize trajectory forecasting or general scene understanding. This paper presents the nuScenes Intention Knowledge Graph (NIKG), a focused Web Ontology Language (OWL)-based semantic representation and construction pipeline for ego-centric vehicle intention context. NIKG instantiates nuScenes scenes as a self-describing Turtle graph and promotes three intention-relevant relations to first-class properties of each scene participant: ego-relative motion, spatial configuration, and time to collision (TTC) risk. The pipeline uses a small input contract available in many ego-centric driving datasets: ego pose, tracked object annotations, and temporal keyframe order. NIKG is released as an ontology-backed, self-describing graph artifact together with a reproducible construction pipeline and validation protocol for ego-centric intention context. Applying this pipeline to nuScenes mini yields a graph of 211,335 triples across 404 keyframes; under the validation protocol, ego-relative motion labels achieve 92.5% forward consistency. Coverage, semantic consistency, and temporal coherence analyses over this artifact are further reported. NIKG occupies the space between scene-oriented traffic KGs and intention-prediction models: a small, explicit semantic layer intended to support downstream work such as knowledge graph embedding (KGE), SPARQL-based feature extraction, or hybrid neuro-symbolic reasoning.",
+    "authors": [
+      "Khaled Nowara",
+      "Mohamed Manzour",
+      "Catherine Elias"
+    ],
+    "published": "2026-10-19T14:56:03Z",
+    "updated": "2026-10-19T14:56:03Z",
+    "url": "https://arxiv.org/abs/2610.26528v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434223+00:00"
+  },
+  {
+    "id": "2610.25534v1",
+    "title": "AQUAACT: A Joystick-Level Underwater Teleoperation Dataset and Closed-Loop Benchmark",
+    "abstract": "Underwater robots support a growing range of work, from inspecting offshore structures and pipelines to surveying reefs and accompanying divers. Most of these tasks, however, are still flown by hand by a pilot, which raises the question of whether they can be carried out autonomously instead. On land, vision-language-action (VLA) models already let robots carry out tasks autonomously from language instructions, which makes them a natural candidate for taking the pilot's place. Underwater, however, there is little data to train such models. We take inspiration from how these tasks are flown today: the pilot watches the camera image and steers with a joystick, whose commands the flight controller turns into motion. We therefore record the pilots and introduce AQUAACT, to our knowledge the first publicly available language-annotated underwater dataset pairing camera images with human joystick commands. It comprises 1.9 hours of real-world and 17.9 hours of simulated demonstrations, both flown by human pilots, together with the vehicle's inertial measurements. Experiments with AQUAACT show that its simulated demonstrations transfer to real data and greatly reduce the real demonstrations a policy needs. A closed-loop benchmark of seven policies in simulation, from imitation-learning baselines to VLA models, each trained with its default recipe, shows that these tasks remain far from solved: no policy completes more than a fifth of the episodes. Pretraining on land data gives large VLA models no advantage over small policies trained from scratch, a gap that land-trained models have yet to close underwater.",
+    "authors": [
+      "Zhenqi Wu",
+      "Trung Tien Dong",
+      "Aditya Penumarti",
+      "Mohamed A. Fouad",
+      "Menna A. Fouad",
+      "Mingyang Mao",
+      "Jane Jaejeong Shin",
+      "Xiaomin Lin"
+    ],
+    "published": "2026-10-18T21:07:34Z",
+    "updated": "2026-10-18T21:07:34Z",
+    "url": "https://arxiv.org/abs/2610.25534v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434303+00:00"
+  },
+  {
+    "id": "2610.25407v1",
+    "title": "AeroDASH: Asynchronous Vision-Language-Action Control for Continuous UAV Flight",
+    "abstract": "Onboard inference latency creates a mismatch between the trajectories predicted by vision-language-action (VLA) policies and the ongoing motion of unmanned aerial vehicles (UAVs). We present AeroDASH, an asynchronous VLA framework for continuous language-conditioned flight. A B-spline policy is initialized through supervised fine-tuning on expert demonstrations, providing continuous trajectory references in position and yaw. During execution, trajectory fusion removes the expired prediction prefix and connects the remaining segment to the active reference with derivative continuity while limiting trajectory deformation. To account for deviations induced by asynchronous execution, execution-aware group relative policy optimization (GRPO) further adapts the policy using trajectory-level rewards. On the UAV-Flow test set, AeroDASH achieves a success rate of 76.56%, exceeding OpenVLA-UAV and AeroDASH w/o GRPO by 38.1 and 20.1 percentage points, respectively. Execution experiments show that AeroDASH sustains motion during inference and reduces acceleration, jerk, and speed fluctuations relative to asynchronous tracking of waypoint sequences. We further demonstrate language-conditioned flight with onboard inference and asynchronous trajectory execution. The code will be released upon acceptance.",
+    "authors": [
+      "Zhe Liu",
+      "Yuxuan Zheng",
+      "Jinzhe Qin",
+      "Ziqi Gao",
+      "Boyu Zhou"
+    ],
+    "published": "2026-10-18T17:05:56Z",
+    "updated": "2026-10-18T17:05:56Z",
+    "url": "https://arxiv.org/abs/2610.25407v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434381+00:00"
+  },
+  {
+    "id": "2610.24944v1",
+    "title": "Epi: Towards a Persistent, Self-Improving Agent for Autonomous Research",
+    "abstract": "We present Épi, an autonomous research agent that sustains investigations across model sessions and evolves its methods through accumulated experience. Épi combines persistent research history, hierarchical memory, branching and independent review to maintain research continuity, learn from experiments, and explore and revisit alternative approaches. Its experiments run across session boundaries, and a fixed verifier evaluates their outputs. Épi produced 120 record-setting results, comprising 20 numerical bound records across 12 families and 100 construction records across eight families. These include an approximately 84-fold narrower interval for the $n$-queens constant and a more than 3.6-million-fold narrower rigorous interval for the quartic Feigenbaum attractor dimension. Exact dual certificates establish that the Cohn-Elkies linear-programming bound cannot be sharp in dimensions 10 and 11. Beyond numerical improvements, Épi gives a computer-assisted proof of Tuza's conjecture for split graphs with an eight-vertex clique part and at most three triangle-active neighborhood types, with arbitrary multiplicities. We extend this research process to algorithmic coding with Épi-turbo, a lightweight configuration that develops executable solvers for tasks including vehicle routing, scheduling and production planning. On 30 FrontierOR tasks, Épi-turbo achieves a 5.4% higher total benchmark score than Codex at 64% of its model cost, using the same underlying model and reasoning effort. Épi is designed to support human understanding by connecting computational results to explicit methods and mathematical arguments that researchers can examine and build upon.",
+    "authors": [
+      "Yue Huang",
+      "Zhangchen Xu",
+      "Xiaonan Luo",
+      "Zheyuan Liu",
+      "Lichi Li",
+      "Yiping Wang",
+      "Peiyang Song",
+      "Eric Gabriel Ramos",
+      "Enze Xie",
+      "Olexandr Isayev",
+      "Paul Liang",
+      "Nouha Dziri",
+      "Huan Sun",
+      "Jianfeng Gao",
+      "Ying Liu",
+      "Misha Sra",
+      "Xiangliang Zhang",
+      "Alex Pentland",
+      "Zichen Chen"
+    ],
+    "published": "2026-10-18T01:30:40Z",
+    "updated": "2026-10-18T01:30:40Z",
+    "url": "https://arxiv.org/abs/2610.24944v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434575+00:00"
+  },
+  {
+    "id": "2610.24590v1",
+    "title": "Scene-Adaptive VLA: Efficient Autonomous Driving via Dynamic Layer Routing",
+    "abstract": "Vision-Language-Action (VLA) models offer a promising paradigm for autonomous driving. However, the massive parameter scale of VLAs strains onboard computational resources during real-time inference. This directly increases energy consumption and limits vehicle battery range, making it critical to minimize computational overhead without compromising driving capability and explainability. Current research on efficient VLA-based driving focuses on sequential adaptation (\\textit{e.g.}, Chain-of-Thought and token adjustment), leaving structural adaptation underexplored despite parameter redundancy across dynamic driving scenes. To address this gap, we propose Scene-Adaptive VLA, an efficient framework leveraging dynamic layer routing to adjust active parameters based on real-time scenes. Inspired by the temporal continuity of scenes and model predictive uncertainty, our approach characterizes model-perceived scene complexity via frame-level temporal scene variations and decision deviations. To uncover latent scene-to-parameter correspondences, we encode this characterization into scene-aware tokens, alongside two specialized queries. A budget-conditioned layer routing mechanism evaluates these refined queries to allocate a budget that determines the active parameter ratio and subsequently selects appropriate layer combinations. The entire framework is optimized end-to-end. Extensive evaluations on the Bench2Drive benchmark show that when adapted to a state-of-the-art VLA model, our approach significantly reduces inference-time computational overhead by 53.5\\% with negligible degradation in driving and language capabilities. Code is available at https:github.com/yang-luvu/Scene-Adaptive-VLA.",
+    "authors": [
+      "Yujia Yang",
+      "Quan Yuan",
+      "Jiawei Fan",
+      "Yang Li",
+      "Tiange Fu",
+      "Xiaoyuan Fu",
+      "Guiyang Luo",
+      "Jinglin Li"
+    ],
+    "published": "2026-10-17T09:53:47Z",
+    "updated": "2026-10-17T09:53:47Z",
+    "url": "https://arxiv.org/abs/2610.24590v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434621+00:00"
+  },
+  {
+    "id": "2610.24475v1",
+    "title": "Safety Analysis of CPSs Over-the-air Updates: Test Case Prioritization and Selection",
+    "abstract": "Over-the-air (OTA) updates for Cyber-Physical Systems (CPS) allow engineers to modify their software wirelessly. In the automotive domain, they enable manufacturers to update software without physical access to the vehicle. However, OTA updates can generate a large number of possible software configurations. For example, end users may decide whether or not to install any given OTA updates. The combinatorial explosion of these configurations hampers SW testing, a standard practice for detecting errors in CPS. To overcome this limitation, we propose CRISP (CRIticality-based Selection and Prioritization), a novel framework supporting test case prioritization and selection in the context of OTA updates. Our framework leverages test case robustness, i.e., how far they are from violating the system requirements, to drive test case prioritization and selection. It enables engineers to rank test case executions from most to least critical, and to select only the critical test cases relevant to a given OTA update. We evaluated our approach using a representative SW product line consisting of seven different vehicles, 22 driving scenarios, and two software components. We considered 224 tests, requiring 59 hours of execution time. We assessed the effectiveness of CRISP across five OTA updates. We compared our solution with (a) a random test case prioritization and selection algorithm, and (b) AP-DISC, identified as the state-of-the-art solution in a recent empirical study on the subject. Our results show that CRISP outperforms our baselines in finding failure-revealing test cases, and that our selection procedure can be configured to find reasonable and practical tradeoffs among accuracy (percentage of failure-revealing test cases identified) and computational time (time required to find them).",
+    "authors": [
+      "Andrea Bombarda",
+      "Luca Carminati",
+      "Nunzio Marco Bisceglia",
+      "Mehrnoosh Askarpour",
+      "Sahar Kokaly",
+      "Ramesh S",
+      "Marsha Chechik",
+      "Claudio Menghi"
+    ],
+    "published": "2026-10-17T05:44:20Z",
+    "updated": "2026-10-17T05:44:20Z",
+    "url": "https://arxiv.org/abs/2610.24475v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434666+00:00"
+  },
+  {
+    "id": "2610.22825v1",
+    "title": "World Action Critic (WAC) Model: Joint Foresight and Criticism for Policy Learning",
+    "abstract": "World models have shown considerable promise in sequential decision-making by anticipating the consequences of actions and providing predictive foresight for policy learning. However, learning to reason about counterfactual actions remains challenging, since predictive objectives may underemphasize information critical for action evaluation, while unexecuted actions lack observed futures for direct supervision. To address these challenges, we propose the World Action Critic (WAC) Model, which proposes multimodal action candidates and jointly learns candidate-conditioned future prediction and consequence evaluation. In our proposed framework, critic supervision directly shapes intermediate predictive representations during rollout, encouraging them to retain information needed to distinguish action quality. Observed futures supervise prediction for executed actions, while external task-quality targets provide evaluation signals for counterfactual candidates. Through joint optimization, critic signals from these candidates propagate into predictive representations without requiring their observed futures. Our theoretical analysis characterizes critic-guided feature retention and bounds candidate-selection regret. Applied to autonomous driving, WAC achieves 93.4 PDMS on NAVSIM-v1, demonstrating the effectiveness of jointly learning predictive foresight and consequence evaluation.",
+    "authors": [
+      "Xiangteng Zhang",
+      "Haoyuan Liu",
+      "Yang Guan",
+      "Jingliang Duan",
+      "Yao Lyu",
+      "Tao Zhang",
+      "Shuai Zhang",
+      "Kehua Sheng",
+      "Bo Zhang",
+      "Shengbo Eben Li"
+    ],
+    "published": "2026-10-16T02:05:03Z",
+    "updated": "2026-10-16T02:05:03Z",
+    "url": "https://arxiv.org/abs/2610.22825v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434772+00:00"
+  },
+  {
+    "id": "2610.22215v1",
+    "title": "FutureLift: Lifting Trajectory Proposals into Bidirectional Future Graphs for Motion Forecasting",
+    "abstract": "Accurate motion prediction is critical for safe autonomous driving, yet even strong forecasters leave residual errors in their multimodal proposals. Existing refiners compress complete proposals or update their segments sequentially, preventing the full proposed future from serving as explicit relational context for correction. We introduce FutureLift, a backbone-agnostic refiner that represents each multimodal proposal as a heterogeneous future graph, with spatially grounded temporal nodes connected to agent histories, map elements, alternative modes, and, for joint prediction, other agents future trajectories. Bidirectional temporal edges allow later evidence to revise earlier segments in a single pass, and the updated nodes predict residual coordinate and confidence corrections. Requiring only proposals, scores, and scene context, FutureLift provides a common refinement interface for structurally different forecasting backbones. On Argoverse2 and the Waymo Open Motion Dataset, it consistently improves frozen proposals and outperforms native and specialized refiners across marginal and joint forecasting. On the WOMD motion-prediction leaderboard, FutureLift ranks first in minADE (0.5049m) and minFDE (0.9942m) among the compared standard-input methods, without LiDAR or ensembling, while achieving a competitive 0.4874 Soft mAP.",
+    "authors": [
+      "Daniel Grimm",
+      "J. Marius Zöllner"
+    ],
+    "published": "2026-10-15T17:00:40Z",
+    "updated": "2026-10-15T17:00:40Z",
+    "url": "https://arxiv.org/abs/2610.22215v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434842+00:00"
+  },
+  {
+    "id": "2610.22092v1",
+    "title": "Onboard Lightweight LLM Reasoning for Human-Aware Safe UAV Navigation",
+    "abstract": "Aerial robots operating near people must treat a pedestrian, a parked car, and a wall differently, yet conventional perception--planning stacks reduce all of them to occupied geometry---a \\emph{human-aware safety gap} in which category-specific clearance is unavailable to the planner and temporary occlusions remove pedestrian-specific constraints from its map. We present a modular, fully onboard pipeline that closes this gap by turning visual observations into context-dependent safety constraints for real-time UAV navigation. A shared BLIP encoder drives scene captioning and text-conditioned segmentation, which is fused with depth to localize obstacles in 3D. Obstacle-specific risk is inferred by a lightweight LLM (Qwen-2.5-0.5B) stabilized with retrieval-augmented generation and grammar-constrained decoding that restricts its output to a planner-compatible JSON schema. The LLM reasons once per object category rather than per frame: its verdicts are cached per class, so previously seen categories are resolved without inference and new ones trigger a fresh retrieval-grounded query; detections are additionally given persistent identities and held in the map across occlusions. The perception pipeline runs at 10\\,Hz on a Jetson Orin NX, while fallback LLM queries take approximately 0.8\\,s and remain off the control-critical path. In Gazebo, low-altitude urban navigation among pedestrians and vehicles shows a roughly $3\\times$ reduction in collision events over a geometric planner, and semantics-aware landing among moving actors raises success from 34\\% to 96\\%. The 224-pixel encoder input limits reliable small-object perception at range; conservative pedestrian margins and short-term persistence mitigate this limitation during navigation.",
+    "authors": [
+      "Siwei Cai",
+      "Yuwei Wu",
+      "Vijay Kumar",
+      "Lifeng Zhou"
+    ],
+    "published": "2026-10-15T15:43:49Z",
+    "updated": "2026-10-15T15:43:49Z",
+    "url": "https://arxiv.org/abs/2610.22092v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434876+00:00"
+  },
+  {
+    "id": "2610.21912v1",
+    "title": "Learning Rewards in Strategic Games",
+    "abstract": "Understanding the objectives that drive agents' behavior is crucial in strategic environments, where multiple agents interact and adapt to one another. This challenge arises in domains such as cybersecurity, autonomous driving, and online markets, where agents' underlying incentives are typically unknown and must be inferred from their observed behavior. Inverse reinforcement learning (IRL) provides a natural framework for this problem, but extending IRL to strategic multi-agent settings introduces a fundamental challenge: a reward that explains observed behavior does not necessarily induce optimal strategies when used for decision-making. In this work, we study this problem through the lens of \\emph{strategic identifiability}, and show that learning from a fixed policy pair can be insufficient to strategically identify rewards, independent of the number of expert samples $K$. Motivated by this, we introduce an active IRL algorithm for two-player repeated Stackelberg games, in which the leader adaptively selects policies to elicit informative responses about the follower's reward. Combining maximum-likelihood estimation with experimental design, we derive finite-sample guarantees on the Stackelberg sub-optimality induced by the learned reward, matching up to polylogarithmic factors a new minimax learning rate of $K^{-1/2}$. Finally, we evaluate our approach in a realistic anti-poaching setting, demonstrating the benefits of active exploration for reward recovery and downstream strategic performance.",
+    "authors": [
+      "Antoine Bergerault",
+      "Cyrille Kone",
+      "Giorgia Ramponi"
+    ],
+    "published": "2026-10-15T13:59:45Z",
+    "updated": "2026-10-15T13:59:45Z",
+    "url": "https://arxiv.org/abs/2610.21912v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434907+00:00"
+  },
+  {
+    "id": "2610.21393v1",
+    "title": "Self-Guided LLM Reasoning for Error Diagnosis in Vehicle Routing Problems",
+    "abstract": "Vehicle Routing Problems (VRPs) are fundamental to many real-world applications. Recent advances in large language models (LLMs) have spurred progress in solving these NP-hard problems. However, most existing approaches assume that input instances are error-free, neglecting the presence of faults commonly encountered in real-world data. In this work, we systematically investigate the capability of LLMs to detect (and correct) errors in VRP instances, and identify key limitations, particularly in handling complex instances or errors that substantially increase the LLM's reasoning burden. To overcome these challenges, we propose a self-guided reasoning framework in which LLMs autonomously generate code that provides structured insights to aid in error diagnosis. Experiments across diverse problem settings and LLMs demonstrate that our framework significantly improves error detection performance, achieving near-perfect accuracy.",
+    "authors": [
+      "Ni Zhang",
+      "Jianan Zhou",
+      "Yue-Jiao Gong",
+      "Zhiguang Cao"
+    ],
+    "published": "2026-10-15T07:08:51Z",
+    "updated": "2026-10-15T07:08:51Z",
+    "url": "https://arxiv.org/abs/2610.21393v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.434934+00:00"
+  },
+  {
+    "id": "2610.19735v1",
+    "title": "MakSafe: A Spatiotemporal Semantic Framework for Formal Specification and Compliance Checking of Road Vehicle Safety Rules",
+    "abstract": "Scenario-based validation is essential for automated road vehicles but cannot cover the full variability of openworld traffic. We present MakSafe, a formal spatiotemporal framework for specifying and checking road vehicle safety rules through semantic zones, action-based forecasting, and trace-tree reasoning, avoiding uniform time discretization. We formalize the road network, vehicle states, and occupancy zones, then build executable rules for front-vehicle identification and timeto-collision (TTC) verification. The evaluation combines a tracedependent case study with a scalability benchmark over traffic density (N ), horizon (H), and branch factor (B). MakSafe yields branch-specific verdicts, deriving safe and unsafe outcomes from the same initial scene, and re-evaluates a scenario after a control update. A single rule check stays well below a millisecond across the reported sweep, and longer horizons slow the TTC check.",
+    "authors": [
+      "Maksym Labzhaniia",
+      "Julien Deantoni",
+      "Marie-Agn{è}s Peraldi-Frati",
+      "Fr{é}d{é}ric Mallet"
+    ],
+    "published": "2026-10-14T07:56:21Z",
+    "updated": "2026-10-14T07:56:21Z",
+    "url": "https://arxiv.org/abs/2610.19735v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:12:46.435005+00:00"
+  }
+]

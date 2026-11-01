@@ -1,0 +1,1032 @@
+{
+  "emotion_intervention": {
+    "query": "(all:driver OR all:\"in-vehicle\" OR all:automotive OR all:\"in-car\") AND (all:\"emotion regulation\" OR all:\"affective interaction\" OR all:\"emotional support\" OR all:empathetic OR all:empathic)",
+    "max_results": 20,
+    "sort_by": "relevance",
+    "retrieved_at": "2026-11-01T16:43:41.079933+00:00",
+    "records": [
+      {
+        "id": "2003.13731v2",
+        "title": "Affective Automotive User Interfaces -- Reviewing the State of Emotion Regulation in the Car",
+        "abstract": "Affective technology offers exciting opportunities to improve road safety by catering to human emotions. Modern car interiors enable the contactless detection of user states, paving the way for a systematic promotion of safe driver behavior through emotion regulation. We review the current literature regarding the impact of emotions on driver behavior and analyze the state of emotion regulation approaches in the car. We summarize challenges for affective interaction in form of cultural aspects, technological hurdles and methodological considerations, as well as opportunities to improve road safety by reinstating drivers into an emotionally balanced state. The purpose of this review is to outline the community's combined knowledge for interested researchers, to provide a focussed introduction for practitioners and to identify future directions for affective interaction in the car.",
+        "authors": [
+          "Michael Braun",
+          "Florian Weber",
+          "Florian Alt"
+        ],
+        "published": "2020-03-30T18:26:01Z",
+        "updated": "2021-10-28T12:09:48Z",
+        "url": "https://arxiv.org/abs/2003.13731v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079082+00:00"
+      },
+      {
+        "id": "2004.02481v1",
+        "title": "What If Your Car Would Care? Exploring Use Cases For Affective Automotive User Interfaces",
+        "abstract": "In this paper we present use cases for affective user interfaces (UIs) in cars and how they are perceived by potential users in China and Germany. Emotion-aware interaction is enabled by the improvement of ubiquitous sensing methods and provides potential benefits for both traffic safety and personal well-being. To promote the adoption of affective interaction at an international scale, we developed 20 mobile in-car use cases through an inter-cultural design approach and evaluated them with 65 drivers in Germany and China. Our data shows perceived benefits in specific areas of pragmatic quality as well as cultural differences, especially for socially interactive use cases. We also discuss general implications for future affective automotive UI. Our results provide a perspective on cultural peculiarities and a concrete starting point for practitioners and researchers working on emotion-aware interfaces.",
+        "authors": [
+          "Michael Braun",
+          "Jingyi Li",
+          "Florian Weber",
+          "Bastian Pfleging",
+          "Andreas Butz",
+          "Florian Alt"
+        ],
+        "published": "2020-04-06T08:33:16Z",
+        "updated": "2020-04-06T08:33:16Z",
+        "url": "https://arxiv.org/abs/2004.02481v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079144+00:00"
+      },
+      {
+        "id": "2607.28648v2",
+        "title": "Why It Hurts: Identifying the Drivers of Negative Thoughts in Emotional Support Conversations",
+        "abstract": "Large Language Models (LLMs) are increasingly used for emotional support tasks, such as negative thought reframing. This task relies on modifying cognitive appraisals, the subjective interpretation of events that elicit negative emotions, which is typically conceptualized along multiple discrete dimensions. Current LLM-based frameworks model cognitive appraisal by exhaustively evaluating all possible dimensions, but they fail to account for the varying saliency of these dimensions across different contexts. In this work, we investigate a vital yet overlooked question: \"Can LLMs infer the salient appraisal dimensions from emotional support conversations?\" To address this question, we introduce the AppraiSal benchmark, containing 996 emotional support conversations with human-annotated mental states, including salient cognitive appraisal dimensions. Furthermore, we propose PRISM, a multi-agent probabilistic framework grounded in Bayesian Inverse Planning, designed to improve LLMs' ability to identify context-specific appraisal dimensions. Experimental results show that PRISM brings improvements to LLMs across various sizes, particularly in identifying the most salient appraisal dimensions.",
+        "authors": [
+          "Hainiu Xu",
+          "Zhaoyue Sun",
+          "Hanqi Yan",
+          "Jinhua Du",
+          "Caroline Catmur",
+          "Yulan He"
+        ],
+        "published": "2026-06-02T11:56:37Z",
+        "updated": "2026-08-29T22:03:58Z",
+        "url": "https://arxiv.org/abs/2607.28648v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079182+00:00"
+      },
+      {
+        "id": "2601.16656v1",
+        "title": "Generative Confidants: How do People Experience Trust in Emotional Support from Generative AI?",
+        "abstract": "People are increasingly turning to generative AI (e.g., ChatGPT, Gemini, Copilot) for emotional support and companionship. While trust is likely to play a central role in enabling these informal and unsupervised interactions, we still lack an understanding of how people develop and experience it in this context. Seeking to fill this gap, we recruited 24 frequent users of generative AI for emotional support and conducted a qualitative study consisting of diary entries about interactions, transcripts of chats with AI, and in-depth interviews. Our results suggest important novel drivers of trust in this context: familiarity emerging from personalisation, nuanced mental models of generative AI, and awareness of people's control over conversations. Notably, generative AI's homogeneous use of personalised, positive, and persuasive language appears to promote some of these trust-building factors. However, this also seems to discourage other trust-related behaviours, such as remembering that generative AI is a machine trained to converse in human language. We present implications for future research that are likely to become critical as the use of generative AI for emotional support increasingly overlaps with therapeutic work.",
+        "authors": [
+          "Riccardo Volpato",
+          "Simone Stumpf",
+          "Lisa DeBruine"
+        ],
+        "published": "2026-01-23T11:19:41Z",
+        "updated": "2026-01-23T11:19:41Z",
+        "url": "https://arxiv.org/abs/2601.16656v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079215+00:00"
+      },
+      {
+        "id": "2607.14683v1",
+        "title": "InCarEmo: A Multimodal Dataset for In-Cabin Emotion Recognition and Driver State Monitoring",
+        "abstract": "Understanding driver emotion and state is critical for the next generation of intelligent in-cabin systems that ensure safety and enhance human-vehicle interaction. However, existing public datasets for in-cabin affective computing are largely limited to visual modalities and rarely include conversational information, making it difficult to capture the linguistic and interactive cues underlying driver emotion. To address these gaps, we introduce InCarEmo, a multimodal dataset for in-cabin emotion recognition and driver state monitoring. InCarEmo integrates RGB and infrared video, in-cabin audio, and dialogue text collected from scripted in-cabin scenarios designed to simulate realistic driver behaviors, covering diverse lighting conditions and driving contexts. The dataset supports three primary tasks: 1) multimodal emotion recognition, 2) fatigue detection, and 3) distraction monitoring. In addition to the original Chinese data, we construct an auxiliary English benchmark to support preliminary cross-lingual evaluation. We provide a unified benchmark with extensive baseline results across unimodal and multimodal methods, including analyses under modality-missing and noise conditions. Experimental results demonstrate the benefits of multimodal fusion and reveal remaining challenges under real-world noise and low-light conditions. By releasing InCarEmo, we aim to establish a comprehensive foundation for robust, interpretable, and human-centric in-cabin affective understanding, promoting safer and more empathetic driver-vehicle interaction.",
+        "authors": [
+          "Hao Yang",
+          "Yanyan Zhao",
+          "Kewei Zhao",
+          "Hongbo Zhang",
+          "Tian Zheng",
+          "Yusheng Liu",
+          "Xing Fu",
+          "Bichen Wang",
+          "Yu Zhang",
+          "Hao He",
+          "Zhen Wu",
+          "Xuda Zhi",
+          "Yongbo Huang",
+          "Bing Qin"
+        ],
+        "published": "2026-07-16T07:44:42Z",
+        "updated": "2026-07-16T07:44:42Z",
+        "url": "https://arxiv.org/abs/2607.14683v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079265+00:00"
+      },
+      {
+        "id": "2408.09046v1",
+        "title": "Keep Calm and Relax -- HMI for Autonomous Vehicles",
+        "abstract": "The growing popularity of self-driving, so-called autonomous vehicles has increased the need for human-machine interfaces~(HMI) and user interaction~(UI) to enhance passenger trust and comfort. While fallback drivers significantly influence the perceived trustfulness of self-driving vehicles, fallback drivers are an expensive solution that may not even improve vehicle safety in emergency situations. Based on a comprehensive literature review, this work delves into the potential of HMI and UI in enhancing trustfulness and emotion regulation in driverless vehicles. By analyzing the impact of various HMI and UI on passenger emotions, innovative and cost-effective concepts for improving human-vehicle interaction are conceptualized. To enable a trustful, highly comfortable, and safe ride, this work concludes by discussing whether HMI and UI are suitable for calming passengers down in emergencies, leading to smarter mobility for all.",
+        "authors": [
+          "Tima M. Yekta",
+          "Julius Schöning"
+        ],
+        "published": "2024-08-16T23:05:08Z",
+        "updated": "2024-08-16T23:05:08Z",
+        "url": "https://arxiv.org/abs/2408.09046v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079292+00:00"
+      },
+      {
+        "id": "2011.02047v1",
+        "title": "When Shall I Be Empathetic? The Utility of Empathetic Parameter Estimation in Multi-Agent Interactions",
+        "abstract": "Human-robot interactions (HRI) can be modeled as dynamic or differential games with incomplete information, where each agent holds private reward parameters. Due to the open challenge in finding perfect Bayesian equilibria of such games, existing studies often consider approximated solutions composed of parameter estimation and motion planning steps, in order to decouple the belief and physical dynamics. In parameter estimation, current approaches often assume that the reward parameters of the robot are known by the humans. We argue that by falsely conditioning on this assumption, the robot performs non-empathetic estimation of the humans' parameters, leading to undesirable values even in the simplest interactions. We test this argument by studying a two-vehicle uncontrolled intersection case with short reaction time. Results show that when both agents are unknowingly aggressive (or non-aggressive), empathy leads to more effective parameter estimation and higher reward values, suggesting that empathy is necessary when the true parameters of agents mismatch with their common belief. The proposed estimation and planning algorithms are therefore more robust than the existing approaches, by fully acknowledging the nature of information asymmetry in HRI. Lastly, we introduce value approximation techniques for real-time execution of the proposed algorithms.",
+        "authors": [
+          "Yi Chen",
+          "Lei Zhang",
+          "Tanner Merry",
+          "Sunny Amatya",
+          "Wenlong Zhang",
+          "Yi Ren"
+        ],
+        "published": "2020-11-03T22:42:37Z",
+        "updated": "2020-11-03T22:42:37Z",
+        "url": "https://arxiv.org/abs/2011.02047v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079325+00:00"
+      },
+      {
+        "id": "2609.27246v1",
+        "title": "Listening and Mirroring: The Effects of Verbal Attunement and Behavioral Mimicry on Social and Empathic Perceptions of Embodied AI Agents in VR",
+        "abstract": "As embodied agents take on increasingly social and relational roles in VR, visual realism and embodiment alone may be insufficient; users must also perceive these agents as emotionally attuned, supportive, and humanlike. Prior work suggests that verbal attunement and nonverbal mimicry can each improve users' social evaluations of embodied agents. However, behavioral mimicry has largely been studied outside of real-time, conversational AI interactions, leaving limited understanding of how users respond when an agent simultaneously generates contextually responsive dialogue and adapts its nonverbal behavior during an immersive conversation. To address this gap, we developed an embodied AI counselor that combines conversational AI with real-time facial-expression and posture mimicry, while producing either verbally attuned or neutral responses. We evaluated the system in a 2 X 2 within-subjects study with 20 participants, manipulating verbal attunement and behavioral mimicry. Results showed that verbal attunement was the most reliable driver of perceived empathy. Behavioral mimicry showed a marginal relationship with perceived humanness, while greater mimicry exposure showed preliminary, exploratory positive associations with empathy, positivity, and humanness, particularly among female participants. Together, these findings show that multimodal synchrony is not a simple additive strategy for designing empathic conversational agents in VR and underscore the need to consider how verbal and nonverbal behaviors are combined during real-time interaction.",
+        "authors": [
+          "Nathalia Gomez",
+          "Haig Shamlian",
+          "Omar Khan",
+          "Tiffany D. Do"
+        ],
+        "published": "2026-09-23T02:30:43Z",
+        "updated": "2026-09-23T02:30:43Z",
+        "url": "https://arxiv.org/abs/2609.27246v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079358+00:00"
+      },
+      {
+        "id": "1907.09929v1",
+        "title": "Detection of Real-world Driving-induced Affective State Using Physiological Signals and Multi-view Multi-task Machine Learning",
+        "abstract": "Affective states have a critical role in driving performance and safety. They can degrade driver situation awareness and negatively impact cognitive processes, severely diminishing road safety. Therefore, detecting and assessing drivers' affective states is crucial in order to help improve the driving experience, and increase safety, comfort and well-being. Recent advances in affective computing have enabled the detection of such states. This may lead to empathic automotive user interfaces that account for the driver's emotional state and influence the driver in order to improve safety. In this work, we propose a multiview multi-task machine learning method for the detection of driver's affective states using physiological signals. The proposed approach is able to account for inter-drive variability in physiological responses while enabling interpretability of the learned models, a factor that is especially important in systems deployed in the real world. We evaluate the models on three different datasets containing real-world driving experiences. Our results indicate that accounting for drive-specific differences significantly improves model performance.",
+        "authors": [
+          "Daniel Lopez-Martinez",
+          "Neska El-Haouij",
+          "Rosalind Picard"
+        ],
+        "published": "2019-07-19T19:16:00Z",
+        "updated": "2019-07-19T19:16:00Z",
+        "url": "https://arxiv.org/abs/1907.09929v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079387+00:00"
+      },
+      {
+        "id": "2204.06377v1",
+        "title": "EMMI: Empathic Human-Machine Interaction for Establishing Trust in Automated Driving",
+        "abstract": "Highly automated vehicles represent one of the most crucial development efforts in the automotive industry. In addition to the use of research vehicles, production vehicles for the general public are realistic in the near future. However, to fully exploit the benefits of these systems, it is fundamental that users have an appropriate level of trust in automation. Recent studies indicate that more research is needed in this area. Furthermore, beyond the management of user trust, the system should also convey a perceptible added value to realize not only trust, but also acceptance and thus use. The EMMI project pushes both, the management of user trust while conveying added value to the user. Therefore, an advanced socio-emotional user model for estimating user trust and various user-centered HMI systems with unique UX are being developed. Together, the systems are employed to induce changes in the users' trust in automated vehicles.",
+        "authors": [
+          "Tobias Oetermann",
+          "Pia Dautzenberg",
+          "Gudrun Voß",
+          "Christopher Brockmeier",
+          "Stefan Ladwig",
+          "Patrick Gebhard",
+          "Tanja Schneeberger",
+          "Markus Funk",
+          "Raymond Brueckner",
+          "Felix Schäfer",
+          "Norbert Helff",
+          "Andreas Gomer",
+          "Lutz Eckstein"
+        ],
+        "published": "2022-04-13T13:36:31Z",
+        "updated": "2022-04-13T13:36:31Z",
+        "url": "https://arxiv.org/abs/2204.06377v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079428+00:00"
+      },
+      {
+        "id": "1901.10013v1",
+        "title": "How Shall I Drive? Interaction Modeling and Motion Planning towards Empathetic and Socially-Graceful Driving",
+        "abstract": "While intelligence of autonomous vehicles (AVs) has significantly advanced in recent years, accidents involving AVs suggest that these autonomous systems lack gracefulness in driving when interacting with human drivers. In the setting of a two-player game, we propose model predictive control based on social gracefulness, which is measured by the discrepancy between the actions taken by the AV and those that could have been taken in favor of the human driver. We define social awareness as the ability of an agent to infer such favorable actions based on knowledge about the other agent's intent, and further show that empathy, i.e., the ability to understand others' intent by simultaneously inferring others' understanding of the agent's self intent, is critical to successful intent inference. Lastly, through an intersection case, we show that the proposed gracefulness objective allows an AV to learn more sophisticated behavior, such as passive-aggressive motions that gently force the other agent to yield.",
+        "authors": [
+          "Yi Ren",
+          "Steven Elliott",
+          "Yiwei Wang",
+          "Yezhou Yang",
+          "Wenlong Zhang"
+        ],
+        "published": "2019-01-28T21:53:29Z",
+        "updated": "2019-01-28T21:53:29Z",
+        "url": "https://arxiv.org/abs/1901.10013v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079458+00:00"
+      },
+      {
+        "id": "2401.15695v2",
+        "title": "HappyRouting: Learning Emotion-Aware Route Trajectories for Scalable In-The-Wild Navigation",
+        "abstract": "Routes represent an integral part of triggering emotions in drivers. Navigation systems allow users to choose a navigation strategy, such as the fastest or shortest route. However, they do not consider the driver's emotional well-being. We present HappyRouting, a novel navigation-based empathic car interface guiding drivers through real-world traffic while evoking positive emotions. We propose design considerations, derive a technical architecture, and implement a routing optimization framework. Our contribution is a machine learning-based generated emotion map layer, predicting emotions along routes based on static and dynamic contextual data. We evaluated HappyRouting in a real-world driving study (N=13), finding that happy routes increase subjectively perceived valence by 11% (p=.007). Although happy routes take 1.25 times longer on average, participants perceived the happy route as shorter, presenting an emotion-enhanced alternative to today's fastest routing mechanisms. We discuss how emotion-based routing can be integrated into navigation apps, promoting emotional well-being for mobility use.",
+        "authors": [
+          "David Bethge",
+          "Daniel Bulanda",
+          "Adam Kozlowski",
+          "Thomas Kosch",
+          "Albrecht Schmidt",
+          "Tobias Grosse-Puppendahl"
+        ],
+        "published": "2024-01-28T16:44:17Z",
+        "updated": "2025-05-04T12:02:55Z",
+        "url": "https://arxiv.org/abs/2401.15695v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079517+00:00"
+      },
+      {
+        "id": "2604.27517v1",
+        "title": "I'm Fine, But My Voice Isn't: Cross-Modal Affective Dissonance Detection for Reflective Journaling",
+        "abstract": "Digital journaling creates an authenticity gap: users consciously translate raw emotions into text, often sanitizing narratives even in private writing. We formalize this as Cross-Modal Affective Dissonance Detection (CADD), a directional three-way classification distinguishing Masking (positive text, negative acoustics), Coping (negative text, positive acoustics), and Congruent utterances, grounded in Gross's process model of emotion regulation. We present three further contributions: (i) CADD-Journal, a 1,800-sample TTS dataset with a shared-sentence-pool design that provably isolates acoustic signal from textual content; (ii) DACM, a dual-encoder model with asymmetric cross-modal attention that re-solves a gradient degeneracy in pooled fusion, achieving macro-F1 0.711 - with a four-step ablation demonstrating that asymmetric attention is the dominant driver (+ 0.242) while the DIM is effective only on cross-modal features (+0.033); and (iii) a domain gap quantification: zero-shot evaluation across three naturalistic corpora reveals a substantial gap between TTS-trained models and real speech, and we identify two concrete requirements for future in-the-wild corpus construction. ReflectJournal, a proof-of-concept iOS application, operationalizes the framework and provides a deployment platform for naturalistic data collection.",
+        "authors": [
+          "Sumin Lee"
+        ],
+        "published": "2026-04-30T07:21:34Z",
+        "updated": "2026-04-30T07:21:34Z",
+        "url": "https://arxiv.org/abs/2604.27517v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079545+00:00"
+      },
+      {
+        "id": "2006.09342v2",
+        "title": "Play with One's Feelings: A Study on Emotion Awareness for Player Experience",
+        "abstract": "Affective interaction between players of video games can elicit rich and varying patterns of emotions. In multiplayer activities that take place in a common space (such as sports and board games), players are generally aware of the emotions of their teammates or opponents as they can directly observe their behavioral patterns, facial expressions, head pose, body stance and so on. Players of online video games, however, are not generally aware of the other players' emotions given the limited channels of direct interaction among them (e.g. via emojis or chat boxes). It also turns out that the impact of real-time emotionawareness on play is still unexplored in the space of online digital games. Motivated by this lack of empirical knowledge on the role of the affect of others to one's gameplay performance in this paper we investigate the degrees to which the expression of manifested emotions of an opponent can affect the emotions of the player and consequently his gameplay behavior. In this initial study, we test our hypothesis on a two-player adversarial car racing game. We perform a comprehensive user study to evaluate the emotions, behaviors, and attitudes of players in emotion aware versus emotion agnostic game versions. Our findings suggest that expressing the emotional state of the opponent through an emoji in real-time affects the emotional state and behavior of players that can consequently affect their playing experience.",
+        "authors": [
+          "Yoones A. Sekhavat",
+          "Samad Roohi",
+          "Hesam Sakian Mohammadi",
+          "Georgios N. Yannakakis"
+        ],
+        "published": "2020-06-16T17:23:43Z",
+        "updated": "2020-06-18T13:55:01Z",
+        "url": "https://arxiv.org/abs/2006.09342v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079579+00:00"
+      },
+      {
+        "id": "2603.20200v1",
+        "title": "Your Robot Will Feel You Now: Empathy in Robots and Embodied Agents",
+        "abstract": "The fields of human-robot interaction (HRI) and embodied conversational agents (ECAs) have long studied how empathy could be implemented in machines. One of the major drivers has been the goal of giving multimodal social and emotional intelligence to these artificially intelligent agents, which interact with people through facial expressions, body, gesture, and speech. What empathic behaviors and models have these fields implemented by mimicking human and animal behavior? In what ways have they explored creating machine-specific analogies? This chapter aims to review the knowledge from these studies, towards applying the lessons learned to today's ubiquitous, language-based agents such as ChatGPT.",
+        "authors": [
+          "Angelica Lim",
+          "Ö. Nilay Yalçin"
+        ],
+        "published": "2026-02-12T22:07:44Z",
+        "updated": "2026-02-12T22:07:44Z",
+        "url": "https://arxiv.org/abs/2603.20200v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079601+00:00"
+      },
+      {
+        "id": "2302.00499v1",
+        "title": "Navigating in the Dark -- Designing Autonomous Driving Features to Assist Old Adults with Visual Impairments",
+        "abstract": "Age-related macular degeneration is a leading cause of blindness worldwide and is one of many limitations to independent driving among old adults. Highly autonomous vehicles present a prospective solution for those who are no longer capable of driving due to low vision. However, accessibility issues must be addressed to create a safe and pleasant experience for this group of users so that it allows them to maintain an appropriate level of situational awareness and a sense of control during driving. In this study, we made use of a human-centered design process consisting of five stages - empathize, define, ideate, prototype, and test. We designed a prototype to aid old adults with age-related macular degeneration to travel with a necessary level of situational awareness and remain in control while riding in a highly or fully autonomous vehicle. The final design prototype includes a voice-activated navigation system with three levels of details to bolster situational awareness, a 360 degree in-vehicle camera to detect both the passenger and objects around the vehicle, a retractable microphone for the passenger to be easily registered in the vehicle while speaking, and a physical button on the console-side of the right and left front seats to manually activate the navigation system.",
+        "authors": [
+          "Lashawnda Bynum",
+          "Jay Parker",
+          "Kristy Lee",
+          "Nia Nitschke",
+          "Melanie LaFlam",
+          "Jennifer Marcussen",
+          "Jana Taleb",
+          "Aleyna Dogan",
+          "Lisa J. Molnar",
+          "Feng Zhou"
+        ],
+        "published": "2023-02-01T15:12:27Z",
+        "updated": "2023-02-01T15:12:27Z",
+        "url": "https://arxiv.org/abs/2302.00499v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079642+00:00"
+      },
+      {
+        "id": "2508.04479v2",
+        "title": "Manifestations of Empathy in Software Engineering: How, Why, and When It Matters",
+        "abstract": "Empathy plays a crucial role in software engineering (SE), influencing collaboration, communication, and decision-making. While prior research has highlighted the importance of empathy in SE, there is limited understanding of how empathy manifests in SE practice, what motivates SE practitioners to demonstrate empathy, and the factors that influence empathy in SE work. Our study explores these aspects through 22 interviews and a large scale survey with 116 software practitioners. Our findings provide insights into the expression of empathy in SE, the drivers behind empathetic practices, SE activities where empathy is perceived as useful or not, and the other factors that influence empathy. In addition, we offer practical implications for SE practitioners and researchers, offering a deeper understanding of how to effectively integrate empathy into SE processes.",
+        "authors": [
+          "Hashini Gunatilake",
+          "John Grundy",
+          "Rashina Hoda",
+          "Ingo Mueller"
+        ],
+        "published": "2025-08-06T14:30:02Z",
+        "updated": "2025-09-29T05:54:11Z",
+        "url": "https://arxiv.org/abs/2508.04479v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079669+00:00"
+      },
+      {
+        "id": "2510.07004v1",
+        "title": "The importance of emotional intelligence in leadership for building an effective team",
+        "abstract": "This study investigates the significance of emotional intelligence (EI) as a fundamental component of effective leadership and its impact on building cohesive, motivated, and high-performing teams. Drawing on data from a survey of 100 professionals, the research examines how EI competencies including self-awareness, self-regulation, empathy, and social skills shape leadership effectiveness, team collaboration, conflict resolution, and workplace motivation. The results demonstrate strong correlations between EI and key leadership traits such as empathy, ethical conduct, social competence, and motivational effectiveness. Leaders with higher levels of EI are perceived as more empathetic, ethical, and capable of fostering trust, resolving conflicts, and inspiring commitment, thereby improving team dynamics and overall organizational performance. The study also highlights that ethical leadership significantly enhances motivation and that social competence is essential for engaging and aligning teams toward common goals. While the findings are exploratory due to the limited sample size, they provide valuable insights for leadership development programs, emphasizing the importance of integrating EI-focused training, coaching, and assessment tools into organizational strategies. The research contributes to leadership theory by demonstrating that emotional intelligence is not an isolated skill but a central driver of interpersonal effectiveness, employee engagement, and sustainable business success.",
+        "authors": [
+          "Joanna Ćwiąkała",
+          "Waldemar Gajda",
+          "Michał Ćwiąkała",
+          "Ernest Górka",
+          "Dariusz Baran",
+          "Gabriela Wojak",
+          "Piotr Mrzygłód",
+          "Maciej Frasunkiewicz",
+          "Piotr Ręczajski",
+          "Jan Piwnik"
+        ],
+        "published": "2025-10-08T13:27:46Z",
+        "updated": "2025-10-08T13:27:46Z",
+        "url": "https://arxiv.org/abs/2510.07004v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079712+00:00"
+      },
+      {
+        "id": "2510.19299v2",
+        "title": "Learning to Make Friends: Coaching LLM Agents toward Emergent Social Ties",
+        "abstract": "Can large language model (LLM) agents reproduce the complex social dynamics that characterize human online behavior -- shaped by homophily, reciprocity, and social validation -- and what memory and learning mechanisms enable such dynamics to emerge? We present a multi-agent LLM simulation framework in which agents repeatedly interact, evaluate one another, and adapt their behavior through in-context learning accelerated by a coaching signal. To model human social behavior, we design behavioral reward functions that capture core drivers of online engagement, including social interaction, information seeking, self-presentation, coordination, and emotional support. These rewards align agent objectives with empirically observed user motivations, enabling the study of how network structures and group formations emerge from individual decision-making. Our experiments show that coached LLM agents develop stable interaction patterns and form emergent social ties, yielding network structures that mirror properties of real online communities. By combining behavioral rewards with in-context adaptation, our framework establishes a principled testbed for investigating collective dynamics in LLM populations and reveals how artificial agents may approximate or diverge from human-like social behavior.",
+        "authors": [
+          "Philipp J. Schneider",
+          "Lin Tian",
+          "Marian-Andrei Rizoiu"
+        ],
+        "published": "2025-10-22T07:00:33Z",
+        "updated": "2026-07-21T16:41:14Z",
+        "url": "https://arxiv.org/abs/2510.19299v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079804+00:00"
+      },
+      {
+        "id": "2201.08470v1",
+        "title": "RoboMal: Malware Detection for Robot Network Systems",
+        "abstract": "Robot systems are increasingly integrating into numerous avenues of modern life. From cleaning houses to providing guidance and emotional support, robots now work directly with humans. Due to their far-reaching applications and progressively complex architecture, they are being targeted by adversarial attacks such as sensor-actuator attacks, data spoofing, malware, and network intrusion. Therefore, security for robotic systems has become crucial. In this paper, we address the underserved area of malware detection in robotic software. Since robots work in close proximity to humans, often with direct interactions, malware could have life-threatening impacts. Hence, we propose the RoboMal framework of static malware detection on binary executables to detect malware before it gets a chance to execute. Additionally, we address the great paucity of data in this space by providing the RoboMal dataset comprising controller executables of a small-scale autonomous car. The performance of the framework is compared against widely used supervised learning models: GRU, CNN, and ANN. Notably, the LSTM-based RoboMal model outperforms the other models with an accuracy of 85% and precision of 87% in 10-fold cross-validation, hence proving the effectiveness of the proposed framework.",
+        "authors": [
+          "Upinder Kaur",
+          "Haozhe Zhou",
+          "Xiaxin Shen",
+          "Byung-Cheol Min",
+          "Richard M. Voyles"
+        ],
+        "published": "2022-01-20T22:11:38Z",
+        "updated": "2022-01-20T22:11:38Z",
+        "url": "https://arxiv.org/abs/2201.08470v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:41.079904+00:00"
+      }
+    ]
+  },
+  "voice_assistance": {
+    "query": "(all:\"in-vehicle\" OR all:\"in-car\" OR all:\"driver assistance\") AND (all:\"voice assistant\" OR all:\"conversational agent\" OR all:\"proactive assistant\")",
+    "max_results": 20,
+    "sort_by": "relevance",
+    "retrieved_at": "2026-11-01T16:43:44.874348+00:00",
+    "records": [
+      {
+        "id": "2402.11853v2",
+        "title": "Beyond Voice Assistants: Exploring Advantages and Risks of an In-Car Social Robot in Real Driving Scenarios",
+        "abstract": "In-car Voice Assistants (VAs) play an increasingly critical role in automotive user interface design. However, existing VAs primarily perform simple 'query-answer' tasks, limiting their ability to sustain drivers' long-term attention. In this study, we investigate the effectiveness of an in-car Robot Assistant (RA) that offers functionalities beyond voice interaction. We aim to answer the question: How does the presence of a social robot impact user experience in real driving scenarios? Our study begins with a user survey to understand perspectives on in-car VAs and their influence on driving experiences. We then conduct non-driving and on-road experiments with selected participants to assess user experiences with an RA. Additionally, we conduct subjective ratings to evaluate user perceptions of the RA's personality, which is crucial for robot design. We also explore potential concerns regarding ethical risks. Finally, we provide a comprehensive discussion and recommendations for the future development of in-car RAs.",
+        "authors": [
+          "Yuanchao Li",
+          "Lachlan Urquhart",
+          "Nihan Karatas",
+          "Shun Shao",
+          "Hiroshi Ishiguro",
+          "Xun Shen"
+        ],
+        "published": "2024-02-19T05:44:00Z",
+        "updated": "2024-02-20T06:09:15Z",
+        "url": "https://arxiv.org/abs/2402.11853v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873465+00:00"
+      },
+      {
+        "id": "1701.04507v1",
+        "title": "Continuous Authentication for Voice Assistants",
+        "abstract": "Voice has become an increasingly popular User Interaction (UI) channel, mainly contributing to the ongoing trend of wearables, smart vehicles, and home automation systems. Voice assistants such as Siri, Google Now and Cortana, have become our everyday fixtures, especially in scenarios where touch interfaces are inconvenient or even dangerous to use, such as driving or exercising. Nevertheless, the open nature of the voice channel makes voice assistants difficult to secure and exposed to various attacks as demonstrated by security researchers. In this paper, we present VAuth, the first system that provides continuous and usable authentication for voice assistants. We design VAuth to fit in various widely-adopted wearable devices, such as eyeglasses, earphones/buds and necklaces, where it collects the body-surface vibrations of the user and matches it with the speech signal received by the voice assistant's microphone. VAuth guarantees that the voice assistant executes only the commands that originate from the voice of the owner. We have evaluated VAuth with 18 users and 30 voice commands and find it to achieve an almost perfect matching accuracy with less than 0.1% false positive rate, regardless of VAuth's position on the body and the user's language, accent or mobility. VAuth successfully thwarts different practical attacks, such as replayed attacks, mangled voice attacks, or impersonation attacks. It also has low energy and latency overheads and is compatible with most existing voice assistants.",
+        "authors": [
+          "Huan Feng",
+          "Kassem Fawaz",
+          "Kang G. Shin"
+        ],
+        "published": "2017-01-17T01:39:49Z",
+        "updated": "2017-01-17T01:39:49Z",
+        "url": "https://arxiv.org/abs/1701.04507v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873638+00:00"
+      },
+      {
+        "id": "2601.15034v1",
+        "title": "Visual and Cognitive Demands of a Large Language Model-Powered In-vehicle Conversational Agent",
+        "abstract": "Driver distraction remains a leading contributor to motor vehicle crashes, necessitating rigorous evaluation of new in-vehicle technologies. This study assessed the visual and cognitive demands associated with an advanced Large Language Model (LLM) conversational agent (Gemini Live) during on-road driving, comparing it against handsfree phone calls, visual turn-by-turn guidance (low load baseline), and the Operation Span (OSPAN) task (high load anchor). Thirty-two licensed drivers completed five secondary tasks while visual and cognitive demands were measured using the Detection Response Task (DRT) for cognitive load, eye-tracking for visual attention, and subjective workload ratings. Results indicated that Gemini Live interactions (both single-turn and multi-turn) and hands-free phone calls shared similar levels of cognitive load, between that of visual turn-by-turn guidance and OSPAN. Exploratory analysis showed that cognitive load remained stable across extended multi-turn conversations. All tasks maintained mean glance durations well below the well-established 2-second safety threshold, confirming low visual demand. Furthermore, drivers consistently dedicated longer glances to the roadway between brief off-road glances toward the device during task completion, particularly during voice-based interactions, rendering longer total-eyes-off-road time findings less consequential. Subjective ratings mirrored objective data, with participants reporting low effort, demands, and perceived distraction for Gemini Live. These findings demonstrate that advanced LLM conversational agents, when implemented via voice interfaces, impose cognitive and visual demands comparable to established, low-risk hands-free benchmarks, supporting their safe deployment in the driving environment.",
+        "authors": [
+          "Chris Monk",
+          "Allegra Ayala",
+          "Christine S. P. Yu",
+          "Gregory M. Fitch",
+          "Dara Gruber"
+        ],
+        "published": "2026-01-21T14:37:05Z",
+        "updated": "2026-01-21T14:37:05Z",
+        "url": "https://arxiv.org/abs/2601.15034v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873681+00:00"
+      },
+      {
+        "id": "2609.21109v1",
+        "title": "Talk to Me, Jarvis: An Open-Source Edge-Deployable Voice Assistant Framework for Autonomous Racecars",
+        "abstract": "Recent advances in large language models have improved their effectiveness as back-end components for voice assistants, particularly in intent understanding and context-aware input classification. However, online-hosted models introduce network dependency and variable inference latency, limiting their suitability for time-critical autonomous driving applications. In this work, we address these issues by developing Jarvis, an offline voice assistant for high-level behavioral commands of autonomous vehicles. Its architecture integrates speech recognition and synthesis with natural language command classification into a lightweight, local framework. Jarvis core component is a text-to-command classifier, built using a domain-specific fine-tuning of the Mistral 7B model, demonstrating low-latency inference. Our experimental evaluation demonstrates that our solution outperforms larger online-hosted models, achieving 97.63 % intent recognition accuracy with an average processing latency of 1.39 s, making it well-suited for operations requiring quick response times. To support further research and fine-tuning, we provide an open-source implementation.",
+        "authors": [
+          "Daniel Henel",
+          "Frederik Werner",
+          "Alexander Langmann",
+          "Johannes Betz"
+        ],
+        "published": "2026-09-17T21:51:03Z",
+        "updated": "2026-09-17T21:51:03Z",
+        "url": "https://arxiv.org/abs/2609.21109v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873819+00:00"
+      },
+      {
+        "id": "2508.08101v1",
+        "title": "ChatGPT on the Road: Leveraging Large Language Model-Powered In-vehicle Conversational Agents for Safer and More Enjoyable Driving Experience",
+        "abstract": "Studies on in-vehicle conversational agents have traditionally relied on pre-scripted prompts or limited voice commands, constraining natural driver-agent interaction. To resolve this issue, the present study explored the potential of a ChatGPT-based in-vehicle agent capable of carrying continuous, multi-turn dialogues. Forty drivers participated in our experiment using a motion-based driving simulator, comparing three conditions (No agent, Pre-scripted agent, and ChatGPT-based agent) as a within-subjects variable. Results showed that the ChatGPT-based agent condition led to more stable driving performance across multiple metrics. Participants demonstrated lower variability in longitudinal acceleration, lateral acceleration, and lane deviation compared to the other two conditions. In subjective evaluations, the ChatGPT-based agent also received significantly higher ratings in competence, animacy, affective trust, and preference compared to the Pre-scripted agent. Our thematic analysis of driver-agent conversations revealed diverse interaction patterns in topics, including driving assistance/questions, entertainment requests, and anthropomorphic interactions. Our results highlight the potential of LLM-powered in-vehicle conversational agents to enhance driving safety and user experience through natural, context-rich interactions.",
+        "authors": [
+          "Yeana Lee Bond",
+          "Mungyeong Choe",
+          "Baker Kasim Hasan",
+          "Arsh Siddiqui",
+          "Myounghoon Jeon"
+        ],
+        "published": "2025-08-11T15:40:44Z",
+        "updated": "2025-08-11T15:40:44Z",
+        "url": "https://arxiv.org/abs/2508.08101v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873853+00:00"
+      },
+      {
+        "id": "2501.09645v1",
+        "title": "CarMem: Enhancing Long-Term Memory in LLM Voice Assistants through Category-Bounding",
+        "abstract": "In today's assistant landscape, personalisation enhances interactions, fosters long-term relationships, and deepens engagement. However, many systems struggle with retaining user preferences, leading to repetitive user requests and disengagement. Furthermore, the unregulated and opaque extraction of user preferences in industry applications raises significant concerns about privacy and trust, especially in regions with stringent regulations like Europe. In response to these challenges, we propose a long-term memory system for voice assistants, structured around predefined categories. This approach leverages Large Language Models to efficiently extract, store, and retrieve preferences within these categories, ensuring both personalisation and transparency. We also introduce a synthetic multi-turn, multi-session conversation dataset (CarMem), grounded in real industry data, tailored to an in-car voice assistant setting. Benchmarked on the dataset, our system achieves an F1-score of .78 to .95 in preference extraction, depending on category granularity. Our maintenance strategy reduces redundant preferences by 95% and contradictory ones by 92%, while the accuracy of optimal retrieval is at .87. Collectively, the results demonstrate the system's suitability for industrial applications.",
+        "authors": [
+          "Johannes Kirmayr",
+          "Lukas Stappen",
+          "Phillip Schneider",
+          "Florian Matthes",
+          "Elisabeth André"
+        ],
+        "published": "2025-01-16T16:37:33Z",
+        "updated": "2025-01-16T16:37:33Z",
+        "url": "https://arxiv.org/abs/2501.09645v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873884+00:00"
+      },
+      {
+        "id": "2602.15569v2",
+        "title": "What Are You Doing? Effects of Intermediate Feedback from Agentic LLM In-Car Assistants During Multi-Step Processing",
+        "abstract": "Agentic AI assistants that autonomously perform multi-step tasks raise open questions for user experience: how should such systems communicate progress and reasoning during extended operations, especially in attention-critical contexts such as driving? We investigate feedback timing and verbosity from agentic LLM-based in-car assistants through a controlled, mixed-methods study (N=45) comparing planned steps and intermediate results feedback against silent operation with final-only response. Using a dual-task paradigm with an in-car voice assistant, we found that intermediate feedback significantly improved perceived speed, trust, and user experience while reducing task load - effects that held across varying task complexities and interaction contexts. Interviews further revealed user preferences for an adaptive approach: high initial transparency to establish trust, followed by progressively reducing verbosity as systems prove reliable, with adjustments based on task stakes and situational context. We translate our empirical findings into design implications for feedback timing and verbosity in agentic assistants, balancing transparency and efficiency.",
+        "authors": [
+          "Johannes Kirmayr",
+          "Raphael Wennmacher",
+          "Khanh Huynh",
+          "Lukas Stappen",
+          "Elisabeth André",
+          "Florian Alt"
+        ],
+        "published": "2026-02-17T13:27:50Z",
+        "updated": "2026-03-03T09:47:41Z",
+        "url": "https://arxiv.org/abs/2602.15569v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873915+00:00"
+      },
+      {
+        "id": "2601.22027v1",
+        "title": "CAR-bench: Evaluating the Consistency and Limit-Awareness of LLM Agents under Real-World Uncertainty",
+        "abstract": "Existing benchmarks for Large Language Model (LLM) agents focus on task completion under idealistic settings but overlook reliability in real-world, user-facing applications. In domains, such as in-car voice assistants, users often issue incomplete or ambiguous requests, creating intrinsic uncertainty that agents must manage through dialogue, tool use, and policy adherence. We introduce CAR-bench, a benchmark for evaluating consistency, uncertainty handling, and capability awareness in multi-turn, tool-using LLM agents in an in-car assistant domain. The environment features an LLM-simulated user, domain policies, and 58 interconnected tools spanning navigation, productivity, charging, and vehicle control. Beyond standard task completion, CAR-bench introduces Hallucination tasks that test agents' limit-awareness under missing tools or information, and Disambiguation tasks that require resolving uncertainty through clarification or internal information gathering. Baseline results reveal large gaps between occasional and consistent success on all task types. Even frontier reasoning LLMs achieve less than 50% consistent pass rate on Disambiguation tasks due to premature actions, and frequently violate policies or fabricate information to satisfy user requests in Hallucination tasks, underscoring the need for more reliable and self-aware LLM agents in real-world settings.",
+        "authors": [
+          "Johannes Kirmayr",
+          "Lukas Stappen",
+          "Elisabeth André"
+        ],
+        "published": "2026-01-29T17:33:42Z",
+        "updated": "2026-01-29T17:33:42Z",
+        "url": "https://arxiv.org/abs/2601.22027v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873946+00:00"
+      },
+      {
+        "id": "2510.25421v2",
+        "title": "Small Talk, Big Impact? LLM-based Conversational Agents to Mitigate Passive Fatigue in Conditional Automated Driving",
+        "abstract": "Passive fatigue during conditional automated driving can compromise driver readiness and safety. This paper presents findings from a test-track study with 40 participants in a real-world automated driving scenario. In this scenario, a Large Language Model (LLM) based conversational agent (CA) was designed to check in with drivers and re-engage them with their surroundings. Drawing on in-car video recordings, sleepiness ratings and interviews, we analysed how drivers interacted with the agent and how these interactions shaped alertness. Results show the CA is helpful for supporting vigilance during passive fatigue. Thematic analysis of acceptability further revealed three user preference profiles that implicate future intention to use CAs. Positioning empirically observed profiles within existing CA archetype frameworks highlights the need for adaptive design sensitive to diverse user groups. This work underscores the potential of CAs as proactive Human-Machine Interface (HMI) interventions, demonstrating how natural language can support context-aware interaction during automated driving.",
+        "authors": [
+          "Lewis Cockram",
+          "Yueteng Yu",
+          "Jorge Pardo",
+          "Xiaomeng Li",
+          "Andry Rakotonirainy",
+          "Jonny Kuo",
+          "Sebastien Demmel",
+          "Mike Lenné",
+          "Ronald Schroeter"
+        ],
+        "published": "2025-10-29T11:40:38Z",
+        "updated": "2026-03-17T02:16:12Z",
+        "url": "https://arxiv.org/abs/2510.25421v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.873978+00:00"
+      },
+      {
+        "id": "2408.10794v1",
+        "title": "Tapping in a Remote Vehicle's onboard LLM to Complement the Ego Vehicle's Field-of-View",
+        "abstract": "Today's advanced automotive systems are turning into intelligent Cyber-Physical Systems (CPS), bringing computational intelligence to their cyber-physical context. Such systems power advanced driver assistance systems (ADAS) that observe a vehicle's surroundings for their functionality. However, such ADAS have clear limitations in scenarios when the direct line-of-sight to surrounding objects is occluded, like in urban areas. Imagine now automated driving (AD) systems that ideally could benefit from other vehicles' field-of-view in such occluded situations to increase traffic safety if, for example, locations about pedestrians can be shared across vehicles. Current literature suggests vehicle-to-infrastructure (V2I) via roadside units (RSUs) or vehicle-to-vehicle (V2V) communication to address such issues that stream sensor or object data between vehicles. When considering the ongoing revolution in vehicle system architectures towards powerful, centralized processing units with hardware accelerators, foreseeing the onboard presence of large language models (LLMs) to improve the passengers' comfort when using voice assistants becomes a reality. We are suggesting and evaluating a concept to complement the ego vehicle's field-of-view (FOV) with another vehicle's FOV by tapping into their onboard LLM to let the machines have a dialogue about what the other vehicle ``sees''. Our results show that very recent versions of LLMs, such as GPT-4V and GPT-4o, understand a traffic situation to an impressive level of detail, and hence, they can be used even to spot traffic participants. However, better prompts are needed to improve the detection quality and future work is needed towards a standardised message interchange format between vehicles.",
+        "authors": [
+          "Malsha Ashani Mahawatta Dona",
+          "Beatriz Cabrero-Daniel",
+          "Yinan Yu",
+          "Christian Berger"
+        ],
+        "published": "2024-08-20T12:38:34Z",
+        "updated": "2024-08-20T12:38:34Z",
+        "url": "https://arxiv.org/abs/2408.10794v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874012+00:00"
+      },
+      {
+        "id": "2007.03876v1",
+        "title": "Audio-Visual Understanding of Passenger Intents for In-Cabin Conversational Agents",
+        "abstract": "Building multimodal dialogue understanding capabilities situated in the in-cabin context is crucial to enhance passenger comfort in autonomous vehicle (AV) interaction systems. To this end, understanding passenger intents from spoken interactions and vehicle vision systems is a crucial component for developing contextual and visually grounded conversational agents for AV. Towards this goal, we explore AMIE (Automated-vehicle Multimodal In-cabin Experience), the in-cabin agent responsible for handling multimodal passenger-vehicle interactions. In this work, we discuss the benefits of a multimodal understanding of in-cabin utterances by incorporating verbal/language input together with the non-verbal/acoustic and visual clues from inside and outside the vehicle. Our experimental results outperformed text-only baselines as we achieved improved performances for intent detection with a multimodal approach.",
+        "authors": [
+          "Eda Okur",
+          "Shachi H Kumar",
+          "Saurav Sahay",
+          "Lama Nachman"
+        ],
+        "published": "2020-07-08T03:31:03Z",
+        "updated": "2020-07-08T03:31:03Z",
+        "url": "https://arxiv.org/abs/2007.03876v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874037+00:00"
+      },
+      {
+        "id": "2404.07807v1",
+        "title": "Voice-Assisted Real-Time Traffic Sign Recognition System Using Convolutional Neural Network",
+        "abstract": "Traffic signs are important in communicating information to drivers. Thus, comprehension of traffic signs is essential for road safety and ignorance may result in road accidents. Traffic sign detection has been a research spotlight over the past few decades. Real-time and accurate detections are the preliminaries of robust traffic sign detection system which is yet to be achieved. This study presents a voice-assisted real-time traffic sign recognition system which is capable of assisting drivers. This system functions under two subsystems. Initially, the detection and recognition of the traffic signs are carried out using a trained Convolutional Neural Network (CNN). After recognizing the specific traffic sign, it is narrated to the driver as a voice message using a text-to-speech engine. An efficient CNN model for a benchmark dataset is developed for real-time detection and recognition using Deep Learning techniques. The advantage of this system is that even if the driver misses a traffic sign, or does not look at the traffic sign, or is unable to comprehend the sign, the system detects it and narrates it to the driver. A system of this type is also important in the development of autonomous vehicles.",
+        "authors": [
+          "Mayura Manawadu",
+          "Udaya Wijenayake"
+        ],
+        "published": "2024-04-11T14:51:12Z",
+        "updated": "2024-04-11T14:51:12Z",
+        "url": "https://arxiv.org/abs/2404.07807v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874067+00:00"
+      },
+      {
+        "id": "2203.04767v1",
+        "title": "A practical framework for multi-domain speech recognition and an instance sampling method to neural language modeling",
+        "abstract": "Automatic speech recognition (ASR) systems used on smart phones or vehicles are usually required to process speech queries from very different domains. In such situations, a vanilla ASR system usually fails to perform well on every domain. This paper proposes a multi-domain ASR framework for Tencent Map, a navigation app used on smart phones and in-vehicle infotainment systems. The proposed framework consists of three core parts: a basic ASR module to generate n-best lists of a speech query, a text classification module to determine which domain the speech query belongs to, and a reranking module to rescore n-best lists using domain-specific language models. In addition, an instance sampling based method to training neural network language models (NNLMs) is proposed to address the data imbalance problem in multi-domain ASR. In experiments, the proposed framework was evaluated on navigation domain and music domain, since navigating and playing music are two main features of Tencent Map. Compared to a general ASR system, the proposed framework achieves a relative 13% $\\sim$ 22% character error rate reduction on several test sets collected from Tencent Map and our in-car voice assistant.",
+        "authors": [
+          "Yike Zhang",
+          "Xiaobing Feng",
+          "Yi Liu",
+          "Songjun Cao",
+          "Long Ma"
+        ],
+        "published": "2022-03-09T14:33:42Z",
+        "updated": "2022-03-09T14:33:42Z",
+        "url": "https://arxiv.org/abs/2203.04767v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874098+00:00"
+      },
+      {
+        "id": "2609.19630v1",
+        "title": "From Intent to Action: Benchmarking LLM Safety in Vehicle Voice Command Authorization",
+        "abstract": "Large language models (LLMs) are increasingly integrated into vehicle voice assistants. But linking natural-language requests to vehicle functions creates a safety-critical authorization problem. Before executing a command, the system must choose whether to execute, refuse, clarify, require confirmation, defer to manual control, trigger an emergency response, or make no tool call. To our knowledge, prior evaluations do not isolate this pre-action decision across speaker role, authentication status, vehicle state, and tool availability. We introduce a 202-scenario benchmark with Reference Decisions under a seven-class taxonomy. We evaluate two local open-weight models and three API-based LLMs using Decision Alignment and safety-specific error metrics. Alignment ranges from 40.1% for Llama 3.2 3B to 89.1% for Gemini 3.1 Pro Preview. The API-based models score between 83.2% and 89.1%, with no statistically significant differences among them. Even these models produce two to three False Executes among 161 non-execution scenarios, and persistent errors remain in confirmation and manual-control decisions. A controlled Llama 3.2 3B ablation increases alignment to 40.1% under the structured authorization policy, versus 28.2-29.2% under schema-only and generic-safety baselines, but it does not eliminate False Executes. Structured LLM decisions are therefore insufficient as a standalone safety mechanism, and deployment requires an independent enforcement layer that verifies tool permissions and vehicle-state constraints before invoking any vehicle function.",
+        "authors": [
+          "Diba Afroze",
+          "Xingli Zhang",
+          "Yazhou Tu",
+          "Xiali Hei"
+        ],
+        "published": "2026-09-17T03:20:22Z",
+        "updated": "2026-09-17T03:20:22Z",
+        "url": "https://arxiv.org/abs/2609.19630v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874130+00:00"
+      },
+      {
+        "id": "2007.05801v3",
+        "title": "Migratable AI: Effect of identity and information migration on users perception of conversational AI agents",
+        "abstract": "Conversational AI agents are proliferating, embodying a range of devices such as smart speakers, smart displays, robots, cars, and more. We can envision a future where a personal conversational agent could migrate across different form factors and environments to always accompany and assist its user to support a far more continuous, personalized, and collaborative experience. This opens the question of what properties of a conversational AI agent migrates across forms, and how it would impact user perception. To explore this, we developed a Migratable AI system where a user's information and/or the agent's identity can be preserved as it migrates across form factors to help its user with a task. We designed a 2x2 between-subjects study to explore the effects of information migration and identity migration on user perceptions of trust, competence, likeability, and social presence. Our results suggest that identity migration had a positive effect on trust, competence, and social presence, while information migration had a positive effect on trust, competence, and likeability. Overall, users report the highest trust, competence, likeability, and social presence towards the conversational agent when both identity and information were migrated across embodiments.",
+        "authors": [
+          "Ravi Tejwani",
+          "Felipe Moreno",
+          "Sooyeon Jeong",
+          "Hae Won Park",
+          "Cynthia Breazeal"
+        ],
+        "published": "2020-07-11T15:46:37Z",
+        "updated": "2021-09-04T21:27:02Z",
+        "url": "https://arxiv.org/abs/2007.05801v3",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874161+00:00"
+      },
+      {
+        "id": "2601.02688v1",
+        "title": "Multi-channel multi-speaker transformer for speech recognition",
+        "abstract": "With the development of teleconferencing and in-vehicle voice assistants, far-field multi-speaker speech recognition has become a hot research topic. Recently, a multi-channel transformer (MCT) has been proposed, which demonstrates the ability of the transformer to model far-field acoustic environments. However, MCT cannot encode high-dimensional acoustic features for each speaker from mixed input audio because of the interference between speakers. Based on these, we propose the multi-channel multi-speaker transformer (M2Former) for far-field multi-speaker ASR in this paper. Experiments on the SMS-WSJ benchmark show that the M2Former outperforms the neural beamformer, MCT, dual-path RNN with transform-average-concatenate and multi-channel deep clustering based end-to-end systems by 9.2%, 14.3%, 24.9%, and 52.2% respectively, in terms of relative word error rate reduction.",
+        "authors": [
+          "Guo Yifan",
+          "Tian Yao",
+          "Suo Hongbin",
+          "Wan Yulong"
+        ],
+        "published": "2026-01-06T03:46:07Z",
+        "updated": "2026-01-06T03:46:07Z",
+        "url": "https://arxiv.org/abs/2601.02688v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874186+00:00"
+      },
+      {
+        "id": "1811.03566v2",
+        "title": "A Natural Language Interface with Relayed Acoustic Communications for Improved Command and Control of AUVs",
+        "abstract": "Autonomous underwater vehicles (AUVs) are being tasked with increasingly complex missions. The acoustic communications required for AUVs are, by the nature of the medium, low bandwidth while adverse environmental conditions underwater often mean they are also intermittent. This has motivated development of highly autonomous systems, which can operate independently of their operators for considerable periods of time. These missions often involve multiple vehicles leading not only to challenges in communications but also in command and control (C2). Specifically operators face complexity in controlling multi-objective, multi-vehicle missions, whilst simultaneously facing uncertainty over the current status and safety of several remote high value assets. Additionally, it may be required to perform command and control of these complex missions in a remote control room. In this paper, we propose a combination of an intuitive, natural language operator interface combined with communications that use platforms from multiple domains to relay data over different mediums and transmission modes, improving command and control of collaborative and fully autonomous missions. In trials, we have demonstrated an integrated system combining working prototypes with established commercial C2 software that enables the use of a natural language interface to monitor an AUV survey mission in an on-shore command and control centre.",
+        "authors": [
+          "David A. Robb",
+          "Jonatan Scharff Willners",
+          "Nicolas Valeyrie",
+          "Francisco J. Chiyah Garcia",
+          "Atanas Laskov",
+          "Xingkun Liu",
+          "Pedro Patron",
+          "Helen Hastie",
+          "Yvan R. Petillot"
+        ],
+        "published": "2018-11-08T17:41:17Z",
+        "updated": "2018-11-09T12:13:47Z",
+        "url": "https://arxiv.org/abs/1811.03566v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874227+00:00"
+      },
+      {
+        "id": "2409.09289v1",
+        "title": "DSCLAP: Domain-Specific Contrastive Language-Audio Pre-Training",
+        "abstract": "Analyzing real-world multimodal signals is an essential and challenging task for intelligent voice assistants (IVAs). Mainstream approaches have achieved remarkable performance on various downstream tasks of IVAs with pre-trained audio models and text models. However, these models are pre-trained independently and usually on tasks different from target domains, resulting in sub-optimal modality representations for downstream tasks. Moreover, in many domains, collecting enough language-audio pairs is extremely hard, and transcribing raw audio also requires high professional skills, making it difficult or even infeasible to joint pre-training. To address these painpoints, we propose DSCLAP, a simple and effective framework that enables language-audio pre-training with only raw audio signal input. Specifically, DSCLAP converts raw audio signals into text via an ASR system and combines a contrastive learning objective and a language-audio matching objective to align the audio and ASR transcriptions. We pre-train DSCLAP on 12,107 hours of in-vehicle domain audio. Empirical results on two downstream tasks show that while conceptually simple, DSCLAP significantly outperforms the baseline models in all metrics, showing great promise for domain-specific IVAs applications.",
+        "authors": [
+          "Shengqiang Liu",
+          "Da Liu",
+          "Anna Wang",
+          "Zhiyu Zhang",
+          "Jie Gao",
+          "Yali Li"
+        ],
+        "published": "2024-09-14T03:40:48Z",
+        "updated": "2024-09-14T03:40:48Z",
+        "url": "https://arxiv.org/abs/2409.09289v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874258+00:00"
+      },
+      {
+        "id": "2108.04105v2",
+        "title": "Towards better data discovery and collection with flow-based programming",
+        "abstract": "Despite huge successes reported by the field of machine learning, such as voice assistants or self-driving cars, businesses still observe very high failure rate when it comes to deployment of ML in production. We argue that part of the reason is infrastructure that was not designed for data-oriented activities. This paper explores the potential of flow-based programming (FBP) for simplifying data discovery and collection in software systems. We compare FBP with the currently prevalent service-oriented paradigm to assess characteristics of each paradigm in the context of ML deployment. We develop a data processing application, formulate a subsequent ML deployment task, and measure the impact of the task implementation within both programming paradigms. Our main conclusion is that FBP shows great potential for providing data-centric infrastructural benefits for deployment of ML. Additionally, we provide an insight into the current trend that prioritizes model development over data quality management.",
+        "authors": [
+          "Andrei Paleyes",
+          "Christian Cabrera",
+          "Neil D. Lawrence"
+        ],
+        "published": "2021-08-09T15:06:02Z",
+        "updated": "2021-10-25T21:16:47Z",
+        "url": "https://arxiv.org/abs/2108.04105v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874283+00:00"
+      },
+      {
+        "id": "2604.22821v2",
+        "title": "Audio2Tool: Speak, Call, Act -- A Dataset for Benchmarking Speech Tool Use",
+        "abstract": "Voice assistants increasingly rely on Speech Language Models (SpeechLMs) to interpret spoken queries and execute complex tasks, yet existing benchmarks lack domain breadth, acoustic diversity, and compositional reasoning complexity to evaluate tool-calling performance. We introduce Audio2Tool, a large-scale dataset comprising approximately 30,000 queries designed to assess tool-calling capabilities of SpeechLMs across three primary domains: Smart Car, Smart Home, and Wearables. Our benchmark features a multi-tier complexity hierarchy, ranging from simple direct commands to complex multi-intent and needle-in-a-haystack extraction to isolate distinct failure modes. To ensure realism, we employ zero-shot voice cloning text-to-speech synthesis and diverse noise profiles to simulate in-the-wild conditions. Evaluations of state-of-the-art SpeechLMs and ASR-LLM pipelines show strong performance on simple commands but significant degradation under compositional and acoustic challenges. Code and dataset are publicly available on the project page: https://audio2tool.github.io/.",
+        "authors": [
+          "Ramit Pahwa",
+          "Apoorva Beedu",
+          "Parivesh Priye",
+          "Rutu Gandhi",
+          "Saloni Takawale",
+          "Aruna Baijal",
+          "Zengli Yang"
+        ],
+        "published": "2026-04-17T16:41:25Z",
+        "updated": "2026-04-28T17:29:55Z",
+        "url": "https://arxiv.org/abs/2604.22821v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:44.874312+00:00"
+      }
+    ]
+  },
+  "context_emotion": {
+    "query": "(all:driver OR all:\"in-vehicle\") AND (all:emotion OR all:stress) AND (all:intervention OR all:regulation OR all:\"user study\")",
+    "max_results": 20,
+    "sort_by": "relevance",
+    "retrieved_at": "2026-11-01T16:43:48.547844+00:00",
+    "records": [
+      {
+        "id": "2608.06378v1",
+        "title": "Multimodal Drivers' Emotion Recognition and Safety-Oriented Intervention for Intelligent Transportation Systems",
+        "abstract": "Driver emotions can affect risk perception, decision-making, and vehicle control under complex road conditions. Existing studies mainly focus on driver emotion recognition, while limited attention has been given to context-aware intervention that jointly considers driver emotion and road perception. This paper proposes a safety-prioritized multimodal driver assistance framework that analyzes speech-derived emotional cues and visual road conditions to generate structured driving interventions. The framework first provides road safety reminders and then generates emotion-aligned verbal support. We construct a multimodal dataset by aligning emotional speech signals with structured road environment descriptors and introduce the CARE (Context-Aware Road-Emotion Evaluation) score to jointly evaluate emotion recognition, risk identification, and intervention generation. Experimental results show that the proposed framework balances environmental risk reporting and emotion-aware verbal regulation, providing a feasible safety-driven direction for intelligent transportation systems.",
+        "authors": [
+          "Chang Liu",
+          "Dalai Mengke",
+          "Hanbo Zhou",
+          "Jia Hu",
+          "Peter Mihajlik",
+          "Tamas Sziranyi"
+        ],
+        "published": "2026-06-05T12:53:07Z",
+        "updated": "2026-06-05T12:53:07Z",
+        "url": "https://arxiv.org/abs/2608.06378v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547208+00:00"
+      },
+      {
+        "id": "2205.06116v2",
+        "title": "How are Drivers' Stress Levels and Emotions Associated with the Driving Context? A Naturalistic Study",
+        "abstract": "Understanding and mitigating drivers' negative emotions, stress levels, and anxiety is of high importance for decreasing accident rates, and enhancing road safety. While detecting drivers' stress and negative emotions can significantly help with this goal, understanding what might be associated with increases in drivers' negative emotions and high stress level, might better help with planning interventions. While studies have provided significant insight into detecting drivers' emotions and stress levels, not many studies focused on the reasons behind changes in stress levels and negative emotions. In this study, by using a naturalistic driving study database, we analyze the changes in the driving scene, including road objects and the dynamical relationship between the ego vehicle and the lead vehicle with respect to changes in drivers' psychophysiological metrics (i.e., heart rate (HR) and facial expressions). Our results indicate that different road objects might be associated with varying levels of increase in drivers' HR as well as different proportions of negative facial emotions detected through computer vision. Larger vehicles on the road, such as trucks and buses, are associated with the highest amount of increase in drivers' HR as well as negative emotions. Additionally, shorter distances and higher standard deviation in the distance to the lead vehicle are associated with a higher number of abrupt increases in drivers' HR, depicting a possible increase in stress level. Our finding indicates more positive emotions, lower facial engagement, and a lower abrupt increase in HR at a higher speed of driving, which often happens in highway environments. This research collectively shows that driving at higher speeds happening in highways by avoiding certain road objects might be a better fit for keeping drivers in a calmer, more positive state.",
+        "authors": [
+          "Arash Tavakoli",
+          "Nathan Lai",
+          "Vahid Balali",
+          "Arsalan Heydarian"
+        ],
+        "published": "2022-05-12T14:30:50Z",
+        "updated": "2022-06-11T02:55:30Z",
+        "url": "https://arxiv.org/abs/2205.06116v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547265+00:00"
+      },
+      {
+        "id": "2406.09777v1",
+        "title": "Road to Serenity: Individual Variations in the Efficacy of Unobtrusive Respiratory Guidance for Driving Stress Regulation",
+        "abstract": "Stress impacts driving-related cognitive functions like attention and decision-making, and may arise in automated vehicles due to non-driving tasks. Unobtrusive relaxation techniques are needed to regulate stress without distracting from driving. Tactile wearables have shown efficacy in stress regulation through respiratory guidance, but individual variations may affect their efficacy. This study assessed slow-breathing tactile guidance under different stress levels on 85 participants. Physiological, behavioral and subjective data were collected. The influence of individual variations (e.g., driving habits and behavior, personality) using logistic regression analysis was explored. Participants could follow the guidance and adjust breathing while driving, but subjective efficacy depended on individual variations linked to different efficiency in using the technique, in relation with its attentional cost. An influence of factors linked to the evaluation of context criticality was also found. The results suggest that considering individual and contextual variations is crucial in designing and using such techniques in demanding driving contexts. In this line some design recommendations and insights for further studies are provided.",
+        "authors": [
+          "A. J. Bequet",
+          "C. Jallais",
+          "J. Quick",
+          "D. Ndiaye",
+          "A. R. Hidalgo-Munoz"
+        ],
+        "published": "2024-06-14T07:25:37Z",
+        "updated": "2024-06-14T07:25:37Z",
+        "url": "https://arxiv.org/abs/2406.09777v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547298+00:00"
+      },
+      {
+        "id": "2003.13731v2",
+        "title": "Affective Automotive User Interfaces -- Reviewing the State of Emotion Regulation in the Car",
+        "abstract": "Affective technology offers exciting opportunities to improve road safety by catering to human emotions. Modern car interiors enable the contactless detection of user states, paving the way for a systematic promotion of safe driver behavior through emotion regulation. We review the current literature regarding the impact of emotions on driver behavior and analyze the state of emotion regulation approaches in the car. We summarize challenges for affective interaction in form of cultural aspects, technological hurdles and methodological considerations, as well as opportunities to improve road safety by reinstating drivers into an emotionally balanced state. The purpose of this review is to outline the community's combined knowledge for interested researchers, to provide a focussed introduction for practitioners and to identify future directions for affective interaction in the car.",
+        "authors": [
+          "Michael Braun",
+          "Florian Weber",
+          "Florian Alt"
+        ],
+        "published": "2020-03-30T18:26:01Z",
+        "updated": "2021-10-28T12:09:48Z",
+        "url": "https://arxiv.org/abs/2003.13731v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547323+00:00"
+      },
+      {
+        "id": "2606.22706v1",
+        "title": "Safety-Aware Evaluation of LLM-Generated Driver Intervention Messages through Multi-Task Risk Fusion",
+        "abstract": "Existing driver intervention systems rely on auditory alerts and fixed templates, failing to leverage multi-task recognition outputs. General-purpose metrics such as BLEU and BERTScore cannot capture intervention-specific quality dimensions including risk-urgency alignment, cognitive load, and driver acceptability. In this paper, we propose the Driver Safety-Aware Intervention Score (DSAIS), a domain-specific metric evaluating five dimensions through a hybrid architecture combining lightweight rule-based computation with LLM Judge evaluation, together with an end-to-end framework integrating four-task recognition outputs into an LLM through risk fusion, state history management, and dynamic prompt construction. Experiments on the AIDE dataset with five models and seven conditions demonstrate that DSAIS achieves ICC 0.798-0.840 across three architecturally distinct judges and Cohen's d > 1.5 across all control conditions. Multi-dimensional sub-score analysis quantifies the contextual adaptability gap between rule-based and LLM-based systems, revealing that multi-task integration improves contextual relevance by 9.1% over rule-based baselines. Ablation experiments demonstrate that each framework component contributes to contextual relevance, with sub-score decomposition revealing gains that aggregate scoring masks. Driver emotion recognition is identified as the most critical upstream factor, and compact local LLMs (7B--9B parameters) achieve quality superior to API-based models, providing practical design guidelines for in-vehicle deployment.",
+        "authors": [
+          "Keito Inoshita"
+        ],
+        "published": "2026-06-21T22:50:55Z",
+        "updated": "2026-06-21T22:50:55Z",
+        "url": "https://arxiv.org/abs/2606.22706v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547350+00:00"
+      },
+      {
+        "id": "2604.02236v1",
+        "title": "Do Emotions in Prompts Matter? Effects of Emotional Framing on Large Language Models",
+        "abstract": "Emotional tone is pervasive in human communication, yet its influence on large language model (LLM) behaviour remains unclear. Here, we examine how first-person emotional framing in user-side queries affect LLM performance across six benchmark domains, including mathematical reasoning, medical question answering, reading comprehension, commonsense reasoning and social inference. Across models and tasks, static emotional prefixes usually produce only small changes in accuracy, suggesting that affective phrasing is typically a mild perturbation rather than a reliable general-purpose intervention. This stability is not uniform: effects are more variable in socially grounded tasks, where emotional context more plausibly interacts with interpersonal reasoning. Additional analyses show that stronger emotional wording induces only modest extra change, and that human-written prefixes reproduce the same qualitative pattern as LLM-generated ones. We then introduce EmotionRL, an adaptive emotional prompting framework that selects emotional framing adaptively for each query. Although no single emotion is consistently beneficial, adaptive selection yields more reliable gains than fixed emotional prompting. Together, these findings show that emotional tone is neither a dominant driver of LLM performance nor irrelevant noise, but a weak and input-dependent signal that can be exploited through adaptive control.",
+        "authors": [
+          "Minda Zhao",
+          "Yutong Yang",
+          "Chufei Peng",
+          "Rachel Gonsalves",
+          "Weiyue Li",
+          "Ruyi Yang",
+          "Zhixi Liu",
+          "Mengyu Wang"
+        ],
+        "published": "2026-04-02T16:31:08Z",
+        "updated": "2026-04-02T16:31:08Z",
+        "url": "https://arxiv.org/abs/2604.02236v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547385+00:00"
+      },
+      {
+        "id": "2504.08440v1",
+        "title": "Speech Command + Speech Emotion: Exploring Emotional Speech Commands as a Compound and Playful Modality",
+        "abstract": "In an era of human-computer interaction with increasingly agentic AI systems capable of connecting with users conversationally, speech is an important modality for commanding agents. By recognizing and using speech emotions (i.e., how a command is spoken), we can provide agents with the ability to emotionally accentuate their responses and socially enrich users' perceptions and experiences. To explore the concept and impact of speech emotion commands on user perceptions, we realized a prototype and conducted a user study (N = 14) where speech commands are used to steer two vehicles in a minimalist and retro game style implementation. While both agents execute user commands, only one of the agents uses speech emotion information to adapt its execution behavior. We report on differences in how users perceived each agent, including significant differences in stimulation and dependability, outline implications for designing interactions with agents using emotional speech commands, and provide insights on how users consciously emote, which we describe as \"voice acting\".",
+        "authors": [
+          "Ilhan Aslan",
+          "Timothy Merritt",
+          "Stine S. Johansen",
+          "Niels van Berkel"
+        ],
+        "published": "2025-04-11T11:04:48Z",
+        "updated": "2025-04-11T11:04:48Z",
+        "url": "https://arxiv.org/abs/2504.08440v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547415+00:00"
+      },
+      {
+        "id": "2607.16181v1",
+        "title": "Vision-Language Assistant for Emotional Reactions to Risky Driving",
+        "abstract": "This study introduces a vision-language pipeline that detects risky driving behaviors and generates emotionally expressive responses to support driver awareness and comfort. Although vision-language models have advanced perception and reasoning in autonomous driving, existing systems rarely consider the emotional dimension or real-world user experience. Keep Yelling Assistant (KYA) detects high-risk driving maneuvers in real time, such as sudden cut-ins. It then produces emotional responses through a large language model tailored to driver preferences. The framework comprises two core modules. The vision module uses YOLOv8 variants to detect nearby vehicles and identify risky behaviors such as sudden cut-ins. Key driving metrics, including relative distance, speed, and projected reach time, are extracted and normalized to produce a structured behavior log. The language module processes this log with user-defined emotional tone settings, such as neutral, humorous, and analytical, and generates verbal reactions using state-of-the-art large language models, including ChatGPT-4o, Claude 3, Gemini 2.5, and Copilot. We evaluated the proposed system using dashcam videos containing risky driving behaviors and a user study involving 108 participants. Participants selected preferred response styles, and the large language models were evaluated based on emotional alignment. All models received favorable ratings, although preferences varied across personas. Notably, the combination of YOLOv8s and ChatGPT-4o achieved the highest score of 4.29 out of 5.00. By integrating real-world perception with emotionally adaptive dialogue, KYA introduces a new paradigm for emotionally intelligent in-vehicle artificial intelligence. It offers promising directions for improving safety, trust, and emotional well-being in both conventional and autonomous vehicles.",
+        "authors": [
+          "Harine Choi",
+          "Eun Hak Lee",
+          "Zhengzhong Tu"
+        ],
+        "published": "2026-07-17T17:57:27Z",
+        "updated": "2026-07-17T17:57:27Z",
+        "url": "https://arxiv.org/abs/2607.16181v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547449+00:00"
+      },
+      {
+        "id": "2408.09046v1",
+        "title": "Keep Calm and Relax -- HMI for Autonomous Vehicles",
+        "abstract": "The growing popularity of self-driving, so-called autonomous vehicles has increased the need for human-machine interfaces~(HMI) and user interaction~(UI) to enhance passenger trust and comfort. While fallback drivers significantly influence the perceived trustfulness of self-driving vehicles, fallback drivers are an expensive solution that may not even improve vehicle safety in emergency situations. Based on a comprehensive literature review, this work delves into the potential of HMI and UI in enhancing trustfulness and emotion regulation in driverless vehicles. By analyzing the impact of various HMI and UI on passenger emotions, innovative and cost-effective concepts for improving human-vehicle interaction are conceptualized. To enable a trustful, highly comfortable, and safe ride, this work concludes by discussing whether HMI and UI are suitable for calming passengers down in emergencies, leading to smarter mobility for all.",
+        "authors": [
+          "Tima M. Yekta",
+          "Julius Schöning"
+        ],
+        "published": "2024-08-16T23:05:08Z",
+        "updated": "2024-08-16T23:05:08Z",
+        "url": "https://arxiv.org/abs/2408.09046v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547476+00:00"
+      },
+      {
+        "id": "2605.05092v2",
+        "title": "Driver-WM: A Driver-Centric Traffic-Conditioned Latent World Model for In-Cabin Dynamics Rollout",
+        "abstract": "Safe L2/L3 driving automation requires anticipating human-in-the-loop reactions during shared-control transitions. While most driving world models forecast the external environment, in-cabin intelligence remains strictly recognition-oriented and lacks multi-step rollout capabilities for driver dynamics. We introduce Driver-WM, a driver-centric latent world model that rolls out in-cabin dynamics causally conditioned on out-cabin traffic context. This formulation unifies physical kinematics forecasting with auxiliary behavioral and emotional semantic recognition. Operating in a compact latent space constructed from frozen vision-language features, Driver-WM adopts a dual-stream architecture to separately encode external traffic and internal driver states. These streams are directionally coupled via a gated causal injection mechanism, which uses a learned vector gate to modulate external contextual perturbations while strictly enforcing temporal causality. Experiments on AIDE show robust long-horizon forecasting on reactive high-motion clips, improved driver/traffic semantic alignment, and controlled interventions that expose the external-to-internal mechanism.",
+        "authors": [
+          "Haozhuang Chi",
+          "Daosheng Qiu",
+          "Hao Su",
+          "Haochen Liu",
+          "Zirui Li",
+          "Haoruo Zhang",
+          "Chen Lv"
+        ],
+        "published": "2026-05-06T16:30:48Z",
+        "updated": "2026-06-26T08:53:36Z",
+        "url": "https://arxiv.org/abs/2605.05092v2",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547540+00:00"
+      },
+      {
+        "id": "2210.15826v1",
+        "title": "Multimodal Estimation of Change Points of Physiological Arousal in Drivers",
+        "abstract": "Detecting unsafe driving states, such as stress, drowsiness, and fatigue, is an important component of ensuring driving safety and an essential prerequisite for automatic intervention systems in vehicles. These concerning conditions are primarily connected to the driver's low or high arousal levels. In this study, we describe a framework for processing multimodal physiological time-series from wearable sensors during driving and locating points of prominent change in drivers' physiological arousal state. These points of change could potentially indicate events that require just-in-time intervention. We apply time-series segmentation on heart rate and breathing rate measurements and quantify their robustness in capturing change points in electrodermal activity, treated as a reference index for arousal, as well as on self-reported stress ratings, using three public datasets. Our experiments demonstrate that physiological measures are veritable indicators of change points of arousal and perform robustly across an extensive ablation study.",
+        "authors": [
+          "Kleanthis Avramidis",
+          "Tiantian Feng",
+          "Digbalay Bose",
+          "Shrikanth Narayanan"
+        ],
+        "published": "2022-10-28T01:38:58Z",
+        "updated": "2022-10-28T01:38:58Z",
+        "url": "https://arxiv.org/abs/2210.15826v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547567+00:00"
+      },
+      {
+        "id": "2606.31442v1",
+        "title": "Who Determines the Meaning of an Emotion? Affective Sovereignty as an Epistemic Consequence of Measurement Limits",
+        "abstract": "Emotion-sensing AI is rapidly becoming embedded in vehicles, home appliances, dialogue agents, and social infrastructure, giving rise to a sphere in which emotion is no longer confined to individual experience but is instead observed and computed at a societal scale, a domain we term the Affectosphere. Yet a central normative question in this domain has remained underexplored: who has the final authority to determine the meaning of one's own emotion? This study addresses the question from the epistemological side of measurement's structural limits. We define a meaning distribution as the distribution of labels assigned by annotators drawn from a population under a fixed annotation protocol, and decompose its uncertainty into reducible and irreducible components. We then demonstrate that, while emotion AI can assign high-confidence point labels and discriminate real differences at an aggregate level, the irreducible component of the meaning distribution for individual instances cannot be estimated with adequate coverage under realistic annotator counts, a systematic divergence we term the epistemic gap. The key finding is that high device confidence does not constitute evidence that irrecoverable meaning has been recovered. From this epistemic gap, together with an explicitly stated normative premise, namely that the output of a system which cannot recover a quantity in principle must not be treated as its authoritative determination, we derive the norm that the final interpretive authority over the meaning of one's emotion is procedurally reserved for the experiencing subject, the norm of affective sovereignty. These results suggest that the design, evaluation, and regulation of emotion AI should place explicit allocation of interpretive authority, rather than accuracy maximisation, at their core.",
+        "authors": [
+          "Keito Inoshita"
+        ],
+        "published": "2026-06-30T10:19:02Z",
+        "updated": "2026-06-30T10:19:02Z",
+        "url": "https://arxiv.org/abs/2606.31442v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547596+00:00"
+      },
+      {
+        "id": "2505.00948v1",
+        "title": "What Makes Teamwork Work? A Multimodal Case Study on Emotions and Diagnostic Expertise in an Intelligent Tutoring System",
+        "abstract": "Teamwork is pivotal in medical teamwork when professionals with diverse skills and emotional states collaborate to make critical decisions. This case study examines the interplay between emotions and professional skills in group decision-making during collaborative medical diagnosis within an Intelligent Tutoring System (ITS). By comparing verbal and physiological data between high-performing and low-performing teams of medical professionals working on a patient case within the ITS, alongside individuals' retrospective collaboration experiences, we employ multimodal data analysis to identify patterns in team emotional climate and their impact on diagnostic efficiency. Specifically, we investigate how emotion-driven dialogue and professional expertise influence both the information-seeking process and the final diagnostic decisions. Grounded in the socially shared regulation of learning framework and utilizing sentiment analysis, we found that social-motivational interactions are key drivers of a positive team emotional climate. Furthermore, through content analysis of dialogue and physiological signals to pinpoint emotional fluctuations, we identify episodes where knowledge exchange and skill acquisition are most likely to occur. Our findings offer valuable insights into optimizing group collaboration in medical contexts by harmonizing emotional dynamics with adaptive strategies for effective decision-making, ultimately enhancing diagnostic accuracy and teamwork effectiveness.",
+        "authors": [
+          "Xiaoshan Huang",
+          "Haolun Wu",
+          "Xue Liu",
+          "Susanne P. Lajoie"
+        ],
+        "published": "2025-05-02T01:21:05Z",
+        "updated": "2025-05-02T01:21:05Z",
+        "url": "https://arxiv.org/abs/2505.00948v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547624+00:00"
+      },
+      {
+        "id": "2509.23578v1",
+        "title": "Unintended Consequences of Early Driving Access: Evidence from Graduated Driver Licensing Policies and Adolescent Health Outcomes",
+        "abstract": "Graduated driver licensing systems effectively reduce adolescent traffic fatalities but create unintended health consequences. Using state-level variation in licensing policies from 1999-2020 and difference-in-differences analysis, we provide the first causal evidence that early driving access generates significant health risks for female adolescents aged 15-19. States allowing learner's permits before age 16 experienced sharp increases in drug-related mortality (+1.331 per 100,000, p<0.001) and mental health-related mortality (+0.760, p<0.001), even as vehicle deaths declined (-0.656, p<0.05). These effects explain nearly one-third of rising adolescent drug mortality and one-tenth of mental health mortality increases over the study period. Early driving access expands geographic reach, enabling contact with illicit drug markets previously inaccessible to adolescents. It broadens social networks, increasing exposure to high-risk peers, while vehicles provide unsupervised spaces for experimentation. Premature independence also intensifies psychological stress during critical developmental stages. Nationally, results correspond to approximately 138 additional drug deaths and 79 mental health deaths annually among female adolescents, imposing over $2 billion in mortality costs yearly. These findings fundamentally reshape cost-benefit assessments of licensing policies, revealing how interventions protecting adolescents in one domain can create risks in others. Evidence-based modifications including enhanced supervision, geographic restrictions, and mental health integration could preserve traffic safety gains while mitigating unintended harms. This research demonstrates the critical need for multi-outcome policy evaluation that captures both benefits and hidden costs of expanded adolescent independence.",
+        "authors": [
+          "Sharareh Massahi"
+        ],
+        "published": "2025-09-28T02:21:58Z",
+        "updated": "2025-09-28T02:21:58Z",
+        "url": "https://arxiv.org/abs/2509.23578v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547651+00:00"
+      },
+      {
+        "id": "2607.09743v1",
+        "title": "Scaffolding the Strategist: Architecture-Dependent Reasoning Interventions in Hotelling Spatial Markets",
+        "abstract": "We investigate whether structured reasoning interventions improve the strategic economic reasoning of large language models, and whether their effects depend on model architecture. Using Hotelling's linear city model as a diagnostic vehicle, we evaluate GPT-4.1-mini (a standard instruction-following model) and GPT-5-mini (a reasoning-optimized model) under five conditions - an unscaffolded baseline and four reasoning interventions - across eight questions spanning deductive and abductive reasoning, three prompt framings, and three repetitions per condition, yielding 720 individually judged responses. We find a statistically significant crossover interaction between scaffolding type and model architecture ($t(7) = 4.79$, $p = 0.002$, $d = 1.69$): commitment scaffolding improves the standard model ($+0.21$) while degrading the reasoning model ($-0.63$), and principled separation shows the opposite pattern ($-0.40$ vs. $+0.31$). Both crossovers are individually significant (commitment: $p = 0.040$; separation: $p = 0.002$) and hold across all eight questions with 7/8 directional consistency. Adversarial stress-testing harms both models, with $2.6\\times$ greater degradation for the reasoning model ($-1.47$ vs. $-0.57$; $p = 0.038$), and the damage correlates negatively with baseline difficulty ($R^2 = 0.36$, $p = 0.014$). We further document a persistent declarative-procedural gap in which both models identify correct strategies at rates far exceeding their ability to execute them; separation fully closes this gap for the reasoning model while no intervention helps the standard model.",
+        "authors": [
+          "Pratyush Singh"
+        ],
+        "published": "2026-07-03T10:23:31Z",
+        "updated": "2026-07-03T10:23:31Z",
+        "url": "https://arxiv.org/abs/2607.09743v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547677+00:00"
+      },
+      {
+        "id": "2610.05827v1",
+        "title": "Spatio-Temporal Stochastic Interventions for Causal Inference in Climate Science",
+        "abstract": "Estimating causal effects in climate science, such as the effect of anthropogenic warming on crop loss, is challenging because of complex spatio-temporal dependence and the high-dimensional nature of the treatment. To address this dependence and the resulting poor overlap between observed and counterfactual scenarios, we develop a spatio-temporal stochastic-intervention framework for estimating causal effects from climate observations. We introduce a regularized estimator of the stochastic-intervention treatment effect that trades a controlled bias for a reduction in the weight variance caused by poor overlap. Simulation studies show that this estimator attains lower mean squared error than alternative weighting estimators and removes the confounding bias of an unadjusted estimator. We apply the framework to estimate the effect of historical warming on vapor-pressure deficit, a driver of crop stress, adjusting for precipitation, which confounds the effect by affecting both temperature and humidity. In GISS-E2-1-G climate-model simulations, the global effect is distinguishable from zero in every year from 1995 onward, and omitting the precipitation adjustment inflates the global estimate by 47%. Adjustment reverses the sign of the estimate over 8% of global cropland (125 million hectares), where an unadjusted analysis could misdirect adaptation between heat-focused and moisture-focused measures.",
+        "authors": [
+          "Samuel Baugh"
+        ],
+        "published": "2026-10-05T05:29:51Z",
+        "updated": "2026-10-05T05:29:51Z",
+        "url": "https://arxiv.org/abs/2610.05827v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547702+00:00"
+      },
+      {
+        "id": "2510.07004v1",
+        "title": "The importance of emotional intelligence in leadership for building an effective team",
+        "abstract": "This study investigates the significance of emotional intelligence (EI) as a fundamental component of effective leadership and its impact on building cohesive, motivated, and high-performing teams. Drawing on data from a survey of 100 professionals, the research examines how EI competencies including self-awareness, self-regulation, empathy, and social skills shape leadership effectiveness, team collaboration, conflict resolution, and workplace motivation. The results demonstrate strong correlations between EI and key leadership traits such as empathy, ethical conduct, social competence, and motivational effectiveness. Leaders with higher levels of EI are perceived as more empathetic, ethical, and capable of fostering trust, resolving conflicts, and inspiring commitment, thereby improving team dynamics and overall organizational performance. The study also highlights that ethical leadership significantly enhances motivation and that social competence is essential for engaging and aligning teams toward common goals. While the findings are exploratory due to the limited sample size, they provide valuable insights for leadership development programs, emphasizing the importance of integrating EI-focused training, coaching, and assessment tools into organizational strategies. The research contributes to leadership theory by demonstrating that emotional intelligence is not an isolated skill but a central driver of interpersonal effectiveness, employee engagement, and sustainable business success.",
+        "authors": [
+          "Joanna Ćwiąkała",
+          "Waldemar Gajda",
+          "Michał Ćwiąkała",
+          "Ernest Górka",
+          "Dariusz Baran",
+          "Gabriela Wojak",
+          "Piotr Mrzygłód",
+          "Maciej Frasunkiewicz",
+          "Piotr Ręczajski",
+          "Jan Piwnik"
+        ],
+        "published": "2025-10-08T13:27:46Z",
+        "updated": "2025-10-08T13:27:46Z",
+        "url": "https://arxiv.org/abs/2510.07004v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547737+00:00"
+      },
+      {
+        "id": "2606.16481v1",
+        "title": "Steering Emotional Dynamics for Art Therapy: Controllable Narrative Script Generation through Hierarchically Guided LLM Agents",
+        "abstract": "Art therapy plays a vital role in emotional healing, in which narrative creation acts as the primary vehicle for emotional expression. Given the inherently dynamic nature of emotions during healing, narratives with finely controlled emotional fluctuations enable individuals to safely project inner conflicts and achieve emotional catharsis. Recently, with the rapid development of Large Language Models (LLMs), automated narrative generation technology has provided a new pathway to support such artistic designs. However, while existing methods can produce fluent texts, they struggle to generate narratives that adhere to specified affective trajectories, failing to meet the demands of emotion-oriented psychological healing. To address these issues, this paper proposes EC-Script, an LLM agent-based framework that enables hierarchical control of the affective trajectory in narrative generation for emotional healing. To ensure that the generated narratives strictly follow the given emotional patterns, EC-Script establishes overall narrative direction through Emotion-Trajectory Planning, propels scene-level plot development with Character-Driven Scene Generation, and regulates local emotional changes of characters via Emotion-Controlled Script Writing. Ultimately, it outputs scene-by-scene script content that remains highly consistent with the preset affective trajectory. Experimental results demonstrate that EC-Script significantly outperforms baseline methods in affective trajectory adherence, exhibiting excellent and reliable emotional controllability, thereby providing effective technical support for AI-assisted emotional healing scenarios.",
+        "authors": [
+          "Suqing Wang",
+          "Qinghai Miao",
+          "Chao Guo",
+          "Yisheng Lv"
+        ],
+        "published": "2026-06-15T09:49:23Z",
+        "updated": "2026-06-15T09:49:23Z",
+        "url": "https://arxiv.org/abs/2606.16481v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547766+00:00"
+      },
+      {
+        "id": "2506.03166v1",
+        "title": "Video Quality Monitoring for Remote Autonomous Vehicle Control",
+        "abstract": "The delivery of high-quality, low-latency video streams is critical for remote autonomous vehicle control, where operators must intervene in real time. However, reliable video delivery over Fourth/Fifth-Generation (4G/5G) mobile networks is challenging due to signal variability, mobility-induced handovers, and transient congestion. In this paper, we present a comprehensive blueprint for an integrated video quality monitoring system, tailored to remote autonomous vehicle operation. Our proposed system includes subsystems for data collection onboard the vehicle, video capture and compression, data transmission to edge servers, real-time streaming data management, Artificial Intelligence (AI) model deployment and inference execution, and proactive decision-making based on predicted video quality. The AI models are trained on a hybrid dataset that combines field-trial measurements with synthetic stress segments and covers Long Short-Term Memory (LSTM), Gated Recurrent Unit (GRU), and encoder-only Transformer architectures. As a proof of concept, we benchmark 20 variants from these model classes together with feed-forward Deep Neural Network (DNN) and linear-regression baselines, reporting accuracy and inference latency. Finally, we study the trade-offs between onboard and edge-based inference. We further discuss the use of explainable AI techniques to enhance transparency and accountability during critical remote-control interventions. Our proactive approach to network adaptation and Quality of Experience (QoE) monitoring aims to enhance remote vehicle operation over next-generation wireless networks.",
+        "authors": [
+          "Dimitrios Kafetzis",
+          "Nikos Fotiou",
+          "Savvas Argyropoulos",
+          "Jad Nasreddine",
+          "Iordanis Koutsopoulos"
+        ],
+        "published": "2025-05-27T21:37:42Z",
+        "updated": "2025-05-27T21:37:42Z",
+        "url": "https://arxiv.org/abs/2506.03166v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547796+00:00"
+      },
+      {
+        "id": "2511.14308v1",
+        "title": "Optimizing Urban Electric Vehicle Charging and Battery Swapping Infrastructure: A Location-Inventory-Grid Model",
+        "abstract": "The rapid rise of electric vehicles (EVs) places unprecedented stress on both urban mobility systems and low-voltage power grids. Designing battery swapping and charging networks that are cost-efficient, grid-compatible, and sustainable is therefore a pressing yet complex challenge: service providers must jointly optimize station locations, battery inventory, and grid interaction under high-dimensional uncertainty. We develop an integrated location-inventory-grid model and employ a continuous approximation approach to overcome the intractability of discrete formulations. Our analysis compares centralized versus decentralized charging, with and without participation in frequency regulation. The results reveal that centralized charging, when combined with frequency regulation, not only reduces cost but also strengthens grid stability. However, it may constrain operational flexibility near the optimum, potentially challenging efforts to mitigate environmental impacts by lowering battery inventories. These results offer actionable guidance for cost-efficient, environmentally sustainable, and grid-compatible scaling of urban EV infrastructure to meet the demands of large-scale EV adoption.",
+        "authors": [
+          "Wenqing Ai",
+          "Hanyu Cheng",
+          "Wei Qi"
+        ],
+        "published": "2025-11-18T10:11:14Z",
+        "updated": "2025-11-18T10:11:14Z",
+        "url": "https://arxiv.org/abs/2511.14308v1",
+        "source": "https://export.arxiv.org/api/query",
+        "retrieved_at": "2026-11-01T16:43:48.547824+00:00"
+      }
+    ]
+  }
+}

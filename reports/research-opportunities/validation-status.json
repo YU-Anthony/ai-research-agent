@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "selected": 10,
+  "new_candidates": 30,
+  "ideas": 3,
+  "usage": {
+    "ceiling_usd": 0.09411,
+    "status": "completed",
+    "estimated_cost_usd": 0.022716,
+    "prompt_tokens": 14636,
+    "completion_tokens": 2020
+  }
+}

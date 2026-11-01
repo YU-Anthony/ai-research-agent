@@ -1,0 +1,181 @@
+{
+  "papers": [
+    {
+      "id": "2610.40002v1",
+      "contribution": "Introduces Q-adaptive guidance, a measure-driven approach to optimize reasoning trust in vision-language-action (VLA) policies, improving autonomous driving performance on Alpamayo and Waymo benchmarks.",
+      "limitation": "Potential dependency on fixed expert policy and noise; may not generalize beyond tested simulators and datasets.",
+      "gap": "Unclear how adaptivity scales to diverse real-world conditions and varying reasoning complexities beyond tested benchmarks."
+    },
+    {
+      "id": "2610.34650v1",
+      "contribution": "Proposes Dream2Assist, a model-based RL framework for intent-conditioned shared vehicle control, combining world models and intent inference to improve torque alignment and reduce collisions in human-robot driving teams.",
+      "limitation": "Evaluation limited to simulations and preliminary on-vehicle deployment with small human subject numbers; generalizability to complex real-world scenarios remains unknown.",
+      "gap": "Need for studies on long-term trust, interruption handling, and adaptation in varied driving environments."
+    },
+    {
+      "id": "2610.33915v1",
+      "contribution": "Analyzes agentic driving effects on driver-state inference, trust, and intervention, identifying altered applicability of existing models and prioritizing research on intervention effects, joint policy design, and adaptive interaction.",
+      "limitation": "Mainly conceptual and analytical; lacks empirical validation of identified research priorities.",
+      "gap": "Calls for integrated studies measuring comprehension, reliance, and timely driver actions under agentic interaction."
+    },
+    {
+      "id": "2610.31835v1",
+      "contribution": "Develops SAGE, a hybrid vision-language and geometry framework that combines vision-language model preferences with geometric candidate paths for work-zone trajectory prediction under temporary traffic control.",
+      "limitation": "Relies on specific datasets and complex manual rule encoding (MUTCD), potentially limiting scalability and domain transfer.",
+      "gap": "Effectiveness under dynamically changing environments or novel temporary controls remains to be explored."
+    },
+    {
+      "id": "2610.31898v1",
+      "contribution": "Presents StateBridge, a structured traffic video-language framework that leverages phase-aware clip construction and track summaries to train synthetic-to-real video captioning and VQA models for traffic safety reasoning.",
+      "limitation": "Trained and tested primarily on synthetic data with unknown robustness to real-world variance and occlusions.",
+      "gap": "Further evaluation on real diverse datasets and expanded reasoning about occluded or rare interactions is needed."
+    },
+    {
+      "id": "2610.32612v1",
+      "contribution": "Introduces DriveOSS, the first real-world multimodal dataset and benchmark for 3D anomaly and open-set semantic segmentation to detect unknown objects in autonomous driving scenes.",
+      "limitation": "Data covers limited weather and scenes; the robustness to rare or corner cases remains unverified.",
+      "gap": "Future work should address generalization to varied domains and fusion strategy improvements for open-set detection."
+    },
+    {
+      "id": "2610.22092v1",
+      "contribution": "Presents a modular onboard pipeline using lightweight LLM reasoning to classify obstacles and infer context-dependent safety constraints for UAV navigation, improving safety in urban scenarios.",
+      "limitation": "Limited by low-resolution input reducing small object perception range; LLM inference latency remains off critical path but is non-negligible.",
+      "gap": "Further research is needed on higher-resolution perception and integrating LLM outputs into dynamic planning robustly."
+    },
+    {
+      "id": "2610.22825v1",
+      "contribution": "Proposes World Action Critic (WAC) model jointly learning predictive foresight and consequence evaluation for multimodal action candidates, improving autonomous driving policy learning accuracy.",
+      "limitation": "Evaluated mainly on simulation data; the impact in real-world driving and complex multimodal traffic scenarios is uncertain.",
+      "gap": "Extension to richer multimodal sensory inputs and transfer to real vehicle control pipelines is required."
+    },
+    {
+      "id": "2610.22215v1",
+      "contribution": "Introduces FutureLift, a graph-based refiner for motion forecasting that enables bidirectional temporal interaction among lifted 3D queries about agents and map, enhancing accuracy on major autonomous driving datasets.",
+      "limitation": "Focuses on improving forecasting proposals without direct integration with planning or explainability components.",
+      "gap": "Further research needed for coupling refined forecasts with planning and interpretable driver behavior explanation."
+    },
+    {
+      "id": "2610.26528v1",
+      "contribution": "Develops nuScenes Intention Knowledge Graph (NIKG), an ontology-backed pipeline capturing ego-centric vehicle intention context with semantic relations, supporting downstream reasoning in driving behavior prediction.",
+      "limitation": "Constructed on nuScenes mini; scalability and incorporation of richer sensor modalities need assessment.",
+      "gap": "Methods to integrate this knowledge graph with end-to-end prediction models and evaluate reasoning benefits remain open."
+    }
+  ],
+  "synthesis": {
+    "trends": [
+      {
+        "finding": "Integration of multimodal perception with reasoning enhances understanding and action in autonomous driving and UAV navigation.",
+        "uncertainty": "Real-world deployment and robustness to diverse conditions remain insufficiently validated.",
+        "evidence_ids": [
+          "2610.40002v1",
+          "2610.34650v1",
+          "2610.22092v1"
+        ]
+      },
+      {
+        "finding": "Semantic and explicit knowledge representations (graphs, ontologies, formal rules) are leveraged to support explainable, intention-aware decision making.",
+        "uncertainty": "Effects on downstream planning and human-centered trust are underexplored.",
+        "evidence_ids": [
+          "2610.26528v1",
+          "2610.31835v1",
+          "2610.19735v1"
+        ]
+      },
+      {
+        "finding": "Model adaptivity, including dynamic resource allocation and active model selection, improves efficiency and safety in resource-constrained autonomous systems.",
+        "uncertainty": "Long-term effects on trust, performance, and scalability to complex urban environments are unclear.",
+        "evidence_ids": [
+          "2610.40002v1",
+          "2610.24590v1",
+          "2610.34650v1"
+        ]
+      }
+    ],
+    "comparisons": [
+      {
+        "comparison": "LLM-based reasoning frameworks (e.g., Dream2Assist, onboard lightweight LLM for UAV) emphasize intent conditioning for proactive assistance versus reactive geometric methods (e.g., SAGE, StateBridge).",
+        "limitation": "LLMs face inference latency and perception resolution limits; geometric methods rely on hand-crafted rules and may struggle with generalization.",
+        "evidence_ids": [
+          "2610.34650v1",
+          "2610.22092v1",
+          "2610.31835v1",
+          "2610.31898v1"
+        ]
+      },
+      {
+        "comparison": "Graph-structured representations like FutureLift and nuScenes Intention Knowledge Graph support relational reasoning for motion forecasting and intention prediction versus direct end-to-end VLA policy models.",
+        "limitation": "Relational reasoning models need integration with downstream planner explanations and open-set detection to enhance safety guarantees.",
+        "evidence_ids": [
+          "2610.22215v1",
+          "2610.26528v1",
+          "2610.32612v1"
+        ]
+      },
+      {
+        "comparison": "Adaptive model selection and guidance (Q-adaptive VLA guidance, Scene-Adaptive VLA) improve computational resource use, contrasting fixed policy or static models.",
+        "limitation": "Limited demonstration on diverse scenes and long-horizon driving tasks.",
+        "evidence_ids": [
+          "2610.40002v1",
+          "2610.24590v1"
+        ]
+      }
+    ],
+    "ideas": [
+      {
+        "question": "Can joint multimodal reasoning in UAV navigation improve safety and operator trust compared to geometric or pure perception methods?",
+        "hypothesis": "Integrating intent-conditioned LLM reasoning with vision-depth perception reduces collisions and enhances pilot comprehension.",
+        "method": "Combine vision-language segmentation and intent inference LLM cascaded with physics-aware trajectory planning.",
+        "datasets": "AeroDASH data, UAV-Flow, Gazebo urban scenarios (unverified).",
+        "baselines": "Pure geometric planners, vision-only perception models.",
+        "metrics": "Collision rate, task success, interaction time, user trust scores.",
+        "compute": "Jetson Orin NX onboard inference; measure latency, memory.",
+        "risk": "LLM latency and perceived behavior misalignment cause trust degradation.",
+        "novelty_check": "Novel integration of lightweight LLM reasoning with UAV control onboard, per 2610.34650v1 and 2610.22092v1.",
+        "priority_rationale": "High significance for safety-critical, human-centered UAV control.",
+        "evidence_ids": [
+          "2610.34650v1",
+          "2610.22092v1"
+        ]
+      },
+      {
+        "question": "Does knowledge-graph-based explicit intention representation improve open-set anomaly awareness in driving behavior prediction?",
+        "hypothesis": "Incorporating semantic intention KGs results in more explainable and robust detection of unknown objects and intentions.",
+        "method": "Integrate NIKG with anomaly segmentation model outputs for downstream reasoning pipelines.",
+        "datasets": "DriveOSS (2610.32612v1), nuScenes mini with NIKG annotations (2610.26528v1).",
+        "baselines": "Anomaly detectors without semantic graphs, standard KGE methods.",
+        "metrics": "Open-set detection accuracy, explanation coherence, timeliness of warning.",
+        "compute": "Standard inference GPUs; embedding and SPARQL query overhead measured.",
+        "risk": "Complex integration might add latency; domain mismatch risks.",
+        "novelty_check": "Combines KG explicit intention and open anomaly detection uniquely.",
+        "priority_rationale": "Addresses safety gaps in unknown object reasoning in autonomous driving.",
+        "evidence_ids": [
+          "2610.32612v1",
+          "2610.26528v1"
+        ]
+      },
+      {
+        "question": "Can adaptive layer routing techniques dynamically optimize VLA models for efficient real-time driving without losing explainability and safety?",
+        "hypothesis": "Scene-based dynamic routing reduces computation by >50% while maintaining driving and language task performance.",
+        "method": "Implement budget-conditioned layer routing on a state-of-the-art VLA model with continuous driving scenarios.",
+        "datasets": "Bench2Drive benchmark (2610.24590v1).",
+        "baselines": "Fixed full-layer VLA models, token pruning adaptations.",
+        "metrics": "Inference FLOPs, driving success rate, language accuracy, runtime latency.",
+        "compute": "Typical embedded automotive-grade GPUs; measure power consumption.",
+        "risk": "Adaptation may skip critical reasoning layers causing safety risks.",
+        "novelty_check": "Extends structural adaptation with budgeted layer routing to VLA driving models.",
+        "priority_rationale": "Balances efficiency and performance constraints vital for onboard deployment.",
+        "evidence_ids": [
+          "2610.24590v1"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "ceiling_usd": 0.09411,
+    "status": "completed",
+    "estimated_cost_usd": 0.022716,
+    "prompt_tokens": 14636,
+    "completion_tokens": 2020
+  },
+  "run_id": "research-vision-verified-evidence"
+}

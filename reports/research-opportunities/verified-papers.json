@@ -1,0 +1,89 @@
+[
+  {
+    "id": "2104.10133v1",
+    "title": "Large Scale Interactive Motion Forecasting for Autonomous Driving : The Waymo Open Motion Dataset",
+    "abstract": "As autonomous driving systems mature, motion forecasting has received increasing attention as a critical requirement for planning. Of particular importance are interactive situations such as merges, unprotected turns, etc., where predicting individual object motion is not sufficient. Joint predictions of multiple objects are required for effective route planning. There has been a critical need for high-quality motion data that is rich in both interactions and annotation to develop motion planning models. In this work, we introduce the most diverse interactive motion dataset to our knowledge, and provide specific labels for interacting objects suitable for developing joint prediction models. With over 100,000 scenes, each 20 seconds long at 10 Hz, our new dataset contains more than 570 hours of unique data over 1750 km of roadways. It was collected by mining for interesting interactions between vehicles, pedestrians, and cyclists across six cities within the United States. We use a high-accuracy 3D auto-labeling system to generate high quality 3D bounding boxes for each road agent, and provide corresponding high definition 3D maps for each scene. Furthermore, we introduce a new set of metrics that provides a comprehensive evaluation of both single agent and joint agent interaction motion forecasting models. Finally, we provide strong baseline models for individual-agent prediction and joint-prediction. We hope that this new large-scale interactive motion dataset will provide new opportunities for advancing motion forecasting models.",
+    "authors": [
+      "Scott Ettinger",
+      "Shuyang Cheng",
+      "Benjamin Caine",
+      "Chenxi Liu",
+      "Hang Zhao",
+      "Sabeek Pradhan",
+      "Yuning Chai",
+      "Ben Sapp",
+      "Charles Qi",
+      "Yin Zhou",
+      "Zoey Yang",
+      "Aurelien Chouard",
+      "Pei Sun",
+      "Jiquan Ngiam",
+      "Vijay Vasudevan",
+      "Alexander McCauley",
+      "Jonathon Shlens",
+      "Dragomir Anguelov"
+    ],
+    "published": "2021-04-20T17:19:05Z",
+    "updated": "2021-04-20T17:19:05Z",
+    "url": "https://arxiv.org/abs/2104.10133v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:11:33.458253+00:00"
+  },
+  {
+    "id": "2312.14150v3",
+    "title": "DriveLM: Driving with Graph Visual Question Answering",
+    "abstract": "We study how vision-language models (VLMs) trained on web-scale data can be integrated into end-to-end driving systems to boost generalization and enable interactivity with human users. While recent approaches adapt VLMs to driving via single-round visual question answering (VQA), human drivers reason about decisions in multiple steps. Starting from the localization of key objects, humans estimate object interactions before taking actions. The key insight is that with our proposed task, Graph VQA, where we model graph-structured reasoning through perception, prediction and planning question-answer pairs, we obtain a suitable proxy task to mimic the human reasoning process. We instantiate datasets (DriveLM-Data) built upon nuScenes and CARLA, and propose a VLM-based baseline approach (DriveLM-Agent) for jointly performing Graph VQA and end-to-end driving. The experiments demonstrate that Graph VQA provides a simple, principled framework for reasoning about a driving scene, and DriveLM-Data provides a challenging benchmark for this task. Our DriveLM-Agent baseline performs end-to-end autonomous driving competitively in comparison to state-of-the-art driving-specific architectures. Notably, its benefits are pronounced when it is evaluated zero-shot on unseen objects or sensor configurations. We hope this work can be the starting point to shed new light on how to apply VLMs for autonomous driving. To facilitate future research, all code, data, and models are available to the public.",
+    "authors": [
+      "Chonghao Sima",
+      "Katrin Renz",
+      "Kashyap Chitta",
+      "Li Chen",
+      "Hanxue Zhang",
+      "Chengen Xie",
+      "Jens Beißwenger",
+      "Ping Luo",
+      "Andreas Geiger",
+      "Hongyang Li"
+    ],
+    "published": "2023-12-21T18:59:12Z",
+    "updated": "2025-01-16T10:57:44Z",
+    "url": "https://arxiv.org/abs/2312.14150v3",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:11:33.458318+00:00"
+  },
+  {
+    "id": "1807.11546v1",
+    "title": "Textual Explanations for Self-Driving Vehicles",
+    "abstract": "Deep neural perception and control networks have become key components of self-driving vehicles. User acceptance is likely to benefit from easy-to-interpret textual explanations which allow end-users to understand what triggered a particular behavior. Explanations may be triggered by the neural controller, namely introspective explanations, or informed by the neural controller's output, namely rationalizations. We propose a new approach to introspective explanations which consists of two parts. First, we use a visual (spatial) attention model to train a convolutional network end-to-end from images to the vehicle control commands, i.e., acceleration and change of course. The controller's attention identifies image regions that potentially influence the network's output. Second, we use an attention-based video-to-text model to produce textual explanations of model actions. The attention maps of controller and explanation model are aligned so that explanations are grounded in the parts of the scene that mattered to the controller. We explore two approaches to attention alignment, strong- and weak-alignment. Finally, we explore a version of our model that generates rationalizations, and compare with introspective explanations on the same video segments. We evaluate these models on a novel driving dataset with ground-truth human explanations, the Berkeley DeepDrive eXplanation (BDD-X) dataset. Code is available at https://github.com/JinkyuKimUCB/explainable-deep-driving.",
+    "authors": [
+      "Jinkyu Kim",
+      "Anna Rohrbach",
+      "Trevor Darrell",
+      "John Canny",
+      "Zeynep Akata"
+    ],
+    "published": "2018-07-30T19:38:24Z",
+    "updated": "2018-07-30T19:38:24Z",
+    "url": "https://arxiv.org/abs/1807.11546v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:11:33.458356+00:00"
+  },
+  {
+    "id": "2305.10355v3",
+    "title": "Evaluating Object Hallucination in Large Vision-Language Models",
+    "abstract": "Inspired by the superior language abilities of large language models (LLM), large vision-language models (LVLM) have been recently explored by integrating powerful LLMs for improving the performance on complex multimodal tasks. Despite the promising progress on LVLMs, we find that LVLMs suffer from the hallucination problem, i.e. they tend to generate objects that are inconsistent with the target images in the descriptions. To investigate it, this work presents the first systematic study on object hallucination of LVLMs. We conduct the evaluation experiments on several representative LVLMs, and show that they mostly suffer from severe object hallucination issue. We further discuss that the visual instructions may influence the hallucination, and find that: objects that frequently occur in the visual instructions or co-occur with the image objects, are obviously prone to be hallucinated by LVLMs. Besides, we find that existing evaluation methods might be affected by the input instructions and generation styles of LVLMs. Thus, we further design an improved evaluation method for object hallucination by proposing a polling-based query method called POPE. Experiment results demonstrate that our POPE can evaluate the object hallucination in a more stable and flexible way. Our codes and data are publicly available at https://github.com/RUCAIBox/POPE.",
+    "authors": [
+      "Yifan Li",
+      "Yifan Du",
+      "Kun Zhou",
+      "Jinpeng Wang",
+      "Wayne Xin Zhao",
+      "Ji-Rong Wen"
+    ],
+    "published": "2023-05-17T16:34:01Z",
+    "updated": "2023-10-26T02:52:40Z",
+    "url": "https://arxiv.org/abs/2305.10355v3",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T06:11:33.458392+00:00"
+  }
+]

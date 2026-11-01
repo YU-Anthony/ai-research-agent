@@ -1,9 +1,9 @@
-name: Daily literature monitor
+name: Weekly research monitor
 on:
   schedule:
     # New York 09:00 = 13:00 UTC in EDT / 14:00 UTC in EST.
     # The gate below selects the correct occurrence across DST transitions.
-    - cron: '0 13,14 * * *'
+    - cron: '0 13,14 * * 1'
   workflow_dispatch:
     inputs:
       days:
@@ -72,6 +72,7 @@ jobs:
           path: |
             reports/weekly/
             monitor-state/state.json
+            monitor-state/library.sqlite
           if-no-files-found: warn
           retention-days: 90
       - name: Job summary
