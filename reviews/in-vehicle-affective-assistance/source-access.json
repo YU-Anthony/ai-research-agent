@@ -1,0 +1,22 @@
+[
+  {
+    "source": "Crossref",
+    "error_type": "ProxyError"
+  },
+  {
+    "source": "OpenAlex",
+    "error_type": "ProxyError"
+  },
+  {
+    "source": "Semantic Scholar",
+    "error_type": "ProxyError"
+  },
+  {
+    "source": "ACM",
+    "error_type": "ProxyError"
+  },
+  {
+    "source": "IEEE",
+    "error_type": "ProxyError"
+  }
+]

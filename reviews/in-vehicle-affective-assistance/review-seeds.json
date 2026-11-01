@@ -1,0 +1,64 @@
+[
+  {
+    "id": "2003.13731v2",
+    "title": "Affective Automotive User Interfaces -- Reviewing the State of Emotion Regulation in the Car",
+    "abstract": "Affective technology offers exciting opportunities to improve road safety by catering to human emotions. Modern car interiors enable the contactless detection of user states, paving the way for a systematic promotion of safe driver behavior through emotion regulation. We review the current literature regarding the impact of emotions on driver behavior and analyze the state of emotion regulation approaches in the car. We summarize challenges for affective interaction in form of cultural aspects, technological hurdles and methodological considerations, as well as opportunities to improve road safety by reinstating drivers into an emotionally balanced state. The purpose of this review is to outline the community's combined knowledge for interested researchers, to provide a focussed introduction for practitioners and to identify future directions for affective interaction in the car.",
+    "authors": [
+      "Michael Braun",
+      "Florian Weber",
+      "Florian Alt"
+    ],
+    "published": "2020-03-30T18:26:01Z",
+    "updated": "2021-10-28T12:09:48Z",
+    "url": "https://arxiv.org/abs/2003.13731v2",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T16:45:33.361862+00:00"
+  },
+  {
+    "id": "2412.08005v1",
+    "title": "Survey on Human-Vehicle Interactions and AI Collaboration for Optimal Decision-Making in Automated Driving",
+    "abstract": "The capabilities of automated vehicles are advancing rapidly, yet achieving full autonomy remains a significant challenge, requiring ongoing human cognition in decision-making processes. Incorporating human cognition into control algorithms has become increasingly important, as researchers work to develop strategies that minimize conflicts between human drivers and AI systems. Despite notable progress, many challenges persist, underscoring the need for further innovation and refinement in this field. This review covers recent progress in human-vehicle interaction (HVI) and AI collaboration for vehicle control. First, we start by looking at how HVI has evolved, pointing out key developments and identifying persistent problems. Second, we discuss the existing techniques, including methods for integrating human intuition and cognition into decision-making processes and developing systems that can mimic human behavior to enable optimal driving strategies and achieve safer and more efficient transportation. This review aims to contribute to the development of more effective and adaptive automated driving systems by enhancing human-AI collaboration.",
+    "authors": [
+      "Abu Jafar Md Muzahid",
+      "Xiaopeng Zhao",
+      "Zhenbo Wang"
+    ],
+    "published": "2024-12-11T01:19:43Z",
+    "updated": "2024-12-11T01:19:43Z",
+    "url": "https://arxiv.org/abs/2412.08005v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T16:45:33.361915+00:00"
+  },
+  {
+    "id": "2605.06439v1",
+    "title": "From Review to Design: Ethical Multimodal Driver Monitoring Systems for Risk Mitigation, Incident Response, and Accountability in Automated Vehicles",
+    "abstract": "As vehicles transition toward higher levels of automation, Driver Monitoring Systems (DMS) have become essential for ensuring human oversight, safety, and regulatory compliance in a vehicle. These systems rely on multimodal sensing and AI-driven inference to assess driver attention, cognitive state, and readiness to take control. While technologically promising, their deployment introduces a complex set of ethical and legal challenges - ranging from privacy and consent to data ownership and algorithmic fairness. While overarching frameworks such as the GDPR, EU AI Act, and IEEE standards offer important guidance, they lack the specificity required for addressing the unique risks posed by in-cabin sensing technologies. This paper adopts a review-to-design perspective, critically examining existing regulatory instruments and ethical frameworks -- such as the GDPR, the EU AI Act, and IEEE guidelines -- and identifying gaps in their applicability to the distinctive risks posed by multimodal, AI-enabled in-cabin monitoring. Building on this review, we propose a modular ethical design framework tailored specifically to Driver Monitoring Systems. The framework translates high-level principles into actionable design and deployment guidance, including user-configurable consent mechanisms, fairness-aware model development, transparency and explainability tools, and safeguards for driver emotional well-being. Finally, the paper outlines a risk analysis and failure mitigation strategy, emphasizing proactive incident response and accountability mechanisms tailored to the DMS context. Together, these contributions aim to inform the development of transparent, trustworthy, and human-centered driver monitoring systems for next-generation autonomous vehicles.",
+    "authors": [
+      "Bilal Khana",
+      "Waseem Shariff",
+      "Rory Coyne",
+      "Muhammad Ali Farooq",
+      "Peter Corcoran"
+    ],
+    "published": "2026-05-07T15:40:17Z",
+    "updated": "2026-05-07T15:40:17Z",
+    "url": "https://arxiv.org/abs/2605.06439v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T16:45:33.361962+00:00"
+  },
+  {
+    "id": "2110.00472v1",
+    "title": "Survey and synthesis of state of the art in driver monitoring",
+    "abstract": "Road-vehicle accidents are mostly due to human errors, and many such accidents could be avoided by continuously monitoring the driver. Driver monitoring (DM) is a topic of growing interest in the automotive industry, and it will remain relevant for all vehicles that are not fully autonomous, and thus for decades for the average vehicle owner. The present paper focuses on the first step of DM, which consists in characterizing the state of the driver. Since DM will be increasingly linked to driving automation (DA), this paper presents a clear view of the role of DM at each of the six SAE levels of DA. This paper surveys the state of the art of DM, and then synthesizes it, providing a unique, structured, polychotomous view of the many characterization techniques of DM. Informed by the survey, the paper characterizes the driver state along the five main dimensions--called here \"(sub)states\"--of drowsiness, mental workload, distraction, emotions, and under the influence. The polychotomous view of DM is presented through a pair of interlocked tables that relate these states to their indicators (e.g., the eye-blink rate) and the sensors that can access each of these indicators (e.g., a camera). The tables factor in not only the effects linked directly to the driver, but also those linked to the (driven) vehicle and the (driving) environment. They show, at a glance, to concerned researchers, equipment providers, and vehicle manufacturers (1) most of the options they have to implement various forms of advanced DM systems, and (2) fruitful areas for further research and innovation.",
+    "authors": [
+      "Anaïs Halin",
+      "Jacques G. Verly",
+      "Marc Van Droogenbroeck"
+    ],
+    "published": "2021-10-01T15:04:56Z",
+    "updated": "2021-10-01T15:04:56Z",
+    "url": "https://arxiv.org/abs/2110.00472v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T16:45:33.361999+00:00"
+  }
+]

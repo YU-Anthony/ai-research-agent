@@ -1,0 +1,29 @@
+{
+  "status": "pilot_evidence_map_not_submission_ready",
+  "search_queries": 3,
+  "returned_search_records": 60,
+  "unique_search_records": 57,
+  "review_seeds": 4,
+  "total_records_with_seeds": 60,
+  "screening_decisions": {
+    "exclude_from_pilot": 33,
+    "review_comparator": 4,
+    "pilot_primary": 8,
+    "pending_fulltext": 12,
+    "adjacent_context": 3
+  },
+  "targeted_fulltext_pdfs": 13,
+  "pilot_primary_studies": 8,
+  "generative_core": 5,
+  "non_generative_comparators": 3,
+  "paid_model_calls": 0,
+  "new_experiments": 0,
+  "public_submissions": 0,
+  "limitations": [
+    "top-20-per-query relevance-capped arXiv pilot",
+    "ACM/IEEE and metadata sources blocked",
+    "single-agent provisional coding",
+    "not preregistered; protocol written after pilot search",
+    "no pooled effect sizes"
+  ]
+}
