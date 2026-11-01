@@ -1,3 +1,7 @@
+## Research-paper format
+
+A compiled [PDF](paper/paper.pdf) and editable [LaTeX source](paper/paper.tex) are available in [paper/](paper/README.md). The neutral single-column article uses standard numbered sections, table captions and numeric BibTeX citations. It is not an official venue template, and author information remains pending confirmation. The visible working-draft status and review limitations have been preserved.
+
 ## Full working manuscript
 
 The drafted article is now in **[manuscript.md](manuscript.md)**, with a [Chinese abstract/reading guide](manuscript-zh-notes.md), a selected-source [BibTeX bibliography](manuscript-references.bib), [source registry](manuscript-sources.json) and [author-review checklist](manuscript-checklist.md). `draft.md` and `draft-v2.md` remain earlier research notes. Run `python reviews/in-vehicle-affective-assistance/validate_manuscript.py` to check citation integrity. The manuscript is not submission-ready: automated citation checks do not substitute for complete retrieval, human verification or novelty assessment.

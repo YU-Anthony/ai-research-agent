@@ -1,0 +1,13 @@
+{
+  "title": "Evaluating Generative In-Vehicle Assistants: From Content Correctness to Human Outcomes",
+  "abstract": "Generative in-vehicle assistants can answer questions, initiate conversations, communicate task progress and produce context-dependent support messages. Evaluating these capabilities requires more than measuring response fluency or task completion: a correct answer, a preferred interaction, a change in driver state and an improvement in driving performance are distinct outcomes. This article develops a structured exploratory evidence map of evaluation practices for generative driver-support assistants, with historical and methodological comparators. Nine arXiv query families returned 265 records, corresponding to 230 unique identifiers; review seeds produced a combined ledger of 233 candidate records. Eighteen original-study publications were provisionally coded, comprising eight generative core studies, five non-generative or historical comparators and five evaluation-method comparators. We organize their evidence across content correctness, interaction quality, human state and driving/task consequences, while separately identifying participant role, input provenance and experimental setting. The inspected literature includes expert-grounded automated evaluation, human preference studies, simulator experiments and real-vehicle interaction studies. Consequently, neither the absence of human validation nor the absence of intervention research is a defensible general characterization. The central synthesis concerns how claims should remain bounded by the constructs, populations and settings actually evaluated. Broader retrieval, complete screening, publication-family reconciliation and independent human checking are needed before field-wide conclusions or submission.",
+  "keywords": [
+    "in-vehicle conversational assistants",
+    "generative AI",
+    "driver support",
+    "multimodal interaction",
+    "affective interfaces",
+    "human-centered evaluation",
+    "evidence mapping"
+  ]
+}

@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,array,calc}
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\small}
+\setlength{\LTcapwidth}{\textwidth}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={$title$},pdfauthor={},pdfsubject={Exploratory review manuscript for author review}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Generative In-Vehicle Assistants}
+\fancyhead[R]{\small Working manuscript}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0.25em}
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{$title$}
+\author{\textit{Author details pending confirmation}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+$abstract$
+\end{abstract}
+\noindent\textbf{Keywords:} $for(keywords)$$keywords$$sep$; $endfor$.
+\par\medskip
+\noindent\textit{Manuscript status:} Exploratory evidence map for author review. Database coverage and human verification remain incomplete. This is not a completed systematic review or a submission-ready paper.
+\par\medskip
+$body$
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+\end{document}
