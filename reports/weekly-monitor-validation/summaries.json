@@ -1,0 +1,42 @@
+{
+  "papers": [
+    {
+      "id": "2610.32069v1",
+      "contribution": "DriveMind introduces a multimodal large language model (MLLM) framework that tracks multiple hypotheses (belief states) about driving scenes over time using a particle filtering-inspired method. This belief tracking improves driving performance and decision-making in ambiguous and complex scenarios like unsignalized intersections and oncoming traffic by maintaining diverse potential scene interpretations.",
+      "limitation": "The framework is evaluated primarily on simulated benchmarks; real-world robustness and performance under broader conditions remain to be validated. The approach adds computational complexity due to maintaining multiple concurrent hypotheses, which might challenge real-time deployment.",
+      "gap": "Further research is needed on scaling belief tracking to richer sensory inputs and complex urban driving, as well as integrating this method with downstream planning modules and real-world testing to confirm gains in explainability and safety."
+    },
+    {
+      "id": "2610.30953v1",
+      "contribution": "This work applies causal, counterfactual analysis to assess the coupling between generated reasoning (language explanations) and actual driving actions in vision-language-action (VLA) driving models. It demonstrates that the textual reasoning provided does not strongly influence or reflect the model's trajectory decisions, questioning the interpretability and explainability claims of these systems.",
+      "limitation": "The study focuses on perturbations of specific VLA models and benchmarks; results may vary with alternative architectures or training approaches. It primarily probes correlation, and the mechanisms behind weak reasoning-action coupling are not fully explained.",
+      "gap": "There is a clear necessity for model designs that strengthen the integration between reasoning explanations and action outputs to achieve verifiable and actionable explainability in autonomous driving VLAs."
+    },
+    {
+      "id": "2610.25734v1",
+      "contribution": "LECDrive proposes a novel vision-language-action (VLA) framework that embeds a chain of latent expert cognition components (visual, semantic, geometric) within the model. This hierarchical cognitive structure fosters dense scene understanding in latent space, improving key tasks such as object perception, state prediction, and trajectory planning, thereby enhancing autonomous driving capabilities.",
+      "limitation": "The method requires pretrained foundational vision models and carefully designed latent token representations, which might limit adaptability to diverse domains or sensor modalities. The interplay of cognitive chains and efficiency trade-offs need further exploration.",
+      "gap": "Future work should investigate how to generalize the latent expert cognition paradigm to broader driving environments and incorporate richer, multi-sensor inputs while maintaining real-time performance and interpretability."
+    },
+    {
+      "id": "2610.17903v1",
+      "contribution": "DriveWLA presents a unified World-Language-Action (WLA) model combining three expert modules for semantic understanding, future scene prediction, and trajectory generation, linked via cross-expert attention. Post-training reinforcement learning further refines actions. It achieves strong performance on multiple autonomous driving benchmarks and shows promising zero-shot generalization to new datasets.",
+      "limitation": "The model's complexity with multiple experts and cross-attention mechanisms may increase inference latency. The reliance on separately trained experts and flow-based RL may require extensive tuning and computational resources.",
+      "gap": "Additional research could focus on end-to-end training to enhance integration and efficiency, and exploration of robustness under rare or adversarial scenarios for safer autonomous driving."
+    },
+    {
+      "id": "2610.25448v1",
+      "contribution": "UBD-Bench introduces a systematic benchmark to analyze representation degradation at the unimodal branch level in multimodal perception models for autonomous driving. It reveals that camera branches consistently degrade after multimodal training, unlike LiDAR branches, and proposes a unimodal-to-multimodal distillation to recover representation quality and improve overall performance.",
+      "limitation": "The benchmark focuses on unimodal branch degradation within perception, not directly addressing downstream driving decision or planning performance. The findings may depend on specific model architectures and training setups evaluated.",
+      "gap": "Future work should explore how unimodal degradation impacts end-to-end autonomous driving task performance and develop generalized techniques to preserve unimodal representation quality during multimodal fusion and training."
+    }
+  ],
+  "usage": {
+    "ceiling_usd": 0.059912,
+    "status": "completed",
+    "estimated_cost_usd": 0.012568,
+    "prompt_tokens": 9412,
+    "completion_tokens": 789
+  },
+  "run_id": "manual-distinct-validation"
+}

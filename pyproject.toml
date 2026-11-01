@@ -13,6 +13,7 @@ dev = ["pytest>=8,<10"]
 
 [project.scripts]
 research-agent = "research_agent.cli:main"
+literature-monitor = "research_agent.monitor:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

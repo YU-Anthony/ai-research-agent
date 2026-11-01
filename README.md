@@ -68,3 +68,44 @@ research-agent --runs reports start driving-new --topic 'all:"autonomous driving
 The first analysis used 4,381 input tokens and 1,059 output tokens (estimated $0.003447 at the documented assumed rates). Billing is determined by OpenAI. The human review must verify that evidence supports each claim; abstract-only statements about missing comparisons are tentative, not established gaps. Model-suggested paid baselines need separate authorization. Compute estimates are model speculation and may be inaccurate; no GPU resources have been allocated.
 
 Live API authentication and connectivity were verified in this cloud session. Credentials are provided by the cloud secret proxy; never copy them into files. aiXiv is unused in this workflow. Its official documentation is at https://aixiv.science/api-docs; a public GET succeeds, but no documented read-only Agent Token authentication check was found. The optional adapter remains disabled. Saved environment configuration and publication are separate from current-instance validation.
+
+## Scheduled literature monitoring
+
+The existing agent is reused by `python -m research_agent.monitor` (installed console entry point: `literature-monitor`). It searches arXiv's official Atom API for recent multimodal autonomous driving, driving behavior understanding and explainable driving reasoning papers. The newest 40 results in the lookback window are considered, with up to 20 unseen records sent to one OpenAI ranking request; 5–10 are selected. If fewer than five new records exist, all are summarized and the shortfall is reported. No model call is made when nothing is new. This is a bounded monitor, not an exhaustive systematic review. OpenAlex enrichment is optional and is not implemented.
+
+Stable arXiv IDs with version suffixes removed prevent repeat digests across runs. Only summarized papers are marked seen. Updated versions of already summarized papers are intentionally skipped. Reports include official arXiv links, authors, dates, reported contributions, tentative limitations/research gaps and token/cost accounting; abstract metadata is retained as evidence. No experiments, aiXiv calls or automatic scientific claims are produced.
+
+### Manual execution
+
+Securely provide `OPENAI_API_KEY` in the environment. Confirm the current price ceilings for the pinned `gpt-4.1-mini-2025-04-14` model before running. Example conservative ceilings, to verify against current pricing: $1 input / $4 output per million tokens.
+
+```bash
+export LITERATURE_PRICING_CONFIRMED=true
+export LITERATURE_INPUT_USD_PER_M=1
+export LITERATURE_OUTPUT_USD_PER_M=4
+python -m research_agent.monitor --days 7 --budget-usd 0.20
+```
+
+The default state is `monitor-state/state.json`; report output is `reports/weekly/`. Both are ignored by Git. Use `--state`, `--output`, and `--run-id` to isolate runs. One writer per state file is required. Corrupt state causes a failure rather than a reset.
+
+The model is pinned, endpoint fixed to api.openai.com, redirects disabled, retries disabled, and output limited to 3,500 tokens. A conservative input-token bound uses UTF-8 bytes plus a 4,096-token framing margin. The request stops **before calling** if its calculated ceiling exceeds the configured budget (maximum $0.20), or if price confirmation/rates/credentials are missing. A reservation is persisted before calling; a repeated run ID cannot reserve another request. Provider billing cannot be independently guaranteed: these controls depend on accurate operator-confirmed price ceilings. If pricing is uncertain, leave confirmation unset and the paid step fails closed. Set provider spending limits separately. Each new manual invocation has its own budget; do not launch repeated invocations as an automatic retry policy.
+
+### GitHub Actions settings
+
+After merging `.github/workflows/literature-monitor.yml` into the default branch:
+
+1. Enable GitHub Actions and permit the checkout, setup-python and upload-artifact actions.
+2. Add repository Actions Secret **OPENAI_API_KEY**. The Codex cloud network secret does not automatically configure GitHub Actions Secrets. Never paste a key into a workflow, issue or command log.
+3. Set repository Actions Variables `LITERATURE_PRICING_CONFIRMED=true`, `LITERATURE_INPUT_USD_PER_M`, and `LITERATURE_OUTPUT_USD_PER_M` only after checking current prices.
+4. Permit the workflow's `contents: write` permission and bot pushes to the dedicated `literature-state` branch. Main-branch protection can remain enabled. State is stored as a JSON-only Git commit on that branch; no generated state is committed to main.
+5. Run **Actions → Weekly literature monitor → Run workflow**. Inputs accept 1–90 lookback days and a budget no greater than $0.20.
+
+Schedules use both 13:00 and 14:00 UTC on Mondays; a New York timezone gate selects 09:00 across EST/EDT. The other occurrence skips the monitor job. GitHub schedules run only from the default branch and are best effort: delays past the gate's 09:00 local hour can skip that week's run. Use manual dispatch if necessary. GitHub can disable schedules in inactive public repositories after 60 days.
+
+A repository-wide concurrency group serializes scheduled/manual runs without canceling an active run. The JSON state branch is fetched before work, then updated with a normal non-force push even after ordinary model/report failure. Remote-read failures never silently reset state. State includes seen IDs, run reservations and usage, but no credentials or paper-body payloads. Deleting the state branch resets cross-run deduplication. Hard runner loss before the save step can lose its latest reservation; avoid retrying an uncertain charged run without reviewing OpenAI usage. A rerun with a preserved reservation stops instead of charging again.
+
+Every attempted monitor job uploads `reports/weekly/` and available state as an Actions artifact for 90 days, including machine-readable `status.json` on CLI failure. The job fails on API, validation, budget or state-persistence failures, and GitHub's failure notifications/job summary provide the alert. Early dependency/state-restore failures may occur before report files exist; inspect job logs. Provider response bodies and exception text are deliberately excluded from error reports because they can echo credentials. Public reports are model analyses, not verified full-text conclusions.
+
+Validation commands: `python -m pytest -q`. The monitor tests cover version-independent deduplication, repeated runs with zero calls, fewer-than-five results, unknown/duplicate model references, corrupted state, fail-closed budget checks and safe error reporting. Existing research-agent tests remain intact.
+
+Manual validation evidence is committed under `reports/weekly-monitor-validation/`: the final 30-day run considered 20 unseen records and produced five distinct summaries using one model request. Its conservative preflight ceiling was $0.059912; measured token usage was 9,412 input / 789 output (estimated $0.012568 at the conservative $1/$4 ceilings). An offline replay of those real paper IDs produced zero candidates and zero model calls. 27 tests passed, including DST dates and an actual local bare-Git state-branch roundtrip. Earlier live tests produced 3- and 10-paper digests; subsequent duplicate model responses were safely rejected. The final implementation removes duplicate selections and still requires at least five distinct summaries when enough candidates exist. Usage is now retained before validation. This is local/manual validation, not a completed GitHub-hosted Actions run. A cloud GitHub API policy denial currently prevents PR creation and remote dispatch; allow api.github.com in the active Codex environment. Dispatch also requires the workflow to exist on the default branch first.

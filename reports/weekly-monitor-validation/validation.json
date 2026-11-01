@@ -1,0 +1,13 @@
+{
+  "tests_passed": 27,
+  "manual_live_run": "success",
+  "selected_papers": 5,
+  "dedup_replay": {
+    "status": "success",
+    "selected": 0,
+    "new_candidates": 0,
+    "usage": {}
+  },
+  "github_actions_dispatch": "not_run_api_blocked_and_workflow_not_on_default_branch",
+  "notes": "Earlier manual runs selected 3 and 10 papers; two subsequent responses were rejected before state was marked seen. Final distinct-selection implementation passed. No experiments or aiXiv requests."
+}
