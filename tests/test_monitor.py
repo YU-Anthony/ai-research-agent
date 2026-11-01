@@ -134,7 +134,8 @@ def test_one_request_and_usage_retained_on_bad_response(tmp_path, monkeypatch):
 @pytest.mark.parametrize('stamp,expected',[
     ('2026-07-06T13:00:00+00:00',True),('2026-07-06T14:00:00+00:00',False),
     ('2026-11-02T14:00:00+00:00',True),('2026-11-02T13:00:00+00:00',False),
-    ('2026-11-03T14:00:00+00:00',False)])
+    ('2026-11-03T14:00:00+00:00',True),
+    ('2026-11-07T14:00:00+00:00',True)])
 def test_new_york_schedule_across_dst(stamp,expected):
     from datetime import datetime
     from research_agent.schedule import should_monitor

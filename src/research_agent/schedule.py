@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 
 def should_monitor(event, now):
     local = now.astimezone(ZoneInfo('America/New_York'))
-    return event == 'workflow_dispatch' or (local.weekday() == 0 and local.hour == 9)
+    return event == 'workflow_dispatch' or (local.hour == 9)
 
 
 if __name__ == '__main__':

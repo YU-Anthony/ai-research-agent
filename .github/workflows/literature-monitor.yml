@@ -1,9 +1,9 @@
-name: Weekly literature monitor
+name: Daily literature monitor
 on:
   schedule:
     # New York 09:00 = 13:00 UTC in EDT / 14:00 UTC in EST.
     # The gate below selects the correct occurrence across DST transitions.
-    - cron: '0 13,14 * * 1'
+    - cron: '0 13,14 * * *'
   workflow_dispatch:
     inputs:
       days:

@@ -90,6 +90,8 @@ The default state is `monitor-state/state.json`; report output is `reports/weekl
 
 The model is pinned, endpoint fixed to api.openai.com, redirects disabled, retries disabled, and output limited to 3,500 tokens. A conservative input-token bound uses UTF-8 bytes plus a 4,096-token framing margin. The request stops **before calling** if its calculated ceiling exceeds the configured budget (maximum $0.20), or if price confirmation/rates/credentials are missing. A reservation is persisted before calling; a repeated run ID cannot reserve another request. Provider billing cannot be independently guaranteed: these controls depend on accurate operator-confirmed price ceilings. If pricing is uncertain, leave confirmation unset and the paid step fails closed. Set provider spending limits separately. Each new manual invocation has its own budget; do not launch repeated invocations as an automatic retry policy.
 
+Monitoring runs daily at 09:00 America/New_York. The seven-day lookback is retained to catch indexing delays; persistent IDs prevent repeat summaries. The per-run estimated cap remains $0.20 (up to $6.20 over 31 daily runs); days without new papers make no model call.
+
 ### GitHub Actions settings
 
 After merging `.github/workflows/literature-monitor.yml` into the default branch:
@@ -98,9 +100,9 @@ After merging `.github/workflows/literature-monitor.yml` into the default branch
 2. Add repository Actions Secret **OPENAI_API_KEY**. The Codex cloud network secret does not automatically configure GitHub Actions Secrets. Never paste a key into a workflow, issue or command log.
 3. Set repository Actions Variables `LITERATURE_PRICING_CONFIRMED=true`, `LITERATURE_INPUT_USD_PER_M`, and `LITERATURE_OUTPUT_USD_PER_M` only after checking current prices.
 4. Permit the workflow's `contents: write` permission and bot pushes to the dedicated `literature-state` branch. Main-branch protection can remain enabled. State is stored as a JSON-only Git commit on that branch; no generated state is committed to main.
-5. Run **Actions → Weekly literature monitor → Run workflow**. Inputs accept 1–90 lookback days and a budget no greater than $0.20.
+5. Run **Actions → Daily literature monitor → Run workflow**. Inputs accept 1–90 lookback days and a budget no greater than $0.20.
 
-Schedules use both 13:00 and 14:00 UTC on Mondays; a New York timezone gate selects 09:00 across EST/EDT. The other occurrence skips the monitor job. GitHub schedules run only from the default branch and are best effort: delays past the gate's 09:00 local hour can skip that week's run. Use manual dispatch if necessary. GitHub can disable schedules in inactive public repositories after 60 days.
+Schedules use both 13:00 and 14:00 UTC every day; a New York timezone gate selects 09:00 across EST/EDT. The other occurrence skips the monitor job. GitHub schedules run only from the default branch and are best effort: delays past the gate's 09:00 local hour can skip that day's run. Use manual dispatch if necessary. GitHub can disable schedules in inactive public repositories after 60 days.
 
 A repository-wide concurrency group serializes scheduled/manual runs without canceling an active run. The JSON state branch is fetched before work, then updated with a normal non-force push even after ordinary model/report failure. Remote-read failures never silently reset state. State includes seen IDs, run reservations and usage, but no credentials or paper-body payloads. Deleting the state branch resets cross-run deduplication. Hard runner loss before the save step can lose its latest reservation; avoid retrying an uncertain charged run without reviewing OpenAI usage. A rerun with a preserved reservation stops instead of charging again.
 
