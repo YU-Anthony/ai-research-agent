@@ -10,11 +10,13 @@ dependencies = ["langgraph>=1.0,<2", "langgraph-checkpoint-sqlite>=3,<4", "opena
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]
+experiments = ["numpy>=1.26,<3", "scikit-learn>=1.4,<2"]
 
 [project.scripts]
 research-agent = "research_agent.cli:main"
 literature-monitor = "research_agent.monitor:main"
 research-library = "research_agent.library:main"
+research-experiment = "research_agent.experiment:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
