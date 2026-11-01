@@ -1,0 +1,82 @@
+name: Daily literature monitor
+on:
+  schedule:
+    # New York 09:00 = 13:00 UTC in EDT / 14:00 UTC in EST.
+    # The gate below selects the correct occurrence across DST transitions.
+    - cron: '0 13,14 * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: Recent lookback days (1-90)
+        type: number
+        default: 7
+      budget_usd:
+        description: Maximum estimated API spend (at most 0.20 USD)
+        type: string
+        default: '0.20'
+permissions:
+  contents: read
+concurrency:
+  group: literature-monitor-state
+  cancel-in-progress: false
+jobs:
+  clock:
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.gate.outputs.proceed }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: gate
+        env:
+          EVENT: ${{ github.event_name }}
+        run: PYTHONPATH=src python -m research_agent.schedule
+  monitor:
+    needs: clock
+    if: needs.clock.outputs.proceed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install and test
+        run: |
+          python -m pip install -e '.[dev]'
+          python -m pytest -q
+      - name: Restore durable deduplication state
+        id: restore
+        run: python examples/monitor_state.py restore monitor-state/state.json
+      - name: Generate digest
+        id: digest
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          LITERATURE_PRICING_CONFIRMED: ${{ vars.LITERATURE_PRICING_CONFIRMED }}
+          LITERATURE_INPUT_USD_PER_M: ${{ vars.LITERATURE_INPUT_USD_PER_M }}
+          LITERATURE_OUTPUT_USD_PER_M: ${{ vars.LITERATURE_OUTPUT_USD_PER_M }}
+          DAYS: ${{ inputs.days || '7' }}
+          BUDGET: ${{ inputs.budget_usd || '0.20' }}
+        run: |
+          python -m research_agent.monitor --days "$DAYS" --budget-usd "$BUDGET" --run-id "actions-${GITHUB_RUN_ID}" --output reports/weekly
+      - name: Preserve state even after model or report failure
+        if: always() && steps.restore.outcome == 'success'
+        run: python examples/monitor_state.py save monitor-state/state.json
+      - name: Upload reports and failure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: literature-digest-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            reports/weekly/
+            monitor-state/state.json
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Job summary
+        if: always()
+        env:
+          DIGEST_OUTCOME: ${{ steps.digest.outcome }}
+        run: |
+          printf 'Literature monitor outcome: %s. See job logs and digest artifact. No experiments or aiXiv operations.\n' "$DIGEST_OUTCOME" >> "$GITHUB_STEP_SUMMARY"

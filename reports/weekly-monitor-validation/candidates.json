@@ -1,0 +1,376 @@
+[
+  {
+    "id": "2610.40455v1",
+    "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+    "abstract": "Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: https://kitscenes.com/aerial",
+    "authors": [
+      "Daniel Lengerer",
+      "Richard Schwarzkopf",
+      "Jonas Merkert",
+      "Fabian Immel",
+      "Rupert Polley",
+      "Frank Bieder",
+      "Jan-Hendrik Pauls",
+      "J. Marius Zöllner",
+      "Klaus Bogenberger",
+      "Christoph Stiller",
+      "Carsten Markgraf"
+    ],
+    "published": "2026-10-29T17:01:30Z",
+    "updated": "2026-10-29T17:01:30Z",
+    "url": "https://arxiv.org/abs/2610.40455v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732549+00:00"
+  },
+  {
+    "id": "2610.35521v1",
+    "title": "PRISMA: Differentially Private Synthetic In-Car Telemetry via Differentiable Simulation",
+    "abstract": "Differentially private synthesis of in-car energy consumption data is challenging because the output is high-dimensional, and known lower bounds show that the privacy-utility trade-off degrades with the square root of the number of output dimensions. However, we observe that the intrinsic dimensionality of in-car energy consumption is much lower than that of the raw trace: given a small set of contextual personal variables-such as start point, end point, the car model, and the driving behavior-the consumption profile can be largely explained by publicly available map data (including elevation) combined with a physical model of vehicle energy use. We exploit this low intrinsic dimensionality in PRISMA, a Privacy-preserving In-car Synthesis and Modelling Algorithm. PRISMA involves three stages: (i) energy consumption traces are encoded into a low-dimensional latent space; (ii) the distribution of latent vectors is synthesized using the differentially private tabular data synthesis algorithm AIM, and (iii) samples drawn from this distribution are decoded back into full energy consumption traces via a differentiable physics-based simulation, a step that consumes no additional privacy budget since it uses only public information. By using a compact, physically-grounded latent representation of the traces, PRISMA significantly reduces the effective output dimension. Our experimental results show that PRISMA achieves for a competitive $\\varepsilon = 0.5$ a better data synthesis performance than prior tabular and marginal-based DP synthesis baselines by preserving the diversity of the original power consumption profiles without collapsing to a small set of modes.",
+    "authors": [
+      "Kilian Zeiseweis",
+      "Nele Sophie Brügge",
+      "Marven Kummerfeldt",
+      "Ali Raza",
+      "Esfandiar Mohammadi"
+    ],
+    "published": "2026-10-26T14:40:26Z",
+    "updated": "2026-10-26T14:40:26Z",
+    "url": "https://arxiv.org/abs/2610.35521v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732620+00:00"
+  },
+  {
+    "id": "2610.34689v1",
+    "title": "RSKD: Grounding Semantic Consistency in Driving VLMs via Distillation",
+    "abstract": "Knowledge distillation can transfer large multimodal models to compact models for autonomous driving, but uniform token-level matching can dilute planning-relevant semantics and amplify teacher errors. We propose RSKD, a semantic-consistency-guided distillation framework that routes supervision according to both the task importance of an answer phrase and its semantic consistency with the teacher prediction. Task-critical semantic phrases are localized in the ground-truth answer, and a phrase-level consistency score controls the balance between Jensen--Shannon divergence (JSD) distillation and ground-truth supervision. Teacher information is emphasized only where it is semantically consistent, while semantically inconsistent phrases receive stronger ground-truth supervision. We evaluate RSKD on DrivingVQA, LingoQA, and MapLMv2. RSKD improves over the compared student-based baselines on DrivingVQA and LingoQA and remains competitive on MapLMv2.",
+    "authors": [
+      "Chuchu Xie",
+      "Yang Zhong",
+      "Kangan Qian",
+      "Hao Ye",
+      "Kun Jiang",
+      "Diange Yang"
+    ],
+    "published": "2026-10-26T01:25:38Z",
+    "updated": "2026-10-26T01:25:38Z",
+    "url": "https://arxiv.org/abs/2610.34689v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732657+00:00"
+  },
+  {
+    "id": "2610.33758v1",
+    "title": "Road Infrastructure Perception for Autonomous Driving: Taxonomy, Representations, Tasks, and Challenges",
+    "abstract": "Road infrastructure perception is a fundamental component of autonomous driving, as it recovers the structured road elements that define roadway geometry, delimit operational space, and encode traffic regulations. Although individual tasks such as lane detection, drivable-space estimation, traffic-sign recognition, and online map construction have been extensively studied, the field remains fragmented across task definitions, sensing assumptions, output representations, datasets, and evaluation protocols. This survey provides a function-oriented synthesis of road infrastructure perception. We first clarify its scope and organize existing studies into three complementary categories: geometric-structural, functional-spatial, and regulatory-semantic infrastructure. Based on this taxonomy, we review sensing modalities, scene representations, representative methods, benchmarks, and evaluation protocols, emphasizing the field's evolution from image-space recognition toward metric, vectorized, topology-aware, occupancy-based, and rule-grounded scene modeling. We further examine how representation choices affect evaluation and downstream usability, revealing limitations of current benchmarks in relation reasoning, temporal consistency, robustness, and planning-oriented assessment. Finally, we discuss open challenges and future directions toward unified infrastructure representation, open-environment generalization, relation- and rule-aware reasoning, and downstream-oriented evaluation. By connecting tasks, representations, and evaluation under a common functional framework, this survey aims to establish road infrastructure perception as a coherent foundation for map-compatible and behavior-relevant autonomous-driving scene understanding.",
+    "authors": [
+      "Guoyang Zhao",
+      "Weiqing Qi",
+      "Kai Zhang",
+      "Zhihai Bi",
+      "Tianshuai Hu",
+      "Zeying Gong",
+      "Dezong Zhao",
+      "Jun Ma"
+    ],
+    "published": "2026-10-24T16:01:13Z",
+    "updated": "2026-10-24T16:01:13Z",
+    "url": "https://arxiv.org/abs/2610.33758v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732698+00:00"
+  },
+  {
+    "id": "2610.32612v1",
+    "title": "DriveOSS: Dataset and Benchmark for 3D Anomaly Segmentation and Open-set Semantic Segmentation in Autonomous Driving",
+    "abstract": "Recent advances in 3D semantic segmentation have significantly improved scene understanding in autonomous driving. However, existing methods are typically developed under a closed-set assumption and evaluated under standard driving conditions, where all categories are known in advance. In real-world driving, autonomous vehicles inevitably encounter previously unseen objects, making closed-set perception insufficient for safe deployment. To address this challenge, we introduce DriveOSS, which, to the best of our knowledge, is the first real-world multimodal dataset and benchmark specifically designed for 3D anomaly segmentation and open-set semantic segmentation. It contains 12,661 synchronized and annotated frames captured using six surround-view RGB cameras, a 128-beam LiDAR, and a GPS/IMU unit. The dataset comprises 52 real-world driving scenes collected under clear, nighttime, cloudy, rainy, and snowy conditions and is organized into ID (in-distribution) and OOD (out-of-distribution) subsets. The ID scenes contain only known classes and are used for training, whereas the OOD scenes additionally contain unknown objects annotated as the outlier class and are used for validation and testing. Extensive experiments show that unseen objects remain a major challenge for current 3D perception systems. The dataset, benchmark protocols, and code are available at https://github.com/chrisyan/DriveOSS.",
+    "authors": [
+      "Zhiran Yan",
+      "Savankumar Bhanderi",
+      "Sourabh Lolge",
+      "Rui Song",
+      "Girdharbhai Paneliya",
+      "Shiva Agrawal",
+      "Gordon Elger"
+    ],
+    "published": "2026-10-23T13:33:39Z",
+    "updated": "2026-10-23T13:33:39Z",
+    "url": "https://arxiv.org/abs/2610.32612v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732761+00:00"
+  },
+  {
+    "id": "2610.32069v1",
+    "title": "DriveMind: Mind-Evolving Belief Tracking for Closed-Loop Autonomous Driving",
+    "abstract": "Recent multimodal large language models (MLLMs) can perceive a traffic scene, reason about it, and propose a driving action within a single model. However, existing MLLM-based drivers reason from scratch at each frame and commit to a single explanation, discarding earlier hypotheses about the scene. When the scene is ambiguous, the agent locks in on the wrong interpretation and acts on it before evidence accumulates. In this paper, we propose DriveMind, an MLLM-based driving framework that keeps several hypotheses about the scene alive at the same time and updates their weights as new frames arrive. Inspired by particle filtering, DriveMind propagates each hypothesis through a VLM, scores it against the current observation, and resamples to maintain diversity. On Bench2Drive, adding belief tracking to the same driving pipeline improves the Driving Score (DS) from 68.50 to 81.37 and the Success Rate (SR) from 41.36% to 54.09%. The largest gains occur on ambiguous scenarios such as unsignalized intersections (+20.0 DS) and oncoming-traffic interactions (+20.5 DS). Beyond the overall metrics, DriveMind also improves fine-grained interactive driving abilities such as merging, emergency braking, and give-way.",
+    "authors": [
+      "Yan Shi",
+      "Kehua Chen",
+      "Jiarui Qi",
+      "Yihong Tang",
+      "Haichen Liao",
+      "Yinhai Wang"
+    ],
+    "published": "2026-10-23T02:13:50Z",
+    "updated": "2026-10-23T02:13:50Z",
+    "url": "https://arxiv.org/abs/2610.32069v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732799+00:00"
+  },
+  {
+    "id": "2610.30953v1",
+    "title": "Measuring the Reasoning-Action Coupling in Driving Vision-Language-Action Models through Counterfactuals",
+    "abstract": "Driving vision-language-action (VLA) models bring an appealing form of explainability to a safety-critical domain, since a system that can state the reasons for its maneuvers offers the transparency that deployment and public trust in autonomous driving demand. These models read the world into language before they act on it, describing the scene and reasoning over it in text that ranges from chain-of-thought to multi-stage question answering on the way to a trajectory. That framing quietly assumes two separable properties, namely that the trajectory follows the generated reasoning and that the generated reasoning tracks the causes that actually produce the trajectory. To thoroughly investigate these properties, we apply causal, counterfactual interventions to four driving VLAs across different benchmarks. First, we perturb the models' own reasoning and show that altering its meaning produces small trajectory changes relative to blanking the same models' camera inputs, a pattern that persists across benchmarks and model architectures. We then construct scene-level counterfactuals through photorealistic removal of key objects named in the models' reasoning and analyze whether the generated reasoning and trajectories track these changes. Overall, our findings indicate that the reasoning these models present to account for their resulting driving behavior is weakly coupled to that behavior itself, pointing to limits on the explainability these systems are intended to provide.",
+    "authors": [
+      "Gabriel Manalu",
+      "Saad Wazir",
+      "Thao Do",
+      "Seongah Kim",
+      "Hyeontaek Hwang",
+      "Tolcha Yalew Kidane",
+      "Daeyoung Kim"
+    ],
+    "published": "2026-10-22T09:04:06Z",
+    "updated": "2026-10-22T09:04:06Z",
+    "url": "https://arxiv.org/abs/2610.30953v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732838+00:00"
+  },
+  {
+    "id": "2610.26528v1",
+    "title": "A Semantic Knowledge Graph Construction Pipeline for Vehicle Intention Prediction in nuScenes",
+    "abstract": "Knowledge graphs (KGs) are increasingly used in autonomous driving (AD) to make traffic scene entities and relations explicit for prediction and reasoning. Existing traffic-scene KGs, however, primarily emphasize trajectory forecasting or general scene understanding. This paper presents the nuScenes Intention Knowledge Graph (NIKG), a focused Web Ontology Language (OWL)-based semantic representation and construction pipeline for ego-centric vehicle intention context. NIKG instantiates nuScenes scenes as a self-describing Turtle graph and promotes three intention-relevant relations to first-class properties of each scene participant: ego-relative motion, spatial configuration, and time to collision (TTC) risk. The pipeline uses a small input contract available in many ego-centric driving datasets: ego pose, tracked object annotations, and temporal keyframe order. NIKG is released as an ontology-backed, self-describing graph artifact together with a reproducible construction pipeline and validation protocol for ego-centric intention context. Applying this pipeline to nuScenes mini yields a graph of 211,335 triples across 404 keyframes; under the validation protocol, ego-relative motion labels achieve 92.5% forward consistency. Coverage, semantic consistency, and temporal coherence analyses over this artifact are further reported. NIKG occupies the space between scene-oriented traffic KGs and intention-prediction models: a small, explicit semantic layer intended to support downstream work such as knowledge graph embedding (KGE), SPARQL-based feature extraction, or hybrid neuro-symbolic reasoning.",
+    "authors": [
+      "Khaled Nowara",
+      "Mohamed Manzour",
+      "Catherine Elias"
+    ],
+    "published": "2026-10-19T14:56:03Z",
+    "updated": "2026-10-19T14:56:03Z",
+    "url": "https://arxiv.org/abs/2610.26528v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732870+00:00"
+  },
+  {
+    "id": "2610.25734v1",
+    "title": "Think Densely, Act Sparsely: Latent Expert Cognitive Chains for Vision-Language-Action Autonomous Driving",
+    "abstract": "Autonomous driving fundamentally demands dense understanding of visual, semantic, and geometric information, yet existing Vision-Language-Action (VLA) models are typically trained with sparse supervision such as language instructions or trajectory signals. This direct mapping from dense visual observations to sparse representations forces the model to compress or even discard critical scene information essential for safe driving. We argue that this limitation does not stem from insufficient model capacity, but from the lack of explicit mechanisms that encourage the formation of dense world representations in the latent space. In this spirit, we propose a novel paradigm for driving intelligence, Think Densely, Act Sparsely, and instantiate it with an efficient and interpretable framework, LECDrive (Latent Expert Cognitive Chains for Vision-Language-Action autonomous Driving). The core idea is to mimic the hierarchical perception process of humans by embedding a progressive chain of latent expert cognition within the VLA model. Concretely, we inject a compact set of task-specific latent tokens as carriers, enabling the model to internalize dense knowledge from foundational vision models, including visual representations (DINOv3), semantic structures (SAM3), and spatial geometry (DepthAnything3), while maintaining efficient inference. This interdependent cognitive chain follows a curriculum learning principle, where supervision is progressively structured from representation to semantics and geometry. Extensive experiments demonstrate that LECDrive consistently improves the performance of base VLMs across multiple autonomous driving benchmarks, covering key tasks such as object perception, state prediction, and trajectory planning. These findings suggest that constructing dense world models through structured latent expert chains is a promising direction for VLA-based autonomous driving.",
+    "authors": [
+      "Jie Wang",
+      "Guang Li",
+      "Zhijian Huang",
+      "Jinlong Li",
+      "Chenxu Dang",
+      "Hangjun Ye",
+      "Yahong Han",
+      "Long Chen"
+    ],
+    "published": "2026-10-19T03:37:38Z",
+    "updated": "2026-10-19T03:37:38Z",
+    "url": "https://arxiv.org/abs/2610.25734v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732914+00:00"
+  },
+  {
+    "id": "2610.25448v1",
+    "title": "UBD-Bench: Benchmarking and Analyzing Unimodal Branch Degradation in Multimodal Perception for Autonomous Driving",
+    "abstract": "Multimodal perception improves autonomous-driving performance by combining complementary sensor information. However, stronger multimodal predictions do not necessarily imply stronger representations in each modality-specific branch. Such branch-level weaknesses can remain hidden in conventional output-level evaluation. We introduce UBD-Bench, a systematic benchmark for studying unimodal branch degradation (UBD) in multimodal perception. UBD-Bench uses a Paired Frozen-Branch Probe to compare the task-relevant representation quality of the same modality after independent unimodal training and multimodal joint training under matched decoding conditions. Across four autonomous-driving perception tasks and 10 models, we find that Camera branches consistently degrade after multimodal joint training, whereas LiDAR branches exhibit weaker and more model-dependent changes, revealing a pronounced modality asymmetry. Hierarchical probing further shows that Camera-branch degradation extends from the visual backbone through the Camera-to-BEV pathway and is most severe at the pre-fusion Camera BEV representation. Guided by this diagnosis, we introduce unimodal-to-multimodal distillation at the degraded representation. This intervention consistently improves both Camera-branch Probe performance and full-model performance across all four tasks. These results show that multimodal gains can coexist with degraded unimodal representations, highlighting branch-level representation quality as an important dimension for evaluating and improving multimodal perception.",
+    "authors": [
+      "Ang Liu",
+      "Xiang Gu",
+      "Ruikai Li",
+      "Qiyue Wang",
+      "Yizhe Fan",
+      "Hao Shan",
+      "Ziyang Yan",
+      "Han Jiang",
+      "Zhenning Li",
+      "Xiaoshuai Hao",
+      "Yilong Ren",
+      "Zhiyong Cui",
+      "Haiyang Yu"
+    ],
+    "published": "2026-10-18T18:11:32Z",
+    "updated": "2026-10-18T18:11:32Z",
+    "url": "https://arxiv.org/abs/2610.25448v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732955+00:00"
+  },
+  {
+    "id": "2610.24590v1",
+    "title": "Scene-Adaptive VLA: Efficient Autonomous Driving via Dynamic Layer Routing",
+    "abstract": "Vision-Language-Action (VLA) models offer a promising paradigm for autonomous driving. However, the massive parameter scale of VLAs strains onboard computational resources during real-time inference. This directly increases energy consumption and limits vehicle battery range, making it critical to minimize computational overhead without compromising driving capability and explainability. Current research on efficient VLA-based driving focuses on sequential adaptation (\\textit{e.g.}, Chain-of-Thought and token adjustment), leaving structural adaptation underexplored despite parameter redundancy across dynamic driving scenes. To address this gap, we propose Scene-Adaptive VLA, an efficient framework leveraging dynamic layer routing to adjust active parameters based on real-time scenes. Inspired by the temporal continuity of scenes and model predictive uncertainty, our approach characterizes model-perceived scene complexity via frame-level temporal scene variations and decision deviations. To uncover latent scene-to-parameter correspondences, we encode this characterization into scene-aware tokens, alongside two specialized queries. A budget-conditioned layer routing mechanism evaluates these refined queries to allocate a budget that determines the active parameter ratio and subsequently selects appropriate layer combinations. The entire framework is optimized end-to-end. Extensive evaluations on the Bench2Drive benchmark show that when adapted to a state-of-the-art VLA model, our approach significantly reduces inference-time computational overhead by 53.5\\% with negligible degradation in driving and language capabilities. Code is available at https:github.com/yang-luvu/Scene-Adaptive-VLA.",
+    "authors": [
+      "Yujia Yang",
+      "Quan Yuan",
+      "Jiawei Fan",
+      "Yang Li",
+      "Tiange Fu",
+      "Xiaoyuan Fu",
+      "Guiyang Luo",
+      "Jinglin Li"
+    ],
+    "published": "2026-10-17T09:53:47Z",
+    "updated": "2026-10-17T09:53:47Z",
+    "url": "https://arxiv.org/abs/2610.24590v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.732992+00:00"
+  },
+  {
+    "id": "2610.23356v1",
+    "title": "STC-MGNet: Spatial-Temporal-Channel Attention-Enhanced Multimodal Graph Network for Pedestrian Intention Prediction",
+    "abstract": "Accurate prediction of pedestrian crossing intentions plays a critical role in enhancing the safety of pedestrian-vehicle interactions in autonomous driving. However, effectively capturing subtle spatiotemporal patterns in pedestrian pose sequences and integrating complementary visual and ego-vehicle motion information remain challenging. This paper proposes a spatial-temporal-channel attention-enhanced multimodal graph network (STC-MGNet) for pedestrian crossing intention prediction. STC-MGNet introduces a spatial-temporal-channel (STC) attention-enhanced pose graph encoder to learn discriminative representations from pedestrian pose sequences. Three parallel attention branches selectively emphasize informative skeletal joints, observation frames, and feature channels, with their outputs integrated through learnable fusion weights. To leverage complementary visual and ego-vehicle motion information, a multi-stage cross-modal channel modulation mechanism is introduced to adaptively refine pose representations through modality-specific channel gating at successive graph encoding stages. Experimental results demonstrate that STC-MGNet achieves accuracy rates of 70%, 87%, and 88% on the JAADbeh, JAADall, and PIE datasets, respectively, outperforming several representative baseline methods. Ablation experiments further highlight the complementary contributions of visual and ego-vehicle motion information to prediction performance.",
+    "authors": [
+      "Yuanzhe Li",
+      "Meng Wang"
+    ],
+    "published": "2026-10-16T12:01:05Z",
+    "updated": "2026-10-16T12:01:05Z",
+    "url": "https://arxiv.org/abs/2610.23356v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733020+00:00"
+  },
+  {
+    "id": "2610.23262v1",
+    "title": "Expand-and-Prune: Test-Time Candidate-Space Adaptation for End-to-End Autonomous Driving",
+    "abstract": "Candidate-based end-to-end driving planners reason over a finite set of trajectory hypotheses. However, for sparse planners, a limited candidate set may provide insufficient support for scene-relevant maneuvers, while fixed downstream candidate budgets do not account for prediction uncertainty. To address these challenges, we introduce Expand-and-Prune, a test-time framework that jointly adapts candidate support and capacity without updating learned parameters. The framework expands the native candidate set using semantic driving intent and temporally propagated predictions and then uses uncertainty in intermediate trajectory scores to adaptively prune the resulting candidates. Across four heterogeneous candidate-based planners and four benchmarks, Expand-and-Prune consistently improves planning performance. It achieves state-of-the-art results on LangAuto, increasing the Driving Score from 68.2 to 75.9, while providing further improvement on Bench2Drive, Fail2Drive, and NAVSIMv2, with particularly strong improvements in out-of-distribution scenarios. Moreover, in its full instantiation, 72.5% of selected trajectories originate from the newly introduced intent-guided or temporal candidates, confirming that candidate-space expansion provides useful hypotheses beyond those generated natively by the planner. The code is available at https://github.com/iis-esslingen/Expand-and-Prune.",
+    "authors": [
+      "Fabian Schmidt",
+      "Karol Fedurko",
+      "Markus Enzweiler",
+      "Abhinav Valada"
+    ],
+    "published": "2026-10-16T10:34:12Z",
+    "updated": "2026-10-16T10:34:12Z",
+    "url": "https://arxiv.org/abs/2610.23262v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733049+00:00"
+  },
+  {
+    "id": "2610.22825v1",
+    "title": "World Action Critic (WAC) Model: Joint Foresight and Criticism for Policy Learning",
+    "abstract": "World models have shown considerable promise in sequential decision-making by anticipating the consequences of actions and providing predictive foresight for policy learning. However, learning to reason about counterfactual actions remains challenging, since predictive objectives may underemphasize information critical for action evaluation, while unexecuted actions lack observed futures for direct supervision. To address these challenges, we propose the World Action Critic (WAC) Model, which proposes multimodal action candidates and jointly learns candidate-conditioned future prediction and consequence evaluation. In our proposed framework, critic supervision directly shapes intermediate predictive representations during rollout, encouraging them to retain information needed to distinguish action quality. Observed futures supervise prediction for executed actions, while external task-quality targets provide evaluation signals for counterfactual candidates. Through joint optimization, critic signals from these candidates propagate into predictive representations without requiring their observed futures. Our theoretical analysis characterizes critic-guided feature retention and bounds candidate-selection regret. Applied to autonomous driving, WAC achieves 93.4 PDMS on NAVSIM-v1, demonstrating the effectiveness of jointly learning predictive foresight and consequence evaluation.",
+    "authors": [
+      "Xiangteng Zhang",
+      "Haoyuan Liu",
+      "Yang Guan",
+      "Jingliang Duan",
+      "Yao Lyu",
+      "Tao Zhang",
+      "Shuai Zhang",
+      "Kehua Sheng",
+      "Bo Zhang",
+      "Shengbo Eben Li"
+    ],
+    "published": "2026-10-16T02:05:03Z",
+    "updated": "2026-10-16T02:05:03Z",
+    "url": "https://arxiv.org/abs/2610.22825v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733086+00:00"
+  },
+  {
+    "id": "2610.22795v1",
+    "title": "STRIDE: Evaluating Spatiotemporal Reasoning in Driving Edge Cases",
+    "abstract": "In autonomous driving, perceiving surrounding objects is not enough: failing to understand how they move and interact over time can lead to dangerous decisions. Evaluating vision-language models (VLMs) therefore requires testing whether they connect past spatial observations to future consequences. Yet existing benchmarks often assess edge cases through basic perception questions or test temporal understanding in simple scenarios, leaving complex spatiotemporal reasoning underexplored. We introduce STRIDE (SpatioTemporal Reasoning In Driving Edge Cases), an object-centric benchmark for long-tail, safety-critical driving scenarios. STRIDE covers six task families: spatial perception, spatial understanding, temporal memory, temporal extrapolation, trajectory prediction, and scene-context awareness. It pairs multiple-choice questions probing individual spatiotemporal judgments with related free-form visual question answering (VQA) requiring detailed scene explanations and justifications of driving decisions. We prioritize scenes with unusual object behaviors and complex traffic interactions, generate reference answers from structured dataset annotations through automated procedures, and use limited language-model assistance and human verification to ensure annotation quality. Across 12 proprietary, open-weight, and driving-specialized models, even the best performer, GPT-6-Astra, achieves only 43.4% average multiple-choice accuracy, versus an approximately 20% random-choice baseline. Further analysis reveals that strong performance in describing driving scenes does not necessarily translate to accurate safety-critical judgments, and that models struggle more with reconstructing object motion than recalling past positions. STRIDE thus exposes spatiotemporal driving limitations that aggregate VQA scores can conceal.",
+    "authors": [
+      "Lieqi Liu",
+      "Rui gao",
+      "Jia-Chen Gu",
+      "Wenbo Hu",
+      "Zhaobin Mo",
+      "Ahmadreza Moradipari",
+      "Nejib Ammar",
+      "Wei Wang",
+      "Nanyun Peng"
+    ],
+    "published": "2026-10-16T01:13:23Z",
+    "updated": "2026-10-16T01:13:23Z",
+    "url": "https://arxiv.org/abs/2610.22795v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733127+00:00"
+  },
+  {
+    "id": "2610.22215v1",
+    "title": "FutureLift: Lifting Trajectory Proposals into Bidirectional Future Graphs for Motion Forecasting",
+    "abstract": "Accurate motion prediction is critical for safe autonomous driving, yet even strong forecasters leave residual errors in their multimodal proposals. Existing refiners compress complete proposals or update their segments sequentially, preventing the full proposed future from serving as explicit relational context for correction. We introduce FutureLift, a backbone-agnostic refiner that represents each multimodal proposal as a heterogeneous future graph, with spatially grounded temporal nodes connected to agent histories, map elements, alternative modes, and, for joint prediction, other agents future trajectories. Bidirectional temporal edges allow later evidence to revise earlier segments in a single pass, and the updated nodes predict residual coordinate and confidence corrections. Requiring only proposals, scores, and scene context, FutureLift provides a common refinement interface for structurally different forecasting backbones. On Argoverse2 and the Waymo Open Motion Dataset, it consistently improves frozen proposals and outperforms native and specialized refiners across marginal and joint forecasting. On the WOMD motion-prediction leaderboard, FutureLift ranks first in minADE (0.5049m) and minFDE (0.9942m) among the compared standard-input methods, without LiDAR or ensembling, while achieving a competitive 0.4874 Soft mAP.",
+    "authors": [
+      "Daniel Grimm",
+      "J. Marius Zöllner"
+    ],
+    "published": "2026-10-15T17:00:40Z",
+    "updated": "2026-10-15T17:00:40Z",
+    "url": "https://arxiv.org/abs/2610.22215v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733154+00:00"
+  },
+  {
+    "id": "2610.21912v1",
+    "title": "Learning Rewards in Strategic Games",
+    "abstract": "Understanding the objectives that drive agents' behavior is crucial in strategic environments, where multiple agents interact and adapt to one another. This challenge arises in domains such as cybersecurity, autonomous driving, and online markets, where agents' underlying incentives are typically unknown and must be inferred from their observed behavior. Inverse reinforcement learning (IRL) provides a natural framework for this problem, but extending IRL to strategic multi-agent settings introduces a fundamental challenge: a reward that explains observed behavior does not necessarily induce optimal strategies when used for decision-making. In this work, we study this problem through the lens of \\emph{strategic identifiability}, and show that learning from a fixed policy pair can be insufficient to strategically identify rewards, independent of the number of expert samples $K$. Motivated by this, we introduce an active IRL algorithm for two-player repeated Stackelberg games, in which the leader adaptively selects policies to elicit informative responses about the follower's reward. Combining maximum-likelihood estimation with experimental design, we derive finite-sample guarantees on the Stackelberg sub-optimality induced by the learned reward, matching up to polylogarithmic factors a new minimax learning rate of $K^{-1/2}$. Finally, we evaluate our approach in a realistic anti-poaching setting, demonstrating the benefits of active exploration for reward recovery and downstream strategic performance.",
+    "authors": [
+      "Antoine Bergerault",
+      "Cyrille Kone",
+      "Giorgia Ramponi"
+    ],
+    "published": "2026-10-15T13:59:45Z",
+    "updated": "2026-10-15T13:59:45Z",
+    "url": "https://arxiv.org/abs/2610.21912v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733188+00:00"
+  },
+  {
+    "id": "2610.20609v1",
+    "title": "SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving",
+    "abstract": "Vision-Language-Action (VLA) models are gaining attention in autonomous driving, inheriting commonsense priors from large language models (LLMs) and widening the navigation interface from a fixed command set to free-form natural-language instructions. However, this open-ended interface exposes a new vulnerability surface: an inattentive driver may issue instructions that are unsafe given the current scene, and a malicious user may issue dangerous ones on purpose. We present the first benchmark suite that evaluates navigation following and conflict awareness together, along with adversarial robustness. Existing VLAs fall short on both: SimLingo completes no language-instructed lane change in closed loop, and all models degrade sharply under conflicting signals. We propose SafeDriveVLA, the first driving VLA that (1) explicitly predicts a three-level navigation-compliance mode to decouple conflict reasoning from action generation, and (2) uses navigation-conditioned world model dreaming to inform this prediction. Unlike prior world models that roll out expert or planned actions, ours dreams of strictly following the navigation signal, showing when following is safe. SafeDriveVLA reaches 88.16 Driving Score (DS) and 68.64% Success Rate (SR) on Bench2Drive, lifts closed-loop language following by 49.3% and reduces collisions under unsafe instructions from 60 to 38 compared to the best SimLingo variant. Video demonstrations are available on our project page.",
+    "authors": [
+      "Shaoyuan Xie",
+      "Zihan Zhang",
+      "Jingxuan Wang",
+      "Jiashu Qu",
+      "Xiaoqing Liang",
+      "Lingdong Kong",
+      "Junchi Lu",
+      "Henrik I. Christensen",
+      "Qi Alfred Chen"
+    ],
+    "published": "2026-10-14T17:59:56Z",
+    "updated": "2026-10-14T17:59:56Z",
+    "url": "https://arxiv.org/abs/2610.20609v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733227+00:00"
+  },
+  {
+    "id": "2610.18373v1",
+    "title": "DR-VLA: Learning Human-Like Quadruped Navigation from Egocentric Web Videos via Domain-Invariant Scene Representations",
+    "abstract": "Quadruped robots performing outdoor deliveries must interpret complex scenes, anticipate changes, and navigate in socially compliant ways. Robot demonstrations are costly to collect at the scale needed for generalization. Egocentric web videos offer abundant human navigation experience, but differences in viewpoint and motion make this experience difficult to transfer to robots. We introduce DR-VLA, a Mixture-of-Transformers framework that transfers human navigation experience through a domain-invariant scene representation (DISR). The framework combines vision-language understanding and latent world modeling with a flow-matching action expert. We introduce EgoLynx, comprising 10,000 hours of curated egocentric web video (EgoLynx-Web) and 2,000 clips of teleoperated robot navigation collected during real-world deliveries (EgoLynx-Robot). We pretrain the understanding and world experts on EgoLynx-Web without action labels, then adapt the model to robot observations and train the action expert on EgoLynx-Robot to predict executable trajectories. We also propose the Quadruped Navigation Score (QNS), a pseudo-closed-loop metric combining safety, instruction compliance, comfort, and progress. On the held-out EgoLynx-Robot test split, DR-VLA improves QNS by approximately 5% and reduces open-loop final heading error (FHE) by 14.6%, each relative to the best competing result for that metric. Ablations show that web-video pretraining improves generalization and that the model's key components contribute to performance. As a future-prediction target, DISR outperforms five generic visual representations and yields performance close to task-specific 3D perception without dedicated geometric labels or point clouds for target construction. Trained separately on NAVSIM v1 without web pretraining, DR-VLA achieves 92.1 PDMS, suggesting that the framework also applies to autonomous driving.",
+    "authors": [
+      "Jun Tian",
+      "Yingjie Niu",
+      "Ruo Chen",
+      "Hongyi Lin",
+      "Chao Li"
+    ],
+    "published": "2026-10-13T13:28:59Z",
+    "updated": "2026-10-13T13:28:59Z",
+    "url": "https://arxiv.org/abs/2610.18373v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733265+00:00"
+  },
+  {
+    "id": "2610.17903v1",
+    "title": "DriveWLA: Unifying Future Dynamics and Scene Semantics through World-Language-Action Modeling for Autonomous Driving",
+    "abstract": "Vision-Language Models (VLMs) and world models have demonstrated strong capabilities in semantic understanding and future scene evolution for autonomous driving. However, effectively integrating both capabilities for trajectory generation remains challenging. In this work, we propose DriveWLA, a unified World-Language-Action model based on Mixture-of-Transformers (MoT) that jointly models semantic understanding, future scene dynamics, and trajectory generation. DriveWLA consists of three experts: a World Expert for future prediction, a Language Expert for semantic understanding, and an Action Expert for trajectory generation. We further introduce Cross-Expert Attention, which enables controlled information flow across experts while aligning semantic and dynamic representations. To improve trajectory generation beyond imitation learning, we apply Flow-GRPO reinforcement learning post-training to refine the Action Expert. Extensive experiments show that DriveWLA achieves superior performance in both open-loop and closed-loop evaluation. DriveWLA achieves 92.3 PDMS on NAVSIM v1 and 90.1 EPDMS on NAVSIM v2, demonstrating strong performance among VLM-based and world-model-based planners. Without specific fine-tuning, DriveWLA further demonstrates strong zero-shot generalization to HUGSIM, nuScenes, and Bench2Drive. These results validate the effectiveness of our unified World-Language-Action modeling, establishing DriveWLA as a generalizable framework for autonomous driving.",
+    "authors": [
+      "Shuzheng Wang",
+      "Haoxuan Li",
+      "Shengzhen Li",
+      "Chenxi Wu",
+      "Yajing Sun",
+      "Lu Hou",
+      "Wenyu Liu",
+      "Xinggang Wang"
+    ],
+    "published": "2026-10-13T07:56:37Z",
+    "updated": "2026-10-13T07:56:37Z",
+    "url": "https://arxiv.org/abs/2610.17903v1",
+    "source": "https://export.arxiv.org/api/query",
+    "retrieved_at": "2026-11-01T04:07:04.733300+00:00"
+  }
+]

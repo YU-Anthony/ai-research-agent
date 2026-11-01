@@ -7,3 +7,5 @@ runs/
 *.sqlite*
 
 .env.*
+monitor-state/
+reports/weekly/
