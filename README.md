@@ -132,3 +132,11 @@ ArXiv-only discovery is implemented. OpenAlex/Semantic Scholar adapters, citatio
 ## Narrow CPU experiment framework (not yet run on real data)
 
 [Temporal-consistency protocol](docs/experiments/temporal-consistency-protocol.md) defines one pedestrian crossing-action experiment. Driver behavior/intention, VLM explanation and emotion-recognition tasks are excluded from this pilot. The framework includes a validated JSONL window interface, last-frame/temporal Logistic Regression, validation-only calibration/thresholds, temporal-consistency abstention, recording-group bootstrap, and explicit per-run CPU approval with hashes and a hard launcher timeout. Optional dependencies: `pip install -e '.[dev,experiments]'`. Run `pytest -q` with these extras to exercise the synthetic software smoke tests; these tests are skipped if optional numerical dependencies are absent. No experiment runs from GitHub literature monitoring. Real PIE access, licensing, label alignment and the data converter remain outstanding; synthetic fixtures are not experimental findings. A real CPU run needs a separately reviewed dataset/config and `--approve-cpu-run`.
+
+### Daily literature monitoring with Zotero
+
+The monitor now schedules daily at 09:00 America/New_York (best-effort GitHub
+execution), with optional manual dispatch. Ranked papers are deduplicated and
+saved to Zotero with tentative collections and tags. Configure GitHub Actions
+secrets/variables separately from cloud credentials; see [setup and failure
+handling](docs/daily-zotero.md). Reports are Actions artifacts under reports/daily.

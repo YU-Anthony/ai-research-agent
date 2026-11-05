@@ -1,9 +1,10 @@
-name: Weekly research monitor
+name: Daily research monitor
 on:
   schedule:
     # New York 09:00 = 13:00 UTC in EDT / 14:00 UTC in EST.
     # The gate below selects the correct occurrence across DST transitions.
-    - cron: '0 13,14 * * 1'
+    - cron: '0 13 * * *'
+    - cron: '0 14 * * *'
   workflow_dispatch:
     inputs:
       days:
@@ -29,6 +30,7 @@ jobs:
       - id: gate
         env:
           EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
         run: PYTHONPATH=src python -m research_agent.schedule
   monitor:
     needs: clock
@@ -60,7 +62,14 @@ jobs:
           DAYS: ${{ inputs.days || '7' }}
           BUDGET: ${{ inputs.budget_usd || '0.20' }}
         run: |
-          python -m research_agent.monitor --days "$DAYS" --budget-usd "$BUDGET" --run-id "actions-${GITHUB_RUN_ID}" --output reports/weekly
+          python -m research_agent.monitor --days "$DAYS" --budget-usd "$BUDGET" --run-id "actions-${GITHUB_RUN_ID}" --output reports/daily
+      - name: Sync selected literature to Zotero
+        if: always() && steps.digest.outcome == 'success'
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+          ZOTERO_LIBRARY_ID: ${{ vars.ZOTERO_LIBRARY_ID }}
+          ZOTERO_LIBRARY_TYPE: ${{ vars.ZOTERO_LIBRARY_TYPE || 'user' }}
+        run: python -m research_agent.zotero
       - name: Preserve state even after model or report failure
         if: always() && steps.restore.outcome == 'success'
         run: python examples/monitor_state.py save monitor-state/state.json
@@ -70,7 +79,7 @@ jobs:
         with:
           name: literature-digest-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
-            reports/weekly/
+            reports/daily/
             monitor-state/state.json
             monitor-state/library.sqlite
           if-no-files-found: warn
