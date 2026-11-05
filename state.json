@@ -32,6 +32,26 @@
     "2611.04034": {
       "reported_at": "2026-11-05T14:50:13.688848+00:00",
       "version": "2611.04034v1"
+    },
+    "2611.06353": {
+      "reported_at": "2026-11-05T14:53:58.278470+00:00",
+      "version": "2611.06353v1"
+    },
+    "2611.02790": {
+      "reported_at": "2026-11-05T14:53:58.278470+00:00",
+      "version": "2611.02790v1"
+    },
+    "2611.02648": {
+      "reported_at": "2026-11-05T14:53:58.278470+00:00",
+      "version": "2611.02648v1"
+    },
+    "2611.02076": {
+      "reported_at": "2026-11-05T14:53:58.278470+00:00",
+      "version": "2611.02076v1"
+    },
+    "2611.00718": {
+      "reported_at": "2026-11-05T14:53:58.278470+00:00",
+      "version": "2611.00718v1"
     }
   },
   "requests": {
@@ -41,6 +61,13 @@
       "estimated_cost_usd": 0.007366800000000001,
       "prompt_tokens": 11113,
       "completion_tokens": 1826
+    },
+    "actions-42049413510": {
+      "ceiling_usd": 0.0246304,
+      "status": "completed",
+      "estimated_cost_usd": 0.005458,
+      "prompt_tokens": 7133,
+      "completion_tokens": 1628
     }
   },
   "papers": {
@@ -57,7 +84,7 @@
       "updated": "2026-11-04T16:50:17Z",
       "url": "https://arxiv.org/abs/2611.06770v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.619271+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266361+00:00"
     },
     "2611.06353": {
       "id": "2611.06353v1",
@@ -77,7 +104,7 @@
       "updated": "2026-11-04T11:15:20Z",
       "url": "https://arxiv.org/abs/2611.06353v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.619340+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266405+00:00"
     },
     "2611.06204": {
       "id": "2611.06204v1",
@@ -112,7 +139,7 @@
       "updated": "2026-11-04T08:43:07Z",
       "url": "https://arxiv.org/abs/2611.06162v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.619424+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266455+00:00"
     },
     "2611.06007": {
       "id": "2611.06007v1",
@@ -212,7 +239,7 @@
       "updated": "2026-11-02T22:20:23Z",
       "url": "https://arxiv.org/abs/2611.04029v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.619818+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266598+00:00"
     },
     "2611.02790": {
       "id": "2611.02790v1",
@@ -227,7 +254,7 @@
       "updated": "2026-11-02T09:03:14Z",
       "url": "https://arxiv.org/abs/2611.02790v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.619853+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266618+00:00"
     },
     "2611.02648": {
       "id": "2611.02648v1",
@@ -242,7 +269,7 @@
       "updated": "2026-11-02T07:10:16Z",
       "url": "https://arxiv.org/abs/2611.02648v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.619888+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266640+00:00"
     },
     "2611.02240": {
       "id": "2611.02240v1",
@@ -270,7 +297,7 @@
       "updated": "2026-11-01T19:47:23Z",
       "url": "https://arxiv.org/abs/2611.02157v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.619957+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266681+00:00"
     },
     "2611.02076": {
       "id": "2611.02076v1",
@@ -288,7 +315,7 @@
       "updated": "2026-11-01T17:30:51Z",
       "url": "https://arxiv.org/abs/2611.02076v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.619996+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266703+00:00"
     },
     "2611.01996": {
       "id": "2611.01996v1",
@@ -319,7 +346,7 @@
       "updated": "2026-10-31T21:38:40Z",
       "url": "https://arxiv.org/abs/2611.01286v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.620068+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266744+00:00"
     },
     "2611.00718": {
       "id": "2611.00718v1",
@@ -340,7 +367,7 @@
       "updated": "2026-10-31T07:32:06Z",
       "url": "https://arxiv.org/abs/2611.00718v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.620112+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266769+00:00"
     },
     "2610.42121": {
       "id": "2610.42121v1",
@@ -353,7 +380,7 @@
       "updated": "2026-10-30T17:53:28Z",
       "url": "https://arxiv.org/abs/2610.42121v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.620153+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266791+00:00"
     },
     "2610.41352": {
       "id": "2610.41352v1",
@@ -368,7 +395,7 @@
       "updated": "2026-10-30T07:14:52Z",
       "url": "https://arxiv.org/abs/2610.41352v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.620186+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266810+00:00"
     },
     "2610.40801": {
       "id": "2610.40801v1",
@@ -388,7 +415,7 @@
       "updated": "2026-10-29T18:01:30Z",
       "url": "https://arxiv.org/abs/2610.40801v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.620228+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266834+00:00"
     },
     "2610.40455": {
       "id": "2610.40455v1",
@@ -411,7 +438,7 @@
       "updated": "2026-10-29T17:01:30Z",
       "url": "https://arxiv.org/abs/2610.40455v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:50:14.620275+00:00"
+      "retrieved_at": "2026-11-05T14:53:59.266861+00:00"
     }
   },
   "history": {
@@ -579,6 +606,143 @@
         "estimated_cost_usd": 0.007366800000000001,
         "prompt_tokens": 11113,
         "completion_tokens": 1826
+      }
+    },
+    "actions-42049413510": {
+      "created_at": "2026-11-05T14:53:58.278470+00:00",
+      "papers": [
+        {
+          "id": "2611.06353v1",
+          "contribution": "Introduces Traffic-VL, an 8B parameter vision-language model for direct multi-view image and natural language inputs to traffic signal control, trained via offline RL on photorealistic SynTra-V data, achieving robust generalization across topologies and conditions.",
+          "limitation": "Relies on simulation-to-real generalization; real-world deployment details are limited; model size and RL training complexity might constrain applicability.",
+          "gap": "Unclear how well the approach scales to highly dynamic or unstructured urban settings or integrates heterogeneous sensor modalities beyond cameras."
+        },
+        {
+          "id": "2611.02790v1",
+          "contribution": "Presents MultiMental-IAS, a large multimodal dataset for driver mental state analysis with synchronized EEG, PPG, vehicle telemetry, and video, enabling non-IID evaluation and driver-state personalization with detailed protocols.",
+          "limitation": "Data collected in a simulated driving cockpit may limit ecological validity; limited to 23 participants and certain induced states.",
+          "gap": "Application to real-world driving contexts with naturalistic stressors and broader populations remains to be explored."
+        },
+        {
+          "id": "2611.02648v1",
+          "contribution": "Proposes ReinSeg, a retrieval-guided multimodal framework combining LiDAR and surround-view images for accurate 3D road anomaly segmentation, improving detection and reducing false positives at high speed.",
+          "limitation": "Dependent on quality and alignment of camera-LiDAR data; reliance on frozen LIDO module may limit adaptability; tested on a specific benchmark (STU).",
+          "gap": "Integration with downstream autonomous driving planning and explanation modules not addressed; robustness in diverse weather or occlusion scenarios uncertain."
+        },
+        {
+          "id": "2611.02076v1",
+          "contribution": "Develops a scene-adaptive readout and decoding framework for diffusion-driving vision-language-action models, dynamically adjusting inference depth and layer readouts, achieving speedup and improved trajectory error on Waymo E2E and nuScenes.",
+          "limitation": "Focuses on efficiency and per-scene adaptation without explicit interpretability of reasoning steps; tested on two datasets, generalization to other domains unclear.",
+          "gap": "Potential for incorporating explicit explainable reasoning mechanisms and human-understandable intermediate outputs."
+        },
+        {
+          "id": "2611.00718v1",
+          "contribution": "Presents STEER, a generic over-reasoning mitigation strategy for vision-language action models in autonomous driving, enabling adaptive reasoning without manual scene-difficulty labels, optimizing route decisions for planning quality and inference efficiency.",
+          "limitation": "Evaluation limited to NAVSIM v1/v2; subjective complexity of driving scenarios might affect generalizability; implementation complexity of uncertainty-aware rollout.",
+          "gap": "Extension to real-world driving datasets and integration with multimodal perception inputs remains to be demonstrated."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal perception combining LiDAR, cameras, and driver state signals is increasingly leveraged to enhance autonomous driving behavior understanding and hazard detection.",
+            "uncertainty": "Effectiveness across varied real-world environments, sensor degradations, and cross-modal calibration remains partially untested.",
+            "evidence_ids": [
+              "2611.02790v1",
+              "2611.02648v1",
+              "2610.41352v1"
+            ]
+          },
+          {
+            "finding": "Adaptive reasoning strategies in vision-language autonomous driving models are emerging to balance computational efficiency with planning performance, often via uncertainty-aware or scene-adaptive mechanisms.",
+            "uncertainty": "Impact on model interpretability and human-centered trust is not fully evaluated.",
+            "evidence_ids": [
+              "2611.02076v1",
+              "2611.00718v1"
+            ]
+          },
+          {
+            "finding": "Vision-language multimodal models are applied beyond direct perception to operational levels such as traffic signal control, integrating RL and real-world evaluations, pointing to a shift towards end-to-end vision-language-based decision making.",
+            "uncertainty": "Scalability to complex, dynamic multi-agent urban settings and fusion with other sensor modalities are open challenges.",
+            "evidence_ids": [
+              "2611.06353v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Traffic-VL (2611.06353v1) directly learns control from images and language, achieving robust end-to-end traffic signal control, while ReinSeg (2611.02648v1) focuses on improving perception with multimodal retrieval for 3D anomaly segmentation.",
+            "limitation": "Traffic-VL mainly addresses decision making; ReinSeg focuses on perception enhancement. Integration of these modalities into a unified decision-making framework remains unexplored.",
+            "evidence_ids": [
+              "2611.06353v1",
+              "2611.02648v1"
+            ]
+          },
+          {
+            "comparison": "STEER (2611.00718v1) and scene-adaptive readout (2611.02076v1) both address adaptive reasoning in autonomous driving VL models, but STEER explicitly avoids reliance on subjective scene-difficulty labels, whereas scene-adaptive readout leverages learned scene-conditioned weighting.",
+            "limitation": "Both methods are evaluated predominantly in simulation; real-world efficacy including interpretability and human trust aspects needs further investigation.",
+            "evidence_ids": [
+              "2611.00718v1",
+              "2611.02076v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can integrating multimodal driver state monitoring (EEG, PPG, telemetry) with LiDAR-image hazard detection improve prediction and explanation of risky driving behavior?",
+            "hypothesis": "Fusing physiological and environmental signals enhances risk prediction accuracy and yields more grounded explanations of driver states.",
+            "method": "Multimodal fusion networks with attention mechanisms; explanation modules linking driver state to perceived hazards.",
+            "datasets": "Multimental-IAS, Spotting the Unexpected (STU)",
+            "baselines": "Single-modality driver or hazard detection models",
+            "metrics": "Macro-F1 for driver state, AP and FPR95 for anomaly detection, explanation faithfulness",
+            "compute": "High, GPUs with fusion models; realistic latency targets",
+            "risk": "Sensor synchronization challenges; overfitting to synthetic data",
+            "novelty_check": "Combines driver internal states with external hazard perception multimodally; extends current separate modalities.",
+            "priority_rationale": "High feasibility and significance for human-centered autonomous driving safety.",
+            "evidence_ids": [
+              "2611.02790v1",
+              "2611.02648v1"
+            ]
+          },
+          {
+            "question": "Does adaptive reasoning routing in driving VL models improve grounded explainability while reducing inference cost in real-world driving?",
+            "hypothesis": "Adaptive routing that incorporates uncertainty-aware rollout can yield interpretable intermediate outputs with effective compute savings.",
+            "method": "Extend STEER and scene-adaptive readout with human-understandable chain-of-thought explanations; evaluate on real driving datasets.",
+            "datasets": "Waymo E2E, nuScenes, NAVSIM variations with added interpretation annotations",
+            "baselines": "Fixed-depth CoT inference models",
+            "metrics": "Planning accuracy, inference time, explanation quality assessed by human judges",
+            "compute": "Moderate GPU usage; multiple seeds for stability",
+            "risk": "Balancing explainability and efficiency may be conflicting; design complexity",
+            "novelty_check": "Explicitly combines adaptive reasoning with explainable chain-of-thought in driving VL models.",
+            "priority_rationale": "Important for trustworthy autonomous driving assistance and explanation.",
+            "evidence_ids": [
+              "2611.00718v1",
+              "2611.02076v1"
+            ]
+          },
+          {
+            "question": "Can vision-language reinforcement learning models trained on simulated photorealistic multi-view data generalize to diverse real-world urban traffic scenarios including complex driver interactions?",
+            "hypothesis": "Augmented training on domain-diverse simulations improves RL policy robustness and multimodal perception generalization.",
+            "method": "Train Traffic-VL-like models on expanded varied synthetic multi-view datasets; test on real-world varied topology scenarios with mixed traffic participants.",
+            "datasets": "SynTra-V plus augmented urban simulations; real connected vehicle datasets",
+            "baselines": "Traffic-VL original model, image-based controllers",
+            "metrics": "Traffic throughput, safety violations, generalization error",
+            "compute": "Large-scale GPU clusters; long RL training",
+            "risk": "Simulation-reality gap; data acquisition costs",
+            "novelty_check": "Extends vision-language RL to highly heterogeneous urban driving with richer multimodality.",
+            "priority_rationale": "Addresses key gap in scaling to realistic urban driving complexity.",
+            "evidence_ids": [
+              "2611.06353v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.0246304,
+        "status": "completed",
+        "estimated_cost_usd": 0.005458,
+        "prompt_tokens": 7133,
+        "completion_tokens": 1628
       }
     }
   }
