@@ -189,3 +189,22 @@ def test_report_and_portable_history_include_proposals(tmp_path):
     text = (tmp_path/'report/weekly-digest.md').read_text()
     assert 'awaiting human review' in text and 'No experiment or publication is authorized' in text
     assert (tmp_path/'library.sqlite').exists()
+
+
+@pytest.mark.parametrize('raw', ['', '$0.40', '0.40 USD', 'not-a-price', 'nan', 'inf', '-1', '0'])
+def test_price_configuration_error_is_safe_and_actionable(monkeypatch, raw):
+    monkeypatch.setenv('LITERATURE_PRICING_CONFIRMED', 'true')
+    monkeypatch.setenv('LITERATURE_INPUT_USD_PER_M', raw)
+    monkeypatch.setenv('LITERATURE_OUTPUT_USD_PER_M', '1.6')
+    with pytest.raises(monitor.MonitorError, match='LITERATURE_INPUT_USD_PER_M') as err:
+        monitor.pricing()
+    if raw:
+        assert repr(raw) not in str(err.value)
+
+
+def test_missing_price_names_the_variable(monkeypatch):
+    monkeypatch.setenv('LITERATURE_PRICING_CONFIRMED', 'true')
+    monkeypatch.setenv('LITERATURE_INPUT_USD_PER_M', '0.4')
+    monkeypatch.delenv('LITERATURE_OUTPUT_USD_PER_M', raising=False)
+    with pytest.raises(monitor.MonitorError, match='LITERATURE_OUTPUT_USD_PER_M'):
+        monitor.pricing()

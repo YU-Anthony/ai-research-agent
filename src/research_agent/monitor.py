@@ -83,9 +83,18 @@ def pricing():
     # No unconfirmed/stale-price defaults: operator must explicitly confirm price ceilings.
     if os.environ.get('LITERATURE_PRICING_CONFIRMED') != 'true':
         raise MonitorError('Confirm current model price ceilings before enabling paid analysis')
-    rates = [float(os.environ[n]) for n in ('LITERATURE_INPUT_USD_PER_M', 'LITERATURE_OUTPUT_USD_PER_M')]
-    if any(not math.isfinite(r) or r <= 0 for r in rates):
-        raise MonitorError('Pricing ceilings must be positive finite numbers')
+    rates = []
+    for name in ('LITERATURE_INPUT_USD_PER_M', 'LITERATURE_OUTPUT_USD_PER_M'):
+        raw = os.environ.get(name, '').strip()
+        if not raw:
+            raise MonitorError(f'{name} is missing or empty; set it in GitHub Actions Variables')
+        try:
+            rate = float(raw)
+        except ValueError:
+            raise MonitorError(f'{name} must be a plain number in USD per million tokens; omit currency symbols and units') from None
+        if not math.isfinite(rate) or rate <= 0:
+            raise MonitorError(f'{name} must be a positive finite number')
+        rates.append(rate)
     return rates
 
 

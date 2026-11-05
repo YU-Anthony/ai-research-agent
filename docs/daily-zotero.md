@@ -52,3 +52,8 @@ Workflow changes must be merged into the default branch before schedules change.
 For a manual verification use Actions → Daily research monitor → Run workflow;
 check the Generate digest and Sync selected literature to Zotero steps, not just
 the green clock job. Neither experiments nor aiXiv publication is part of this flow.
+
+Pricing variables must be plain decimal numbers in USD per million tokens (no
+currency symbols, commas or unit suffixes). Empty or malformed values now report
+the exact variable name without echoing its contents. `LITERATURE_PRICING_CONFIRMED`
+must be exactly `true`; do not confuse the $0.20 per-run budget with token prices.
