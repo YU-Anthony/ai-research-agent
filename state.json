@@ -1,7 +1,48 @@
 {
   "version": 1,
-  "seen": {},
-  "requests": {},
+  "seen": {
+    "2611.06204": {
+      "reported_at": "2026-11-05T14:50:13.688848+00:00",
+      "version": "2611.06204v1"
+    },
+    "2611.05448": {
+      "reported_at": "2026-11-05T14:50:13.688848+00:00",
+      "version": "2611.05448v1"
+    },
+    "2611.05249": {
+      "reported_at": "2026-11-05T14:50:13.688848+00:00",
+      "version": "2611.05249v1"
+    },
+    "2611.06007": {
+      "reported_at": "2026-11-05T14:50:13.688848+00:00",
+      "version": "2611.06007v1"
+    },
+    "2611.02240": {
+      "reported_at": "2026-11-05T14:50:13.688848+00:00",
+      "version": "2611.02240v1"
+    },
+    "2611.01996": {
+      "reported_at": "2026-11-05T14:50:13.688848+00:00",
+      "version": "2611.01996v1"
+    },
+    "2611.04710": {
+      "reported_at": "2026-11-05T14:50:13.688848+00:00",
+      "version": "2611.04710v1"
+    },
+    "2611.04034": {
+      "reported_at": "2026-11-05T14:50:13.688848+00:00",
+      "version": "2611.04034v1"
+    }
+  },
+  "requests": {
+    "actions-42048773870": {
+      "ceiling_usd": 0.031418800000000004,
+      "status": "completed",
+      "estimated_cost_usd": 0.007366800000000001,
+      "prompt_tokens": 11113,
+      "completion_tokens": 1826
+    }
+  },
   "papers": {
     "2611.06770": {
       "id": "2611.06770v1",
@@ -16,7 +57,7 @@
       "updated": "2026-11-04T16:50:17Z",
       "url": "https://arxiv.org/abs/2611.06770v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320057+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619271+00:00"
     },
     "2611.06353": {
       "id": "2611.06353v1",
@@ -36,7 +77,7 @@
       "updated": "2026-11-04T11:15:20Z",
       "url": "https://arxiv.org/abs/2611.06353v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320125+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619340+00:00"
     },
     "2611.06204": {
       "id": "2611.06204v1",
@@ -56,7 +97,7 @@
       "updated": "2026-11-04T09:21:22Z",
       "url": "https://arxiv.org/abs/2611.06204v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320175+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619389+00:00"
     },
     "2611.06162": {
       "id": "2611.06162v1",
@@ -71,7 +112,7 @@
       "updated": "2026-11-04T08:43:07Z",
       "url": "https://arxiv.org/abs/2611.06162v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320210+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619424+00:00"
     },
     "2611.06007": {
       "id": "2611.06007v1",
@@ -86,7 +127,7 @@
       "updated": "2026-11-04T05:55:39Z",
       "url": "https://arxiv.org/abs/2611.06007v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320250+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619465+00:00"
     },
     "2611.05448": {
       "id": "2611.05448v1",
@@ -101,7 +142,7 @@
       "updated": "2026-11-03T17:36:47Z",
       "url": "https://arxiv.org/abs/2611.05448v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320288+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619497+00:00"
     },
     "2611.05249": {
       "id": "2611.05249v1",
@@ -122,7 +163,7 @@
       "updated": "2026-11-03T17:35:27Z",
       "url": "https://arxiv.org/abs/2611.05249v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320337+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619610+00:00"
     },
     "2611.04710": {
       "id": "2611.04710v1",
@@ -138,7 +179,7 @@
       "updated": "2026-11-03T11:31:33Z",
       "url": "https://arxiv.org/abs/2611.04710v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320374+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619676+00:00"
     },
     "2611.04034": {
       "id": "2611.04034v1",
@@ -155,7 +196,7 @@
       "updated": "2026-11-02T22:29:36Z",
       "url": "https://arxiv.org/abs/2611.04034v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320463+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619779+00:00"
     },
     "2611.04029": {
       "id": "2611.04029v1",
@@ -171,7 +212,7 @@
       "updated": "2026-11-02T22:20:23Z",
       "url": "https://arxiv.org/abs/2611.04029v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320502+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619818+00:00"
     },
     "2611.02790": {
       "id": "2611.02790v1",
@@ -186,7 +227,7 @@
       "updated": "2026-11-02T09:03:14Z",
       "url": "https://arxiv.org/abs/2611.02790v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320536+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619853+00:00"
     },
     "2611.02648": {
       "id": "2611.02648v1",
@@ -201,7 +242,7 @@
       "updated": "2026-11-02T07:10:16Z",
       "url": "https://arxiv.org/abs/2611.02648v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320572+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619888+00:00"
     },
     "2611.02240": {
       "id": "2611.02240v1",
@@ -216,7 +257,7 @@
       "updated": "2026-11-01T22:03:30Z",
       "url": "https://arxiv.org/abs/2611.02240v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320607+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619923+00:00"
     },
     "2611.02157": {
       "id": "2611.02157v1",
@@ -229,7 +270,7 @@
       "updated": "2026-11-01T19:47:23Z",
       "url": "https://arxiv.org/abs/2611.02157v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320641+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619957+00:00"
     },
     "2611.02076": {
       "id": "2611.02076v1",
@@ -247,7 +288,7 @@
       "updated": "2026-11-01T17:30:51Z",
       "url": "https://arxiv.org/abs/2611.02076v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320680+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.619996+00:00"
     },
     "2611.01996": {
       "id": "2611.01996v1",
@@ -265,7 +306,7 @@
       "updated": "2026-11-01T15:34:04Z",
       "url": "https://arxiv.org/abs/2611.01996v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320724+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.620038+00:00"
     },
     "2611.01286": {
       "id": "2611.01286v1",
@@ -278,7 +319,7 @@
       "updated": "2026-10-31T21:38:40Z",
       "url": "https://arxiv.org/abs/2611.01286v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320753+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.620068+00:00"
     },
     "2611.00718": {
       "id": "2611.00718v1",
@@ -299,7 +340,7 @@
       "updated": "2026-10-31T07:32:06Z",
       "url": "https://arxiv.org/abs/2611.00718v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320838+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.620112+00:00"
     },
     "2610.42121": {
       "id": "2610.42121v1",
@@ -312,7 +353,7 @@
       "updated": "2026-10-30T17:53:28Z",
       "url": "https://arxiv.org/abs/2610.42121v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320881+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.620153+00:00"
     },
     "2610.41352": {
       "id": "2610.41352v1",
@@ -327,7 +368,7 @@
       "updated": "2026-10-30T07:14:52Z",
       "url": "https://arxiv.org/abs/2610.41352v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320916+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.620186+00:00"
     },
     "2610.40801": {
       "id": "2610.40801v1",
@@ -347,7 +388,7 @@
       "updated": "2026-10-29T18:01:30Z",
       "url": "https://arxiv.org/abs/2610.40801v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.320958+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.620228+00:00"
     },
     "2610.40455": {
       "id": "2610.40455v1",
@@ -370,8 +411,175 @@
       "updated": "2026-10-29T17:01:30Z",
       "url": "https://arxiv.org/abs/2610.40455v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-05T14:42:28.321006+00:00"
+      "retrieved_at": "2026-11-05T14:50:14.620275+00:00"
     }
   },
-  "history": {}
+  "history": {
+    "actions-42048773870": {
+      "created_at": "2026-11-05T14:50:13.688848+00:00",
+      "papers": [
+        {
+          "id": "2611.06204v1",
+          "contribution": "Proposes CoSafe, a cooperative runtime safety assurance framework using V2X communication for scene-level hazard monitoring and intervention in mixed-traffic autonomous driving.",
+          "limitation": "Evaluation is on simulation benchmark InterDrive; generalization to diverse real-world scenarios may be untested.",
+          "gap": "Integration of cooperative safety assurance with human driver behavior understanding and explainable intervention reasoning is not detailed."
+        },
+        {
+          "id": "2611.05448v1",
+          "contribution": "Introduces Jev-AD that combines a typed decision model with a language world model for foresight in highway merging, improving collision rates and aligning with passenger intent using predicted vehicle movements.",
+          "limitation": "Focuses primarily on highway merging scenarios; real-world deployment and scalability to broader conditions require exploration.",
+          "gap": "Extending language-model-backed foresight to multimodal contexts and explainable, human-centered driving assistance is unexplored."
+        },
+        {
+          "id": "2611.05249v1",
+          "contribution": "Analyzes training recipes for vision-language-action models in autonomous driving, revealing the impact of action-token supervision and gradient routing strategies on trajectory prediction and control performance.",
+          "limitation": "Study is on pretraining and training strategies; does not address downstream multimodal driving behavior interpretation or explanation.",
+          "gap": "Bridging training insights with explainable driving reasoning and multimodal human-centric interaction models remains open."
+        },
+        {
+          "id": "2611.06007v1",
+          "contribution": "Presents MotoVerse, a benchmark dataset for predictive perception focusing on motorized two-wheelers in dense, unstructured traffic with annotated challenges and multimodal data for anticipation and trajectory prediction.",
+          "limitation": "Zero-shot VLMs perform near simple baselines, indicating room for improved driving-specific multimodal understanding methods.",
+          "gap": "Integration of explainable reasoning and human-centered driver-state modeling for two-wheelers has yet to be addressed."
+        },
+        {
+          "id": "2611.02240v1",
+          "contribution": "Proposes a unified belief-space MPC that integrates information-seeking and risk-aware control adapting safety constraints dynamically as internal clarity about human intent evolves during interactive driving.",
+          "limitation": "Evaluations are limited to lane-merging and unsignalized intersection scenarios; broader traffic contexts and human behavior complexities remain untested.",
+          "gap": "Combining this risk-adaptive, interactive reasoning with multimodal sensory input fusion and explainable decision justification is a future direction."
+        },
+        {
+          "id": "2611.01996v1",
+          "contribution": "Develops Safety4DM, a vision-language system for vehicle-road-cloud cooperative dynamic maps, integrating a fine-tuned VLM for risk perception and a step-wise prompting interface for natural language querying and driving advice generation.",
+          "limitation": "System performance heavily depends on the quality of the fine-tuned VLM and simulation environment; real-world deployment constraints may pose challenges.",
+          "gap": "Further exploration is needed for multimodal fusion with onboard sensor data and personalized driver-state integration to enhance human-centered safety reasoning."
+        },
+        {
+          "id": "2611.04710v1",
+          "contribution": "Introduces DenseTwins, a self-supervised multimodal learning framework that decouples shared and modality-specific dense features, improving representation quality across multimodal perception tasks including autonomous driving.",
+          "limitation": "Focuses on representation learning benchmarks; direct applicability to downstream autonomous driving reasoning and explanations is not evaluated.",
+          "gap": "Extending learned dense features for explainable reasoning in driving behavior understanding is an open research avenue."
+        },
+        {
+          "id": "2611.04034v1",
+          "contribution": "Conducts a systematic study on transferability of pretrained backbones to multisensor autonomous driving setups, presenting targeted modifications improving MultiMAE for physical sensors fusion.",
+          "limitation": "Study centers on sensor backbone pretraining and transfer; connection to downstream driving behavior understanding and explanation remains indirect.",
+          "gap": "Bridging robust multisensor feature learning with interpretable multimodal driving reasoning models requires further work."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Emerging frameworks leverage multimodal fusion and language models to enhance driving behavior understanding and safety in autonomous and cooperative driving.",
+            "uncertainty": "Effectiveness varies across traffic complexities and real-world deployments; robustness and interpretability need more study.",
+            "evidence_ids": [
+              "2611.06204v1",
+              "2611.05448v1",
+              "2611.01996v1"
+            ]
+          },
+          {
+            "finding": "Self-supervised and pretraining strategies improve multimodal feature representations but have limited direct impact on explainable driving reasoning or human-centered assistance.",
+            "uncertainty": "Connection between representation quality and downstream behavior understanding or explanation remains to be empirically validated.",
+            "evidence_ids": [
+              "2611.04710v1",
+              "2611.04034v1",
+              "2611.05249v1"
+            ]
+          },
+          {
+            "finding": "Adaptive control integrating information-seeking with risk-aware planning enhances interaction modeling and safety in autonomous driving.",
+            "uncertainty": "Scalability to varied traffic scenarios and integration with multimodal perception data is not yet established.",
+            "evidence_ids": [
+              "2611.02240v1",
+              "2611.06204v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Cooperative runtime safety frameworks (CoSafe) use V2X for scene-level hazards versus individual agent foresight models (Jev-AD) focusing on ego-centric reasoning.",
+            "limitation": "CoSafe focuses on multi-agent interventions with limited language explainability; Jev-AD emphasizes foresight with language-based models but is mostly ego-centric.",
+            "evidence_ids": [
+              "2611.06204v1",
+              "2611.05448v1"
+            ]
+          },
+          {
+            "comparison": "Vision-language-action model training methods differ on gradient routing and action-token supervision affecting control performance.",
+            "limitation": "Findings primarily relate to model training efficacy rather than human-centered explanation or interaction understanding.",
+            "evidence_ids": [
+              "2611.05249v1"
+            ]
+          },
+          {
+            "comparison": "Benchmarks (MotoVerse, Safety4DM) target different traffic participants and contexts: two-wheelers in dense traffic versus cooperative vehicle-road-cloud safety contexts.",
+            "limitation": "Each dataset addresses specific challenges; integration for comprehensive multimodal driving behavior and explanation benchmarks is lacking.",
+            "evidence_ids": [
+              "2611.06007v1",
+              "2611.01996v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can cooperative runtime safety assurance be combined with language-based foresight models for explainable, multi-agent autonomous driving interventions?",
+            "hypothesis": "Integrating V2X-based scene reasoning with language world models improves safety intervention explainability and effectiveness.",
+            "method": "Combine CoSafe's V2X monitoring with Jev-AD's language-guided foresight; evaluate real-time intervention accuracy and explanation clarity.",
+            "datasets": "InterDrive, NGSIM, UMBench",
+            "baselines": "CoSafe alone, Jev-AD alone",
+            "metrics": "Safety violations reduction, explanation fidelity, intervention success rate",
+            "compute": "Real-time multi-agent simulation with V2X; moderate GPU for LLM inference",
+            "risk": "Communication delays and model complexity may hinder real-time deployment.",
+            "novelty_check": "No prior work combining cooperative runtime safety with language-driven foresight for explainable interventions.",
+            "priority_rationale": "High significance for trustworthy, explainable mixed-traffic autonomous driving.",
+            "evidence_ids": [
+              "2611.06204v1",
+              "2611.05448v1"
+            ]
+          },
+          {
+            "question": "Does adding modality-specific dense representations improve multimodal driving behavior understanding and explainable reasoning models?",
+            "hypothesis": "DenseTwins' decoupled dense features yield better multimodal fusion and enhanced explanation capabilities for driving behavior analysis.",
+            "method": "Integrate DenseTwins pretrained embeddings into VLAs with evaluation on driving behavior prediction and explanation tasks.",
+            "datasets": "MotoVerse, Safety4DM",
+            "baselines": "Standard VLM embeddings, MultiMAE",
+            "metrics": "Prediction accuracy, explanation quality, computation overhead",
+            "compute": "Moderate GPU usage for dense embeddings and VLA inference",
+            "risk": "Dense features may increase model complexity without clear explanation gains.",
+            "novelty_check": "First application of decoupled dense features for explainable multimodal driving reasoning.",
+            "priority_rationale": "Medium novelty, enabling better multimodal fusion for explanation.",
+            "evidence_ids": [
+              "2611.04710v1",
+              "2611.06007v1",
+              "2611.01996v1"
+            ]
+          },
+          {
+            "question": "Can clarity-aware, risk-adaptive MPC be extended to incorporate fine-grained multimodal perception and explainable decision outputs in interactive driving?",
+            "hypothesis": "Integrating multimodal fusion into adaptive MPC enhances safety and interpretability in interaction-dense scenarios.",
+            "method": "Augment the existing MPC framework with fused data inputs and add explainable risk attribution modules; benchmark on interactive driving simulations.",
+            "datasets": "Simulated lane merge, unsignalized intersections",
+            "baselines": "Original MPC, non-adaptive planners",
+            "metrics": "Success rate, collision rate, explanation coherence",
+            "compute": "Moderate compute for MPC and multimodal fusion",
+            "risk": "Model complexity and real-time constraints.",
+            "novelty_check": "Adaptive risk-aware MPC with integrated multimodal inputs and explanations is novel.",
+            "priority_rationale": "High feasibility and significance for human-centered autonomous navigation.",
+            "evidence_ids": [
+              "2611.02240v1",
+              "2611.06204v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.031418800000000004,
+        "status": "completed",
+        "estimated_cost_usd": 0.007366800000000001,
+        "prompt_tokens": 11113,
+        "completion_tokens": 1826
+      }
+    }
+  }
 }
