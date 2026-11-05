@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "seen": {},
+  "requests": {},
+  "papers": {
+    "2611.06770": {
+      "id": "2611.06770v1",
+      "title": "Benchmarking Fine-Grained Visual Reasoning for Remote Sensing in Urban Management",
+      "abstract": "Fine-grained visual reasoning is essential for remote sensing in urban management, yet remains underexplored in the evaluation of multimodal large language models (MLLMs). We introduce UMBench, a fine-grained urban remote sensing benchmark built from unmanned aerial vehicle (UAV) images for multiple urban management tasks such as traffic monitoring, urban construction, environmental quality, and disaster warning. Evaluations on UMBench reveal that current MLLMs often rely on scene-level priors and overlook fine-grained visual evidence. To address this issue, we further propose a novel evidence-first chain-of-thought method that directs models to inspect fine-grained visual evidence in a training-free manner. Experiments show that our method can improve the performance of both open-source and commercial MLLMs on UMBench.",
+      "authors": [
+        "Jiawei Zhang",
+        "Rizhao Cai",
+        "Dayan Guan"
+      ],
+      "published": "2026-11-04T16:50:17Z",
+      "updated": "2026-11-04T16:50:17Z",
+      "url": "https://arxiv.org/abs/2611.06770v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804278+00:00"
+    },
+    "2611.06353": {
+      "id": "2611.06353v1",
+      "title": "Traffic-VL: Reinforced Vision-Language Models for Generalizable End-to-End Traffic Signal Control",
+      "abstract": "Existing traffic signal control methods typically rely on structured traffic states produced by dedicated perception pipelines. Emerging visual approaches often use idealized simulator images and convert them into intermediate representations before control, limiting their ability to directly exploit roadside visual observations. To bridge both the visual-domain and perception-to-decision gaps, we introduce SynTra-V and Traffic-VL. SynTra-V converts physics-based traffic simulations into photorealistic multi-view surveillance imagery across diverse road topologies and sensing conditions, and automatic semantic auditing checks that control-critical geometry, vehicle movements, and lane semantics match the simulator state. Traffic-VL is an eight-billion-parameter vision-language model that directly maps synchronized multi-view images and natural-language phase descriptions to signal decisions without intermediate structured states. Building on Traffic-R1's two-stage reinforced reasoning framework, Traffic-VL adapts its vision encoder via offline reinforcement learning on SynTra-V and freezes it during online visual stepwise trajectory policy optimization in closed-loop simulation. Experiments show that Traffic-VL matches structured-state Traffic-R1 while outperforming image-based controllers and general-purpose vision-language models, including Gemini 3 Pro. Evaluations on unseen topologies, degraded sensing conditions, real surveillance footage, and a three-week deployment across ten intersections further demonstrate robust visual generalization and effective constrained online control.",
+      "authors": [
+        "Xingchen Zou",
+        "Maonan Wang",
+        "Kemou Jiang",
+        "Jie Li",
+        "Yiqi Chen",
+        "Xi Chen",
+        "Hai Yang",
+        "Yuxuan Liang"
+      ],
+      "published": "2026-11-04T11:15:20Z",
+      "updated": "2026-11-04T11:15:20Z",
+      "url": "https://arxiv.org/abs/2611.06353v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804345+00:00"
+    },
+    "2611.06204": {
+      "id": "2611.06204v1",
+      "title": "CoSafe: Cooperative Runtime Safety Assurance for Mixed-Traffic Autonomous Driving",
+      "abstract": "With the rapid development of autonomous driving systems (ADSes), real-world roads are evolving into mixed-traffic environments where autonomous vehicles (AVs) and other traffic participants (e.g., human-driven vehicles (HDVs), cyclists, and pedestrians) coexist and interact with each other. However, current ADSes still incur various safety violations in mixed traffic scenarios, raising a strong demand for runtime safety assurance frameworks that can continuously monitor hazards and prevent potential violations. Existing ego-centric assurance approaches are insufficient for mixed traffic, where violations often arise from locally reasonable yet jointly incompatible decisions among multiple vehicles and cannot be reliably resolved through independent takeover. To bridge this gap, we propose CoSafe, a modular and ADS-agnostic cooperative runtime safety assurance framework for mixed-traffic autonomous driving to extend runtime safety assurance from ego-centric takeover to scene-level cooperative intervention. CoSafe leverages vehicle-to-everything (V2X) communication to enable roadside units (RSUs) to monitor scene-level hazards and jointly mitigate hazards involving multiple vehicles. We integrate CoSafe with seven state-of-the-art ADSes, and our evaluation on the InterDrive benchmark demonstrates that CoSafe improves the driving score of AVs by 70.03% on average, reduces safety violations by 87.80%, and accurately identifies unsafe AVs with an F3 score of 0.930, while satisfying real-time constraints.",
+      "authors": [
+        "Dingji Wang",
+        "You Lu",
+        "Haowen Jiang",
+        "Yanggang Chen",
+        "Yuyang Bi",
+        "Bihuan Chen",
+        "Shenglin Bao",
+        "Xin Peng"
+      ],
+      "published": "2026-11-04T09:21:22Z",
+      "updated": "2026-11-04T09:21:22Z",
+      "url": "https://arxiv.org/abs/2611.06204v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804414+00:00"
+    },
+    "2611.06162": {
+      "id": "2611.06162v1",
+      "title": "A Layered View of LLM Support in Underwater Robotics",
+      "abstract": "This extended abstract discusses a specific and, in our experience, practically relevant role for large language models (LLMs) in underwater robotics. Our main premise is that, in underwater fielding missions, the immediate difficulty is often not the synthesis of new low-level control laws, but the operation of complex robotic systems under limited communications, partial observability, and expensive field time. In particular, a significant fraction of the effort during sea trials is devoted to fault diagnosis, telemetry interpretation, mission adjustment, and coordination across heterogeneous assets and operators. We argue that LLMs may be useful at this higher operational level, especially when grounded in structured vehicle state, alarms, logs, mission context, and existing planning or validation tools. At the same time, current limitations in grounding, consistency, and causal reasoning make these systems lack the predictability required to guarantee direct control, especially in real-world critical applications, although we do not exclude a future evolution in this direction. This viewpoint suggests a layered architecture in which conventional autonomy remains responsible for control, perception, estimation, and validated mission execution, whereas LLM-based modules serve as an additional support layer for debugging, operator interaction, constrained replanning support, orchestration, and post-mission analysis.",
+      "authors": [
+        "Federico Celi",
+        "Leonardo Zacchini",
+        "Gabriele Ferri"
+      ],
+      "published": "2026-11-04T08:43:07Z",
+      "updated": "2026-11-04T08:43:07Z",
+      "url": "https://arxiv.org/abs/2611.06162v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804452+00:00"
+    },
+    "2611.06007": {
+      "id": "2611.06007v1",
+      "title": "MotoVerse: A Benchmark for Predictive Perception of Motorized Two-Wheelers in Dense Unstructured Traffic",
+      "abstract": "Motorized Two-Wheelers (MTWs) dominate personal transport across much of the Global South, yet remain largely overlooked in predictive perception research for autonomous driving and ADAS. We introduce MotoVerse, a benchmark for predictive perception from an MTW's ego-centric perspective. MotoVerse comprises 949 maneuver clips collected in dense, unstructured traffic and trajectory annotations for over 31,000 surrounding road agents, including over 16,000 MTWs, enabling two complementary tasks: Ego-Rider Maneuver Anticipation (ERMA) and Traffic Agent Trajectory Prediction (TATP). Each clip is further annotated with an MTW-specific challenge taxonomy comprising dynamic ego-motion, weak traffic structure and contextual occlusion, enabling challenge-aware evaluation. We benchmark established conventional prediction models, general-purpose Vision-Language Models (VLMs), driving-specific VLMs and vision-language-action models. Our experiments reveal three key insights: (i) video backbones reach most of their full-observation accuracy from the first fifth of a maneuver, whereas zero-shot VLMs need most of the maneuver to be observed; (ii) zero-shot VLMs, whether general-purpose or driving-specific, largely remain close to simple baselines on both tasks; a preliminary LoRA study shows that adaptation lifts anticipation sharply but leaves trajectory prediction behind conventional models; and (iii) the rider's own motion drives forecasting difficulty: for every model, including a static baseline, errors are highest during left turns and rise under dynamic ego-motion. We believe MotoVerse will serve as a challenging benchmark for safer and more robust predictive AI for intelligent two-wheelers. The dataset and evaluation code are publicly available at https://github.com/VarunIIITH/MotoVerse.",
+      "authors": [
+        "Varun A. Paturkar",
+        "Shankar Gangisetty",
+        "C. V. Jawahar"
+      ],
+      "published": "2026-11-04T05:55:39Z",
+      "updated": "2026-11-04T05:55:39Z",
+      "url": "https://arxiv.org/abs/2611.06007v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804494+00:00"
+    },
+    "2611.05448": {
+      "id": "2611.05448v1",
+      "title": "Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model",
+      "abstract": "Large language models understand passengers' driving commands, but as driving agents they reason in generated text for seconds and must infer each action's consequences implicitly from the scene. We present Jev-AD, which pairs Jev, a typed decision model that answers predefined questions with probabilities, not generated text, with a language world model that predicts for every candidate action how nearby vehicles move over the next two seconds. Code turns these predictions into foreseen consequences, which Jev compares instead of inferring them from coordinates. In simulated highway merging (500 car-episodes), this foresight lowers the same decision model's collision rate from 26.0% to 2.4% at 0.25 seconds per decision, and Jev-AD achieves the passenger's intent in 93% of free-form command trials. In 500 replayed real-world NGSIM episodes, foresight lowers the collision rate from 48.2% to 2.8%, and the world model, learned from this traffic, foresees 93% of dangerous actions. Project page: https://ys-qu.github.io/jev-ad-website.",
+      "authors": [
+        "Yansong Qu",
+        "Jiancong Chen",
+        "Samuel Labi"
+      ],
+      "published": "2026-11-03T17:36:47Z",
+      "updated": "2026-11-03T17:36:47Z",
+      "url": "https://arxiv.org/abs/2611.05448v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804528+00:00"
+    },
+    "2611.05249": {
+      "id": "2611.05249v1",
+      "title": "Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs",
+      "abstract": "Vision-language-action (VLA) models increasingly pair a pre-trained vision-language model (VLM) with a flow-matching expert that conditions its action predictions on the VLM's key-value representations. Those representations must carry information useful for control, yet the VLM was never trained for the action expert's flow-matching objective. Two signals can address this: gradients backpropagated from the expert's loss (coupling), or VLM supervision to predict discrete tokens encoding the same target actions. Prominent training recipes forgo the first, blocking expert-to-VLM gradients (insulation) to protect the VLM's existing capabilities, while also supervising it on vision-language data and action tokens. Because vision-language co-training also aims to preserve those capabilities, the additional protection provided by insulation is unclear. At the same time, insulation removes a direct signal about which features continuous action prediction requires. On the other hand, action-token supervision offers an alternative way to learn action-relevant representations, which may explain why insulation succeeds in practice. We disentangle these factors in autonomous driving and manipulation by independently varying action-token supervision and whether the expert's loss updates the VLM. In open-loop driving, insulation is competitive with coupling when action tokens are supervised; without them, coupling reduces trajectory-prediction error by roughly 25%. When both components are trained jointly from the outset, coupling increases closed-loop driving route progress by approximately 17% with action-token supervision and 40% without it, and similarly improves robot manipulation performance under both settings. These findings show that the value of gradient insulation depends on the VLM's action supervision and the evaluation setting, challenging insulation as a default VLA training recipe.",
+      "authors": [
+        "Asher James Hancock",
+        "Boyi Li",
+        "Yuxiao Chen",
+        "Shuhan Tan",
+        "Wenhao Ding",
+        "Thomas Tian",
+        "Yan Wang",
+        "Boris Ivanovic",
+        "Marco Pavone"
+      ],
+      "published": "2026-11-03T17:35:27Z",
+      "updated": "2026-11-03T17:35:27Z",
+      "url": "https://arxiv.org/abs/2611.05249v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804578+00:00"
+    },
+    "2611.04710": {
+      "id": "2611.04710v1",
+      "title": "DenseTwins: Dense Modality Decoupling for Multimodal Self-Supervision",
+      "abstract": "Multimodal perception is central to many computer vision applications, including robotics and autonomous driving, where different sensing modalities provide complementary cues. Self-supervised learning offers a scalable solution for exploiting large amounts of unlabeled multimodal data. However, existing methods either neglect modality-specific information by enforcing feature-space alignment between modalities or learn only global representations without preserving spatial structure. We propose DenseTwins, a multimodal self-supervised framework that learns dense representations by explicitly decoupling the dense feature space into shared and modality-specific components. The proposed approach combines dense cross-modal correspondences with redundancy-reduction objectives, enabling the model to capture both shared semantics and modality-specific cues within a structured dense embedding space. DenseTwins jointly optimizes an intra-modal objective across augmented views and a cross-modal objective that aligns shared features while decorrelating modality-specific information. We evaluate DenseTwins across multiple multimodal benchmarks and sensing setups, achieving state-of-the-art or competitive performance across multimodal self-supervised baselines. Code available at: https://github.com/CarloSgaravatti/DenseTwins.",
+      "authors": [
+        "Carlo Sgaravatti",
+        "Daniele Kopyshevskiy",
+        "Davide Secco",
+        "Giacomo Boracchi"
+      ],
+      "published": "2026-11-03T11:31:33Z",
+      "updated": "2026-11-03T11:31:33Z",
+      "url": "https://arxiv.org/abs/2611.04710v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804615+00:00"
+    },
+    "2611.04034": {
+      "id": "2611.04034v1",
+      "title": "Do Pretrained Backbones Transfer to Physical Sensors? A Systematic Study of Multimodal Initialization Across the Sensor Stack",
+      "abstract": "Transfer learning from pretrained backbones has become standard practice in multi-sensor computer vision---yet two questions remain open: which pretrained weights transfer best to multi-sensor setups, and can in-domain pretraining outperform off-the-shelf solutions? Frameworks like MultiMAE demonstrate the utility of masked autoencoding in a multi-modal context, but rely entirely on dense, model-derived modalities. It is unclear how robustly these methods translate to real-world applications that use physical sensors, where the aggregation of diverse public datasets for large-scale pretraining inherently introduces modality sparsity. To investigate this systematically, we curate a multi-sensor autonomous driving collection of $2.82M$ images from 16 publicly available datasets, incorporating both physical hardware modalities (RGB, LWIR, NIR, Event) and model-derived modalities (Stereo Depth, Segmentation). We use this collection for in-domain pretraining based on the MultiMAE approach. We adapt MultiMAE's loss formulation to accommodate sparse samples, and study the effect of an enforced encoder bottleneck for modality alignment and of additional losses specific to dense reconstruction (SSIM and FFT). We then systematically compare against common pretrained backbones (ViT, MAE, DINO and MultiMAE) across downstream sensor fusion tasks. We find that MultiMAE is a surprisingly strong out-of-the-box baseline, transferring effectively even to modalities it has never seen, while our targeted modifications yield incremental but consistent improvements on multi-sensor transfer and overall robustness.",
+      "authors": [
+        "Fabio Montello",
+        "Ronja Güldenring",
+        "Lucas Mogensen Sandby",
+        "Christoffer Koo Øhrstrøm",
+        "Lazaros Nalpantidis"
+      ],
+      "published": "2026-11-02T22:29:36Z",
+      "updated": "2026-11-02T22:29:36Z",
+      "url": "https://arxiv.org/abs/2611.04034v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804655+00:00"
+    },
+    "2611.04029": {
+      "id": "2611.04029v1",
+      "title": "A Review of Max-Pressure Traffic Signal Control Algorithms: State of the Art and Research Opportunities",
+      "abstract": "Max-Pressure (MP) has emerged as a widely studied decentralized traffic signal control framework, thanks to its desirable theoretical properties and strong control performance. Early research on MP focused on improving control performance by exploring different variables of the traffic state for the definition of pressure. Subsequent studies expanded MP to incorporate the complexity of real-world transportation systems and emerging technologies. This paper provides a comprehensive review of these developments. The review first introduces the theoretical foundations of MP and examines early developments in movement weight definition. It then synthesizes major extensions for multimodal and multiscale network control, followed by recent developments in connected and automated vehicle (CAV) environments and the integration of MP with artificial intelligence (AI) and data-driven methods. Beyond summarizing existing approaches, this review examines their underlying assumptions, data requirements, implementation considerations, and practical limitations. Based on this comprehensive review, key research gaps and future directions are identified, including remaining limitations in the theoretical foundations of MP and the underexplored integration of autonomous vehicle control with the MP framework. Overall, this review provides a structured perspective on the evolution and current state of MP control and highlights opportunities for developing more proactive, robust, and practically deployable MP-based traffic control methods.",
+      "authors": [
+        "Abdullah Al Asif",
+        "Chaopeng Tan",
+        "Vikash V. Gayah",
+        "Hao Liu"
+      ],
+      "published": "2026-11-02T22:20:23Z",
+      "updated": "2026-11-02T22:20:23Z",
+      "url": "https://arxiv.org/abs/2611.04029v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804693+00:00"
+    },
+    "2611.02790": {
+      "id": "2611.02790v1",
+      "title": "MultiMental-IAS: A Multimodal Driver Mental State Analysis Dataset for Context-Aware Non-IID Evaluation",
+      "abstract": "Robust driver-state modelling requires synchronized physiological, behavioural, and contextual signals, yet existing open resources typically target a single cognitive state, omit continuous vehicle context, or do not define evaluation protocols that expose inter-subject heterogeneity. We present Multimental-IAS, a multimodal driver mental-state dataset collected in a cockpit-in-the-loop simulation built on CARLA. It contains vehicle telemetry with scenario-context channels, four-channel EEG and three-channel PPG from a Muse 2 headband, and cabin-facing video from 23 participants, recorded in 148 trials (11.6 hours) under six induced states: Normal, Distracted, Alerted, Stressed, Relaxed, and Drowsy. We document the acquisition pipeline in detail and provide a benchmark with one protocol for all models: chronological within-subject splits, participant-disjoint cross-subject folds, validation-based model selection, and ablations over modalities, scenario-context channels, and signal normalization. Multimodal fusion reaches a macro-F1 of 0.94 for drivers seen during training. For unseen drivers, fusing driving dynamics with per-window normalized EEG/PPG raises macro-F1 from 0.408 (telemetry alone) to 0.485, consistently across all five folds, while the gap between the two protocols quantifies the inter-driver heterogeneity that personalized models must address. Multimental-IAS thus provides a concrete testbed for non-IID generalization, personalization, and federated learning in driver monitoring.",
+      "authors": [
+        "Baran Can Gül",
+        "Nagendra Pal Singh",
+        "Anjana Arvind Naik"
+      ],
+      "published": "2026-11-02T09:03:14Z",
+      "updated": "2026-11-02T09:03:14Z",
+      "url": "https://arxiv.org/abs/2611.02790v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804727+00:00"
+    },
+    "2611.02648": {
+      "id": "2611.02648v1",
+      "title": "ReinSeg: Retrieval-Guided Bounded Multimodal Refinement for 3-D Road Anomaly Segmentation",
+      "abstract": "3-D road anomaly segmentation is essential for risk-aware perception in autonomous driving. Its central challenge is to rank sparsely observed hazards ahead of abundant normal road structures while preserving point-wise metric localization. LiDAR provides accurate 3-D point support, whereas surround-view imagery offers complementary semantic context for separating unexpected hazards from challenging normal structures. We propose ReinSeg, a retrieval-guided bounded multimodal refinement framework for point-wise road anomaly segmentation. Occupied LiDAR bird's-eye-view cells retrieve scene-specific context from a shared memory of eight surround-view images without supplying calibration variables to the retrieval module. A relative-norm-bounded residual returns this context to the LiDAR point features, so the frozen LIDO anomaly-scoring interface is preserved, and the refinement is optimized with in-distribution semantic labels only. On the Spotting the Unexpected (STU) benchmark, ReinSeg improves validation average precision from 27.54\\% to 35.67\\% and reduces the false-positive rate at 95\\% anomaly recall from 34.85\\% to 10.61\\%, shrinking the high-recall screening set from 67.54 to 20.55 million points. Relative to REL, AP is 24.99 percentage points higher and FPR95 is 0.99 points lower. Matched interfaces and component isolation show that retrieved scene imagery and the relative-norm bound are both essential, and ReinSeg stays above LiDAR-only performance under missing, corrupted, or misaligned camera inputs while running at 21.8 frames per second. These results establish bounded retrieval of scene-specific visual evidence as an effective route to reliable 3-D road-hazard perception.",
+      "authors": [
+        "Haifa Zhang",
+        "Yijing Wang",
+        "Zhiqiang Zuo"
+      ],
+      "published": "2026-11-02T07:10:16Z",
+      "updated": "2026-11-02T07:10:16Z",
+      "url": "https://arxiv.org/abs/2611.02648v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804763+00:00"
+    },
+    "2611.02240": {
+      "id": "2611.02240v1",
+      "title": "When to Probe and When to Act: Clarity-Aware Risk-Adaptive Control for Interactive Driving",
+      "abstract": "Safe navigation in interactive traffic requires autonomous vehicles to reason about unobservable human characteristics and the reciprocal nature of multi-agent interactions. Traditional architectures often decouple prediction from planning, leading to the \"Frozen Robot Problem\" or unsafe maneuvers under high ambiguity because they treat risk assessment and information acquisition as independent objectives. We argue that the notion of safety should not remain static but must instead dynamically co-evolve with the system's internal confidence: the robot should actively clarify ambiguity when necessary while also recognizing the diminishing returns of information, and naturally transition toward task execution. We introduce a unified belief-space Model Predictive Control (MPC) framework that couples multistep information planning with a clarity-adaptive Conditional Value-at-Risk (CVaR) barrier mechanism. By treating clarity, a scalar informational state, as an explicit planning variable, the controller co-designs its probing strategy with its safety specification, tightening conservatism under high ambiguity and relaxing constraints as confidence improves. We further provide a performance analysis showing that the cost of information seeking and the expected planning-cost gap to a controller that knows the true human characteristic are bounded by residual ambiguity and solver error. We evaluate the framework in lane-merging and unsignalized-intersection scenarios against representative interactive-planning baselines. Across 5,000 simulations, the proposed method achieves the highest success rates (94.6% and 93.2%) and the lowest collision rates (1.2% and 1.4%) among the compared methods, providing a principled foundation for robust decision-making in human-centric environments.",
+      "authors": [
+        "Youran Wang",
+        "Devodita Chakravarty",
+        "Yiwei Lyu"
+      ],
+      "published": "2026-11-01T22:03:30Z",
+      "updated": "2026-11-01T22:03:30Z",
+      "url": "https://arxiv.org/abs/2611.02240v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804798+00:00"
+    },
+    "2611.02157": {
+      "id": "2611.02157v1",
+      "title": "Wireless Networks That See: Integrated Sensing and Communication in Complex Environments",
+      "abstract": "The same radio interactions that complicate wireless communication can reveal what is happening around a network. Integrated sensing and communication (ISAC) turns these interactions into opportunities to observe unmanned aerial vehicles (UAVs), road vehicles, and industrial mobile robots. Yet a strong echo is not necessarily a reliable object observation: stationary background can conceal motion, reflections can create virtual objects, and one viewpoint can leave part of an object's motion unobserved. This tutorial explains how known cellular signals are used to estimate propagation, suppress stationary background, interpret reflected paths, and combine observations from different sites. UAV examples under a Third Generation Partnership Project (3GPP) stochastic channel model and ray tracing in a San Francisco urban scene illustrate the mechanisms through spatial layouts, channel profiles, and before/after range--Doppler maps. Local checks reduce false outputs, with some loss of detection. Cooperation improves position accuracy for UAVs detected by both a single site and cooperating sites. The examples show how signal resources, measurement reporting, and application needs shape sensing performance, providing practical guidance for sensing services in complex environments.",
+      "authors": [
+        "Xingqin Lin"
+      ],
+      "published": "2026-11-01T19:47:23Z",
+      "updated": "2026-11-01T19:47:23Z",
+      "url": "https://arxiv.org/abs/2611.02157v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804827+00:00"
+    },
+    "2611.02076": {
+      "id": "2611.02076v1",
+      "title": "Scene-Adaptive Readout and Decoding in Diffusion Driving VLAs",
+      "abstract": "Diffusion driving vision-language-action models repeatedly execute the backbone at every denoising stage, incurring substantial inference cost, while it remains unclear whether all scenes require the same decoding computation. To distinguish when a trajectory becomes readable from how much further refinement it requires, we analyze trajectory readout across network depth and decoding progress. We identify a depth-decoding dissociation in which late-layer representations already support useful trajectory readout after the first forward sweep, whereas early-layer representations benefit more from continued decoding. We further find that both the preferred readout layer and decoding depth vary across scenes. Based on these observations, we propose a scene-adaptive readout and decoding framework. A scene-conditioned readout MoE adaptively weights and combines trajectory predictions from layer-specific late-layer representations after a single backbone sweep, while an adaptive decoding policy applies additional native refinement only when required by the scene. We evaluate our framework on two diffusion driving VLAs across the Waymo E2E and nuScenes benchmarks. Our method improves validation RFS by up to 0.56 while also improving test performance, and achieves an end-to-end speedup of up to $6.0\\times$ on Waymo E2E, while consistently reducing trajectory error on nuScenes. These results demonstrate that scene-level readout and decoding allocation improves planning quality while avoiding unnecessary decoding. Our code is available at https://github.com/sjyu001/SARD",
+      "authors": [
+        "Seungjun Yu",
+        "Jiho Choi",
+        "Inha Kang",
+        "Hojun Choi",
+        "Seungwook Kim",
+        "Hyunjung Shim"
+      ],
+      "published": "2026-11-01T17:30:51Z",
+      "updated": "2026-11-01T17:30:51Z",
+      "url": "https://arxiv.org/abs/2611.02076v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804866+00:00"
+    },
+    "2611.01996": {
+      "id": "2611.01996v1",
+      "title": "Safety4DM: A Vision-Language Framework for Risk-Aware Dynamic Maps in Vehicle-Road-Cloud Collaborative Driving",
+      "abstract": "Dynamic map (DM) is a core information infrastructure for vehicle-road-cloud (VRC) cooperative autonomous driving. It fuses perception data from multiple sources to overcome the inherent line-of-sight and field-of-view limits of single-vehicle perception. However, DM still falls short on driving safety in two ways. First, DM data specifications already define road conditions semantically, but no pipeline yet turns real-world road observations into fine-grained risk entities in the DM. Second, existing DM systems lack a natural language interface for driving risks. To close these gaps, we propose Safety4DM, a safety-oriented language system for VRC dynamic maps. We first build RoadRisk, a real-world road image dataset that covers four types of road conditions and four risk levels. On this dataset, we fine-tune a vision-language model (VLM) for road safety risk perception. The model outputs structured risk representations that the DM can ingest directly. We then introduce a Safety-aware Step-wise Prompting (SafeStep) mechanism as the natural language query interface of the DM. SafeStep answers queries accurately and also generates actionable driving advice. To build and evaluate this interface, we develop SafeVRC-Sim, a VRC cooperative simulation framework, and SafeDM-QA, a safety question-answering benchmark. Experiments show that even the compact Qwen3-VL-4B reaches 89.83% accuracy on risk perception after fine-tuning. SafeStep also plugs easily into multiple LLM families. With medium and large models (20B and above) from five families, it achieves over 93% natural language query accuracy in every case, which shows strong generalization.",
+      "authors": [
+        "Zhengshu Zhou",
+        "Shaoyu Wang",
+        "Lu Tao",
+        "Xinhui Hu",
+        "Jiaqi Gu",
+        "Tingting Zhao"
+      ],
+      "published": "2026-11-01T15:34:04Z",
+      "updated": "2026-11-01T15:34:04Z",
+      "url": "https://arxiv.org/abs/2611.01996v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804909+00:00"
+    },
+    "2611.01286": {
+      "id": "2611.01286v1",
+      "title": "An analytical model to explain under which conditions home batteries create new load peaks in the local grid",
+      "abstract": "Simulation studies find that price-responsive home batteries and electric vehicles create new load peaks in low-voltage grids; with endogenous wholesale prices most of these peaks disappear. This paper explains both findings with an analytical model of the coincident peak at the transformer. The model is algebraic and solved in closed form, so the parameters that determine whether a new peak emerges and how large it becomes can be identified; they are few. The peak is the background load in the critical hour plus the charging of the local fleet. Under exogenous prices the charging equals the rated power of the fleet. Under endogenous prices the national fleet fills the trough of residual load until the price is flat; the depth of the fill follows from an energy balance in which the price function does not appear. For a V-shaped trough the local charging peak is the share of the grid in national flexibility times the square root of flank gradient times national flexibility. Rated power, price level, network charge and market size do not enter. The model reproduces simulated peaks for a German case within a few percent.",
+      "authors": [
+        "Lion Hirth"
+      ],
+      "published": "2026-10-31T21:38:40Z",
+      "updated": "2026-10-31T21:38:40Z",
+      "url": "https://arxiv.org/abs/2611.01286v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804942+00:00"
+    },
+    "2611.00718": {
+      "id": "2611.00718v1",
+      "title": "STEER: Route-Aware Adaptive Reasoning for Autonomous Driving",
+      "abstract": "Vision-language action (VLA) models excel for end-to-end autonomous driving, yet their tendency to over-invoke chain-of-thought (CoT) reasoning mirrors a human cognitive pitfall: overthinking. Just as deliberate reasoning can slow or mislead human judgment in routine tasks, excessive CoT in VLA incurs unnecessary compute overhead and can paradoxically degrade planning performance. Recent research tackles this via adaptive reasoning, which dynamically modulates inference complexity by selectively triggering CoT for complex scenes while responding directly to routine ones. While prior adaptive methods rely on implicit adaptation, recent work shows that explicitly optimizing the route between CoT and direct responses yields superior performance, assuming scene-difficulty annotations which are labor-intensive, poorly scalable, and prone to error due to the subjectivity of judging driving complexity. We explore, for the first time, whether adaptive reasoning with explicit route optimization can be achieved without any scene-difficulty labeling. We introduce STEER, a generic over-reasoning mitigation strategy featuring two key components: (i) routing uncertainty-aware rollout, which calibrates sampling to align routing diversity with model uncertainty; and (ii) cross-route advantage credit assignment, which introduces a differential metric to reinforce optimal routing decisions based on environmental rewards rather than subjective labels. Extensive experiments on NAVSIM v1/v2 demonstrate that STEER is competitive with state-of-the-art methods in both planning quality and the Pareto front of inference efficiency.",
+      "authors": [
+        "Yangang Zou",
+        "Pei Liu",
+        "Nan Song",
+        "Bozhou Zhang",
+        "Mingyu Guo",
+        "Jun Ma",
+        "Jiankang Deng",
+        "Xiatian Zhu",
+        "Li Zhang"
+      ],
+      "published": "2026-10-31T07:32:06Z",
+      "updated": "2026-10-31T07:32:06Z",
+      "url": "https://arxiv.org/abs/2611.00718v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.804986+00:00"
+    },
+    "2610.42121": {
+      "id": "2610.42121v1",
+      "title": "Where ADS Crashes Differ: A Harmonized Comparison Against Human Baselines",
+      "abstract": "Crash-rate comparisons between automated driving systems (ADS) and human drivers require an exposure denominator that only a few operators publish. We instead ask a composition question: given a crash, does the mix of crash types differ between ADS and human-driven vehicles? The question needs no mileage and can therefore cover every ADS operator. We assemble the NHTSA Standing General Order (SGO) ADS incident files across both file generations into 2,450 distinct in-scope incidents (2021-2026), of which 828 fall within the 2021-2024 window covered by the Crash Report Sampling System (CRSS), the national police-reported human comparator. A schema-constrained large language model (LLM) codes each SGO narrative into the CRSS crash-type taxonomy. Because SGO compels reporting far below the police-reporting threshold, we bracket reportability with an objective severity floor and a reasonable-person rubric, and claim a difference only where it survives both. Two composition differences hold under every reportability definition, tow definition and weighting of the human side, and under both definitions of driverless operation: turn-across-path crashes are under-represented among ADS crashes (0.23-0.46x the CRSS share under the primary driverless definition) and so are single-vehicle crashes (0.19-0.56x). In severity-floor rear-end crashes the ADS vehicle is the striking party at a quasi-induced-exposure ratio of 0.121 (95% CI [0.05, 0.23]) against a human baseline of 1.000. If the ADS vehicle is also struck more often than its exposure implies, this ratio overstates the ADS-human difference. We also document three pitfalls in the federal data: an operator-specific coding of driverless operation, a tow-away criterion confounded by fleet recovery practice, and an occupancy confound that accounts for about 42% of the apparent ADS-human severity gap.",
+      "authors": [
+        "Doyeon Jang"
+      ],
+      "published": "2026-10-30T17:53:28Z",
+      "updated": "2026-10-30T17:53:28Z",
+      "url": "https://arxiv.org/abs/2610.42121v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.805020+00:00"
+    },
+    "2610.41352": {
+      "id": "2610.41352v1",
+      "title": "CalibSwitch: Observation-Driven Camera-LiDAR Extrinsic Recovery and Selective Maintenance for Multimodal Perception",
+      "abstract": "Camera--LiDAR perception on mobile robots and intelligent vehicles depends on reliable sensor geometry throughout deployment. Installation variations create uncertainty in the initial extrinsics, while changing observation quality makes frame-wise estimates fluctuate during operation. This paper presents CalibSwitch, an observation-driven framework that separates absolute extrinsic recovery from selective state maintenance. A cross-modal absolute extrinsic generator (CAEG) combines projection-free bidirectional feature interaction with geometry-regularized learning to recover complete SE(3) candidates from image--point observations and coarse view context, without a supplied numerical initial transform. A selective recurrent calibration policy (SRCP) combines observation quality and temporal history to determine when a candidate should replace the working geometry consumed by a frozen multimodal detector. On nuScenes, CAEG achieves mean translation and rotation errors of 0.248 m and 5.884$^\\circ$. Under sustained geometric transitions, SRCP reaches a mean composite error of 1.46 with 9.70\\% candidate commitments, outperforming quality-based and temporal-consistency gating at comparable commitment rates. Relative to unconditional per-frame updating, it improves frozen-detector mAP and NDS by 1.43 and 0.92 points. Paired geometry--observation uncertainty tests, two real-vehicle platforms, and 13.5-FPS single-camera Jetson execution demonstrate the system value of selective geometric-state maintenance for continuous perception.",
+      "authors": [
+        "Haifa Zhang",
+        "Yijing Wang",
+        "Zhiqiang Zuo"
+      ],
+      "published": "2026-10-30T07:14:52Z",
+      "updated": "2026-10-30T07:14:52Z",
+      "url": "https://arxiv.org/abs/2610.41352v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.805054+00:00"
+    },
+    "2610.40801": {
+      "id": "2610.40801v1",
+      "title": "Drone-PUR: From Visual Clue Discovery to Understanding and Reasoning in UAV Scenes",
+      "abstract": "The reasoning capabilities of vision-language models (VLMs) can be limited by incomplete or inaccurate visual observations in the general domain. In unmanned aerial vehicle (UAV) scenes, small targets, subtle attributes, and changing viewpoints further complicate perception and understanding. Therefore, we introduce Drone-PUR, a dataset and benchmark organized around visual clue discovery, interpretation, and integration, corresponding to the three capability dimensions of perception, understanding, and reasoning. Reasoning samples are designed to require models to combine multiple visual clues to derive visually grounded conclusions. Its 11 tasks provide 175k training and 20k test samples spanning single images, image sequences, cross-modal images, and multiple viewpoints. All test samples undergo human review. Evaluating 22 general-purpose VLMs reveals persistent limitations in spatial judgment and cross-modal and cross-view reasoning. Across models, stronger perception is associated with better reasoning, while single-task fine-tuning further reveals selective bidirectional transfer between these capabilities. To examine domain adaptation, we develop UAV-PUR from Qwen3-VL through staged fine-tuning with auxiliary supervision. Its 4B and 8B variants improve overall multiple-choice accuracy by 18.33 and 17.52 percentage points over their pretrained counterparts, respectively. The dataset and project resources are available at https://drone-pur.github.io.",
+      "authors": [
+        "Jiahe Wu",
+        "Bing Cao",
+        "Xingyue Guo",
+        "Ruipu Zhao",
+        "Beiming Yu",
+        "Jiekang Feng",
+        "Qinghua Hu",
+        "Pengfei Zhu"
+      ],
+      "published": "2026-10-29T18:01:30Z",
+      "updated": "2026-10-29T18:01:30Z",
+      "url": "https://arxiv.org/abs/2610.40801v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.805100+00:00"
+    },
+    "2610.40455": {
+      "id": "2610.40455v1",
+      "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+      "abstract": "Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: https://kitscenes.com/aerial",
+      "authors": [
+        "Daniel Lengerer",
+        "Richard Schwarzkopf",
+        "Jonas Merkert",
+        "Fabian Immel",
+        "Rupert Polley",
+        "Frank Bieder",
+        "Jan-Hendrik Pauls",
+        "J. Marius Zöllner",
+        "Klaus Bogenberger",
+        "Christoph Stiller",
+        "Carsten Markgraf"
+      ],
+      "published": "2026-10-29T17:01:30Z",
+      "updated": "2026-10-29T17:01:30Z",
+      "url": "https://arxiv.org/abs/2610.40455v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-05T14:26:05.805154+00:00"
+    }
+  },
+  "history": {}
+}
