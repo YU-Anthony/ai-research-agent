@@ -51,3 +51,30 @@ def test_auth_failure_does_not_expose_response():
 
 def test_fallback_classification():
     assert categories({'title': 'Unrelated topic'}) == ['待筛选']
+
+
+def test_sync_history_retries_and_second_run_deduplicates(tmp_path, monkeypatch):
+    from research_agent.zotero import synchronize
+    from research_agent.monitor import atomic_json
+    for name, value in [('ZOTERO_API_KEY', 'fake'), ('ZOTERO_LIBRARY_ID', '123'), ('ZOTERO_LIBRARY_TYPE', 'user')]:
+        monkeypatch.setenv(name, value)
+    state = {'version': 1, 'seen': {'2601.12345': {}}, 'requests': {},
+             'papers': {'2601.12345': PAPER}, 'history': {'previous': {'papers': [{'id': PAPER['id']}]}}}
+    path = tmp_path / 'state.json'
+    atomic_json(path, state)
+    stored = []
+    def handler(req):
+        if req.url.path.endswith('/collections'):
+            return httpx.Response(200, json=[{'key': str(i), 'data': {'name': n, 'parentCollection': False}} for i, n in enumerate(categories(PAPER))])
+        if req.method == 'GET':
+            return httpx.Response(200, json=stored)
+        item = json.loads(req.content)[0]
+        stored.append({'data': item})
+        return httpx.Response(200, json={'successful': {'0': {'key': 'saved'}}})
+    def client():
+        return httpx.Client(transport=httpx.MockTransport(handler))
+    first = synchronize(path, tmp_path / 'first.json', client())
+    second = synchronize(path, tmp_path / 'second.json', client())
+    assert first['created'] == 1
+    assert second['existing'] == 1
+    assert len(stored) == 1
