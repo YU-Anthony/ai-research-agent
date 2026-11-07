@@ -84,6 +84,26 @@
     "2611.06770": {
       "reported_at": "2026-11-06T20:11:26.440536+00:00",
       "version": "2611.06770v1"
+    },
+    "2611.07122": {
+      "reported_at": "2026-11-07T18:25:41.877762+00:00",
+      "version": "2611.07122v1"
+    },
+    "2611.04029": {
+      "reported_at": "2026-11-07T18:25:41.877762+00:00",
+      "version": "2611.04029v1"
+    },
+    "2611.02157": {
+      "reported_at": "2026-11-07T18:25:41.877762+00:00",
+      "version": "2611.02157v1"
+    },
+    "2611.08070": {
+      "reported_at": "2026-11-07T18:25:41.877762+00:00",
+      "version": "2611.08070v1"
+    },
+    "2611.01286": {
+      "reported_at": "2026-11-07T18:25:41.877762+00:00",
+      "version": "2611.01286v1"
     }
   },
   "requests": {
@@ -107,6 +127,13 @@
       "estimated_cost_usd": 0.005756400000000001,
       "prompt_tokens": 6407,
       "completion_tokens": 1996
+    },
+    "actions-42401205605": {
+      "ceiling_usd": 0.017394,
+      "status": "completed",
+      "estimated_cost_usd": 0.0032116000000000002,
+      "prompt_tokens": 2841,
+      "completion_tokens": 1297
     }
   },
   "papers": {
@@ -278,7 +305,7 @@
       "updated": "2026-11-02T22:20:23Z",
       "url": "https://arxiv.org/abs/2611.04029v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-06T20:11:27.380135+00:00"
+      "retrieved_at": "2026-11-07T18:25:46.329115+00:00"
     },
     "2611.02790": {
       "id": "2611.02790v1",
@@ -336,7 +363,7 @@
       "updated": "2026-11-01T19:47:23Z",
       "url": "https://arxiv.org/abs/2611.02157v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-06T20:11:27.380291+00:00"
+      "retrieved_at": "2026-11-07T18:25:46.329217+00:00"
     },
     "2611.02076": {
       "id": "2611.02076v1",
@@ -385,7 +412,7 @@
       "updated": "2026-10-31T21:38:40Z",
       "url": "https://arxiv.org/abs/2611.01286v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-06T20:11:27.380418+00:00"
+      "retrieved_at": "2026-11-07T18:25:46.329305+00:00"
     },
     "2611.00718": {
       "id": "2611.00718v1",
@@ -553,7 +580,7 @@
       "updated": "2026-11-05T14:23:07Z",
       "url": "https://arxiv.org/abs/2611.08070v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-06T20:11:27.379503+00:00"
+      "retrieved_at": "2026-11-07T18:25:46.328708+00:00"
     },
     "2611.07540": {
       "id": "2611.07540v1",
@@ -609,7 +636,7 @@
       "updated": "2026-11-04T20:38:24Z",
       "url": "https://arxiv.org/abs/2611.07122v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-06T20:11:27.379637+00:00"
+      "retrieved_at": "2026-11-07T18:25:46.328795+00:00"
     },
     "2611.07081": {
       "id": "2611.07081v1",
@@ -1101,6 +1128,136 @@
         "estimated_cost_usd": 0.005756400000000001,
         "prompt_tokens": 6407,
         "completion_tokens": 1996
+      }
+    },
+    "actions-42401205605": {
+      "created_at": "2026-11-07T18:25:41.877762+00:00",
+      "papers": [
+        {
+          "id": "2611.07122v1",
+          "contribution": "Proposes a multi-agent reinforcement learning framework for regulating profit-driven AMoD operators to limit surge pricing and improve regional service availability.",
+          "limitation": "Effectiveness limited during peak periods with high fleet utilization, and regulation depends on spare capacity and learned policies.",
+          "gap": "Unexplored integration with human-centered behavior modeling and multimodal traffic influences in regulatory dynamics."
+        },
+        {
+          "id": "2611.04029v1",
+          "contribution": "Reviews Max-Pressure traffic signal control algorithms, covering theory, extensions to multimodal/multiscale networks, CAV integration, and AI-enhanced methods.",
+          "limitation": "Theoretical foundations have remaining limitations; practical deployment challenges and integration with autonomous vehicle control need more study.",
+          "gap": "Underexplored coupling between explainable driving reasoning and AI-based Max-Pressure control in multimodal, automated environments."
+        },
+        {
+          "id": "2611.02157v1",
+          "contribution": "Presents integrated sensing and communication methods using cellular signals to detect and locate UAVs and road vehicles in complex environments with cooperative multi-site observations.",
+          "limitation": "Sensing affected by environmental complexities such as reflections and occlusions, and detection can suffer false positives requiring local checks.",
+          "gap": "Limited exploration of extracting explainable driving behavior or driver state from observed wireless sensing data in autonomous driving contexts."
+        },
+        {
+          "id": "2611.08070v1",
+          "contribution": "Investigates LLM capability to reason about neural network weights, concluding local arithmetic and dataset priors dominate over true weight-flow reasoning.",
+          "limitation": "Exploratory results from mostly single runs; verification of forward-pass tests lacking; generalization uncertain.",
+          "gap": "Application of such weight-space reasoning to interpret driving behavior models or explain autonomous driving reasoning remains unaddressed."
+        },
+        {
+          "id": "2611.01286v1",
+          "contribution": "Provides a closed-form analytical model explaining conditions under which home batteries create new local grid load peaks considering endogenous and exogenous prices.",
+          "limitation": "Model validated on a German case, uncertainty about generalizability; focus on grid load peaks rather than driving behavior or multimodal traffic interactions.",
+          "gap": "Does not address implications for multimodal autonomous driving or driver-state understanding in smart grid-integrated mobility."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Integration of AI and data-driven approaches is increasingly central to advanced traffic and mobility control methods.",
+            "uncertainty": "Extent to which these AI methods provide explainable, human-centered driving reasoning needs further validation.",
+            "evidence_ids": [
+              "2611.04029v1",
+              "2611.07122v1"
+            ]
+          },
+          {
+            "finding": "Multimodal sensing and cooperation between sites enhance perception of complex driving and traffic scenarios using wireless signals.",
+            "uncertainty": "Robustness to environmental artifacts and mapping to driving behavior understanding is still limited.",
+            "evidence_ids": [
+              "2611.02157v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Multi-agent reinforcement learning regulation of AMoD (2611.07122v1) controls pricing and service, while Max-Pressure algorithms (2611.04029v1) focus on traffic signal optimization; both target improved traffic flow and service but via different control layers.",
+            "limitation": "Neither explicitly addresses transparent, explainable reasoning for autonomous vehicle behavior or driver state.",
+            "evidence_ids": [
+              "2611.07122v1",
+              "2611.04029v1"
+            ]
+          },
+          {
+            "comparison": "Wireless ISAC sensing (2611.02157v1) offers detection data potentially useful for behavior analysis; LLM-based weight reasoning (2611.08070v1) explores understanding model internals but not linked to sensing data or driving reasoning.",
+            "limitation": "No direct combination of wireless sensing insights with learned weight and behavior explainability is demonstrated.",
+            "evidence_ids": [
+              "2611.02157v1",
+              "2611.08070v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can multi-agent RL-based AMoD regulation be enhanced with interpretable driver behavior models using wireless ISAC sensing?",
+            "hypothesis": "Incorporating sensed driver state and behavior improves regulation policies and service equity.",
+            "method": "Fuse ISAC data with multi-agent RL in simulation and real data; analyze policy interpretability.",
+            "datasets": "Manhattan AMoD data plus ISAC sensing simulations.",
+            "baselines": "Standard multi-agent RL regulation without integrated sensing.",
+            "metrics": "Service availability, pricing fairness, interpretability scores.",
+            "compute": "High for multi-agent RL with sensor fusion; GPU needed; multiple seeds.",
+            "risk": "Data alignment challenges; sensing noise may degrade policies.",
+            "novelty_check": "Combines regulation with ISAC sensing and interpretability rarely explored.",
+            "priority_rationale": "High impact on human-centered AMoD regulation.",
+            "evidence_ids": [
+              "2611.07122v1",
+              "2611.02157v1"
+            ]
+          },
+          {
+            "question": "Can Max-Pressure signal control be integrated with autonomous vehicle onboard weight-space model reasoning to enable explainable driving decisions?",
+            "hypothesis": "Coupling traffic signal control with vehicle-internal reasoning improves traffic flow and driving transparency.",
+            "method": "Develop joint control-reasoning model combining MP algorithms and LLM-based weight interpreters.",
+            "datasets": "Traffic network and simulated autonomous driving models.",
+            "baselines": "MP control alone; LLM reasoning alone.",
+            "metrics": "Traffic throughput, decision explanation fidelity.",
+            "compute": "Medium to high; simulations plus LLM inference.",
+            "risk": "Complex integration; latency issues.",
+            "novelty_check": "Merges control theory with interpretable driving reasoning rarely combined.",
+            "priority_rationale": "Bridges infrastructure and vehicle AI for autonomous driving explainability.",
+            "evidence_ids": [
+              "2611.04029v1",
+              "2611.08070v1"
+            ]
+          },
+          {
+            "question": "Does integrating economic grid load models with multimodal traffic control enable better autonomous driving behavior adaptation to local energy conditions?",
+            "hypothesis": "Energy-aware behavior improves grid stability and driving efficiency.",
+            "method": "Link home battery load peak models with driving route and signal control adjustments.",
+            "datasets": "Grid load profiles; traffic data from reviewed papers.",
+            "baselines": "Traffic control without energy considerations.",
+            "metrics": "Grid load peak reduction; travel time.",
+            "compute": "Low to medium simulations.",
+            "risk": "Model complexity and causality unclear.",
+            "novelty_check": "Novel crossover of grid load and autonomous driving control.",
+            "priority_rationale": "Important for sustainable multimodal driving environments.",
+            "evidence_ids": [
+              "2611.01286v1",
+              "2611.04029v1",
+              "2611.07122v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.017394,
+        "status": "completed",
+        "estimated_cost_usd": 0.0032116000000000002,
+        "prompt_tokens": 2841,
+        "completion_tokens": 1297
       }
     }
   }
