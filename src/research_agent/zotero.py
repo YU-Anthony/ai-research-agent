@@ -1,8 +1,12 @@
 """Synchronize ranked, verified arXiv metadata to Zotero; no model calls or PDFs."""
 import argparse
+from contextlib import nullcontext
 import hashlib
 import json
 import os
+import math
+import time
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import httpx
@@ -27,9 +31,14 @@ def categories(paper):
 
 
 class Zotero:
-    def __init__(self, client, library, kind, key):
+    def __init__(self, client, library, kind, key, *, clock=time.time, sleep=time.sleep,
+                 interval=1.0, max_wait=60, max_retries=2):
         if not library.isdigit() or kind not in ('user', 'group') or not key:
             raise ZoteroError('Configure ZOTERO_API_KEY, numeric ZOTERO_LIBRARY_ID and user/group library type')
+        self.clock, self.sleep = clock, sleep
+        self.interval, self.max_wait, self.max_retries = interval, max_wait, max_retries
+        self.not_before = 0.0
+        self.waited = 0.0
         self.client = client
         self.base = f'https://api.zotero.org/{"users" if kind == "user" else "groups"}/{library}'
         self.headers = {'Zotero-API-Key': key, 'Zotero-API-Version': '3'}
@@ -39,8 +48,39 @@ class Zotero:
         if data is not None:
             headers['Zotero-Write-Token'] = hashlib.sha256(
                 (self.base + path + json.dumps(data, sort_keys=True)).encode()).hexdigest()[:32]
-        response = self.client.request('POST' if data is not None else 'GET', self.base + path,
-                                       headers=headers, json=data, params=params)
+        for attempt in range(self.max_retries + 1):
+            delay = max(0, self.not_before - self.clock())
+            if self.waited + delay > self.max_wait:
+                raise ZoteroError('Zotero cooldown exceeds run wait budget; pending papers retained for next sync')
+            while delay > 0:
+                chunk = min(delay, 30)
+                self.sleep(chunk)
+                self.waited += chunk
+                delay = max(0, self.not_before - self.clock())
+            response = self.client.request('POST' if data is not None else 'GET', self.base + path,
+                                           headers=headers, json=data, params=params)
+            now = self.clock()
+            delays = [self.interval]
+            for name in ('Backoff', 'Retry-After'):
+                raw = response.headers.get(name)
+                if raw is None:
+                    continue
+                try:
+                    seconds = float(raw)
+                except ValueError:
+                    try:
+                        seconds = parsedate_to_datetime(raw).timestamp() - now
+                    except (ValueError, TypeError, OverflowError):
+                        continue
+                if math.isfinite(seconds):
+                    delays.append(max(0, seconds))
+            if response.status_code == 429:
+                delays.append(5 * 2 ** attempt)
+            self.not_before = now + max(delays)
+            if response.status_code != 429:
+                break
+            if attempt == self.max_retries:
+                raise ZoteroError('Zotero HTTP 429 after bounded retries; pending papers retained for next sync')
         if response.status_code >= 300:
             raise ZoteroError(f'Zotero HTTP {response.status_code}; no automatic retry')
         result = response.json()
@@ -87,17 +127,39 @@ def synchronize(state_path, output, client=None):
     state = read_state(state_path)
     # Replay all selected history, so a failed sync is retried despite monitor seen-state.
     ids = {stable_id(row['id']) for run in state['history'].values() for row in run['papers']}
-    result = {'status': 'success', 'created': 0, 'existing': 0}
-    with httpx.Client(timeout=30, follow_redirects=False) if client is None else client as transport:
+    result = {'status': 'success', 'created': 0, 'existing': 0, 'cached': 0, 'pending': len(ids)}
+    with (httpx.Client(timeout=30, follow_redirects=False) if client is None else nullcontext(client)) as transport:
         api = Zotero(transport, os.environ.get('ZOTERO_LIBRARY_ID', '').strip(),
                      os.environ.get('ZOTERO_LIBRARY_TYPE', 'user').strip(), os.environ.get('ZOTERO_API_KEY', ''))
-        collections = api.collections()
-        for identifier in sorted(ids):
-            paper = state['papers'].get(identifier)
-            if not paper:
-                raise ZoteroError('Selected paper metadata missing from persistent state')
-            result[api.save(paper, collections)] += 1
-    atomic_json(output, result)
+        # Namespace by destination, so changing libraries does not suppress uploads.
+        destinations = state.setdefault('zotero', {})
+        cache = destinations.setdefault(api.base, {'synced': {}, 'not_before': 0})
+        if not isinstance(cache.get('synced'), dict):
+            raise ZoteroError('Invalid Zotero sync state; refusing to reset it')
+        api.not_before = float(cache.get('not_before', 0))
+        pending = ids - set(cache['synced'])
+        result.update(cached=len(ids) - len(pending), pending=len(pending))
+        try:
+            collections = api.collections() if pending else {}
+            for identifier in sorted(pending):
+                paper = state['papers'].get(identifier)
+                if not paper:
+                    raise ZoteroError('Selected paper metadata missing from persistent state')
+                outcome = api.save(paper, collections)
+                result[outcome] += 1
+                cache['synced'][identifier] = {'status': outcome}
+                result['pending'] -= 1
+                # Checkpoint every confirmed item, even if a later request fails.
+                cache['not_before'] = api.not_before
+                atomic_json(state_path, state)
+        except Exception as exc:
+            result.update(status='failed', error_type=type(exc).__name__,
+                          reason=str(exc) if isinstance(exc, ZoteroError) else 'External failure; details suppressed to protect credentials')
+            raise
+        finally:
+            cache['not_before'] = api.not_before
+            atomic_json(state_path, state)
+            atomic_json(output, result)
     return result
 
 
@@ -111,6 +173,9 @@ def main():
     except Exception as exc:
         result = {'status': 'failed', 'error_type': type(exc).__name__,
                   'reason': str(exc) if isinstance(exc, ZoteroError) else 'External failure; details suppressed to protect credentials'}
+        if args.output.exists():
+            previous = json.loads(args.output.read_text())
+            result = {**previous, **result}
         atomic_json(args.output, result)
         print(json.dumps(result))
         raise SystemExit(1)
