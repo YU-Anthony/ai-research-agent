@@ -1,9 +1,13 @@
 """Synchronize ranked, verified arXiv metadata to Zotero; no model calls or PDFs."""
 import argparse
+import hashlib
 from contextlib import nullcontext
 import secrets
 import json
 import os
+import re
+import unicodedata
+from urllib.parse import unquote
 import math
 import time
 from email.utils import parsedate_to_datetime
@@ -35,6 +39,48 @@ def categories(paper):
     return [name for name, words in rules.items() if any(w in text for w in words)] or ['待筛选']
 
 
+def normalized_text(value):
+    return ''.join(c for c in unicodedata.normalize('NFKC', value).casefold() if c.isalnum())
+
+
+def arxiv_ids(data):
+    """Extract explicit identifiers; do not treat arbitrary title digits as IDs."""
+    found = set()
+    fields = [('archiveID', r'^(?:arXiv:\s*)?(.+)$'),
+              ('url', r'arxiv\.org/(?:abs|pdf)/([^?#\s]+)'),
+              ('extra', r'(?im)^arxiv:\s*(\S+)'),
+              ('DOI', r'(?i)10\.48550/arxiv\.(\S+)')]
+    for name, pattern in fields:
+        for match in re.finditer(pattern, unquote(data.get(name, '')), re.I):
+            candidate = re.sub(r'\.pdf$', '', match.group(1).strip(), flags=re.I)
+            try:
+                found.add(stable_id(candidate))
+            except ValueError:
+                continue
+    return found
+
+
+def creator_names(data):
+    return {normalized_text(c.get('name') or (c.get('firstName', '') + ' ' + c.get('lastName', '')))
+            for c in data.get('creators', []) if c.get('creatorType') == 'author'} - {''}
+
+
+def matches_paper(data, paper):
+    identifiers = arxiv_ids(data)
+    if identifiers:
+        return stable_id(paper['id']) in identifiers
+    # Conservative fallback for manually imported entries lacking arXiv metadata.
+    doi = paper.get('DOI') or paper.get('doi')
+    def normalized_doi(value):
+        return re.sub(r'^(?:https?://(?:dx\.)?doi\.org/|doi:\s*)', '', value.strip(), flags=re.I).casefold()
+    if doi and data.get('DOI') and normalized_doi(doi) == normalized_doi(data['DOI']):
+        return True
+    names = {normalized_text(n) for n in paper.get('authors', [])} - {''}
+    return (bool(names) and bool(normalized_text(paper['title']))
+            and normalized_text(data.get('title', '')) == normalized_text(paper['title'])
+            and creator_names(data) == names)
+
+
 class Zotero:
     def __init__(self, client, library, kind, key, *, clock=time.time, sleep=time.sleep,
                  interval=1.0, max_wait=60, max_retries=2):
@@ -42,6 +88,7 @@ class Zotero:
             raise ZoteroError('Configure ZOTERO_API_KEY, numeric ZOTERO_LIBRARY_ID and user/group library type')
         self.clock, self.sleep = clock, sleep
         self.interval, self.max_wait, self.max_retries = interval, max_wait, max_retries
+        self._items = None
         self.not_before = 0.0
         self.waited = 0.0
         self.client = client
@@ -92,7 +139,7 @@ class Zotero:
         if response.status_code >= 300:
             raise ZoteroError(f'Zotero HTTP {response.status_code} on {"POST" if data is not None else "GET"} {path}; no automatic retry')
         result = response.json()
-        if data is not None and (result.get('failed') or not result.get('successful')):
+        if data is not None and (not isinstance(result, dict) or result.get('failed') or not result.get('successful')):
             raise ZoteroError('Zotero rejected write; inspect permissions and metadata')
         return result
 
@@ -108,13 +155,27 @@ class Zotero:
                 return result
             start += 100
 
+    def items(self, refresh=False):
+        if self._items is None or refresh:
+            rows, start = [], 0
+            while True:
+                page = self.request('/items/top', params={'limit': 100, 'start': start})
+                if not isinstance(page, list):
+                    raise ZoteroError('Invalid Zotero item listing; refusing to infer an empty library')
+                rows.extend(page)
+                if len(page) < 100:
+                    break
+                start += 100
+            self._items = rows
+        return self._items
+
     def save(self, paper, collections):
         identifier = stable_id(paper['id'])
-        def exists():
-            rows = self.request('/items', params={'q': identifier, 'qmode': 'everything', 'limit': 100})
-            for row in rows:
-                data = row['data']
-                if any(identifier in data.get(k, '') for k in ('url', 'extra')):
+        self.last_item_key = None
+        def exists(refresh=False):
+            for row in self.items(refresh):
+                if matches_paper(row['data'], paper):
+                    self.last_item_key = row.get('key')
                     return True
             return False
 
@@ -139,12 +200,30 @@ class Zotero:
                 'archiveID': identifier, 'extra': f'arXiv: {identifier}',
                 'tags': [{'tag': '待阅读'}, {'tag': '自动分类待复核'}], 'collections': keys}
         try:
-            self.request('/items', [item])
+            result = self.request('/items', [item])
+            self.last_item_key = next(iter(result['successful'].values())).get('key')
         except ZoteroPreconditionError:
-            if exists():
+            if exists(refresh=True):
                 return 'existing'
             raise
+        self._items.append({'key': self.last_item_key, 'data': item})
         return 'created'
+
+
+def sync_registry(state):
+    """Human-readable GitHub list, derived from the authoritative state ledger."""
+    libraries = {}
+    for destination, cache in state.get('zotero', {}).items():
+        # Avoid exposing library account numbers in the standalone list.
+        namespace = hashlib.sha256(destination.encode()).hexdigest()[:16]
+        entries = []
+        for identifier, record in sorted(cache['synced'].items()):
+            paper = state.get('papers', {}).get(identifier, {})
+            entries.append({'arxiv_id': identifier, 'title': paper.get('title'),
+                            'url': f'https://arxiv.org/abs/{identifier}',
+                            'zotero_item_key': record.get('item_key'), 'status': record['status']})
+        libraries[namespace] = entries
+    return {'version': 1, 'source': 'state.json confirmed Zotero ledger', 'libraries': libraries}
 
 
 def synchronize(state_path, output, client=None):
@@ -171,7 +250,7 @@ def synchronize(state_path, output, client=None):
                     raise ZoteroError('Selected paper metadata missing from persistent state')
                 outcome = api.save(paper, collections)
                 result[outcome] += 1
-                cache['synced'][identifier] = {'status': outcome}
+                cache['synced'][identifier] = {'status': outcome, 'item_key': api.last_item_key}
                 result['pending'] -= 1
                 # Checkpoint every confirmed item, even if a later request fails.
                 cache['not_before'] = api.not_before
@@ -183,6 +262,7 @@ def synchronize(state_path, output, client=None):
         finally:
             cache['not_before'] = api.not_before
             atomic_json(state_path, state)
+            atomic_json(Path(state_path).with_name('zotero-sync-list.json'), sync_registry(state))
             atomic_json(output, result)
     return result
 

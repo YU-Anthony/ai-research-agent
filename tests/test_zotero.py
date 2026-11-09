@@ -165,9 +165,9 @@ def test_partial_progress_persisted_before_failure(tmp_path, monkeypatch):
     path, output = tmp_path / 'state.json', tmp_path / 'status.json'
     atomic_json(path, state)
     def handler(req):
-        if req.url.path.endswith('/collections'):
+        if req.method == 'GET' and req.url.path.endswith('/collections'):
             return httpx.Response(200, json=[])
-        if '12345' in str(req.url):
+        if req.url.path.endswith('/items/top'):
             return httpx.Response(200, json=[{'data': {'url': 'https://arxiv.org/abs/2601.12345'}}])
         return httpx.Response(429, headers={'Retry-After': '3600'})
     with httpx.Client(transport=httpx.MockTransport(handler)) as client:
@@ -277,3 +277,59 @@ def test_collection_412_reconciles_existing_collection():
         api = Zotero(client, '123', 'user', 'fake', clock=clock.time, sleep=clock.sleep)
         assert api.save(PAPER, {}) == 'created'
     assert sum(method == 'POST' and path.endswith('/collections') for method, path in calls) == 1
+
+
+def test_paginated_snapshot_finds_item_even_when_search_would_miss():
+    clock = FakeClock()
+    reads = []
+    def handler(req):
+        assert req.method == 'GET', 'Existing item must never be written again'
+        assert req.url.path.endswith('/items/top')
+        assert 'q' not in req.url.params
+        reads.append(int(req.url.params['start']))
+        if reads[-1] == 0:
+            return httpx.Response(200, json=[{'data': {'title': 'other'}} for _ in range(100)])
+        return httpx.Response(200, json=[{'data': {'archiveID': '2601.12345v1'}}])
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        api = Zotero(client, '123', 'user', 'fake', clock=clock.time, sleep=clock.sleep)
+        assert api.save(PAPER, {}) == 'existing'
+        assert api.save(PAPER, {}) == 'existing'
+    assert reads == [0, 100]
+
+
+@pytest.mark.parametrize('data', [
+    {'url': 'https://arxiv.org/pdf/2601.12345v3.pdf'},
+    {'archiveID': '2601.12345'},
+    {'extra': 'arXiv: 2601.12345v1'},
+    {'DOI': '10.48550/arXiv.2601.12345'},
+    {'title': PAPER['title'].upper(), 'creators': [{'creatorType': 'author', 'name': 'A. Researcher'}]},
+])
+def test_identity_matching_without_search(data):
+    from research_agent.zotero import matches_paper
+    assert matches_paper(data, PAPER)
+
+
+def test_different_explicit_arxiv_id_is_not_a_title_match():
+    from research_agent.zotero import matches_paper
+    data = {'archiveID': '2601.12346', 'title': PAPER['title'],
+            'creators': [{'creatorType': 'author', 'name': 'A. Researcher'}]}
+    assert not matches_paper(data, PAPER)
+
+
+def test_title_alone_does_not_merge_different_authors():
+    from research_agent.zotero import matches_paper
+    assert not matches_paper({'title': PAPER['title'], 'creators': [
+        {'creatorType': 'author', 'name': 'Different Author'}]}, PAPER)
+
+
+def test_github_registry_contains_only_confirmed_records_and_no_secret():
+    from research_agent.zotero import sync_registry
+    state = {'papers': {'2601.12345': PAPER}, 'zotero': {
+        'https://api.zotero.org/users/123': {'synced': {
+            '2601.12345': {'status': 'existing', 'item_key': 'ITEMKEY1'}}, 'not_before': 0}}}
+    registry = sync_registry(state)
+    entries = next(iter(registry['libraries'].values()))
+    assert entries == [{'arxiv_id': '2601.12345', 'title': PAPER['title'],
+                        'url': 'https://arxiv.org/abs/2601.12345',
+                        'zotero_item_key': 'ITEMKEY1', 'status': 'existing'}]
+    assert 'api.zotero.org/users/123' not in json.dumps(registry)
