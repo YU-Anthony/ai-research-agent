@@ -86,6 +86,7 @@ jobs:
           path: |
             reports/daily/
             monitor-state/state.json
+            monitor-state/zotero-sync-list.json
             monitor-state/library.sqlite
           if-no-files-found: warn
           retention-days: 90

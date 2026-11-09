@@ -1,5 +1,6 @@
 """Restore/persist monitor state on a dedicated Git branch, without touching the index."""
 import argparse
+import json
 from pathlib import Path
 import subprocess
 
@@ -36,9 +37,13 @@ def main():
         print('No state file to persist')
         return
     from research_agent.monitor import read_state
-    read_state(args.path)  # fail closed on malformed state
+    state = read_state(args.path)  # fail closed on malformed state
+    from research_agent.zotero import sync_registry
+    registry = json.dumps(sync_registry(state), ensure_ascii=False, indent=2).encode()
     blob = git('hash-object', '-w', '--stdin', data=args.path.read_bytes())
-    tree = git('mktree', data=f'100644 blob {blob}\tstate.json\n'.encode())
+    registry_blob = git('hash-object', '-w', '--stdin', data=registry)
+    tree = git('mktree', data=(f'100644 blob {blob}\tstate.json\n'
+                             f'100644 blob {registry_blob}\tzotero-sync-list.json\n').encode())
     if parent and git('rev-parse', f'{parent}^{{tree}}') == tree:
         print('State unchanged')
         return

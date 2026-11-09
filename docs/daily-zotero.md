@@ -25,8 +25,13 @@ most $0.20/run; it fails before calling when pricing is absent or too expensive.
 ## Zotero behavior
 
 The sync reads selected papers from persistent history, not every discovered paper.
-Each paper is checked against Zotero using the arXiv base identifier (versions
-are not duplicated). Existing matches are left intact; no user tags or collections
+Before any write, confirmed IDs are checked in the GitHub-persisted ledger.
+For uncached IDs, all existing top-level Zotero items are paginated once and
+matched locally using explicit arXiv identifiers (versions ignored), DOI when
+available, or an exact normalized title AND author set. Distinct explicit arXiv
+IDs are not merged by title. This replaces `qmode=everything` search: real-library
+audit found that searching an arXiv ID returned zero despite existing entries.
+The in-memory snapshot is updated after every successful creation. Existing matches are left intact; no user tags or collections
 are overwritten. New items get rule-based collections and the tags 待阅读 and
 自动分类待复核. Collection assignment is tentative; it is not model-generated.
 Full names use Zotero's single-field creator form to avoid guessing family names.
@@ -78,3 +83,22 @@ Pricing variables must be plain decimal numbers in USD per million tokens (no
 currency symbols, commas or unit suffixes). Empty or malformed values now report
 the exact variable name without echoing its contents. `LITERATURE_PRICING_CONFIRMED`
 must be exactly `true`; do not confuse the $0.20 per-run budget with token prices.
+
+
+## GitHub synchronized-paper list
+
+The `literature-state` branch contains `state.json` (authoritative history and
+ledger) and `zotero-sync-list.json` (a human-readable view of confirmed syncs).
+The standalone list includes stable arXiv IDs, titles, paper links, confirmation
+status and Zotero item keys when available. Older ledger records may have a null
+item key. It contains no credentials and hashes the destination namespace rather
+than displaying the account number. The standalone list is generated from the
+ledger in the same Git commit, not maintained independently. Do not manually edit
+only the view and expect deduplication to change.
+
+Before writing, the restored ledger skips confirmed entries. Unconfirmed items
+are compared against the actual library snapshot; a failed read never counts as
+an empty library. Only confirmed created/existing entries enter the list. A lost
+or first-run ledger still benefits from snapshot matching. Existing duplicates
+are not deleted or merged by this workflow; review their notes/attachments and
+collection/tag unions before any cleanup.
