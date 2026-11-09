@@ -41,7 +41,11 @@ after a confirmed sync (delete that ledger entry explicitly to resync it).
 
 Requests are spaced at least one second apart. Both Backoff and Retry-After
 headers are respected, including HTTP-date Retry-After values. HTTP 429 may be
-retried at most twice, with the identical deterministic write token and payload.
+retried at most twice, with an identical per-operation random write token and payload. A new operation
+gets a fresh token; content hashes are not reused across runs. HTTP 412 on a
+write triggers a read-only reconciliation of the item/collection. Only a
+confirmed remote match counts as success; otherwise it remains pending without
+blindly repeating the write.
 Network errors and other HTTP errors are not automatically retried. Total sleep
 per invocation is limited to 60 seconds, in chunks no longer than 30 seconds. If a
 server cooldown exceeds this limit, the sync stops without shortening it; the

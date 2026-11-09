@@ -213,3 +213,67 @@ def test_saved_cooldown_prevents_new_requests(tmp_path, monkeypatch):
     with httpx.Client(transport=httpx.MockTransport(handler)) as client:
         with pytest.raises(ZoteroError, match='cooldown'):
             synchronize(path, tmp_path / 'status.json', client)
+
+
+def test_separate_operations_use_fresh_tokens():
+    clock = FakeClock()
+    tokens = []
+    def handler(req):
+        tokens.append(req.headers['Zotero-Write-Token'])
+        return httpx.Response(200, json={'successful': {'0': {'key': 'saved'}}})
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        api = Zotero(client, '123', 'user', 'fake', clock=clock.time, sleep=clock.sleep)
+        api.request('/collections', [{'name': 'same'}])
+        api.request('/collections', [{'name': 'same'}])
+    assert len(tokens[0]) == 32
+    assert tokens[0] != tokens[1]
+
+
+def test_item_412_is_only_success_after_remote_confirmation():
+    clock = FakeClock()
+    methods = []
+    def handler(req):
+        methods.append(req.method)
+        if req.method == 'POST':
+            return httpx.Response(412, text='untrusted provider body')
+        return httpx.Response(200, json=[] if len(methods) == 1 else [
+            {'data': {'url': 'https://arxiv.org/abs/2601.12345'}}])
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        api = Zotero(client, '123', 'user', 'fake', clock=clock.time, sleep=clock.sleep)
+        assert api.save(PAPER, {n: n for n in categories(PAPER)}) == 'existing'
+    assert methods == ['GET', 'POST', 'GET']
+
+
+def test_unconfirmed_item_412_stays_pending_without_rewrite():
+    from research_agent.zotero import ZoteroPreconditionError
+    clock = FakeClock()
+    methods = []
+    def handler(req):
+        methods.append(req.method)
+        return httpx.Response(412, text='sensitive') if req.method == 'POST' else httpx.Response(200, json=[])
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        api = Zotero(client, '123', 'user', 'fake', clock=clock.time, sleep=clock.sleep)
+        with pytest.raises(ZoteroPreconditionError, match='POST /items') as error:
+            api.save(PAPER, {n: n for n in categories(PAPER)})
+    assert 'sensitive' not in str(error.value)
+    assert methods == ['GET', 'POST', 'GET']
+
+
+def test_collection_412_reconciles_existing_collection():
+    clock = FakeClock()
+    calls = []
+    names = categories(PAPER)
+    def handler(req):
+        calls.append((req.method, req.url.path))
+        if req.url.path.endswith('/collections'):
+            if req.method == 'POST':
+                return httpx.Response(412)
+            return httpx.Response(200, json=[{'key': str(i), 'data': {'name': n, 'parentCollection': False}}
+                                             for i, n in enumerate(names)])
+        if req.method == 'GET':
+            return httpx.Response(200, json=[])
+        return httpx.Response(200, json={'successful': {'0': {'key': 'saved'}}})
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        api = Zotero(client, '123', 'user', 'fake', clock=clock.time, sleep=clock.sleep)
+        assert api.save(PAPER, {}) == 'created'
+    assert sum(method == 'POST' and path.endswith('/collections') for method, path in calls) == 1
