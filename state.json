@@ -1269,8 +1269,87 @@
   },
   "zotero": {
     "https://api.zotero.org/users/22439373": {
-      "synced": {},
-      "not_before": 1794197554.5489979
+      "synced": {
+        "2611.00718": {
+          "status": "created"
+        },
+        "2611.01286": {
+          "status": "created"
+        },
+        "2611.01996": {
+          "status": "created"
+        },
+        "2611.02076": {
+          "status": "created"
+        },
+        "2611.02157": {
+          "status": "created"
+        },
+        "2611.02240": {
+          "status": "created"
+        },
+        "2611.02648": {
+          "status": "created"
+        },
+        "2611.02790": {
+          "status": "created"
+        },
+        "2611.04029": {
+          "status": "created"
+        },
+        "2611.04034": {
+          "status": "created"
+        },
+        "2611.04710": {
+          "status": "created"
+        },
+        "2611.05249": {
+          "status": "created"
+        },
+        "2611.05448": {
+          "status": "created"
+        },
+        "2611.06007": {
+          "status": "created"
+        },
+        "2611.06162": {
+          "status": "created"
+        },
+        "2611.06204": {
+          "status": "created"
+        },
+        "2611.06353": {
+          "status": "created"
+        },
+        "2611.06770": {
+          "status": "created"
+        },
+        "2611.07081": {
+          "status": "created"
+        },
+        "2611.07122": {
+          "status": "created"
+        },
+        "2611.07537": {
+          "status": "created"
+        },
+        "2611.07540": {
+          "status": "created"
+        },
+        "2611.08070": {
+          "status": "created"
+        },
+        "2611.08436": {
+          "status": "created"
+        },
+        "2611.08441": {
+          "status": "created"
+        },
+        "2611.08449": {
+          "status": "created"
+        }
+      },
+      "not_before": 1794197823.3945558
     }
   }
 }
