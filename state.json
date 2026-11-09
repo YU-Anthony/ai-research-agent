@@ -1266,5 +1266,11 @@
       "synthesis": {},
       "usage": {}
     }
+  },
+  "zotero": {
+    "https://api.zotero.org/users/22439373": {
+      "synced": {},
+      "not_before": 1794197554.5489979
+    }
   }
 }
