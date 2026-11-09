@@ -184,6 +184,20 @@
         "url": "https://arxiv.org/abs/2611.08449",
         "zotero_item_key": null,
         "status": "created"
+      },
+      {
+        "arxiv_id": "2611.08898",
+        "title": "FATHOM: World-Model-Guided Diffusion Action-Trajectory Selection for Sparse-Marker AUV Tracking",
+        "url": "https://arxiv.org/abs/2611.08898",
+        "zotero_item_key": "N8WM5KBN",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.09004",
+        "title": "Sharing the Road: LLM-Based Bargaining in Mixed-Autonomy Traffic",
+        "url": "https://arxiv.org/abs/2611.09004",
+        "zotero_item_key": "HZTARWCD",
+        "status": "created"
       }
     ]
   }

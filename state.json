@@ -104,6 +104,14 @@
     "2611.01286": {
       "reported_at": "2026-11-07T18:25:41.877762+00:00",
       "version": "2611.01286v1"
+    },
+    "2611.09004": {
+      "reported_at": "2026-11-09T23:15:00.629658+00:00",
+      "version": "2611.09004v1"
+    },
+    "2611.08898": {
+      "reported_at": "2026-11-09T23:15:00.629658+00:00",
+      "version": "2611.08898v1"
     }
   },
   "requests": {
@@ -134,6 +142,13 @@
       "estimated_cost_usd": 0.0032116000000000002,
       "prompt_tokens": 2841,
       "completion_tokens": 1297
+    },
+    "actions-42718790861": {
+      "ceiling_usd": 0.015211200000000001,
+      "status": "completed",
+      "estimated_cost_usd": 0.0021404,
+      "prompt_tokens": 1523,
+      "completion_tokens": 957
     }
   },
   "papers": {
@@ -654,6 +669,38 @@
       "url": "https://arxiv.org/abs/2611.07081v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-06T20:11:27.379687+00:00"
+    },
+    "2611.09004": {
+      "id": "2611.09004v1",
+      "title": "Sharing the Road: LLM-Based Bargaining in Mixed-Autonomy Traffic",
+      "abstract": "Mixed-autonomy traffic involves heterogeneous driving populations competing for shared road space. Previous studies have shown the existence and emergence of collective rationality using game-theoretic and reinforcement learning approaches, which rely on explicitly specified behavioral assumptions or reward functions for driving agents. However, how bargaining behaviors between driving agents evolve and lead to collective outcomes based on richer agent characteristics and language-based reasoning remains less understood. To fill this gap, we develop a bargaining framework based on large language models (LLMs) in which population-level autonomous vehicle (AV) and human-driven vehicle (HV) agents negotiate road-space allocations under heterogeneous objectives and private information. Through controlled experiments varying traffic composition, agent objectives, and traffic-domain knowledge, we examine bargaining behavior, coordination, and resource utilization. Results show that negotiated allocations respond to relative traffic density without strictly following proportional sharing, while density-balanced states exhibit greater coordination difficulty. Fairness-oriented objectives substantially improve agreement rates but do not necessarily yield equally high road-space utilization. Furthermore, domain knowledge affects bargaining outcomes differently across objective configurations, shaping both coordination and the role-dependent effects of fairness. These findings demonstrate the potential of LLM-based bargaining for modeling and designing interactions among driving agents in mixed-autonomy traffic.",
+      "authors": [
+        "Lingxiao Zhou",
+        "Di Chen",
+        "Jia Li"
+      ],
+      "published": "2026-11-06T05:27:51Z",
+      "updated": "2026-11-06T05:27:51Z",
+      "url": "https://arxiv.org/abs/2611.09004v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-09T23:15:01.754099+00:00"
+    },
+    "2611.08898": {
+      "id": "2611.08898v1",
+      "title": "FATHOM: World-Model-Guided Diffusion Action-Trajectory Selection for Sparse-Marker AUV Tracking",
+      "abstract": "Reliable relative tracking is fundamental to cooperative autonomous underwater vehicles (AUVs), yet remains challenging under nonlinear vehicle dynamics and degraded underwater visual conditions. Active light markers improve robustness to appearance variation, but provide deliberately sparse observations that can become incomplete or corrupted by occlusion, reflections, and detection noise during dynamic motion. To address the resulting partial-observation control problem, this paper proposes FATHOM, a world-model-guided diffusion action-trajectory selection framework for sparse-marker AUV tracking. FATHOM first integrates structured marker observations, inertial measurements, action history, and temporal dynamics into a predictive tracking belief using a multimodal task-supervised recurrent state-space model. A diffusion action prior then generates multiple expert-like multi-thruster trajectories, whose future tracking consequences are predicted through the learned latent dynamics. Rather than directly executing a generated trajectory, FATHOM selects the most favorable candidate under an explicit receding-horizon objective and continually updates the decision from onboard observations. Extensive offline analyses verify the learned predictive belief, multi-step world-model prediction, diffusion trajectory generation, and predictive selection. More importantly, comprehensive real-AUV experiments, including strong pose-based comparisons and component ablations, demonstrate robust autonomous tracking across nominal and challenging motions with naturally occurring partial marker visibility, while maintaining real-time onboard operation without motion-capture feedback.",
+      "authors": [
+        "Xiaorui Wang",
+        "Zeyu Sha",
+        "Mingyang Yang",
+        "David Chen Wang",
+        "Feitian Zhang"
+      ],
+      "published": "2026-11-06T02:40:08Z",
+      "updated": "2026-11-06T02:40:08Z",
+      "url": "https://arxiv.org/abs/2611.08898v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-09T23:15:01.754219+00:00"
     }
   },
   "history": {
@@ -1265,6 +1312,106 @@
       "papers": [],
       "synthesis": {},
       "usage": {}
+    },
+    "actions-42718790861": {
+      "created_at": "2026-11-09T23:15:00.629658+00:00",
+      "papers": [
+        {
+          "id": "2611.09004v1",
+          "contribution": "Develops an LLM-based bargaining framework for mixed-autonomy traffic, modeling negotiation among AVs and HVs with heterogeneous objectives and language-based reasoning.",
+          "limitation": "Abstract does not specify real-world deployment or scalability; impact on diverse real traffic patterns is unverified.",
+          "gap": "Unclear how well LLM-based bargaining generalizes across diverse real-world driving scenarios or integrates with perception/action control systems."
+        },
+        {
+          "id": "2611.08898v1",
+          "contribution": "Proposes FATHOM, a multimodal world-model-guided diffusion framework for robust sparse-marker AUV tracking, integrating marker, inertial data, and action history for predictive control.",
+          "limitation": "Focuses on underwater AUV tracking; potential adaptation to on-road driving scenarios or multimodal traffic interactions is unexplored.",
+          "gap": "Limited direct applicability or evaluation for multimodal autonomous driving or driver behavior understanding in traffic."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal data integration with advanced models (LLMs, recurrent state-space) enhances interaction modeling and decision making in autonomous agents.",
+            "uncertainty": "Applicability of underwater AUV methods to road driving contexts and real-time human-AV interaction remains to be tested.",
+            "evidence_ids": [
+              "2611.09004v1",
+              "2611.08898v1"
+            ]
+          },
+          {
+            "finding": "Incorporating fairness and explicit negotiation reasoning shapes outcomes and coordination in mixed-autonomy traffic simulations.",
+            "uncertainty": "Long-term behavioural adaptation and real human driver compliance with LLM-driven bargaining require further investigation.",
+            "evidence_ids": [
+              "2611.09004v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "2611.09004v1 studies language-based multi-agent bargaining for traffic interactions, contrasting 2611.08898v1's state-space modeling for tracking control under partial observations.",
+            "limitation": "Neither integrates human driver-state monitoring or provides explainable driving reasoning beyond behavior modeling.",
+            "evidence_ids": [
+              "2611.09004v1",
+              "2611.08898v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can LLM-based negotiation models improve explainable decision-making in real-world mixed-autonomy traffic?",
+            "hypothesis": "LLM-driven bargaining yields more interpretable and human-aligned traffic interactions than rule-based baselines.",
+            "method": "Deploy LLM negotiation agent in realistic simulator with human driver models; output natural language rationales.",
+            "datasets": "WOMD-Reasoning, mixed-autonomy datasets",
+            "baselines": "Rule-based bargaining, RL agents",
+            "metrics": "Agreement rate, fairness, explanation coherence, human trust",
+            "compute": "Moderate GPU for LLM inference, real-time constraint",
+            "risk": "LLM misinterpretations or slow inference affecting safety",
+            "novelty_check": "Few works leverage LLMs for naturalistic multi-agent driving negotiation and explanation",
+            "priority_rationale": "Targets human-centered transparent assistant design, advances multimodal reasoning in traffic",
+            "evidence_ids": [
+              "2611.09004v1"
+            ]
+          },
+          {
+            "question": "Can multimodal world models for underwater tracking inspire explainable trajectory selection in autonomous driving under partial occlusion?",
+            "hypothesis": "Structured latent dynamics with diffusion sampling improve trajectory prediction robustness and interpretability under occlusion compared to end-to-end methods.",
+            "method": "Adapt FATHOM's approach to vehicle sensors (camera,Lidar), simulate occluded driving scenarios.",
+            "datasets": "WOMD, autonomous driving datasets with occlusion events",
+            "baselines": "End-to-end trajectory predictors, standard planners",
+            "metrics": "Tracking accuracy, robustness under occlusion, explanation fidelity",
+            "compute": "High GPU for diffusion sampling, moderate latency requirement",
+            "risk": "Domain gap from underwater to driving, computational overhead",
+            "novelty_check": "Novel use of diffusion action-trajectory sampling in driving explained by latent dynamics",
+            "priority_rationale": "Improves multimodal robustness and explanation in safety-critical perception-actions",
+            "evidence_ids": [
+              "2611.08898v1"
+            ]
+          },
+          {
+            "question": "How does fairness-oriented bargaining impact collective driving behaviors and traffic efficiency in mixed-autonomy environments?",
+            "hypothesis": "Fairness objectives improve agreement but may reduce overall traffic utilization, revealing trade-offs valuable for system design.",
+            "method": "Simulate varying traffic densities and fairness objectives using LLM bargaining framework; analyze emergent traffic patterns.",
+            "datasets": "Custom mixed-autonomy traffic simulation",
+            "baselines": "Selfish vs fairness-agnostic bargaining agents",
+            "metrics": "Agreement rate, road-space utilization, coordination difficulty",
+            "compute": "Simulation-standard CPU/GPU",
+            "risk": "Sim-to-real gap, fairness criteria applicability",
+            "novelty_check": "Quantifies fairness-traffic efficiency trade-offs via LLM-based negotiation for the first time",
+            "priority_rationale": "Guides human-centered objective design for equitable autonomous traffic",
+            "evidence_ids": [
+              "2611.09004v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.015211200000000001,
+        "status": "completed",
+        "estimated_cost_usd": 0.0021404,
+        "prompt_tokens": 1523,
+        "completion_tokens": 957
+      }
     }
   },
   "zotero": {
@@ -1347,9 +1494,17 @@
         },
         "2611.08449": {
           "status": "created"
+        },
+        "2611.08898": {
+          "status": "created",
+          "item_key": "N8WM5KBN"
+        },
+        "2611.09004": {
+          "status": "created",
+          "item_key": "HZTARWCD"
         }
       },
-      "not_before": 1794197823.3945558
+      "not_before": 1794266115.346491
     }
   }
 }
