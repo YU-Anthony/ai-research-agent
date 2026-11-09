@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "source": "state.json confirmed Zotero ledger",
+  "libraries": {
+    "0fdc20a1790d6153": [
+      {
+        "arxiv_id": "2611.00718",
+        "title": "STEER: Route-Aware Adaptive Reasoning for Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.00718",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.01286",
+        "title": "An analytical model to explain under which conditions home batteries create new load peaks in the local grid",
+        "url": "https://arxiv.org/abs/2611.01286",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.01996",
+        "title": "Safety4DM: A Vision-Language Framework for Risk-Aware Dynamic Maps in Vehicle-Road-Cloud Collaborative Driving",
+        "url": "https://arxiv.org/abs/2611.01996",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.02076",
+        "title": "Scene-Adaptive Readout and Decoding in Diffusion Driving VLAs",
+        "url": "https://arxiv.org/abs/2611.02076",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.02157",
+        "title": "Wireless Networks That See: Integrated Sensing and Communication in Complex Environments",
+        "url": "https://arxiv.org/abs/2611.02157",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.02240",
+        "title": "When to Probe and When to Act: Clarity-Aware Risk-Adaptive Control for Interactive Driving",
+        "url": "https://arxiv.org/abs/2611.02240",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.02648",
+        "title": "ReinSeg: Retrieval-Guided Bounded Multimodal Refinement for 3-D Road Anomaly Segmentation",
+        "url": "https://arxiv.org/abs/2611.02648",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.02790",
+        "title": "MultiMental-IAS: A Multimodal Driver Mental State Analysis Dataset for Context-Aware Non-IID Evaluation",
+        "url": "https://arxiv.org/abs/2611.02790",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.04029",
+        "title": "A Review of Max-Pressure Traffic Signal Control Algorithms: State of the Art and Research Opportunities",
+        "url": "https://arxiv.org/abs/2611.04029",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.04034",
+        "title": "Do Pretrained Backbones Transfer to Physical Sensors? A Systematic Study of Multimodal Initialization Across the Sensor Stack",
+        "url": "https://arxiv.org/abs/2611.04034",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.04710",
+        "title": "DenseTwins: Dense Modality Decoupling for Multimodal Self-Supervision",
+        "url": "https://arxiv.org/abs/2611.04710",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.05249",
+        "title": "Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs",
+        "url": "https://arxiv.org/abs/2611.05249",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.05448",
+        "title": "Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model",
+        "url": "https://arxiv.org/abs/2611.05448",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.06007",
+        "title": "MotoVerse: A Benchmark for Predictive Perception of Motorized Two-Wheelers in Dense Unstructured Traffic",
+        "url": "https://arxiv.org/abs/2611.06007",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.06162",
+        "title": "A Layered View of LLM Support in Underwater Robotics",
+        "url": "https://arxiv.org/abs/2611.06162",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.06204",
+        "title": "CoSafe: Cooperative Runtime Safety Assurance for Mixed-Traffic Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.06204",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.06353",
+        "title": "Traffic-VL: Reinforced Vision-Language Models for Generalizable End-to-End Traffic Signal Control",
+        "url": "https://arxiv.org/abs/2611.06353",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.06770",
+        "title": "Benchmarking Fine-Grained Visual Reasoning for Remote Sensing in Urban Management",
+        "url": "https://arxiv.org/abs/2611.06770",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.07081",
+        "title": "Wide View Synthesis from Overlapping Perspective Cameras in Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.07081",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.07122",
+        "title": "Regulating Autonomous Mobility-on-Demand Operators with Fixed and Adaptive Penalties: A Multi-Agent Reinforcement Learning Approach",
+        "url": "https://arxiv.org/abs/2611.07122",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.07537",
+        "title": "Unified Overview of Safety Certificate Functions: Techniques from Hamilton--Jacobi Reachability and Control Barrier Functions",
+        "url": "https://arxiv.org/abs/2611.07537",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.07540",
+        "title": "Action-Conditioned VLM Monitoring for Autonomous Vehicle Semantic Anomalies",
+        "url": "https://arxiv.org/abs/2611.07540",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.08070",
+        "title": "Can an LLM Actually Reason and Program about Neural Network's Weights or is it just memorization on steroids? Exploring \"Weight-Space Programming\"",
+        "url": "https://arxiv.org/abs/2611.08070",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.08436",
+        "title": "SM4RT: Cascaded Feed-forward Model for 4D Reconstruction",
+        "url": "https://arxiv.org/abs/2611.08436",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.08441",
+        "title": "Edge-Assisted Crowdsensing for Explainable Cyclist Safety Perception",
+        "url": "https://arxiv.org/abs/2611.08441",
+        "zotero_item_key": null,
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.08449",
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://arxiv.org/abs/2611.08449",
+        "zotero_item_key": null,
+        "status": "created"
+      }
+    ]
+  }
+}
