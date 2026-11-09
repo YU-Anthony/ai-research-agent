@@ -7,6 +7,10 @@ on:
     - cron: '0 14 * * *'
   workflow_dispatch:
     inputs:
+      zotero_only:
+        description: Retry Zotero sync only (no arXiv or OpenAI calls)
+        type: boolean
+        default: false
       days:
         description: Recent lookback days (1-90)
         type: number
@@ -53,6 +57,7 @@ jobs:
         id: restore
         run: python examples/monitor_state.py restore monitor-state/state.json
       - name: Generate digest
+        if: inputs.zotero_only != true
         id: digest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -64,7 +69,7 @@ jobs:
         run: |
           python -m research_agent.monitor --days "$DAYS" --budget-usd "$BUDGET" --run-id "actions-${GITHUB_RUN_ID}" --output reports/daily
       - name: Sync selected literature to Zotero
-        if: always() && steps.digest.outcome == 'success'
+        if: always() && steps.restore.outcome == 'success' && (steps.digest.outcome == 'success' || inputs.zotero_only == true)
         env:
           ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
           ZOTERO_LIBRARY_ID: ${{ vars.ZOTERO_LIBRARY_ID }}
