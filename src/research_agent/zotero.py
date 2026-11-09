@@ -1,7 +1,7 @@
 """Synchronize ranked, verified arXiv metadata to Zotero; no model calls or PDFs."""
 import argparse
 from contextlib import nullcontext
-import hashlib
+import secrets
 import json
 import os
 import math
@@ -14,6 +14,11 @@ from .monitor import read_state, stable_id, atomic_json
 
 
 class ZoteroError(ValueError):
+    pass
+
+
+class ZoteroPreconditionError(ZoteroError):
+    """A rejected write must be reconciled before another write is attempted."""
     pass
 
 
@@ -46,8 +51,9 @@ class Zotero:
     def request(self, path, data=None, params=None):
         headers = dict(self.headers)
         if data is not None:
-            headers['Zotero-Write-Token'] = hashlib.sha256(
-                (self.base + path + json.dumps(data, sort_keys=True)).encode()).hexdigest()[:32]
+            # Tokens identify one operation, not content across separate runs.
+            # Keep this token unchanged only for the 429 retries below.
+            headers['Zotero-Write-Token'] = secrets.token_hex(16)
         for attempt in range(self.max_retries + 1):
             delay = max(0, self.not_before - self.clock())
             if self.waited + delay > self.max_wait:
@@ -81,8 +87,10 @@ class Zotero:
                 break
             if attempt == self.max_retries:
                 raise ZoteroError('Zotero HTTP 429 after bounded retries; pending papers retained for next sync')
+        if response.status_code == 412 and data is not None:
+            raise ZoteroPreconditionError(f'Zotero HTTP 412 on POST {path}; verify remote state before retrying')
         if response.status_code >= 300:
-            raise ZoteroError(f'Zotero HTTP {response.status_code}; no automatic retry')
+            raise ZoteroError(f'Zotero HTTP {response.status_code} on {"POST" if data is not None else "GET"} {path}; no automatic retry')
         result = response.json()
         if data is not None and (result.get('failed') or not result.get('successful')):
             raise ZoteroError('Zotero rejected write; inspect permissions and metadata')
@@ -102,16 +110,27 @@ class Zotero:
 
     def save(self, paper, collections):
         identifier = stable_id(paper['id'])
-        rows = self.request('/items', params={'q': identifier, 'qmode': 'everything', 'limit': 100})
-        for row in rows:
-            data = row['data']
-            if any(identifier in data.get(k, '') for k in ('url', 'extra')):
-                return 'existing'
+        def exists():
+            rows = self.request('/items', params={'q': identifier, 'qmode': 'everything', 'limit': 100})
+            for row in rows:
+                data = row['data']
+                if any(identifier in data.get(k, '') for k in ('url', 'extra')):
+                    return True
+            return False
+
+        if exists():
+            return 'existing'
         keys = []
         for name in categories(paper):
             if name not in collections:
-                result = self.request('/collections', [{'name': name, 'parentCollection': False}])
-                collections[name] = next(iter(result['successful'].values()))['key']
+                try:
+                    result = self.request('/collections', [{'name': name, 'parentCollection': False}])
+                    collections[name] = next(iter(result['successful'].values()))['key']
+                except ZoteroPreconditionError:
+                    # Reconcile a possible prior creation; never assume 412 means success.
+                    collections.update(self.collections())
+                    if name not in collections:
+                        raise
             keys.append(collections[name])
         item = {'itemType': 'preprint', 'title': paper['title'],
                 'creators': [{'creatorType': 'author', 'name': name} for name in paper['authors']],
@@ -119,7 +138,12 @@ class Zotero:
                 'url': f'https://arxiv.org/abs/{identifier}', 'archive': 'arXiv',
                 'archiveID': identifier, 'extra': f'arXiv: {identifier}',
                 'tags': [{'tag': '待阅读'}, {'tag': '自动分类待复核'}], 'collections': keys}
-        self.request('/items', [item])
+        try:
+            self.request('/items', [item])
+        except ZoteroPreconditionError:
+            if exists():
+                return 'existing'
+            raise
         return 'created'
 
 
