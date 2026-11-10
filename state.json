@@ -112,6 +112,46 @@
     "2611.08898": {
       "reported_at": "2026-11-09T23:15:00.629658+00:00",
       "version": "2611.08898v1"
+    },
+    "2611.12382": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.12382v1"
+    },
+    "2611.11940": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.11940v1"
+    },
+    "2611.11856": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.11856v1"
+    },
+    "2611.11532": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.11532v1"
+    },
+    "2611.11516": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.11516v1"
+    },
+    "2611.11148": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.11148v1"
+    },
+    "2611.10819": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.10819v1"
+    },
+    "2611.10632": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.10632v1"
+    },
+    "2611.10506": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.10506v1"
+    },
+    "2611.10355": {
+      "reported_at": "2026-11-10T20:40:27.138510+00:00",
+      "version": "2611.10355v1"
     }
   },
   "requests": {
@@ -149,6 +189,13 @@
       "estimated_cost_usd": 0.0021404,
       "prompt_tokens": 1523,
       "completion_tokens": 957
+    },
+    "actions-42897485869": {
+      "ceiling_usd": 0.021856800000000003,
+      "status": "completed",
+      "estimated_cost_usd": 0.005504,
+      "prompt_tokens": 5620,
+      "completion_tokens": 2035
     }
   },
   "papers": {
@@ -701,6 +748,220 @@
       "url": "https://arxiv.org/abs/2611.08898v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-09T23:15:01.754219+00:00"
+    },
+    "2611.12382": {
+      "id": "2611.12382v1",
+      "title": "AutoVLA-D: Learn a Trajectory-Geometric Condition from Reasoning for Autonomous Driving VLA",
+      "abstract": "Autoregressive VLA planning usually predicts continuous trajectories as the final output, but driving instructions often describe actions rather than ego states, which weakens direct conditioning on the final continuous trajectory. We address this gap with TrajCond, which introduces a discrete trajectory-geometric condition for VLA planning. Specifically, we represent TrajCond as a 1D-Brohan differential action trajectory and learn it with a two-stage training framework before final continuous trajectory prediction. With the simultaneous autoregressive generation of discrete and numeric trajectories, we name our method AutoVLA-D (Double). Experiments on NAVSIM navtest, nuScenes, and NeuroNCAP show that discrete trajectories are weaker as direct outputs but more effective as TrajCond, consistently improving final continuous trajectory prediction across closed-loop and open-loop driving benchmarks. Code is available at https://github.com/ShivaTeam/AutoVLA-D.",
+      "authors": [
+        "Yuguang Yang",
+        "Zhewen Tan",
+        "Canyu Chen",
+        "Linlin Yang",
+        "Cheng Chi",
+        "Chunyang Liu",
+        "Kehua Sheng",
+        "Jinyu Yang",
+        "Baochang Zhan",
+        "Bo Zhang",
+        "Yan Wang",
+        "Xianbin Cao"
+      ],
+      "published": "2026-11-09T13:20:38Z",
+      "updated": "2026-11-09T13:20:38Z",
+      "url": "https://arxiv.org/abs/2611.12382v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.989665+00:00"
+    },
+    "2611.11940": {
+      "id": "2611.11940v1",
+      "title": "Reliability-Adaptive Multimodal Relative Pose Tracking for Underwater Leader-Follower Robots",
+      "abstract": "Underwater leader-follower formation control requires continuous relative-pose estimation despite degraded sensing conditions and limited onboard computation. This paper presents a reliability-adaptive multimodal perception framework for six-degree-of-freedom relative-pose tracking between two moving underwater robots. The framework integrates complementary visual, acoustic-ranging, and hydrodynamic measurements while accounting for their distinct physical characteristics and time-varying reliability. It adaptively weights modality contributions and models temporal dependencies with linear computational complexity, enabling efficient pose estimation on embedded hardware. Extensive experiments were conducted using a custom-built AUV platform, with 648 pool trials spanning two leader vehicle types, three illumination conditions, and nine trajectory patterns. Evaluation yields an average translational error of 3.8 cm and an average orientation error of 2.4°. On an onboard NVIDIA Jetson AGX Orin, the fusion network achieves an inference latency of 17.62 ms, providing a 2.69-fold speedup over the evaluated Transformer-based fusion baseline. Closed-loop experiments further demonstrate stable formation maintenance with a moving leader under onboard computational constraints. A multimodal dataset containing measurements from all 648 trials will be made publicly available.",
+      "authors": [
+        "Mingyang Yang",
+        "Zeyu Sha",
+        "Xiaorui Wang",
+        "Jun Wang",
+        "David Chen Wang",
+        "Feitian Zhang"
+      ],
+      "published": "2026-11-09T06:09:00Z",
+      "updated": "2026-11-09T06:09:00Z",
+      "url": "https://arxiv.org/abs/2611.11940v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.989742+00:00"
+    },
+    "2611.11856": {
+      "id": "2611.11856v1",
+      "title": "DeltaForge: A Post-hoc Mixture-of-Experts VLA for Multi-Domain Autonomous Driving",
+      "abstract": "Fleets of driving vision-language-action (VLA) models are developed one domain at a time: each operator finetunes a shared base model on private data, producing specialized experts that are costly to consolidate into a single model. Weight merging loses accuracy as heterogeneous domains accumulate, and dense mixture-of-experts routing is prohibitively expensive to combine them. We present DeltaForge, to our knowledge the first post-hoc mixture-of-experts VLA for driving, which consolidates N independently finetuned per-domain models into a single multi-domain model from their weights and a small proxy set alone. When different operators finetune the same base model, their weight updates end up sharing a lot of structure. We exploit this by decomposing all the updates together using singular value decomposition (SVD), splitting each one into a shared part (the same across all domains) and a tiny domain-specific part. The router then only needs to work with those tiny domain-specific pieces, not the full expert weights, which is what keeps the approach efficient. Then two cooperating clip-level blind routers, one over the VLM reasoning experts and one over the flow-matching dynamics experts, are trained from soft labels on the proxy dataset. Across six diverse domains spanning urban, off-road, and highway driving on cars, trucks, and all-terrain vehicles (ATVs), DeltaForge approaches the accuracy of the per-domain experts and surpasses every merging, routing, centralized, and federated baseline at close to single-model parameter and compute cost. Adding a new domain requires only projecting its weight update onto the shared basis with no end-to-end retraining needed. The resulting model also generalizes to domain combinations it was never explicitly trained on.",
+      "authors": [
+        "Bingzhang Wang",
+        "Mo Poorsartep",
+        "Yasaman Esfandiari"
+      ],
+      "published": "2026-11-09T04:24:28Z",
+      "updated": "2026-11-09T04:24:28Z",
+      "url": "https://arxiv.org/abs/2611.11856v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.989790+00:00"
+    },
+    "2611.11532": {
+      "id": "2611.11532v1",
+      "title": "DriveFoundry: Co-Evolving Data and Model for Efficient Closed-Loop Iteration in Autonomous Driving",
+      "abstract": "A driving foundation model must learn reusable decision knowledge from rare critical events and apply it under strict runtime constraints. We introduce DriveFoundry, a closed-loop framework improving iteration efficiency under data and computation budgets by coupling structured causal data refinement with adaptive inference. The Data Engine builds traceable scene-candidate records linking scene evidence and factor-decision relations to candidate trajectories and outcome assessments. Candidate comparisons and counterfactual annotations clarify how scene factors affect behavioral feasibility and preference. Verified model failures guide VLM-assisted annotation and expert correction, refining training data and annotation systems. The model engine, Xiaomi-Drive-o1, unifies Perception, Causation, Action, World, and Value within a shared vision-language backbone to enable cross-task knowledge transfer. Block-wise latent refill passes candidate-specific evidence and predicted visual consequences between task blocks, connecting scene understanding, planning, and evaluation. A learned value-of-computation head selects tasks and allocates latent tokens based on expected benefit and cost, adapting inference to each decision. On PhysicalAI, the 9B model achieves the lowest ADE@1 across evaluated splits and horizons among tested models. In AlpaSim, it outperforms Alpamayo 1.5 across all metrics and achieves lower close-encounter and off-road rates than the 34B Alpamayo 2 Super, while trailing in progress and AlpaSim scores. For the 0.8B variant, joint training reduces 5 s minADE@6 by about 54% without altering the inference path or token budget. Adaptive inference matches full reasoning performance using only 28% of tokens. Real-vehicle tests confirm runtime feasibility, supporting a unified paradigm for learning from critical experience and dynamically allocating computation.",
+      "authors": [
+        "Ziyang Yao",
+        "Yuncheng Jiang",
+        "Fang Li",
+        "Haochen Liu",
+        "Shaoqing Xu",
+        "Wen Zhang",
+        "Xiangyang Chu",
+        "Zibin Guo",
+        "Jiale Hou",
+        "Chuang Wan",
+        "Jia Hua",
+        "Gengzhao Xiang",
+        "Xiaoran Luo",
+        "Chong He",
+        "Yuechen Luo",
+        "Junzhe Wang",
+        "Zhiyu Sun",
+        "Jun Zhang",
+        "Wei Li",
+        "Lei Li",
+        "Hongwei Xie",
+        "Bing Wang",
+        "Yuannan Shen",
+        "Jianwei Cui",
+        "Guang Chen",
+        "Hangjun Ye",
+        "Jingwei Zhao"
+      ],
+      "published": "2026-11-08T18:16:59Z",
+      "updated": "2026-11-08T18:16:59Z",
+      "url": "https://arxiv.org/abs/2611.11532v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.989868+00:00"
+    },
+    "2611.11516": {
+      "id": "2611.11516v1",
+      "title": "Breaking survivorship bias in driving world models",
+      "abstract": "World models allow autonomous vehicles to imagine the consequences of candidate actions before execution, but their reliability depends on the futures represented in their training data. We identify a survivorship bias in driving world models: because the futures recorded in prevailing driving datasets almost always end safely, existing models often imagine benign outcomes even when a collision is imminent. We introduce a neutral world model (NWM) that learns both routine and safety-critical futures from a mixture of routine driving and real accident videos with a bounding-box-guided objective. The NWM more faithfully anticipates imminent collisions, while maintaining a low false collision rate and competitive generation quality in routine driving. We further use the model as an imagination engine for decision-making. Given multiple ego trajectories, the NWM predicts the future associated with each candidate, and a reward function evaluates these imagined outcomes before selecting an action. On challenging NAVSIM scenarios, this procedure selects the better trajectory more reliably than the baseline world model. Zero-shot experiments with real-world pedestrian dummy crossing data collected using an autonomous research vehicle further demonstrate transfer to unseen sensor observations. These results show that correcting survivorship bias enables world models to more faithfully reason about futures and support safety-critical decision-making in autonomous driving.",
+      "authors": [
+        "Zihao Sheng",
+        "Zilin Huang",
+        "Yuhao Luo",
+        "Zhengyang Wan",
+        "Boyue Wang",
+        "Soyoung Ahn",
+        "David A. Noyce",
+        "Sikai Chen"
+      ],
+      "published": "2026-11-08T17:45:00Z",
+      "updated": "2026-11-08T17:45:00Z",
+      "url": "https://arxiv.org/abs/2611.11516v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.989910+00:00"
+    },
+    "2611.11148": {
+      "id": "2611.11148v1",
+      "title": "MOSU2: Long-range Navigation System with Multi-modal Scene Understanding",
+      "abstract": "Robots that travel long distances through public outdoor spaces must do more than avoid obstacles: they must remain on terrain suited to their mobility and decide when to proceed, yield, or detour around pedestrians, cyclists, vehicles, traffic signals, and temporary restrictions. These decisions are difficult because their correctness often depends on how a scene evolves, such as whether an approaching car is slowing or a cyclist will cross the robot's path. Vision-language models (VLMs) can interpret such cues, but they reason over images that lack metric geometry and motion. Supplying this evidence at every step is too slow for real-time navigation, and hand-crafted triggers cannot anticipate the open-ended variety of outdoor situations. We present MOSU2, a long-range navigation system with two-stage trajectory selection, in which first-stage contextual reasoning determines when additional evidence is needed and what to retrieve. Only when an interaction remains unresolved does the first stage trigger the second stage to retrieve geometric and dynamic information and align it with scene context to make navigation decisions. Building on MOSU, MOSU2 follows routes from GPS-based route planning and filters candidate trajectories through multi-modal traversability analysis before selecting a trajectory to move the robot. In real-world experiments spanning stop gestures, construction sites, crosswalks, and roads shared with vehicles, cyclists, and pedestrians, MOSU2 raises mean navigation success from 61.8% to 94.2% and condition-detection accuracy from 72.2% to 91.4% over its single-image predecessor, at about 2.2 times its mean decision latency. Project website: https://jinggm.github.io/mosu2/",
+      "authors": [
+        "Jing Liang",
+        "Zhenyu Hou",
+        "Senthurbavan Kirubaharan",
+        "Md Safwan Mondal",
+        "Ashok Gudivada",
+        "Xuesu Xiao",
+        "Dinesh Manocha"
+      ],
+      "published": "2026-11-08T05:41:39Z",
+      "updated": "2026-11-08T05:41:39Z",
+      "url": "https://arxiv.org/abs/2611.11148v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.989951+00:00"
+    },
+    "2611.10819": {
+      "id": "2611.10819v1",
+      "title": "Selective Cooperative Perception via Blind Spot Reasoning and Agentic Dialogue with Vision-Language Models",
+      "abstract": "Real-time cooperative perception (CP) in multi-agent traffic environments is highly resource-intensive, which posing scalability challenges for large-scale deployment. Efficiency can be significantly improved by selectively performing CP only in safety-critical scenarios and for key occluding objects. Vision-Language Models (VLMs) are well-suited for complex reasoning in dynamic and uncertain environments, making them a promising tool for this selective CP task. This study proposes a VLM-driven agentic framework for blind spot reasoning and dialogue-based CP. A mixed-model architecture is designed that integrates conventional object detection for stable perception, vision-language reasoning for identifying impactful occlusions, and a physics-based geometric module to align reasoning with real-world visibility constraints. The framework also incorporates a Chain-of-Thought (CoT) prompting mechanism to enhance interpretability and intent-aware decision-making. We collect real-world data from connected vehicles operating in urban traffic and compare the driving-critical blind spot identification and dialogue performance of four state-of-the-art VLMs. Experimental results demonstrate that our method achieves over 80% accuracy in driving-critical blind spot detection and over 90% success in dialogue-driven perception sharing. This work provides a scalable, interpretable, and bandwidth-efficient alternative to conventional CP pipelines, and offers new insights into agentic communication design for future connected traffic systems.",
+      "authors": [
+        "Chengyuan Ma",
+        "Shixiao Liang",
+        "Hangyu Li",
+        "Zheng Li",
+        "Hang Zhou",
+        "Keke Long",
+        "Bofeng Cao",
+        "Zhaohui Liang",
+        "Xiaopeng Li"
+      ],
+      "published": "2026-11-07T15:58:59Z",
+      "updated": "2026-11-07T15:58:59Z",
+      "url": "https://arxiv.org/abs/2611.10819v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.989995+00:00"
+    },
+    "2611.10632": {
+      "id": "2611.10632v1",
+      "title": "Latent-WAM++: Shaping World and Action Representations for End-to-End Autonomous Driving",
+      "abstract": "We introduce Latent-WAM++, a representation-centered World Action Model (WAM) for end-to-end autonomous driving. Existing WAMs are primarily trained to predict future states or final actions, leaving the intermediate world and action representations that connect prediction to planning only indirectly constrained. Latent-WAM++ matches the supervision of each representation to its role in planning. World Representation Construction combines scene-ego future prediction, SIGReg-based distribution stabilization, and frozen geometric priors to learn a temporally predictive, non-degenerate, and geometry-aware world representation without an EMA target encoder. Trajectory MeanFlow Planner directly predicts multimodal trajectory proposals while being optimized with an Improved MeanFlow velocity-space objective, enabling one-step sampling. Visual-Action Representation Alignment further aligns the resulting pre-output action features with a stop-gradient target derived from current visual semantics. Latent-WAM++ achieves state-of-the-art performance on NAVSIM v2 and under zero-shot evaluation on HUGSIM, reaching 90.1 EPDMS on NAVSIM v2 and 47.0 average RC and 30.1 average HD-Score on HUGSIM. Training the planner end to end costs 190 GPU-hours for Latent-WAM++ versus 1,600 for Latent-WAM, a reduction of 88.1%.",
+      "authors": [
+        "Yichen Zhang",
+        "Yupeng Zheng",
+        "Linbo Wang",
+        "Pengxuan Yang",
+        "Zebin Xing",
+        "Junli Wang",
+        "Shiwei Li",
+        "Kangwei Liu",
+        "Fan Ren",
+        "Qichao Zhang",
+        "Yifeng Pan",
+        "Ji Tao",
+        "Dongbin Zhao"
+      ],
+      "published": "2026-11-07T10:20:14Z",
+      "updated": "2026-11-07T10:20:14Z",
+      "url": "https://arxiv.org/abs/2611.10632v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.990046+00:00"
+    },
+    "2611.10506": {
+      "id": "2611.10506v1",
+      "title": "SRA: Spatial Reasoning Adapter via Evolving Social Interaction Graphs for Trajectory Prediction",
+      "abstract": "Predicting where multiple agents will move next is fundamental to autonomous driving, robotics, and any system that must share space with people safely. Modern stochastic predictors read off inter-agent interactions once from the observed past and keep that view fixed throughout the generative rollout, so the reciprocal geometric constraints that emerge as the joint future sharpens are not re-examined. We address this gap with SRA (Spatial Reasoning Adapter), a modular graph denoiser that is integrated into existing diffusion and flow-matching predictors without redesigning their generative cores. At every reverse step, SRA reads the host's current future estimate, builds a sparse Euclidean interaction graph on the predicted trajectories, and returns a residual correction to the host's decoding path. Our adapter consists of three core components: a sparse neighborhood retrieved with a learned query-key score and a geometric bias, a future-conditioned relational feature recomputed on the evolving prediction, and uncertainty-weighted message passing where confident agents act as anchors for uncertain ones. We instantiate SRA on three structurally different hosts (LED, MID, and MoFlow) across four multi-agent benchmarks: SDD, NBA, Soccer, and Football. SRA improves ADE for every host on every dataset, with average gains of 5.8% in ADE and 7.0% in FDE. A cumulative ablation shows that the three components act as one mechanism: only together do they improve every host on every sports dataset, indicating that spatial reasoning over the model's own evolving future, weighted by how far that future can be trusted, is broadly useful across denoising architectures. Code is available at https://github.com/Jaewoo97/SRA.",
+      "authors": [
+        "Jaewoo Jeong",
+        "Seonkyu Song",
+        "Hyeonwoo Park",
+        "Jegyeong Cho",
+        "Yujin Bae",
+        "Giwon Lee",
+        "Daehee Park",
+        "Kuk-Jin Yoon"
+      ],
+      "published": "2026-11-07T06:16:58Z",
+      "updated": "2026-11-07T06:16:58Z",
+      "url": "https://arxiv.org/abs/2611.10506v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.990092+00:00"
+    },
+    "2611.10355": {
+      "id": "2611.10355v1",
+      "title": "From Radio Measurements to Sensing Services: A 3GPP Perspective on Multi-UAV Tracking with Networked ISAC",
+      "abstract": "Integrated sensing and communication (ISAC) can turn radio measurements into networked sensing services, but accurate position estimates alone do not ensure useful tracking. Missed targets, late acquisition, track interruptions and aging observations also shape the information available to an application. This article examines tracking of noncooperative unmanned aerial vehicles (UAVs) from a Third Generation Partnership Project (3GPP) perspective. It connects sensing-service requirements and network architecture to three information interfaces: receiver search regions, measurement context and track validity. A five-UAV case study in a 3GPP urban scenario and a ray-traced San Francisco scene illustrates the tradeoff between target coverage and extra outputs, the distinction between acquisition and ongoing continuity, and the value of testing a static mission envelope before adding adaptation. An observation-age example explains how a state predicted to the present can still rely on old evidence. The resulting lessons are to align receiver search with requested coverage, preserve measurement time and uncertainty, and assess coverage, ambiguity and timeliness together. We conclude by pointing out fruitful avenues for further work in sensing design, calibration and service validation.",
+      "authors": [
+        "Xingqin Lin"
+      ],
+      "published": "2026-11-07T00:35:33Z",
+      "updated": "2026-11-07T00:35:33Z",
+      "url": "https://arxiv.org/abs/2611.10355v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-10T20:40:27.990126+00:00"
     }
   },
   "history": {
@@ -1412,6 +1673,183 @@
         "prompt_tokens": 1523,
         "completion_tokens": 957
       }
+    },
+    "actions-42897485869": {
+      "created_at": "2026-11-10T20:40:27.138510+00:00",
+      "papers": [
+        {
+          "id": "2611.12382v1",
+          "contribution": "Introduces TrajCond, a discrete trajectory-geometric condition improving continuous trajectory prediction in autonomous driving VLA planning via a two-stage framework, jointly generating discrete and continuous trajectories.",
+          "limitation": "Discrete trajectories alone are weaker outputs; effectiveness depends on integration with continuous prediction; limitation in scenarios beyond tested datasets (NAVSIM navtest, nuScenes, NeuroNCAP) is unaddressed.",
+          "gap": "Applicability of TrajCond to interactive multimodal traffic scenarios or explanation of driving reasoning remains unexplored."
+        },
+        {
+          "id": "2611.11940v1",
+          "contribution": "Presents a reliability-adaptive multimodal perception framework for underwater robots, fusing visual, acoustic, and hydrodynamic data for relative-pose tracking with low latency and high accuracy on embedded platforms.",
+          "limitation": "Focuses on underwater leader-follower robots; transferability to autonomous driving domains with complex multimodal modalities and human behaviors is unclear.",
+          "gap": "Does not address driving behavior understanding or explainable reasoning relevant to autonomous driving contexts."
+        },
+        {
+          "id": "2611.11856v1",
+          "contribution": "Proposes DeltaForge, a post-hoc mixture-of-experts vision-language-action model consolidating multi-domain autonomous driving experts into one efficient model without retraining end-to-end, enabling generalization and efficient routing across heterogeneous domains.",
+          "limitation": "Relies on operators finetuning the same base model; performance on domains with less relatedness or unseen domains may require further validation.",
+          "gap": "Explanation and interpretability of driving behavior reasoning in the combined multi-domain model are not discussed explicitly."
+        },
+        {
+          "id": "2611.11532v1",
+          "contribution": "Introduces DriveFoundry, a closed-loop framework coupling causal data refinement and adaptive inference to improve efficiency and reduce errors in autonomous driving VLAs, unifying perception, causation, action, world, and value within a shared backbone.",
+          "limitation": "Complex system combining many tasks; real-vehicle test details limited; scalability and real-time constraints under diverse conditions require further study.",
+          "gap": "Degree to which explanations support human understanding or interactive driver-state reasoning is not clarified explicitly."
+        },
+        {
+          "id": "2611.11516v1",
+          "contribution": "Identifies and addresses survivorship bias in driving world models by integrating accident videos to better anticipate imminent collisions, improving decision-making and safety-critical reasoning with a neutral world model (NWM).",
+          "limitation": "Focuses mainly on collision anticipation; generalization to diverse interactive traffic scenarios or multimodal observations beyond video requires more study.",
+          "gap": "Integration of multimodal data or incorporation into autonomous driving assistants for human-centered reasoning is not detailed."
+        },
+        {
+          "id": "2611.11148v1",
+          "contribution": "Presents MOSU2, a long-range autonomous navigation system combining vision-language models with geometric and dynamic information retrieval via two-stage trajectory selection, improving multimodal traversability and interaction reasoning in complex environments.",
+          "limitation": "Primarily evaluated on real-world outdoor robot navigation with social agents; extension to full vehicle autonomous driving scenarios with multimodal traffic interactions and driver state is unspecified.",
+          "gap": "Explainable and human-centered driver reasoning aspects or integration with autonomous assistants is not explicitly addressed."
+        },
+        {
+          "id": "2611.10819v1",
+          "contribution": "Develops a VLM-driven framework for selective cooperative perception in multi-agent traffic, using blind spot reasoning and dialogue-based interaction to identify critical occlusions, improving interpretability and communication efficiency.",
+          "limitation": "Evaluation focuses on urban connected vehicle scenarios; robustness under varied environments and broader human-behavior interpretation needs further validation.",
+          "gap": "Extension to driver state modeling or comprehensive explainable driving reasoning beyond blind spot detection is undeveloped."
+        },
+        {
+          "id": "2611.10632v1",
+          "contribution": "Proposes Latent-WAM++, a world-action model that shapes intermediate world and action representations aligned with planning for end-to-end autonomous driving, achieving state-of-the-art performance while reducing training compute.",
+          "limitation": "Focuses on trajectory planning accuracy and representation alignment; interpretability and multimodal behavior understanding are not primary focuses in this work.",
+          "gap": "Faithful grounded driving explanations and human-centered reasoning integration remain open for future research."
+        },
+        {
+          "id": "2611.10506v1",
+          "contribution": "Introduces SRA, a spatial reasoning adapter that dynamically refines multi-agent trajectory predictions by reasoning over evolving social interaction graphs, improving multimodal prediction in trajectory forecasting benchmarks.",
+          "limitation": "Evaluated mostly on sports datasets; applicability and adaptation to complex urban driving traffic interactions with diverse human behaviors require exploration.",
+          "gap": "Explicit connection to explainable driving reasoning or embedding within autonomous driving assistive systems is not established."
+        },
+        {
+          "id": "2611.10355v1",
+          "contribution": "Analyzes multi-UAV tracking from a 3GPP networking and sensing perspective, discussing information interfaces for tracking continuity, coverage, and ambiguity to improve sensing service design.",
+          "limitation": "Focused on networked UAV tracking; relevance to automotive autonomous driving multimodal behavior or driving reasoning is indirect and speculative.",
+          "gap": "Does not address multimodal driving traffic interactions or driving behavior reasoning directly."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Increasing use of multimodal frameworks combining vision, geometric, and dynamic information to improve trajectory prediction and navigation decisions.",
+            "uncertainty": "Extent of real-time applicability and generalization to diverse driving scenarios varies across approaches.",
+            "evidence_ids": [
+              "2611.12382v1",
+              "2611.11148v1",
+              "2611.10632v1"
+            ]
+          },
+          {
+            "finding": "Emergence of methods addressing safety-critical reasoning by incorporating non-routine and biased data to correct model predictions and support robust decision-making.",
+            "uncertainty": "How these methods integrate with multimodal perception and explanation for human understanding needs exploration.",
+            "evidence_ids": [
+              "2611.11516v1",
+              "2611.11532v1"
+            ]
+          },
+          {
+            "finding": "Use of vision-language models for reasoning and interpretability in multi-agent traffic contexts to enable selective perception and cooperative communication.",
+            "uncertainty": "Robustness and scalability under complex and heterogeneous driving environments remain to be validated.",
+            "evidence_ids": [
+              "2611.10819v1",
+              "2611.11148v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "DeltaForge consolidates multi-domain expert models efficiently using weight decompositions, enabling practical multi-domain deployment unlike dense routing or retraining methods.",
+            "limitation": "Does not explicitly incorporate or evaluate explainable driving behavior or multimodal reasoning in user-interpretable formats.",
+            "evidence_ids": [
+              "2611.11856v1",
+              "2611.11532v1"
+            ]
+          },
+          {
+            "comparison": "SRA dynamically updates multi-agent trajectory predictions leveraging spatial graphs during generation, contrasting static interaction models in existing methods.",
+            "limitation": "Mostly evaluated on sports datasets; urban driving traffic complexity and explainability remain untested.",
+            "evidence_ids": [
+              "2611.10506v1"
+            ]
+          },
+          {
+            "comparison": "Neutral world models improve anticipation of collisions by learning from accident data, addressing survivorship bias unlike traditional world models focused on routine data.",
+            "limitation": "Integration with multimodal traffic cues and real-time explanation systems is not detailed.",
+            "evidence_ids": [
+              "2611.11516v1",
+              "2611.10632v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can a multimodal VLM-based framework selectively trigger geometric and dynamic data retrieval to improve interpretable trajectory predictions in urban traffic?",
+            "hypothesis": "Selective retrieval enhances reasoning efficiency and explanation fidelity for multimodal autonomous driving.",
+            "method": "Extend MOSU2’s two-stage selection combining VLM reasoning with latent world-action representations from Latent-WAM++.",
+            "datasets": "NAVSIM, nuScenes, AlpaSim (unverified)",
+            "baselines": "Latent-WAM++, MOSU2, DriveFoundry",
+            "metrics": "Prediction accuracy, latency, explanation clarity",
+            "compute": "GPU-enabled realtime inference; moderate memory; seed control needed",
+            "risk": "Integration complexity and inference delay",
+            "novelty_check": "Combines selective multimodal retrieval with action-representation alignment; novel in driving context.",
+            "priority_rationale": "Balances feasibility and significance; enables efficient, explainable driving reasoning.",
+            "evidence_ids": [
+              "2611.11148v1",
+              "2611.10632v1",
+              "2611.11532v1"
+            ]
+          },
+          {
+            "question": "Does integrating accident and rare-event data in a multimodal world model improve faithfulness of collision anticipation and support human-understandable explanations?",
+            "hypothesis": "Inclusion of safety-critical data reduces survivorship bias, enhancing model trustworthiness and decision quality.",
+            "method": "Combine Neutral World Model learning with DriveFoundry’s causal data refinement and adaptive inference strategies.",
+            "datasets": "NAVSIM accident set, PhysicalAI, real-world incident videos (unverified)",
+            "baselines": "Neutral World Model, DriveFoundry standard model",
+            "metrics": "Collision prediction accuracy, false positives, explanation fidelity",
+            "compute": "High compute for training; real-time inference feasible",
+            "risk": "Data imbalance and annotation quality issues",
+            "novelty_check": "Explicit survivorship bias correction paired with multimodal causal models is novel.",
+            "priority_rationale": "High significance for safety-critical reasoning, moderate feasibility due to data needs.",
+            "evidence_ids": [
+              "2611.11516v1",
+              "2611.11532v1"
+            ]
+          },
+          {
+            "question": "Can dialogue-driven blind spot reasoning using VLMs improve cooperative perception efficiency and support interpretable communication for human drivers and autonomous vehicles?",
+            "hypothesis": "Dialogue-based selective perception reduces bandwidth and increases transparency in multi-agent traffic.",
+            "method": "Implement agentic dialogue framework from 2611.10819v1 integrated with spatial reasoning adapters to enhance context understanding.",
+            "datasets": "Connected vehicle urban data, cooperative perception benchmarks (unverified)",
+            "baselines": "Conventional CP pipelines, blind spot detection without dialogue",
+            "metrics": "Detection accuracy, dialogue success rate, bandwidth use, interpretability",
+            "compute": "Embedded-level compute for real-time operation",
+            "risk": "Dialogue robustness in diverse conditions",
+            "novelty_check": "Agentic VLM dialogue for CP with interpretability is an emerging novelty.",
+            "priority_rationale": "Feasible and significant for scalable cooperative autonomous driving.",
+            "evidence_ids": [
+              "2611.10819v1",
+              "2611.10506v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.021856800000000003,
+        "status": "completed",
+        "estimated_cost_usd": 0.005504,
+        "prompt_tokens": 5620,
+        "completion_tokens": 2035
+      }
     }
   },
   "zotero": {
@@ -1502,9 +1940,49 @@
         "2611.09004": {
           "status": "created",
           "item_key": "HZTARWCD"
+        },
+        "2611.10355": {
+          "status": "created",
+          "item_key": "SV9IRIF3"
+        },
+        "2611.10506": {
+          "status": "created",
+          "item_key": "7238PICJ"
+        },
+        "2611.10632": {
+          "status": "created",
+          "item_key": "HCVKC3VJ"
+        },
+        "2611.10819": {
+          "status": "created",
+          "item_key": "GCPHJAHG"
+        },
+        "2611.11148": {
+          "status": "created",
+          "item_key": "ZZ4XFCJG"
+        },
+        "2611.11516": {
+          "status": "created",
+          "item_key": "UTWWHIWC"
+        },
+        "2611.11532": {
+          "status": "created",
+          "item_key": "76N5SME2"
+        },
+        "2611.11856": {
+          "status": "created",
+          "item_key": "2H4VHADK"
+        },
+        "2611.11940": {
+          "status": "created",
+          "item_key": "RZTDKHQI"
+        },
+        "2611.12382": {
+          "status": "created",
+          "item_key": "UNTFCGEA"
         }
       },
-      "not_before": 1794266115.346491
+      "not_before": 1794343261.7000895
     }
   }
 }

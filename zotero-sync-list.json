@@ -198,6 +198,76 @@
         "url": "https://arxiv.org/abs/2611.09004",
         "zotero_item_key": "HZTARWCD",
         "status": "created"
+      },
+      {
+        "arxiv_id": "2611.10355",
+        "title": "From Radio Measurements to Sensing Services: A 3GPP Perspective on Multi-UAV Tracking with Networked ISAC",
+        "url": "https://arxiv.org/abs/2611.10355",
+        "zotero_item_key": "SV9IRIF3",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.10506",
+        "title": "SRA: Spatial Reasoning Adapter via Evolving Social Interaction Graphs for Trajectory Prediction",
+        "url": "https://arxiv.org/abs/2611.10506",
+        "zotero_item_key": "7238PICJ",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.10632",
+        "title": "Latent-WAM++: Shaping World and Action Representations for End-to-End Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.10632",
+        "zotero_item_key": "HCVKC3VJ",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.10819",
+        "title": "Selective Cooperative Perception via Blind Spot Reasoning and Agentic Dialogue with Vision-Language Models",
+        "url": "https://arxiv.org/abs/2611.10819",
+        "zotero_item_key": "GCPHJAHG",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.11148",
+        "title": "MOSU2: Long-range Navigation System with Multi-modal Scene Understanding",
+        "url": "https://arxiv.org/abs/2611.11148",
+        "zotero_item_key": "ZZ4XFCJG",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.11516",
+        "title": "Breaking survivorship bias in driving world models",
+        "url": "https://arxiv.org/abs/2611.11516",
+        "zotero_item_key": "UTWWHIWC",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.11532",
+        "title": "DriveFoundry: Co-Evolving Data and Model for Efficient Closed-Loop Iteration in Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.11532",
+        "zotero_item_key": "76N5SME2",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.11856",
+        "title": "DeltaForge: A Post-hoc Mixture-of-Experts VLA for Multi-Domain Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.11856",
+        "zotero_item_key": "2H4VHADK",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.11940",
+        "title": "Reliability-Adaptive Multimodal Relative Pose Tracking for Underwater Leader-Follower Robots",
+        "url": "https://arxiv.org/abs/2611.11940",
+        "zotero_item_key": "RZTDKHQI",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.12382",
+        "title": "AutoVLA-D: Learn a Trajectory-Geometric Condition from Reasoning for Autonomous Driving VLA",
+        "url": "https://arxiv.org/abs/2611.12382",
+        "zotero_item_key": "UNTFCGEA",
+        "status": "created"
       }
     ]
   }
