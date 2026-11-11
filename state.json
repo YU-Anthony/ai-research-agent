@@ -152,6 +152,30 @@
     "2611.10355": {
       "reported_at": "2026-11-10T20:40:27.138510+00:00",
       "version": "2611.10355v1"
+    },
+    "2611.13192": {
+      "reported_at": "2026-11-11T21:01:20.129333+00:00",
+      "version": "2611.13192v1"
+    },
+    "2611.13890": {
+      "reported_at": "2026-11-11T21:01:20.129333+00:00",
+      "version": "2611.13890v1"
+    },
+    "2611.13238": {
+      "reported_at": "2026-11-11T21:01:20.129333+00:00",
+      "version": "2611.13238v1"
+    },
+    "2611.14373": {
+      "reported_at": "2026-11-11T21:01:20.129333+00:00",
+      "version": "2611.14373v1"
+    },
+    "2611.14371": {
+      "reported_at": "2026-11-11T21:01:20.129333+00:00",
+      "version": "2611.14371v1"
+    },
+    "2611.13456": {
+      "reported_at": "2026-11-11T21:01:20.129333+00:00",
+      "version": "2611.13456v1"
     }
   },
   "requests": {
@@ -196,6 +220,13 @@
       "estimated_cost_usd": 0.005504,
       "prompt_tokens": 5620,
       "completion_tokens": 2035
+    },
+    "actions-43099383028": {
+      "ceiling_usd": 0.01842,
+      "status": "completed",
+      "estimated_cost_usd": 0.0039576,
+      "prompt_tokens": 3502,
+      "completion_tokens": 1598
     }
   },
   "papers": {
@@ -962,6 +993,99 @@
       "url": "https://arxiv.org/abs/2611.10355v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-10T20:40:27.990126+00:00"
+    },
+    "2611.14373": {
+      "id": "2611.14373v1",
+      "title": "Gaussian Process-Augmented Model Predictive Contouring Control for 6-DoF Trajectory Tracking with a Holonomic AUV",
+      "abstract": "Small, holonomic Autonomous Underwater Vehicles (AUVs) enable close-range inspection of underwater structures from arbitrary viewpoints, requiring accurate position and attitude tracking under state and input constraints. Model Predictive Contouring Control (MPCC) naturally handles these requirements, but relies on an accurate dynamics model, which is difficult to obtain underwater. In this paper, we present a nonlinear MPCC in all six Degrees of Freedom (DoF) for a holonomic AUV and alleviate the inaccuracies in the dynamics by augmenting the nominal model employed with residual dynamics learned via Gaussian Process (GP) regression. The learned residual is embedded in the optimal control problem through a zero-order robust optimization scheme, which keeps the controller real-time capable at 25 Hz. A simulation ablation shows that residual selection is essential when designing the controller, and simulation and in-water experiments with the Multimodality, Observing, Low-cost, Agile (MOLA) AUV validate the resulting controllers against a nominal MPCC and a field proven Proportional-Integral-Derivative (PID) controller.",
+      "authors": [
+        "David Dörner",
+        "Giancarlo Troni",
+        "Ignacio Torroba",
+        "Ivan Stenius"
+      ],
+      "published": "2026-11-10T17:30:20Z",
+      "updated": "2026-11-10T17:30:20Z",
+      "url": "https://arxiv.org/abs/2611.14373v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-11T21:01:21.256824+00:00"
+    },
+    "2611.14371": {
+      "id": "2611.14371v1",
+      "title": "Reliable and explainable analysis of AVS/RS by Statistical Model Checking and Process Mining",
+      "abstract": "Automated Vehicle Storage and Retrieval Systems (AVS/RS) are increasingly adopted to boost warehouse throughput while containing operational costs. We present an integrated analysis framework that couples discrete-event simulation with Statistical Model Checking (SMC) and Process Mining (PM) to quantify and explain AVS/RS performance. SMC, implemented through the MultiVeStA tool, delivers statistically reliable estimates of key indicators, such as cycle times, throughput, and storage utilization, across alternative stocking and picking policies with user-specified confidence levels. MultiVeStA orchestrates multiple independent simulations in a black-box manner, enabling automated verification. PM ingests the resulting event logs to uncover the behavioral patterns and bottlenecks that drive those indicators, closing the interpretability gap typical of simulation studies. We instantiate the framework on a new open-source AVS/RS simulator configured according to recent industrial guidelines and evaluate multiple control strategies. Results show that the joint use of SMC and PM enables both predictive what-if analyses and post-hoc diagnostics, providing the first combined SMC+PM assessment of AVS/RS operations and a reusable toolchain for automated warehousing research.",
+      "authors": [
+        "Emanuele Guerrazzi",
+        "Andrea Vandin"
+      ],
+      "published": "2026-11-10T17:28:54Z",
+      "updated": "2026-11-10T17:28:54Z",
+      "url": "https://arxiv.org/abs/2611.14371v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-11T21:01:21.256881+00:00"
+    },
+    "2611.13890": {
+      "id": "2611.13890v1",
+      "title": "DroneSegEdit: Adapting Pretrained Generative Editors for UAV Segmentation with Language-Grounded Verification",
+      "abstract": "Recent work has shown that pretrained image generators can support diverse visual tasks. Yet directly applying them to language-guided unmanned aerial vehicle (UAV) segmentation exposes a key limitation: a plausible mask may correspond to the wrong instance among small and repeated objects. We call this mismatch between mask rendering and expression-level target selection the Grounding-Rendering Gap. We present DroneSegEdit, which combines RGB proposal rendering with language-grounded, proposal-constrained verification to select supported foreground while retaining rendered geometry. DroneSegEdit adapts the open-weight LongCat-Image-Edit model using task-specific LoRA and fixed color-to-label decoding. For referring segmentation, a Language-Grounded Spatial Verifier (LGSV) reads hierarchical states from the frozen multimodal large language model backbone to derive expression-conditioned spatial evidence, which is mapped back to the rendered proposal without introducing foreground outside it. On RIS-LAD, DroneSegEdit reaches a new state of the art at 52.78 mIoU, 7.16 points above the previous best. It remains competitive overall on UAVid-RIS and VDD-RIS, with its clearest class-wise gains on compact, application-relevant categories, notably vehicles and humans. A separate verifier-free experiment extends the RGB interface to full-scene parsing: a task-specific adapter jointly renders all classes from one task-level instruction without enumerating class names or palette colors.",
+      "authors": [
+        "Dehua Chen",
+        "Long Xin",
+        "Jiangtao Wei"
+      ],
+      "published": "2026-11-10T10:50:35Z",
+      "updated": "2026-11-10T10:50:35Z",
+      "url": "https://arxiv.org/abs/2611.13890v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-11T21:01:21.256947+00:00"
+    },
+    "2611.13456": {
+      "id": "2611.13456v1",
+      "title": "When Reasoning looks like Hidden Understanding: How Chain-of-Thought Fosters Anthropomorphism, Perceptions of Epistemic Superiority, and Cognitive Deference",
+      "abstract": "As AI-based products permeate society, specifically systems using generative models, a belief system is emerging about what these products are and what they can and cannot do. One common belief concerns the perception of the form of language as evidence of 'understanding' language. As these generative models reproduce linguistic patterns rather than understand meaning, interpreting these patterns as evidence of understanding is a misattribution. This misconception is extended by the notion that generative models can 'explain their reasoning.' Anecdotally, these misconceptions which mistake the form of language for its meaning are driving cognitive deference to AI systems in a way that displaces human agency. Such mistakes involve attributions of cognitive properties to the system, allowing them to be treated like intentional 'minds'. Importantly, perceived epistemic authority and superiority make that 'mind' worth deferring to. Anthropomorphism in tandem with epistemic authority and superiority, we argue, increases the risk that users generalise from narrow task performance to broader competencies, committing the \"fallacy of composition\". This paper explores misconceptions of Chain of Thought (CoT) reasoning as sufficient transparent 'explanation'. We explore how anthropomorphism acts as a vehicle for cognitive deference of decision-making and perceptions of epistemic superiority in AI systems. Finally, we explore CoT's ramifications using medicine as an example. Taken together, we conclude that explainability operationalised through CoT is highly problematic and undercuts the very ethical principles it is intended to serve. While CoT may be valuable for improving output accuracy and moderation, we suggest that the practice of asking models to provide user facing reasons for their outputs should be actively discouraged, and AI literacy training should explicitly caution against its use.",
+      "authors": [
+        "Oliver Lack",
+        "Lana Tikhomirov",
+        "Humphrey Thompson",
+        "Carolyn Semmler",
+        "Melissa McCradden"
+      ],
+      "published": "2026-11-10T02:00:52Z",
+      "updated": "2026-11-10T02:00:52Z",
+      "url": "https://arxiv.org/abs/2611.13456v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-11T21:01:21.257000+00:00"
+    },
+    "2611.13238": {
+      "id": "2611.13238v1",
+      "title": "STAR: Semantic-Criticality Tiered Allocation of Radio Resources via Zero-Shot Learning",
+      "abstract": "In remote inference, edge devices transmit high-resolution images over wireless links to a receiver, where an artificial intelligence (AI) model answers task-specific questions about these images to enable reliable decisions. These answers are often determined by a small set of task-causal pixels, such as those of text, whose corruption changes the answer, so these pixels must be delivered with high fidelity. Conventional transmission protects every pixel equally, so it either consumes many resource elements (REs) or corrupts these regions at low signal-to-noise ratio (SNR). To overcome these limitations, in this paper, a zero-shot, domain-agnostic framework, termed semantic-criticality tiered allocation of resources (STAR), is proposed. In particular, a per-pixel semantic-criticality indicator (SCI) is derived from the attention of a frozen vision-language model, so new tasks and domains are handled by changing only the prompt, without retraining. The resulting task causality-aware resource allocation problem over protection tiers is solved exactly by a threshold rule on the SCI, realized by a coded tier for the task-causal pixels and an uncoded, downsampled base layer for the full image. Simulations over a 5G New Radio link demonstrate that STAR attains a semantic accuracy of at least 0.98 for $E_s/N_0 \\geq -4$ dB and, at comparable semantic reliability, reduces the REs of robust coded transmission by 59.5% and 91.5% on factory- and vehicle-monitoring datasets, respectively, the latter without any change to the models. Although a deep joint source-channel coding baseline uses fewer REs at comparable semantic accuracy, it must be retrained with labeled data for every new task or domain.",
+      "authors": [
+        "Albert Shaju",
+        "Christo Kurisummoottil Thomas",
+        "Mingzhe Chen"
+      ],
+      "published": "2026-11-09T21:07:26Z",
+      "updated": "2026-11-09T21:07:26Z",
+      "url": "https://arxiv.org/abs/2611.13238v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-11T21:01:21.257037+00:00"
+    },
+    "2611.13192": {
+      "id": "2611.13192v1",
+      "title": "Multimodal Road Closure Mapping via Cross-Modal Graph Attention",
+      "abstract": "Accurate and timely identification of road closures is critical for large-scale navigation and logistics systems, yet remains challenging due to the need to jointly reason over visual evidence, spatial context, and road network topology. Existing approaches either rely on manual map updates or focus on detecting closure-related objects without resolving which road segment is affected. In this work, we introduce a unified multimodal and multitask framework that jointly performs road closure classification (no, partial, complete) and road segment association within a single learning architecture. Our model integrates graph-structured map data, satellite imagery augmented with projected street-level detections, and street-view images using modality-specific encoders and cross-modal transformer attention, enabling explicit reasoning over visual cues and network topology. Evaluated on nearly 20K real-world scenarios collected from a large-scale commercial vehicle fleet, our approach achieves 72.7% closure classification accuracy and 60% road segment association accuracy, outperforming frontier vision-language models by over 28 percentage points on closure classification while being over 4,000x smaller and 100x faster at inference. Extensive ablations demonstrate the importance of cross-modal attention, edge-aware pooling, and graph message passing for accurate geospatial reasoning. This work establishes the first benchmark for joint road closure classification and segment-level attribution, and shows that task-specific architectural inductive biases substantially outperform general-purpose multimodal models for structured geospatial understanding.",
+      "authors": [
+        "Izzeddin Teeti",
+        "Vaibhav Kango",
+        "Nidhi Sridhar",
+        "Mohamed Moustafa"
+      ],
+      "published": "2026-11-09T20:13:18Z",
+      "updated": "2026-11-09T20:13:18Z",
+      "url": "https://arxiv.org/abs/2611.13192v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-11T21:01:21.257073+00:00"
     }
   },
   "history": {
@@ -1850,6 +1974,154 @@
         "prompt_tokens": 5620,
         "completion_tokens": 2035
       }
+    },
+    "actions-43099383028": {
+      "created_at": "2026-11-11T21:01:20.129333+00:00",
+      "papers": [
+        {
+          "id": "2611.13192v1",
+          "contribution": "Proposes a multimodal multitask model integrating satellite, street images, and graph data to jointly classify road closures and associate affected segments, outperforming vision-language baselines.",
+          "limitation": "Focused on road closure detection and association; may not generalize directly to driving behavior understanding or explainable decision-making.",
+          "gap": "Lacks explicit driver behavior interpretation or autonomous driving control components; explanation centricity is indirect via classification accuracy."
+        },
+        {
+          "id": "2611.13890v1",
+          "contribution": "Introduces DroneSegEdit for UAV segmentation using pretrained generative editors, resolving Grounding-Rendering Gap via language-grounded verification to correctly identify small repeated objects.",
+          "limitation": "Centered on segmentation and language grounding rather than explicit driving behavior reasoning or multimodal interaction interpretation.",
+          "gap": "Does not address driving behavior or autonomous driving decision explainability directly, focused on UAV visual instance segmentation."
+        },
+        {
+          "id": "2611.13238v1",
+          "contribution": "Proposes STAR, a zero-shot, prompt-based semantic-criticality resource allocation framework using vision-language attention to prioritize pixels critical for task inference over wireless links.",
+          "limitation": "Emphasizes remote transmission and semantic communication, not explicit autonomous driving control or behavior understanding.",
+          "gap": "Does not incorporate multimodal driving data or explainable driving reasoning; focuses on semantic resource allocation for remote inference."
+        },
+        {
+          "id": "2611.14373v1",
+          "contribution": "Develops a 6-DoF nonlinear Model Predictive Contouring Controller for holonomic AUVs augmented with Gaussian Process residual dynamics for better tracking under uncertain modeling.",
+          "limitation": "Demonstrated in underwater vehicles, not ground autonomous driving; focus is trajectory tracking rather than multimodal perception or explainability.",
+          "gap": "No direct applicability to multimodal reasoning or human-centered driver state modeling; control-focused without behavior explanation."
+        },
+        {
+          "id": "2611.14371v1",
+          "contribution": "Integrates discrete-event simulation with Statistical Model Checking and Process Mining to analyze and explain performance of Automated Vehicle Storage and Retrieval Systems.",
+          "limitation": "Targeted at warehouse automation systems; limited relevance to on-road autonomous driving or driver behavior understanding.",
+          "gap": "Lacks real-time multimodal sensory data or driving task explainability; focuses on system operational analytics."
+        },
+        {
+          "id": "2611.13456v1",
+          "contribution": "Analyzes cognitive biases and anthropomorphism induced by Chain-of-Thought explanations in AI, highlighting risks of misplaced epistemic authority and fallacy of composition.",
+          "limitation": "Conceptual work; does not propose technical methods for explainable driving or multimodal perception.",
+          "gap": "Does not directly address autonomous driving systems or multimodal data but warns of interpretative risks in AI reasoning explanations."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal approaches that incorporate spatial and visual data with graph-based topology enhance geospatial understanding for road closure detection.",
+            "uncertainty": "Further testing needed in diverse driving environments and extension to driver behavior prediction.",
+            "evidence_ids": [
+              "2611.13192v1"
+            ]
+          },
+          {
+            "finding": "Language grounding combined with pretrained vision models improves segmentation accuracy, critical for detailed perception in UAV contexts possibly transferable to driving scenes.",
+            "uncertainty": "Applicability to complex urban driving scenarios with diverse object classes remains untested.",
+            "evidence_ids": [
+              "2611.13890v1"
+            ]
+          },
+          {
+            "finding": "Explainability mechanisms (e.g., Chain-of-Thought) may induce anthropomorphism and overtrust, challenging human-centered AI system design in driving contexts.",
+            "uncertainty": "Empirical impact on driver trust and behavior with real autonomous driving systems needs exploration.",
+            "evidence_ids": [
+              "2611.13456v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "2611.13192v1 integrates multimodal data with domain-specific graph attention outperforming general vision-language models; 2611.13890v1 tailors pretrained generative editors for language-grounded segmentation, both enhancing task-specific perceptual understanding.",
+            "limitation": "Neither fully addresses explainable driving reasoning or predictive driver behavior modeling.",
+            "evidence_ids": [
+              "2611.13192v1",
+              "2611.13890v1"
+            ]
+          },
+          {
+            "comparison": "2611.13238v1's zero-shot semantic-criticality allocation contrasts with 2611.14373v1's physical model-based control augmentation; one optimizes communication fidelity, the other improves vehicle control accuracy.",
+            "limitation": "Both focus less on human-centered explanations or multimodal behavioral understanding during driving.",
+            "evidence_ids": [
+              "2611.13238v1",
+              "2611.14373v1"
+            ]
+          },
+          {
+            "comparison": "2611.13456v1 provides a critical ethical and cognitive perspective on explainability contrasting with engineering-centric approaches in other papers, emphasizing the risks of anthropomorphism in AI explanations.",
+            "limitation": "Does not propose technical solutions for autonomous driving but underpins the need for careful explanation design.",
+            "evidence_ids": [
+              "2611.13456v1",
+              "2611.13192v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can multimodal graph attention models be extended to explain driver behavior and decision reasoning in autonomous driving?",
+            "hypothesis": "Cross-modal graph attention with semantic features enhances explainable driving behavior understanding over baseline multimodal perception.",
+            "method": "Extend 2611.13192v1's architecture for driving scenes, integrating driving context and behavior labels with attention visualization for explanations.",
+            "datasets": "WOMD-Reasoning and driving datasets with behavior annotations.",
+            "baselines": "Vision-language models and non-attentional graph models.",
+            "metrics": "Behavior classification accuracy, explanation faithfulness, user interpretability.",
+            "compute": "GPU-enabled deep learning rigs, moderate memory and hours training, reproducible seeds.",
+            "risk": "Uncertain correlation between model attention and human-understandable explanations.",
+            "novelty_check": "No existing multimodal graph attention for explainable driving behavior reasoning reported in supplied papers.",
+            "priority_rationale": "High impact for combining perception and transparent reasoning in driving AI.",
+            "evidence_ids": [
+              "2611.13192v1",
+              "2611.13456v1"
+            ]
+          },
+          {
+            "question": "Does semantic-criticality based resource allocation improve multimodal sensor data fidelity for downstream explainable autonomous driving?",
+            "hypothesis": "STAR-style resource allocation focusing on task-causal features improves semantic perception and explanation robustness under bandwidth constraints.",
+            "method": "Adapt 2611.13238v1's zero-shot SCI with driving vision-language embeddings, measure perception and explanation accuracy under varied wireless allocation.",
+            "datasets": "Multimodal driving datasets with communication constraints (unverified).",
+            "baselines": "Uniform pixel transmission, joint source-channel coding.",
+            "metrics": "Semantic accuracy, explanation fidelity, communication resource savings.",
+            "compute": "Simulations on 5G setups, multiple runs for statistical significance.",
+            "risk": "Translating SCI from generic images to complex driving scenes may be challenging.",
+            "novelty_check": "Combines semantics-driven resource allocation with explainable perception, novel in driving context.",
+            "priority_rationale": "Medium, addressing edge communications in driving with explainability benefits.",
+            "evidence_ids": [
+              "2611.13238v1",
+              "2611.13890v1"
+            ]
+          },
+          {
+            "question": "How do Chain-of-Thought style explanations affect human trust and cognitive deferral in safety-critical autonomous driving decisions?",
+            "hypothesis": "CoT explanations increase anthropomorphism and overtrust in autonomous driving AI compared to simple factual explanations.",
+            "method": "Use 2611.13456v1's cognitive framework to design user studies contrasting explanation styles in simulated driving assistant outputs.",
+            "datasets": "User study data with driving assistant interaction scenarios.",
+            "baselines": "No explanation, factual explanations, CoT explanations.",
+            "metrics": "Trust scores, cognitive deferral measures, error detection rates.",
+            "compute": "Standard experimental facilities and participant recruitment.",
+            "risk": "User variability and ethical considerations in inducing overtrust.",
+            "novelty_check": "First study informed by cognitive risks of CoT in driving AI explanations.",
+            "priority_rationale": "High significance for human-centered safe AI system design.",
+            "evidence_ids": [
+              "2611.13456v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.01842,
+        "status": "completed",
+        "estimated_cost_usd": 0.0039576,
+        "prompt_tokens": 3502,
+        "completion_tokens": 1598
+      }
     }
   },
   "zotero": {
@@ -1980,9 +2252,33 @@
         "2611.12382": {
           "status": "created",
           "item_key": "UNTFCGEA"
+        },
+        "2611.13192": {
+          "status": "created",
+          "item_key": "C4VSJ28B"
+        },
+        "2611.13238": {
+          "status": "created",
+          "item_key": "Z49IB32D"
+        },
+        "2611.13456": {
+          "status": "created",
+          "item_key": "2IBK7ZM2"
+        },
+        "2611.13890": {
+          "status": "created",
+          "item_key": "627C6GVK"
+        },
+        "2611.14371": {
+          "status": "created",
+          "item_key": "8S85NMJ5"
+        },
+        "2611.14373": {
+          "status": "created",
+          "item_key": "D78FPXCS"
         }
       },
-      "not_before": 1794343261.7000895
+      "not_before": 1794430904.9164665
     }
   }
 }

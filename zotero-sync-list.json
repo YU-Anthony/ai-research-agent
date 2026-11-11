@@ -268,6 +268,48 @@
         "url": "https://arxiv.org/abs/2611.12382",
         "zotero_item_key": "UNTFCGEA",
         "status": "created"
+      },
+      {
+        "arxiv_id": "2611.13192",
+        "title": "Multimodal Road Closure Mapping via Cross-Modal Graph Attention",
+        "url": "https://arxiv.org/abs/2611.13192",
+        "zotero_item_key": "C4VSJ28B",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.13238",
+        "title": "STAR: Semantic-Criticality Tiered Allocation of Radio Resources via Zero-Shot Learning",
+        "url": "https://arxiv.org/abs/2611.13238",
+        "zotero_item_key": "Z49IB32D",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.13456",
+        "title": "When Reasoning looks like Hidden Understanding: How Chain-of-Thought Fosters Anthropomorphism, Perceptions of Epistemic Superiority, and Cognitive Deference",
+        "url": "https://arxiv.org/abs/2611.13456",
+        "zotero_item_key": "2IBK7ZM2",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.13890",
+        "title": "DroneSegEdit: Adapting Pretrained Generative Editors for UAV Segmentation with Language-Grounded Verification",
+        "url": "https://arxiv.org/abs/2611.13890",
+        "zotero_item_key": "627C6GVK",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.14371",
+        "title": "Reliable and explainable analysis of AVS/RS by Statistical Model Checking and Process Mining",
+        "url": "https://arxiv.org/abs/2611.14371",
+        "zotero_item_key": "8S85NMJ5",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.14373",
+        "title": "Gaussian Process-Augmented Model Predictive Contouring Control for 6-DoF Trajectory Tracking with a Holonomic AUV",
+        "url": "https://arxiv.org/abs/2611.14373",
+        "zotero_item_key": "D78FPXCS",
+        "status": "created"
       }
     ]
   }
