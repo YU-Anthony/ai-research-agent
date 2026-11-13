@@ -176,6 +176,26 @@
     "2611.13456": {
       "reported_at": "2026-11-11T21:01:20.129333+00:00",
       "version": "2611.13456v1"
+    },
+    "2611.16767": {
+      "reported_at": "2026-11-13T20:43:52.112280+00:00",
+      "version": "2611.16767v1"
+    },
+    "2611.16727": {
+      "reported_at": "2026-11-13T20:43:52.112280+00:00",
+      "version": "2611.16727v1"
+    },
+    "2611.15225": {
+      "reported_at": "2026-11-13T20:43:52.112280+00:00",
+      "version": "2611.15225v1"
+    },
+    "2611.15238": {
+      "reported_at": "2026-11-13T20:43:52.112280+00:00",
+      "version": "2611.15238v1"
+    },
+    "2611.15360": {
+      "reported_at": "2026-11-13T20:43:52.112280+00:00",
+      "version": "2611.15360v1"
     }
   },
   "requests": {
@@ -227,6 +247,13 @@
       "estimated_cost_usd": 0.0039576,
       "prompt_tokens": 3502,
       "completion_tokens": 1598
+    },
+    "actions-43504116455": {
+      "ceiling_usd": 0.02208,
+      "status": "completed",
+      "estimated_cost_usd": 0.004718399999999999,
+      "prompt_tokens": 5644,
+      "completion_tokens": 1538
     }
   },
   "papers": {
@@ -1086,6 +1113,210 @@
       "url": "https://arxiv.org/abs/2611.13192v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-11T21:01:21.257073+00:00"
+    },
+    "2611.17330": {
+      "id": "2611.17330v1",
+      "title": "ProtoVis-Nav: Prototypical Visual Imagination for Visual-Spatial Aligned UAV Navigation",
+      "abstract": "Vision language navigation (VLN) is very challenging for Unmanned Aerial Vehicles (UAVs) since small errors in 3D motion prediction can lead to navigation errors and collisions. Unable to fathom execution outcomes in 3D environments, existing methods often struggle to predict accurate navigation waypoints from language instructions. To solve this, we introduce the Prototypical Visual Imagination framework, shortened as ProtoVis-Nav, which forces the model to imagine an outcome-associated local visual representation for the intended next UAV movement. Specifically, we predict feature prototypes and use their linear combination to estimate the visual feature of the target region. In this manner, the VLN model first imagines the local visual representation of the next intended location, and then uses predicted prototypes as context for generating the final action, promoting alignment between visual context and waypoint outputs. Extensive experiments demonstrate the effectiveness of the ProtoVis-Nav framework and show substantial improvements over existing baselines.",
+      "authors": [
+        "Guangyuan Sui",
+        "Yunzhong Hou",
+        "Chi Harold Liu"
+      ],
+      "published": "2026-11-12T18:59:49Z",
+      "updated": "2026-11-12T18:59:49Z",
+      "url": "https://arxiv.org/abs/2611.17330v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.072742+00:00"
+    },
+    "2611.16767": {
+      "id": "2611.16767v1",
+      "title": "Evaluating Video LLMs' Understanding of Corner Cases in Autonomous Driving",
+      "abstract": "Natural language explanations promised by modern Video Large Language Models (Video LLMs) offer autonomous driving systems a path toward detailed scene description and interpretable decision making on the road. While recent benchmarks have begun assessing these models on driving scenes, they mainly target routine traffic conditions and general comprehension tasks based on existing driving datasets and therefore fail to evaluate model performance on the rarest and most safety-critical driving events, also known as \"corner cases\". To provide a comprehensive evaluation of Video LLMs on precisely these scenarios, we introduce DashBench, a benchmark testing 25 Video LLMs on 1,709 carefully curated driving videos spanning not only collision-related corner cases but also rare non-collision ones. Through extensive prompts and open-ended question answering, we expose a critical capability gap: all evaluated models perform substantially below the threshold required for safety-critical driving applications, frequently misjudging or missing dangerous events on the road ahead and hallucinating non-existent agents or actions in their explanations. We believe DashBench, combining an extensive dataset with a rigorous evaluation toolkit and a detailed diagnosis of current model limitations, drives progress toward safer, more explainable autonomous driving systems. The code and data will be shared at: cornercase-dashbench.github.io",
+      "authors": [
+        "Gabriel Manalu",
+        "Minh Son Hoang",
+        "Hyeontaek Hwang",
+        "Jaesung Lee",
+        "Hyojin Choi",
+        "Tran Tuan Phong",
+        "Seon Kwon Kim",
+        "Saad Wazir",
+        "Daeyoung Kim"
+      ],
+      "published": "2026-11-12T13:15:27Z",
+      "updated": "2026-11-12T13:15:27Z",
+      "url": "https://arxiv.org/abs/2611.16767v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.072815+00:00"
+    },
+    "2611.16727": {
+      "id": "2611.16727v1",
+      "title": "From Foundation VLM to Versatile Driving VLM: A Triplet Incremental Training Approach",
+      "abstract": "Adapting general Vision-Language Models (VLMs) to Autonomous Driving (AD) is thought to require heavy 3D spatial priors or intrusive architectural overhauls to compensate for a lack of spatial grounding. In this work, we present a counterintuitive pilot study: off-the-shelf general VLMs already exhibit remarkable adaptability across diverse driving tasks, while precise metric depth remains the primary missing link, a bottleneck readily addressable via onboard sensors and depth foundation models. To this end, we introduce the Triplet Incremental Training Framework, a non-intrusive paradigm that seamlessly instills 3D geometric awareness into a general VLM backbone while fully preserving its open-world capabilities. Driven by automatically constructed (image, depth, QA pair) triplets, our framework operates via a unified tri-stream training pipeline: an unfrozen primary VLM stream to adapt to driving tasks, an auxiliary depth stream that guides the visual backbone to implicitly imagine 3D scene geometry via explicit geometric constraints, and a frozen twin VLM stream employing logit-level KL distillation to prevent semantic drift. Crucially, the auxiliary depth branch is discarded during deployment, ensuring the enhanced geometric awareness comes with zero inference overhead. We evaluate our framework across four major benchmarks targeting four diverse capabilities spanning 3D spatial perception, driving-oriented language reasoning, end-to-end planning, and general multimodal understanding. Our approach outperforms state-of-the-art driving VLMs, rivals domain-specific expert models in 3D perception, and successfully retains its original general reasoning capabilities. This demonstrates that Triplet Incremental Training offers a unified, deployment-ready paradigm for transforming general foundation models into robust driving intelligences.",
+      "authors": [
+        "Shengtao Wu",
+        "Zichao Dong",
+        "Weixuan Qiao",
+        "Xiaolu Liu",
+        "Xin Zhan",
+        "Junbo Chen",
+        "Jianke Zhu"
+      ],
+      "published": "2026-11-12T12:39:25Z",
+      "updated": "2026-11-12T12:39:25Z",
+      "url": "https://arxiv.org/abs/2611.16727v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.072891+00:00"
+    },
+    "2611.16061": {
+      "id": "2611.16061v1",
+      "title": "Pothole Risk Assessment with Geometrically Grounded Vision Language Models",
+      "abstract": "Potholes impose billions of dollars in annual vehicle damage, yet detectors report only where potholes are, not how severe they are or what to do. Judging severity from a single RGB image is ill-posed, and ungrounded vision-language model (VLM) assessments tend to be over-conservative. We present a five-stage modular framework for the offline assessment of already-detected potholes that combines geometric measurements with VLM reasoning: perspective transformation, zero-shot SAM segmentation, geometric feature extraction, Gemini 2.5 Pro severity classification with composite risk scoring, and natural-language warning generation. We evaluate it on 3,092 potholes in 1,119 dashcam scenes against independent references. Severity agreement with a prediction-free three-annotator panel is weak (Cohen's $κ= 0.139$, 95% CI [0.00, 0.28]; $n = 101$) and far below the annotators' agreement with one another ($κ= 0.605$); against physically measured depth on an independent RGB-D dataset, it is also weak ($κ= 0.098$), although the predicted classes preserve the order of measured depths. The severity classes are therefore perceived visual categories, not depth measurements. Geometric grounding does change the warnings: relative to an image-only baseline, it moves 26.7% of scenes out of the high-urgency tier and raises critical-tier assignments by 109% (Stuart-Maxwell $p < 10^{-15}$), and in a blind study, three raters preferred the grounded warnings 3.5:1. A six-arm prompt ablation attributes the hybrid prompt's rule adherence to the per-pothole measurements rather than to the rubric or worked examples. At USD 0.105 per scene, it suits large-scale offline infrastructure assessment; its maneuver suggestions are advisory research outputs, not validated vehicle guidance.",
+      "authors": [
+        "Abdalmalek Aburaddaha",
+        "Zaid A. El Shair",
+        "Ali Al-Bustami",
+        "Samir A. Rawashdeh"
+      ],
+      "published": "2026-11-11T22:19:41Z",
+      "updated": "2026-11-11T22:19:41Z",
+      "url": "https://arxiv.org/abs/2611.16061v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.072947+00:00"
+    },
+    "2611.15809": {
+      "id": "2611.15809v1",
+      "title": "Fine-Grained Generative Hallucination Detection and Correction for Aerial Image Captioning",
+      "abstract": "Aerial imagery captured by unmanned aerial vehicles (UAVs) plays a vital role in applications such as surveillance, disaster response, and large-scale environmental monitoring. Automatic generation of textual descriptions for such imagery is essential for reducing manual inspection overhead and enabling better downstream decision-making. However, Multimodal Large Language Models (MLLMs), despite their impressive captioning capabilities, are prone to hallucination, producing descriptions that are inconsistent with the visual input. This problem is significantly amplified in aerial imagery due to its unique challenges such as extreme viewpoint variation, small objects, class imbalance, and ambiguous visual entities. Existing hallucination detection approaches either rely on computationally expensive large external models such as GPT-4, which perform poorly on aerial domains, or treat the problem as a rigid binary classification task, ignoring the inherent uncertainty in ambiguous cases. To address these limitations, we propose a lightweight, reference-free framework for hallucination detection and correction in free-form aerial image captioning. Our method leverages state-of-the-art MLLMs, specifically InternVL3 and Qwen2.5-VL, to detect hallucinated content in generated captions with minimal computational overhead. Detected hallucinations are corrected through a dedicated refinement module that improves the factual consistency of the original captions. Extensive experiments on the Labelled Illusion Dataset (LID) demonstrate that our framework significantly reduces hallucination rates while remaining practical for real-time deployment in resource-constrained environments. Code is available at: https://github.com/Debolena7/Hal_Detect.",
+      "authors": [
+        "Debolena Basak",
+        "Somsubhra De",
+        "Maunendra Sankar Desarkar"
+      ],
+      "published": "2026-11-11T18:26:26Z",
+      "updated": "2026-11-11T18:26:26Z",
+      "url": "https://arxiv.org/abs/2611.15809v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.072988+00:00"
+    },
+    "2611.15360": {
+      "id": "2611.15360v1",
+      "title": "CARE-Drive: Coupled Alternating Refinement for Ego-trajectories",
+      "abstract": "Vision-language-action (VLA) models bring multimodal understanding and world knowledge to end-to-end autonomous driving. To further improve the quality of predicted trajectories, existing studies introduce candidate refinement, residual denoising, and token correction. However, these methods typically focus on unified refinement of the entire trajectory, paying limited attention to the distinct physical quantities and their interactions. We further investigate physical specialization and coordination in trajectory refinement, centering on position and heading for simpler and more intuitive correction modeling. To this end, we propose CARE-Drive (Coupled Alternating Refinement for Ego-trajectories), which decomposes trajectory refinement into waypoint residual correction and position-conditioned heading generation. Through imitation learning and a future-token auxiliary task, the backbone provides predictive representations and a base trajectory. The position expert predicts bounded metric waypoint residuals, while the heading expert reconstructs vehicle orientation from adjacent angular increments conditioned on the corrected path. With the backbone frozen, the two experts are optimized alternately through supervised initialization and reinforcement fine-tuning. This design simplifies refinement through clear physical specialization while preserving conditional coupling during prediction and optimization. On NAVSIM v1, CARE-Drive achieves 88.8 PDMS, improving by 2.4 points over the unrefined base trajectories generated by the same backbone. Ablation studies further support the effectiveness of specialized experts and staged training.",
+      "authors": [
+        "Xiao Ma",
+        "Yijun Chen",
+        "Zhiquan Hu",
+        "Jicheng Zhao",
+        "Yuming Li",
+        "Chuang Dai"
+      ],
+      "published": "2026-11-11T11:39:00Z",
+      "updated": "2026-11-11T11:39:00Z",
+      "url": "https://arxiv.org/abs/2611.15360v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.073031+00:00"
+    },
+    "2611.15238": {
+      "id": "2611.15238v1",
+      "title": "Towards Robust Vision-Language Reasoning: A Multi-Stage Optimization Pipeline with Masked Diffusion Model",
+      "abstract": "Discrete diffusion generation is emerging as a competitive alternative to autoregressive generation by denoising the entire token sequence through iterative refinement. Its global planning and progressive correction capabilities are particularly well suited to autonomous driving. However, transferring this generation paradigm from general-purpose settings to driving introduces substantial domain gaps in both training and inference. To unlock its potential, we propose a multi-stage optimization pipeline for standard vision-language model architectures, without auxiliary action experts or specialized mixture-of-experts Transformer, spanning post-training and inference. During supervised fine-tuning, we optimize the representation of planning inputs to suppress hallucinations in task responses. During reinforcement learning, we introduce metric-guided diversity filtering to identify stronger learning starting points and improve policy exploration. At inference time, we propose Dynamic Autonomous Driving Decoding (DAD), which adaptively adjusts decoding modes according to scene complexity. Based on this pipeline, we develop Masked Diffusion Drive (MD-Drive), improving its performance by 29.7\\% over the unoptimized model. Experiments on the NAVSIM closed loop benchmark and the nuScenes and DriveCoT open loop datasets show that MD-Drive outperforms autoregressive VLM baselines with the same architecture, while achieving a more favorable balance between performance and computational cost than systems with different architectures through discrete diffusion training and inference.",
+      "authors": [
+        "Shunming Liu",
+        "Pei Huang",
+        "Yajing Sun",
+        "Huaxiao Liu"
+      ],
+      "published": "2026-11-11T09:30:15Z",
+      "updated": "2026-11-11T09:30:15Z",
+      "url": "https://arxiv.org/abs/2611.15238v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.073072+00:00"
+    },
+    "2611.15225": {
+      "id": "2611.15225v1",
+      "title": "Can MLLMs Reason over Surround-View Driving Videos? A Multi-View Autonomous Driving QA Benchmark",
+      "abstract": "Surround-view video understanding in autonomous driving is a crucial capability for Multimodal Large Language Models (MLLMs) to achieve reliable driving reasoning. Real-world driving often requires information beyond the front-view camera. Existing MLLMs primarily focus on front-view information, while their spatio-temporal understanding and reasoning abilities remain unknown. To address this gap, we propose MVDriveBench, a high-information-density video QA benchmark for autonomous driving, characterized by synchronized surround-view inputs, spatio-temporal understanding, and reasoning-chain-oriented evaluation. We design 12 categories of QA tasks that cover the complete reasoning pipeline from low-level visual perception to high-level driving decision-making, enabling a systematic evaluation of MLLMs surround-view spatio-temporal understanding and reasoning capabilities in complex driving environments. We conduct a comprehensive evaluation of 23 open-source, closed-source, and expert MLLMs on MVDriveBench. The results show that current MLLMs still exhibit insufficient surround-view spatio-temporal reasoning ability. Meanwhile, closed-loop evaluations of specialist models in AlpaSim reveal a correlation between surround-view spatio-temporal reasoning capabilities and closed-loop driving performance, highlighting the importance of comprehensive multi-view understanding for reliable vehicle control.",
+      "authors": [
+        "Shunming Liu",
+        "Jianyi Peng",
+        "Cheng Li",
+        "Lu Hou",
+        "Pei Huang",
+        "Yajing Sun",
+        "Huaxiao Liu"
+      ],
+      "published": "2026-11-11T09:18:15Z",
+      "updated": "2026-11-11T09:18:15Z",
+      "url": "https://arxiv.org/abs/2611.15225v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.073114+00:00"
+    },
+    "2611.15217": {
+      "id": "2611.15217v1",
+      "title": "Are We Ready for Snow-tonomous Driving? Challenges Toward Robust Automated Driving in Extreme Weather",
+      "abstract": "Automated driving has gained remarkable momentum over the past decade, with both industry and academia investing substantial resources in developing perception and control solutions to advance vehicle autonomy. However, these efforts have largely focused on clear-weather scenarios, leaving harsh conditions, such as snow, rain, and fog, comparatively understudied. As a result, inclement weather remains one of the most significant hurdles for autonomous vehicles, often leading to substantial performance degradation in downstream perception and control tasks. In this paper, we present insights from the EU-funded Horizon Europe project ROADVIEW, which aims to develop robust, weather-aware perception and control modules for connected and automated vehicles operating under severe conditions, including snow, rain, and fog. Drawing on four years of large-scale development and real-world demonstrations across multiple vehicle platforms in different locations, we identify ten key challenges that hinder the development of weather-resilient autonomy, including data scarcity, domain shifts, limitations in multimodal perception, control robustness, and validation gaps, among others. We summarize these challenges and lessons learned toward enabling reliable snow-autonomous driving, highlighting critical directions for future research and standardization.",
+      "authors": [
+        "Eren Erdal Aksoy",
+        "Abu Mohammed Raisuddin",
+        "Thien-Thu Ngo",
+        "Eren Aydemir",
+        "Osman Tahir Ekşi",
+        "Paula Litkey",
+        "Petri Manninen",
+        "Heikki Hyyti",
+        "Jyri Maanpää",
+        "Tarmo Kivioja",
+        "Tuomas Herranen",
+        "Väisänen Sofie",
+        "Niemi Kalle",
+        "Isabelle Morvan",
+        "Pierre Duthon",
+        "Ian Marsh",
+        "Martin Sanfridson",
+        "Henrik Toss",
+        "Thanh Bui",
+        "Yuri Poledna",
+        "Maikol Funk Drechsler",
+        "Mikko Tarkiainen",
+        "Matti Kutila",
+        "Topi Miekkala",
+        "Stefan Parzefall",
+        "Valentina Donzella",
+        "Pak Hung Chan",
+        "Sogol Kharrazi",
+        "Mario Ceccarelli"
+      ],
+      "published": "2026-11-11T09:10:13Z",
+      "updated": "2026-11-11T09:10:13Z",
+      "url": "https://arxiv.org/abs/2611.15217v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.073191+00:00"
+    },
+    "2611.14953": {
+      "id": "2611.14953v1",
+      "title": "RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence",
+      "abstract": "Aerial spatial intelligence (ASI) requires models to understand objects and spatial relationships across changing viewpoints and scales. Evaluating these abilities as models evolve calls for fresh physical observations, yet producing new aerial spatial questions requires repeatedly establishing entity identities, geometric references, and cross-view correspondences. We introduce \\textbf{RSLiveBench-UAV}, a continually evolving vision-language benchmark driven by recurring acquisition of real UAV imagery. Its update protocol admits images captured after the preceding release and delays answer disclosure. An entity-centered production workflow uses geometry-assisted association to link repeated observations of physical vehicles, reuse human-verified attributes, and combine them with view-specific annotations and spatial references for traceable question generation. All tasks use deterministic scoring without model judges. We evaluate 30 general-purpose, remote-sensing, and embodied models on 35,491 question records from ten scenes, covering 17 tasks across 2D perception, 3D perception, cross-view perception, and reasoning. All 18 tested embodied models outperform the three selected remote-sensing comparators in Overall, although the strongest embodied model scores 43.29 versus 59.88 for GPT-6-Astra. Fine-grained vehicle recognition remains challenging, and performance varies across heights and camera pitches. Retrospective scene-group comparisons and rolling-window replay characterize score-pattern consistency under scene renewal. RSLiveBench-UAV connects fresh physical observations, entity-centered answer production, and systematic model evaluation to support continual assessment of ASI. Benchmark will release at https://rslivebench.space",
+      "authors": [
+        "Yue Zhou",
+        "Jiawei Liu",
+        "Jue Chen",
+        "Ziyang Gong",
+        "Haojia Wei",
+        "Jingxiang Li",
+        "Xue Jiang",
+        "Zhihang Zhong",
+        "Pai Peng",
+        "Xue Yang",
+        "Yansheng Li",
+        "Jonathan Li"
+      ],
+      "published": "2026-11-11T02:59:53Z",
+      "updated": "2026-11-11T02:59:53Z",
+      "url": "https://arxiv.org/abs/2611.14953v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-13T20:43:53.073241+00:00"
     }
   },
   "history": {
@@ -2128,6 +2359,144 @@
       "papers": [],
       "synthesis": {},
       "usage": {}
+    },
+    "actions-43504116455": {
+      "created_at": "2026-11-13T20:43:52.112280+00:00",
+      "papers": [
+        {
+          "id": "2611.16767v1",
+          "contribution": "Introduces DashBench to evaluate Video Large Language Models (Video LLMs) on safety-critical autonomous driving corner cases through extensive QA, revealing significant model limitations in detecting and explaining rare events.",
+          "limitation": "Models perform substantially below safety thresholds, frequently misjudging corner cases and hallucinating agents; evaluation focuses mainly on video QA rather than closed-loop control.",
+          "gap": "Improving Video LLM reliability on rare, critical driving events with faithful, grounded explanations remains unresolved for real-world safety applications."
+        },
+        {
+          "id": "2611.16727v1",
+          "contribution": "Proposes Triplet Incremental Training to imbue general Vision-Language Models (VLMs) with 3D geometric awareness for driving without architectural changes, improving 3D perception and maintaining open-world reasoning.",
+          "limitation": "Relies on metric depth input availability; auxiliary depth stream discarded at inference, possibly limiting geometric insight in deployment.",
+          "gap": "Integration of precise depth-based 3D grounding into driving VLMs balancing general reasoning and spatial perception is promising but underexplored."
+        },
+        {
+          "id": "2611.15225v1",
+          "contribution": "Creates MVDriveBench, a multi-view video QA benchmark assessing MLLMs' surround-view spatio-temporal understanding and reasoning for driving, exposing insufficiencies in current models and linking reasoning ability to closed-loop driving success.",
+          "limitation": "Current MLLMs show insufficient reasoning ability on surround-view data; models tested mostly on QA tasks, not direct control or full autonomy.",
+          "gap": "Robust multi-camera spatio-temporal reasoning enabling faithful driving decisions needs further research, especially for multimodal language models."
+        },
+        {
+          "id": "2611.15238v1",
+          "contribution": "Develops a Multi-Stage Optimization Pipeline and Masked Diffusion Drive (MD-Drive), improving vision-language reasoning in autonomous driving via diffusion modeling and adaptive decoding, outperforming autoregressive baselines with better efficiency.",
+          "limitation": "Optimization complexity and inference adaptation may require careful tuning; results primarily on NAVSIM and open datasets with uncertain real-world generalization.",
+          "gap": "Applying discrete diffusion methods for explainable, efficient driving policy generation that balances planning accuracy and computational costs is underinvestigated."
+        },
+        {
+          "id": "2611.15360v1",
+          "contribution": "Proposes CARE-Drive, decomposing ego-trajectory refinement into specialized position and heading experts with alternating training, yielding improved trajectory predictions while preserving model backbone.",
+          "limitation": "Focused on trajectory refinement with separate physical quantities; relies on frozen backbone limiting adaptation; benchmarked mainly on NAVSIM data.",
+          "gap": "Exploiting specialized physical components in trajectory prediction for explainable, iterative refinement combines interpretable driving behavior and model efficiency."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal models benefit from integrating geometric or depth information to improve spatial grounding for driving tasks.",
+            "uncertainty": "Effectiveness depends on depth data availability and model adaptation methods; real-world generalization uncertain.",
+            "evidence_ids": [
+              "2611.16727v1",
+              "2611.15360v1"
+            ]
+          },
+          {
+            "finding": "Current multimodal language models show limited reasoning and explanation abilities in rare and complex driving scenarios, especially corner cases and surround-view inputs.",
+            "uncertainty": "Extent to which training or architecture improvements can close the safety-relevant gap remains open.",
+            "evidence_ids": [
+              "2611.16767v1",
+              "2611.15225v1"
+            ]
+          },
+          {
+            "finding": "Hybrid generative approaches (e.g., discrete diffusion in MD-Drive) demonstrate promise in balancing reasoning quality and computational cost in driving policy generation.",
+            "uncertainty": "Practical deployment constraints and real-world verification of safety-related explanations require further study.",
+            "evidence_ids": [
+              "2611.15238v1",
+              "2611.15360v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Triplet Incremental Training adds geometric depth awareness to general VLMs with zero inference overhead, while CARE-Drive explicitly refines trajectories through alternating physical quantity experts.",
+            "limitation": "Neither fully addresses multi-view temporal reasoning or closed-loop control feedback in multimodal autonomous driving.",
+            "evidence_ids": [
+              "2611.16727v1",
+              "2611.15360v1"
+            ]
+          },
+          {
+            "comparison": "DashBench and MVDriveBench benchmarks respectively focus on video QA in rare driving corner cases and multi-view spatio-temporal reasoning for driving, both exposing insufficient model capabilities.",
+            "limitation": "Benchmarks emphasize evaluation of language reasoning over direct control or closed-loop robustness; gap in linking explanation to autonomous decisions.",
+            "evidence_ids": [
+              "2611.16767v1",
+              "2611.15225v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can integrating depth-based 3D geometric awareness via triplet incremental training improve MLLM surround-view spatio-temporal reasoning?",
+            "hypothesis": "Adding metric depth with triplet incremental training enhances spatio-temporal reasoning on multi-view datasets by grounding semantics in 3D geometry.",
+            "method": "Extend Triplet Incremental Training with multi-view inputs and evaluate on MVDriveBench QA tasks.",
+            "datasets": "MVDriveBench, NAVSIM datasets (unverified)",
+            "baselines": "Original Triplet model; front-view-only models; MLLMs without geometry.",
+            "metrics": "QA accuracy, reasoning chain correctness, compute cost.",
+            "compute": "Moderate GPU with depth stream overhead; reproducible seeds.",
+            "risk": "Complexity increase; uncertain gains on multi-view data.",
+            "novelty_check": "Extends prior triplet training with multi-view temporal fusion not previously done.",
+            "priority_rationale": "Addresses key gap in multimodal reasoning linked to physical grounding and multi-view complexity.",
+            "evidence_ids": [
+              "2611.16727v1",
+              "2611.15225v1"
+            ]
+          },
+          {
+            "question": "Can discrete diffusion-based vision-language planning (MD-Drive) achieve improved explanation fidelity and efficiency on rare corner driving cases?",
+            "hypothesis": "Discrete diffusion models with metric-guided optimization improve explanation accuracy and safety-critical reasoning on DashBench rare event videos.",
+            "method": "Fine-tune MD-Drive on DashBench, enhance hallucination suppression, compare to autoregressive VLMs.",
+            "datasets": "DashBench corner-case videos (unverified)",
+            "baselines": "Autoregressive VLMs, baseline MD-Drive without optimization.",
+            "metrics": "Explanation correctness, hallucination reduction, inference time.",
+            "compute": "High GPU for diffusion training; real-time inference feasible.",
+            "risk": "Diffusion robustness under varied rare events unclear.",
+            "novelty_check": "Applies diffusion frameworks explicitly to corner case explanation in autonomous driving.",
+            "priority_rationale": "Targets safety-critical explanation gaps in modern Video LLMs with efficient generative modeling.",
+            "evidence_ids": [
+              "2611.16767v1",
+              "2611.15238v1"
+            ]
+          },
+          {
+            "question": "Does physically decomposed trajectory refinement (CARE-Drive) provide interpretable and robust driving behavior understanding in multi-view environments?",
+            "hypothesis": "Position and heading specialized experts yield clearer correction cues facilitating human-centered driving assistant development.",
+            "method": "Apply CARE-Drive refinements with multi-view inputs; test on MVDriveBench open-loop predictive scenarios.",
+            "datasets": "MVDriveBench, NAVSIM (unverified)",
+            "baselines": "Unrefined base trajectory, unified refinement models.",
+            "metrics": "Trajectory error, physical interpretability, human preference.",
+            "compute": "Moderate resources; training with staged optimization.",
+            "risk": "Limited by frozen backbone; multi-view extension nontrivial.",
+            "novelty_check": "Extends refinement to multi-view and human interpretability not yet explored.",
+            "priority_rationale": "Supports explainable driving behavior and human trust enhancement via interpretable modular models.",
+            "evidence_ids": [
+              "2611.15360v1",
+              "2611.15225v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.02208,
+        "status": "completed",
+        "estimated_cost_usd": 0.004718399999999999,
+        "prompt_tokens": 5644,
+        "completion_tokens": 1538
+      }
     }
   },
   "zotero": {
@@ -2282,9 +2651,29 @@
         "2611.14373": {
           "status": "created",
           "item_key": "D78FPXCS"
+        },
+        "2611.15225": {
+          "status": "created",
+          "item_key": "9JUHBH59"
+        },
+        "2611.15238": {
+          "status": "created",
+          "item_key": "92BCW4F3"
+        },
+        "2611.15360": {
+          "status": "created",
+          "item_key": "IC2SFIP5"
+        },
+        "2611.16727": {
+          "status": "created",
+          "item_key": "ZI5Q4QVH"
+        },
+        "2611.16767": {
+          "status": "created",
+          "item_key": "H4V5UU92"
         }
       },
-      "not_before": 1794430904.9164665
+      "not_before": 1794602660.00152
     }
   }
 }

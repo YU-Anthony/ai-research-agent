@@ -310,6 +310,41 @@
         "url": "https://arxiv.org/abs/2611.14373",
         "zotero_item_key": "D78FPXCS",
         "status": "created"
+      },
+      {
+        "arxiv_id": "2611.15225",
+        "title": "Can MLLMs Reason over Surround-View Driving Videos? A Multi-View Autonomous Driving QA Benchmark",
+        "url": "https://arxiv.org/abs/2611.15225",
+        "zotero_item_key": "9JUHBH59",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.15238",
+        "title": "Towards Robust Vision-Language Reasoning: A Multi-Stage Optimization Pipeline with Masked Diffusion Model",
+        "url": "https://arxiv.org/abs/2611.15238",
+        "zotero_item_key": "92BCW4F3",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.15360",
+        "title": "CARE-Drive: Coupled Alternating Refinement for Ego-trajectories",
+        "url": "https://arxiv.org/abs/2611.15360",
+        "zotero_item_key": "IC2SFIP5",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.16727",
+        "title": "From Foundation VLM to Versatile Driving VLM: A Triplet Incremental Training Approach",
+        "url": "https://arxiv.org/abs/2611.16727",
+        "zotero_item_key": "ZI5Q4QVH",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.16767",
+        "title": "Evaluating Video LLMs' Understanding of Corner Cases in Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.16767",
+        "zotero_item_key": "H4V5UU92",
+        "status": "created"
       }
     ]
   }
