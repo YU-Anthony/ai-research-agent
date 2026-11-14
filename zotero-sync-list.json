@@ -312,6 +312,20 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.14953",
+        "title": "RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence",
+        "url": "https://arxiv.org/abs/2611.14953",
+        "zotero_item_key": "9SFHE4XH",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.15217",
+        "title": "Are We Ready for Snow-tonomous Driving? Challenges Toward Robust Automated Driving in Extreme Weather",
+        "url": "https://arxiv.org/abs/2611.15217",
+        "zotero_item_key": "4ZEXJ2E5",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.15225",
         "title": "Can MLLMs Reason over Surround-View Driving Videos? A Multi-View Autonomous Driving QA Benchmark",
         "url": "https://arxiv.org/abs/2611.15225",
@@ -333,6 +347,20 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.15809",
+        "title": "Fine-Grained Generative Hallucination Detection and Correction for Aerial Image Captioning",
+        "url": "https://arxiv.org/abs/2611.15809",
+        "zotero_item_key": "24TB986D",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.16061",
+        "title": "Pothole Risk Assessment with Geometrically Grounded Vision Language Models",
+        "url": "https://arxiv.org/abs/2611.16061",
+        "zotero_item_key": "XT2Q94N4",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.16727",
         "title": "From Foundation VLM to Versatile Driving VLM: A Triplet Incremental Training Approach",
         "url": "https://arxiv.org/abs/2611.16727",
@@ -344,6 +372,13 @@
         "title": "Evaluating Video LLMs' Understanding of Corner Cases in Autonomous Driving",
         "url": "https://arxiv.org/abs/2611.16767",
         "zotero_item_key": "H4V5UU92",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.17330",
+        "title": "ProtoVis-Nav: Prototypical Visual Imagination for Visual-Spatial Aligned UAV Navigation",
+        "url": "https://arxiv.org/abs/2611.17330",
+        "zotero_item_key": "KH3RXE4U",
         "status": "created"
       }
     ]

@@ -196,6 +196,26 @@
     "2611.15360": {
       "reported_at": "2026-11-13T20:43:52.112280+00:00",
       "version": "2611.15360v1"
+    },
+    "2611.14953": {
+      "reported_at": "2026-11-14T18:55:51.790806+00:00",
+      "version": "2611.14953v1"
+    },
+    "2611.17330": {
+      "reported_at": "2026-11-14T18:55:51.790806+00:00",
+      "version": "2611.17330v1"
+    },
+    "2611.15217": {
+      "reported_at": "2026-11-14T18:55:51.790806+00:00",
+      "version": "2611.15217v1"
+    },
+    "2611.16061": {
+      "reported_at": "2026-11-14T18:55:51.790806+00:00",
+      "version": "2611.16061v1"
+    },
+    "2611.15809": {
+      "reported_at": "2026-11-14T18:55:51.790806+00:00",
+      "version": "2611.15809v1"
     }
   },
   "requests": {
@@ -254,6 +274,13 @@
       "estimated_cost_usd": 0.004718399999999999,
       "prompt_tokens": 5644,
       "completion_tokens": 1538
+    },
+    "actions-43629243383": {
+      "ceiling_usd": 0.0178272,
+      "status": "completed",
+      "estimated_cost_usd": 0.003674,
+      "prompt_tokens": 3241,
+      "completion_tokens": 1486
     }
   },
   "papers": {
@@ -1127,7 +1154,7 @@
       "updated": "2026-11-12T18:59:49Z",
       "url": "https://arxiv.org/abs/2611.17330v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-13T20:43:53.072742+00:00"
+      "retrieved_at": "2026-11-14T18:55:52.445234+00:00"
     },
     "2611.16767": {
       "id": "2611.16767v1",
@@ -1183,7 +1210,7 @@
       "updated": "2026-11-11T22:19:41Z",
       "url": "https://arxiv.org/abs/2611.16061v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-13T20:43:53.072947+00:00"
+      "retrieved_at": "2026-11-14T18:55:52.445355+00:00"
     },
     "2611.15809": {
       "id": "2611.15809v1",
@@ -1198,7 +1225,7 @@
       "updated": "2026-11-11T18:26:26Z",
       "url": "https://arxiv.org/abs/2611.15809v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-13T20:43:53.072988+00:00"
+      "retrieved_at": "2026-11-14T18:55:52.445380+00:00"
     },
     "2611.15360": {
       "id": "2611.15360v1",
@@ -1292,7 +1319,7 @@
       "updated": "2026-11-11T09:10:13Z",
       "url": "https://arxiv.org/abs/2611.15217v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-13T20:43:53.073191+00:00"
+      "retrieved_at": "2026-11-14T18:55:52.445513+00:00"
     },
     "2611.14953": {
       "id": "2611.14953v1",
@@ -1316,7 +1343,7 @@
       "updated": "2026-11-11T02:59:53Z",
       "url": "https://arxiv.org/abs/2611.14953v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-13T20:43:53.073241+00:00"
+      "retrieved_at": "2026-11-14T18:55:52.445546+00:00"
     }
   },
   "history": {
@@ -2497,6 +2524,151 @@
         "prompt_tokens": 5644,
         "completion_tokens": 1538
       }
+    },
+    "actions-43629243383": {
+      "created_at": "2026-11-14T18:55:51.790806+00:00",
+      "papers": [
+        {
+          "id": "2611.14953v1",
+          "contribution": "RSLiveBench-UAV introduces a continuously evolving vision-language benchmark for aerial spatial intelligence, linking physical vehicle observations across views and time, enabling systematic model evaluation on 17 tasks including 2D/3D perception and reasoning.",
+          "limitation": "Current strongest models achieve moderate scores; fine-grained vehicle recognition remains challenging and performance varies with UAV altitude and camera pitch.",
+          "gap": "Extensions needed for more robust vehicle recognition and to cover additional dynamic driving behavior aspects beyond static spatial intelligence."
+        },
+        {
+          "id": "2611.17330v1",
+          "contribution": "ProtoVis-Nav framework predicts prototypical visual features to imagine local visual context for drone navigation, improving alignment between predicted waypoints and visual input, thus enhancing UAV vision-language navigation accuracy.",
+          "limitation": "Focused on UAV navigation with local visual imagination; unclear generalization to autonomous driving or integrating multi-agent behavior understanding.",
+          "gap": "Incorporation of multimodal data beyond vision-language and extension to complex driving behavior reasoning remains unexplored."
+        },
+        {
+          "id": "2611.15217v1",
+          "contribution": "This paper identifies ten key challenges for robust automated driving in extreme weather (snow, rain, fog), highlighting data scarcity, domain shifts, multimodal perception limitations, and control robustness issues.",
+          "limitation": "Challenges are identified qualitatively; lacks validated multimodal methods or solutions for explainable behavior under adverse conditions.",
+          "gap": "Need for multimodal and explainable autonomous driving methods explicitly tested in harsh weather scenarios."
+        },
+        {
+          "id": "2611.16061v1",
+          "contribution": "Presents a modular framework combining geometric measurements with vision-language models for pothole severity assessment, improving risk warning relevance and interpretability over image-only methods.",
+          "limitation": "Severity classes are visual categories, not direct physical measurements; advisory warnings not validated for real vehicle guidance.",
+          "gap": "Bridging visual risk assessment with actionable multimodal driving behavior understanding and explainable reasoning remains open."
+        },
+        {
+          "id": "2611.15809v1",
+          "contribution": "Proposes a lightweight hallucination detection and correction method for aerial image captioning using multimodal large language models to improve factual consistency in challenging aerial views.",
+          "limitation": "Method validated mainly on aerial scenarios; general applicability to driving contexts and real-time human-centered explanation needs further study.",
+          "gap": "Opportunity to adapt hallucination correction to autonomous driving explanations and driver-assistant communication for safe decision justification."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal integration (vision and language) improves spatial and risk understanding in aerial and driving domains.",
+            "uncertainty": "Extent of generalization to diverse driving scenarios and adverse conditions is not fully demonstrated.",
+            "evidence_ids": [
+              "2611.14953v1",
+              "2611.16061v1",
+              "2611.17330v1"
+            ]
+          },
+          {
+            "finding": "Explainability and factual consistency in model outputs are critical, as hallucinations and visual ambiguities impair reliability.",
+            "uncertainty": "Balancing lightweight hallucination correction with real-time deployment and broad scenario coverage remains challenging.",
+            "evidence_ids": [
+              "2611.15809v1",
+              "2611.16061v1"
+            ]
+          },
+          {
+            "finding": "Robust autonomous driving under extreme weather demands advances in multimodal perception, control robustness, and data beyond clear-weather benchmarks.",
+            "uncertainty": "Practical multimodal, explainable driving solutions under harsh conditions are still nascent.",
+            "evidence_ids": [
+              "2611.15217v1",
+              "2611.14953v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "RSLiveBench-UAV benchmarks multimodal aerial perception including spatial reasoning, whereas ProtoVis-Nav focuses narrowly on local visual imagination for UAV navigation waypoint prediction.",
+            "limitation": "ProtoVis-Nav may lack broader reasoning capacity present in RSLiveBench-UAV; neither specifically targets autonomous ground vehicle driving behavior.",
+            "evidence_ids": [
+              "2611.14953v1",
+              "2611.17330v1"
+            ]
+          },
+          {
+            "comparison": "Pothole risk assessment combines geometric grounding with vision-language reasoning improving interpretability, whereas hallucination detection targets improving factual consistency in captions.",
+            "limitation": "Neither directly addresses real-time onboard driving decision explainability or human-centric assistant integration.",
+            "evidence_ids": [
+              "2611.16061v1",
+              "2611.15809v1"
+            ]
+          },
+          {
+            "comparison": "Snow-autonomous driving challenges emphasize data and performance gaps in multimodal perception and control not yet resolved by existing benchmarks or hallucination correction frameworks.",
+            "limitation": "Current works do not converge on unified solutions integrating weather robustness, multimodal perception, and explainable driving reasoning.",
+            "evidence_ids": [
+              "2611.15217v1",
+              "2611.14953v1",
+              "2611.15809v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can entity-centered evolving aerial benchmarks improve human-understandable multimodal driving behavior models?",
+            "hypothesis": "Continual updates with real UAV imagery enhance model adaptability and spatial reasoning fidelity.",
+            "method": "Extend RSLiveBench-UAV protocol to driving scenes with temporal vehicle tracking and question-answer tasks.",
+            "datasets": "RSLiveBench-UAV extended; new driving multimodal datasets with temporal annotations.",
+            "baselines": "Existing embodied and remote sensing vision-language models.",
+            "metrics": "Score-pattern consistency, fine-grained recognition accuracy, reasoning tasks performance.",
+            "compute": "High-memory GPUs for transformer training; training times weeks; multiple seeds for stability.",
+            "risk": "Data scarcity for complex driving behaviors; benchmark bias toward static scenes.",
+            "novelty_check": "Benchmark updates with entity-tracking unique in aerial/driving spatial intelligence.",
+            "priority_rationale": "Supports multimodal driving behavior understanding and continual model evaluation.",
+            "evidence_ids": [
+              "2611.14953v1"
+            ]
+          },
+          {
+            "question": "Does imagining outcome-associated local visual features enhance multimodal waypoint prediction in driving?",
+            "hypothesis": "Visual imagination aligned with spatial context improves navigation waypoint accuracy over direct prediction.",
+            "method": "Adapt ProtoVis-Nav feature prototype method to autonomous vehicle perceptions and multimodal sensor fusion.",
+            "datasets": "Multimodal driving datasets with language instructions and GPS waypoints (unverified).",
+            "baselines": "End-to-end VLN models without visual imagination.",
+            "metrics": "Waypoint error, collision rates, navigation success rates.",
+            "compute": "Moderate GPU requirements; real-time constraints.",
+            "risk": "Limited generalization beyond UAV to ground vehicles; multimodal complexity increase.",
+            "novelty_check": "Incorporates visual imagination framework from UAV VLN to ground driving navigation.",
+            "priority_rationale": "Bridges interpretability and accuracy in multimodal driving reasoning.",
+            "evidence_ids": [
+              "2611.17330v1"
+            ]
+          },
+          {
+            "question": "Can geometric grounding of vision-language risk assessments translate to actionable explainable driving advisories?",
+            "hypothesis": "Incorporating geometric features into VLMs improves semantic risk classification and enhances driver assistance explanations.",
+            "method": "Integrate geometric measurements with VLMs for driving hazard assessment and natural-language advisory generation.",
+            "datasets": "Dashcam and RGB-D driving hazard datasets (unverified).",
+            "baselines": "Image-only VLM hazard classifiers.",
+            "metrics": "Severity classification agreement, advisory preference ratings, safety improvement metrics.",
+            "compute": "Moderate compute; costs per scene similar to pothole study.",
+            "risk": "Advisories may not correspond to validated control actions; driver over-trust risk.",
+            "novelty_check": "Extends pothole hybrid framework to driving risk assessment and explanations.",
+            "priority_rationale": "Advances human-centered explainable driving safety reasoning.",
+            "evidence_ids": [
+              "2611.16061v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.0178272,
+        "status": "completed",
+        "estimated_cost_usd": 0.003674,
+        "prompt_tokens": 3241,
+        "completion_tokens": 1486
+      }
     }
   },
   "zotero": {
@@ -2671,9 +2843,29 @@
         "2611.16767": {
           "status": "created",
           "item_key": "H4V5UU92"
+        },
+        "2611.14953": {
+          "status": "created",
+          "item_key": "9SFHE4XH"
+        },
+        "2611.15217": {
+          "status": "created",
+          "item_key": "4ZEXJ2E5"
+        },
+        "2611.15809": {
+          "status": "created",
+          "item_key": "24TB986D"
+        },
+        "2611.16061": {
+          "status": "created",
+          "item_key": "XT2Q94N4"
+        },
+        "2611.17330": {
+          "status": "created",
+          "item_key": "KH3RXE4U"
         }
       },
-      "not_before": 1794602660.00152
+      "not_before": 1794682575.6826978
     }
   }
 }
