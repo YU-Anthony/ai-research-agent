@@ -216,6 +216,30 @@
     "2611.15809": {
       "reported_at": "2026-11-14T18:55:51.790806+00:00",
       "version": "2611.15809v1"
+    },
+    "2611.20648": {
+      "reported_at": "2026-11-17T21:59:04.922191+00:00",
+      "version": "2611.20648v1"
+    },
+    "2611.20765": {
+      "reported_at": "2026-11-17T21:59:04.922191+00:00",
+      "version": "2611.20765v1"
+    },
+    "2611.20011": {
+      "reported_at": "2026-11-17T21:59:04.922191+00:00",
+      "version": "2611.20011v1"
+    },
+    "2611.19184": {
+      "reported_at": "2026-11-17T21:59:04.922191+00:00",
+      "version": "2611.19184v1"
+    },
+    "2611.19138": {
+      "reported_at": "2026-11-17T21:59:04.922191+00:00",
+      "version": "2611.19138v1"
+    },
+    "2611.19830": {
+      "reported_at": "2026-11-17T21:59:04.922191+00:00",
+      "version": "2611.19830v1"
     }
   },
   "requests": {
@@ -281,6 +305,13 @@
       "estimated_cost_usd": 0.003674,
       "prompt_tokens": 3241,
       "completion_tokens": 1486
+    },
+    "actions-44185335195": {
+      "ceiling_usd": 0.025491200000000002,
+      "status": "completed",
+      "estimated_cost_usd": 0.005670800000000001,
+      "prompt_tokens": 7673,
+      "completion_tokens": 1626
     }
   },
   "papers": {
@@ -1344,6 +1375,262 @@
       "url": "https://arxiv.org/abs/2611.14953v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-14T18:55:52.445546+00:00"
+    },
+    "2611.21311": {
+      "id": "2611.21311v1",
+      "title": "A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification",
+      "abstract": "The rapid growth of unmanned aerial vehicles (UAVs) in low-altitude airspace increases the risk of unauthorized intrusions, making reliable detection and identification of non-cooperative UAVs essential for low-altitude airspace safety. However, the existing public UAV datasets are mostly acquired from fixed ground-based viewpoints and are limited to imaging or radio-frequency (RF) observations, which restricts the sensing coverage and deployment flexibility. To address this gap, we present A2A-UAV, a multimodal air-to-air dataset for UAV detection and identification. Specifically, 15 target UAVs of 13 commercial models were recorded at three outdoor sites under daytime and nighttime conditions by using a UAV-mounted platform equipped with an RGB-thermal gimbal camera, a panoramic camera, an RF spectrum analyzer, and a millimeter-wave radar. The dataset contains 105,294 time-aligned samples of RGB, panoramic, thermal, and RF time-frequency images and radar point clouds. Moreover, all 209,539 bounding boxes of the predominantly small UAV targets were manually annotated and cross-checked. Therefore, A2A-UAV provides a valuable resource for air-to-air UAV detection, identification, and multimodal fusion in low-altitude airspace.",
+      "authors": [
+        "Hongtao Liang",
+        "Yiyao Wan",
+        "Kezhi Zhu",
+        "Jiayi Zhang",
+        "Zequn Jiang",
+        "Ziyu Zhou",
+        "Jiahuan Ji",
+        "Fuhui Zhou",
+        "Qihui Wu"
+      ],
+      "published": "2026-11-16T16:07:59Z",
+      "updated": "2026-11-16T16:07:59Z",
+      "url": "https://arxiv.org/abs/2611.21311v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.129908+00:00"
+    },
+    "2611.20765": {
+      "id": "2611.20765v1",
+      "title": "STA: A Split Temporal Adversary Method for Evaluating Robustness of Multimodal RL-based Driving Policies",
+      "abstract": "Multimodal reinforcement learning (MRL) offers a promising paradigm for autonomous driving by jointly leveraging complementary sensor observations to learn effective decision-making policies. However, its effectiveness critically depends on temporal alignment across modalities, making temporal inconsistency a fundamental vulnerability. Even subtle misalignment or latency can corrupt fused representations and ultimately lead to decision failures. Existing studies have explored adversarial attacks to induce cross-modal temporal inconsistencies, thereby enabling systematic evaluation of the temporal robustness of MRL policies. However, existing methods remain limited in generality, realism, and adaptivity. To address these limitations, we propose the Split Temporal Adversary (STA), which formulates multimodal temporal attacks as a unified decision process that jointly optimizes attack timing and modality selection under realistic policy-aware and budget-constrained settings. STA includes two mechanisms: a) a unified multimodal temporal perturbation mechanism that delays observations via historical states, removing the need for modality-specific noise; b) a split multimodal adversarial decision mechanism that jointly optimizes attack timing and modality selection through adaptive optimization while leveraging the victim policy's clean actions to identify sensitive decision patterns. We provide a theoretical analysis of the induced distribution shift and a modality selection principle. Experiments in the CARLA simulator show that STA more than doubles the collision rate of the strongest baseline against PPO while using 17.8\\% fewer attack attempts, and that it generalizes to a VLM-based driving policy. These results reveal temporal consistency as a critical vulnerability, highlighting temporal robustness as essential for safe autonomous driving.",
+      "authors": [
+        "Shenghao Xiong",
+        "Xiaolin Chang"
+      ],
+      "published": "2026-11-16T09:16:45Z",
+      "updated": "2026-11-16T09:16:45Z",
+      "url": "https://arxiv.org/abs/2611.20765v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.129952+00:00"
+    },
+    "2611.20686": {
+      "id": "2611.20686v1",
+      "title": "UbiHearo: Bringing Scenario-Aware Sound Guidance to DHH Users with Mobile Agents",
+      "abstract": "For Deaf and Hard-of-Hearing (DHH) users, effective sound awareness goes beyond detecting \\emph{what} sound occurs; it requires understanding \\emph{what it means}, \\emph{how urgent it is}, and \\emph{what to do}. However, existing mobile assistants largely reduce acoustic scenes to isolated labels or generic alerts, failing to provide contextual guidance when the same sound implies different risks across scenarios. We present \\sysname, a mobile hearing assistant agent that closes the sensing--reasoning--action loop for \\textit{scenario-aware} and \\textit{personalized} DHH assistance. \\sysname adopts a \\textit{neuro-symbolic} design that transforms continuous acoustic and physical context streams into structured intermediate representations (IRs) for controllable reasoning and guidance. It introduces three key mechanisms. \\textit{First}, a perception-thresholded sensing mechanism enables energy-efficient always-on awareness by activating processing only for perceptually meaningful events while preserving safety-critical cues through deterministic overrides. \\textit{Second}, a staged neuro-symbolic reasoning framework performs promptless scenario understanding by conditioning an on-device audio-language model on structured IRs instead of user-authored context descriptions. \\textit{Third}, a bounded human-in-the-loop personalization mechanism adapts user-specific guidance through lightweight on-device decision-boundary updates while preserving population-aligned reasoning. We evaluate \\sysname on smartphones and in-vehicle systems across diverse scenarios. It achieves favorable accuracy--latency--energy tradeoffs and personalized guidance.",
+      "authors": [
+        "Fengmin Wu",
+        "Sicong Liu",
+        "Zimu Zhou",
+        "Chenren Xu",
+        "Wanbing Zhao",
+        "Peiwen Sun",
+        "Zhiwen Yu"
+      ],
+      "published": "2026-11-16T07:51:11Z",
+      "updated": "2026-11-16T07:51:11Z",
+      "url": "https://arxiv.org/abs/2611.20686v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.129981+00:00"
+    },
+    "2611.20648": {
+      "id": "2611.20648v1",
+      "title": "Competent Autonomous Driving Through Fine Tuning Vision Language Action Models with Symbolic Traffic Rules",
+      "abstract": "Vision-language-action (VLA) models offer a unified approach to perception, reasoning, and control for autonomous driving, but accurate action prediction alone does not establish compliance with traffic regulations. This paper presents a rule-guided VLA framework that incorporates symbolic traffic-rule feedback into policy optimisation. The framework combines supervised fine-tuning on expert demonstrations with reinforcement learning (RL) refinement using a reward that encourages encoded-rule compliance while penalising deviations from expert actions. Selected provisions of the United Kingdom Highway Code are formalised as executable first-order logic rules using PyReason, covering speed adaptation, following distance, and road-user priority. A frozen vision-language model extracts scene predicates, which are combined with vehicle-state information to assess the projected consequences of candidate control actions. Offline evaluation on held-out data collected in the CARLA simulator compares three group-based RL methods. The results show improvements in both action prediction accuracy and encoded-rule compliance over the supervised baseline. The best-performing variant increases the overall rule pass rate from 92.9% to 97.6%, with zero observed violations of the encoded road-user-priority check in the evaluated samples. These findings support symbolic rule feedback as a means of improving VLA policy alignment with explicit traffic-rule criteria.",
+      "authors": [
+        "Barkin Dagda",
+        "Vinal Asodia",
+        "Iman Sharifi",
+        "Peng Wei",
+        "Saber Fallah"
+      ],
+      "published": "2026-11-16T07:06:44Z",
+      "updated": "2026-11-16T07:06:44Z",
+      "url": "https://arxiv.org/abs/2611.20648v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130005+00:00"
+    },
+    "2611.20631": {
+      "id": "2611.20631v1",
+      "title": "Instructions Before Actions: Prospective and Retrospective Language Supervision for Driving Vision-Language-Action Data",
+      "abstract": "Driving vision-language-action (VLA) models can accept navigation instructions, yet predicting a driver's trajectory does not establish that a model follows the instruction. We study how driving-language supervision is collected and evaluated, distinguishing prospective instructions issued before an action from retrospective labels written after observing it. We develop ADVLAT-Engine to synchronize spoken instructions, road-scene video, and vehicle trajectories, and compare three navigation apps on 48 replayed routes. On 87 maneuvers announced by both Google Maps and a passenger, the passenger uses more scene-dependent language. We evaluate four open driving VLAs before and after fine-tuning on prospective navigation-app drives. Fine-tuning reduces passenger-drive trajectory error by 23-59%, but instruction effects remain inconsistent. At real intersections, counterfactual instructions reveal stronger responsiveness: fine-tuned Alpamayo~2 Super gains 31 and 18 accuracy points at 15 and 5~m, while Qwen-Drive follows alternative maneuvers more reliably with a discrete command than with a sentence. We additionally collected retrospective annotations from four people for the driving recordings and describe controlled comparisons of annotation content, timing, and downstream learning; those analyses are pending. Our findings separate maneuver prediction from instruction-following and establish a framework for comparing prospective and retrospective supervision.",
+      "authors": [
+        "Angel Martinez-Sanchez",
+        "Ross Greer"
+      ],
+      "published": "2026-11-16T06:52:38Z",
+      "updated": "2026-11-16T06:52:38Z",
+      "url": "https://arxiv.org/abs/2611.20631v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130025+00:00"
+    },
+    "2611.20458": {
+      "id": "2611.20458v1",
+      "title": "VISTA: A Framework for Vision-Informed Semantic Traffic Awareness",
+      "abstract": "The Internet of Things (IoT) is transforming intelligent transportation systems by connecting roadside cameras, edge computing units, vehicles, and traffic infrastructure into a shared sensing and decision-making ecosystem. However, transmitting raw traffic video over vehicle-to-everything (V2X) links is bandwidth-intensive, while deploying large multimodal models directly on resource-constrained vehicles is often impractical. To address these limitations, this article proposes VISTA (Vision-Informed Semantic Traffic Awareness), a multimodal vision-language edge-intelligence framework that combines predictive video representation learning with lightweight language-based reasoning to provide communication-efficient traffic situational awareness. In the proposed architecture, roadside surveillance units employ the Video Joint Embedding Predictive Architecture (V-JEPA) and an attentive-pooler module to convert traffic video clips into compact future-scene embeddings. These embeddings are transmitted through V2X links to vehicle-mounted systems, where a TinyLlama small language model, enhanced with a custom visual adapter, interprets the embeddings alongside natural-language (NL) traffic queries. VISTA enables vehicles to obtain interpretable traffic information, reason about upcoming scene dynamics, and identify potential collision risks without receiving raw video streams. Experimental results in a digital-twin urban traffic environment show that VISTA achieves 97.77% accuracy and an 89% F1 score for future collision prediction while reducing the communication payload by several orders of magnitude compared with raw RGB video transmission. These results demonstrate the feasibility of embedding-based multimodal intelligence for low-latency, communication-efficient, and safety-oriented IoT-enabled transportation systems.",
+      "authors": [
+        "Murat Arda Onsu",
+        "Poonam Lohan",
+        "Burak Kantarci",
+        "Aisha Syed",
+        "Matthew Andrews",
+        "Sean Kennedy"
+      ],
+      "published": "2026-11-16T03:26:30Z",
+      "updated": "2026-11-16T03:26:30Z",
+      "url": "https://arxiv.org/abs/2611.20458v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130050+00:00"
+    },
+    "2611.20372": {
+      "id": "2611.20372v1",
+      "title": "VisDrone-ReID: A Unified Multi-Category Object Re-Identification Benchmark",
+      "abstract": "Object re-identification (Re-ID) benchmarks remain predominantly confined to single-category evaluations, limiting the development of unified systems capable of operating across diverse object types. This paper presents VisDrone-ReID, a unified multi-category Re-ID benchmark derived from the VisDrone2019-MOT dataset through a principled conversion pipeline. The pipeline resolves structural incompatibilities between multi-object tracking annotations and Re-ID evaluation requirements, addressing sequence-scoped identity collision, temporal redundancy, and the absence of a principled identity-level train/test split. The resulting benchmark comprises 9,516 identities and 150,016 images across ten object categories - pedestrian, people, bicycle, car, van, truck, tricycle, awning-tricycle, bus, and motor, sourced from 80 unmanned aerial vehicle (UAV) sequences captured across urban environments. A leave-one-out (LOO) evaluation protocol is adopted to provide a comprehensive assessment. Baseline experiments across four representative Re-ID models spanning CNN and transformer architectures establish the first systematic performance reference on this benchmark. Results reveal a consistent Rank-1 to mAP gap across all models, suggesting that VisDrone-ReID presents a genuine retrieval challenge beyond nearest-neighbour matching. Per-category analysis identifies pedestrian as the most challenging category and reveals that vision-language pretraining provides a measurable advantage on semantically distinctive categories. VisDrone-ReID provides a consistent platform for studying multi-category object re-identification under the scale variation, viewpoint challenges, and category diversity characteristic of real-world surveillance scenarios.",
+      "authors": [
+        "Asmau Lawal Bilbis",
+        "Nathanael L. Baisa",
+        "Amudhavel Jayavel"
+      ],
+      "published": "2026-11-16T01:02:10Z",
+      "updated": "2026-11-16T01:02:10Z",
+      "url": "https://arxiv.org/abs/2611.20372v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130072+00:00"
+    },
+    "2611.20019": {
+      "id": "2611.20019v1",
+      "title": "D'BEAST: Logged Bad Experiences as Explanation for Autonomous Driving Agents",
+      "abstract": "Reinforcement learning agents learn from mistakes, yet their decisions can be difficult to trace back to those experiences. We investigate whether a tabular agent's decisions can be explained by its bad experiences, defined as the training transitions associated with safety or task events. A fixed training log is replayed from the same initial Q-table under three conditions. FULL retains all updates, SKIP omits bad-experience updates, and NEUTRALIZE retains those updates without their event penalties. We illustrate the method on six classic Markov decision processes and evaluate it in closed-loop driving in CARLA. On the full driving task, FULL reached the goal from 33 of 40 test starts, whereas SKIP and NEUTRALIZE reached it from none, indicating that the bad experiences carry decision-relevant information. At the local level, for 47 decisions shortly before a failure of SKIP or NEUTRALIZE, removing or neutralizing a small group of bad experiences, with a median size of one, caused the trained agent to select the failing policy's action in 46 cases. For this agent, the results indicate that its decisions can be explained by its bad experiences.",
+      "authors": [
+        "Ahmad Alfan Alfian Irfan",
+        "Nur Ahmad Khatim",
+        "Mansur Arief"
+      ],
+      "published": "2026-11-15T14:05:02Z",
+      "updated": "2026-11-15T14:05:02Z",
+      "url": "https://arxiv.org/abs/2611.20019v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130096+00:00"
+    },
+    "2611.20011": {
+      "id": "2611.20011v1",
+      "title": "ReactBench-AD: Do Driving VLAs and World-Action Models React to Imminent Hazards in Their Path?",
+      "abstract": "Vision-Language-Action models (VLAs) and World-Action Models (WAMs) have emerged in autonomous driving with the promise of strong generalization to long-tail scenarios. Although these models achieve state-of-the-art results on autonomous driving benchmarks, most existing benchmarks are dominated by nominal scenarios and therefore cannot test this promise. To test one such long-tail capability that is critical for safety, we introduce ReactBench-AD, a benchmark that measures how driving models react to objects that appear in the ego vehicle's path. Built on real NAVSIM and PhysicalAI-Autonomous-Vehicles scenes, ReactBench-AD composites a crossing pedestrian, a standing pedestrian, or a stationary car consistently across all camera views and history frames. Each edited scene thus forms an exact, pixel-level counterfactual pair with its original, which allows us to isolate the causal effect of the inserted object on the predicted trajectory. Evaluating four VLAs and two WAMs, we find that they react weakly, often barely at all. Finally, we test how easily one of the evaluated VLAs, ReCogDrive, can be taught to brake hard for imminent hazards: a short fine-tuning stage on edited scenes substantially improves its reactions, with the learned behavior generalizing to unseen objects and fully real scenes, at minimal cost to nominal driving. These results call into question the out-of-the-box long-tail capabilities of these models, but suggest that they can be a strong foundation for acquiring them with little additional training, highlighting the value of real or synthetic data that demonstrates the long-tail behaviors nominal datasets rarely contain. Code and data will be made publicly available.",
+      "authors": [
+        "Nikos Theodoridis",
+        "Reenu Mohandas",
+        "Sushil Sharma",
+        "Ciarán Hogan",
+        "Ganesh Sistu",
+        "Anthony Scanlan",
+        "Tim Brophy",
+        "Ciarán Eising"
+      ],
+      "published": "2026-11-15T13:42:52Z",
+      "updated": "2026-11-15T13:42:52Z",
+      "url": "https://arxiv.org/abs/2611.20011v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130127+00:00"
+    },
+    "2611.19830": {
+      "id": "2611.19830v1",
+      "title": "Beyond Vehicle-Centric Data: Scaling Autonomous Driving through Roadside-to-Vehicle Generation",
+      "abstract": "Training autonomous driving models requires large and diverse datasets, collected primarily by vehicles. Scaling them entails investment in fleet operation, data processing and annotation. Road infrastructure records traffic and multi-vehicle interactions, yet the viewpoint gap between roadside and onboard sensors limits its direct use for training. Here we introduce AnyR2V, a framework that transforms multimodal roadside observations into seven-camera surround-view videos for different vehicle perspectives. It aggregates sequential observations into a shared scene representation of geometry and road-user motion, then renders appearance, depth and layout conditions along target-vehicle trajectories. Supervised by spatiotemporally aligned roadside-vehicle pairs, AnyR2V generates surround-view videos guided by scene structure and road-user motion. Existing roadside 3D bounding boxes are transformed into target-vehicle coordinates and paired with generated images, allowing one traffic recording and its annotations to yield training data from multiple vehicle perspectives. We construct R2V360, a dataset of 89 real traffic sequences at an urban intersection, with aligned multimodal roadside data and onboard surround-view videos. AnyR2V outperforms six scene reconstruction methods in image fidelity and in depth and semantic agreement between generated and real onboard images. We further evaluate generated videos along other vehicles' trajectories by adding them to real training data. Adding generated frames equal to 50% of the original real training frame count improves mean average precision (mAP) by 3.3-3.4 AP-points across three 3D object detectors on the real onboard test set, relative to real-data-only baselines. These results demonstrate that roadside traffic records can provide training data from multiple vehicle perspectives, offering a new data source for autonomous driving.",
+      "authors": [
+        "Yichen Zhang",
+        "Zihan Wang",
+        "Hao Chen",
+        "Runyi Huang",
+        "Ruixue Zong",
+        "Jing Wang",
+        "Yunong Mao",
+        "Lei He",
+        "Keqiang Li"
+      ],
+      "published": "2026-11-15T06:23:23Z",
+      "updated": "2026-11-15T06:23:23Z",
+      "url": "https://arxiv.org/abs/2611.19830v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130175+00:00"
+    },
+    "2611.19730": {
+      "id": "2611.19730v1",
+      "title": "AlphaTruck: A Platform for High-Speed Off-Road Autonomy on Unstructured Terrain",
+      "abstract": "Progress in autonomous navigation in off-road environments requires not only advances in algorithms, but also robust and capable physical platforms suited to both development and deployment. Today, off-road autonomy is typically developed and tested at one of two extremes of vehicle scale, each with different drawbacks. Full-size vehicles are capable but expensive, require large logistic infrastructure for deployment and maintenance, and expensive when pushed beyond their limits. RC-scale vehicles are small and inexpensive, but limited in the terrain they can traverse and the payload that they can carry, which includes their sensors and compute. We present the AlphaTruck platform, which leverages recent advances in compact sensing and compute to integrate multimodal sensing, embedded CPU-GPU compute, and an onboard autonomy stack for high-speed, off-road navigation, all integrated into a large-scale, 1/5th RC vehicle chassis. AlphaTruck is designed as both a research testbed and a field-deployable platform for commercial and defense missions such as survey, search and rescue, and agriculture, with the capacity to carry task-specific payloads. At 1/5 scale, the autonomy stack, sensors, and batteries all compete for the same mass, power, and cooling budget, so the platform must balance five needs: mobility over rough terrain, rich sensing, onboard computation, payload capacity to carry the autonomy stack while leaving room for task-specific equipment, and practical operation and repair. Thus, AlphaTruck navigates off-road environments autonomously at 6-10 m/s using only onboard sensing and compute.",
+      "authors": [
+        "Rwik Rana",
+        "Adam J. Thorpe",
+        "Jesse Quattrociocchi",
+        "William Ward",
+        "Goktug Poyrazoglu",
+        "Adam Uccello",
+        "Christian Ellis",
+        "Rahul Moorthy Mahesh",
+        "Yukang Cao",
+        "Nathan Tsoi",
+        "Garrett Warnell",
+        "Volkan Isler",
+        "Ufuk Topcu",
+        "Joydeep Biswas"
+      ],
+      "published": "2026-11-15T02:25:32Z",
+      "updated": "2026-11-15T02:25:32Z",
+      "url": "https://arxiv.org/abs/2611.19730v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130208+00:00"
+    },
+    "2611.19184": {
+      "id": "2611.19184v1",
+      "title": "Do VLMs Really Look at the Road? A Diagnostic Evaluation for Autonomous Driving",
+      "abstract": "Vision-language models (VLMs) are increasingly being evaluated for autonomous driving through question-answering benchmarks, yet high benchmark accuracy does not necessarily reflect visually grounded reasoning. We present a diagnostic evaluation framework that systematically probes whether VLMs base safety-critical driving decisions on visual evidence or instead rely on language priors, answer biases, and dataset regularities. Our benchmark comprises two task categories, Adverse Weather and Junctions \\& Intersections, with a nuScenes spatial reasoning extension, and evaluates open-source (general, driving, and spatial-reasoning) VLMs along four diagnostic protocols: image versus no-image evaluation, counterfactual weather sensitivity, linguistic robustness under paraphrasing and negation, and spatial reasoning. All ground-truth labels are derived programmatically from BDD100K and DriveLM annotations, enabling reproducible evaluation without manual labeling. Across all models, we find that competitive overall accuracy conceals systematic failure modes, including strong affirmation bias, limited sensitivity to counterfactual scene changes, near-chance performance on negated questions despite high paraphrase consistency, and confident driving decisions even without visual input. These results demonstrate that current open-source VLMs remain insufficiently grounded for safety-critical autonomous driving and underscore the need for diagnostic evaluation beyond aggregate accuracy.",
+      "authors": [
+        "Shankar Gangisetty",
+        "Muskan Singh",
+        "C V Jawahar"
+      ],
+      "published": "2026-11-14T06:07:18Z",
+      "updated": "2026-11-14T06:07:18Z",
+      "url": "https://arxiv.org/abs/2611.19184v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130228+00:00"
+    },
+    "2611.19138": {
+      "id": "2611.19138v1",
+      "title": "SuperGlance: Driving at a Glance with a Vision-Language Model",
+      "abstract": "Autonomous driving is turning to vision-language-action models (VLAs). They answer and plan by decoding, one step at a time. Each step is another forward pass, so a plan can take over a second of GPU time. Embodied AI often pairs such a slow, reasoning System 2 with a fast System 1 that acts. Human drivers plan at a glance, with System 1. Faster designs usually put System 1 outside the vision-language model (VLM), in a planner without its abilities. Yet before a VLM writes its first token, it has already read the scene into one hidden state. We show that, once trained, this hidden state is enough to drive and to answer questions about what the model sees. SuperGlance reads it to turn a decoder-only VLM into an encoder-style driving policy. Its linear head scores a fixed set of 5,273 candidate trajectories. With the set fixed, rewards are computed offline, so supervised targets can be reward-weighted and reinforcement learning maximizes the exact expected reward. Before and during policy training, multiple-choice training keeps the VLM's visual abilities in one pass, so the policy still answers questions about driving scenes. Training questions are built against shortcuts. Each must be answered right in two option orders. Against drift, a KL term keeps each stage near its starting model. One pass offers VLAs a more plausible path to System 1. SuperGlance answers visual multiple-choice questions as well as its base VLM does by decoding. It plans in 84 ms of GPU time, six times faster than Qwen-Drive-1.0, and at least as well on NAVSIM, PAI-AV and WOD-E2E. In AlpaSim closed loop, km per at-fault incident holds for both planners up to a 300-ms delay and drops beyond. With GPU time charged as delay, SuperGlance's lead over Qwen-Drive-1.0 grows from 2.8 to 3.9 times. Delayed by 1.2 s, our model falls below Qwen-Drive-1.0 at its own 518 ms.",
+      "authors": [
+        "Jieyuan Pei",
+        "Xin Yan",
+        "Mingwei Xu",
+        "Haiyi Zhang",
+        "Siyu Zou",
+        "Zhangyi Hu",
+        "Zhuoxuan Li",
+        "Yuguang Yang",
+        "Rongjunchen Zhang",
+        "Cheng Chi",
+        "Hui Xiong",
+        "Yan Wang"
+      ],
+      "published": "2026-11-14T03:59:37Z",
+      "updated": "2026-11-14T03:59:37Z",
+      "url": "https://arxiv.org/abs/2611.19138v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130262+00:00"
+    },
+    "2611.18813": {
+      "id": "2611.18813v1",
+      "title": "RescueVLM: Model-Agnostic Vision-Language Framework for Rescue Drone Imagery",
+      "abstract": "A single unmanned aerial vehicle (UAV) mission over an incident site produces hundreds of images, far more than a rescue commander can review under time pressure, and human screening of destruction imagery carries a documented psychological cost. The two obvious remedies both fail in search and rescue (SAR) practice: cloud vision-language model (VLM) services are excluded because the imagery must not leave the incident network under GDPR and German civil-protection (BOS) rules, and fine-tuned specialist detectors age quickly while retraining and re-certifying them exceeds most SAR organizations resources. We present RescueVLM, an open-source, training-free and model-agnostic triage tool built on SketchVLM: a general-purpose open-weight VLM runs fully on-premise and is swapped for a newer model through a simple dropdown selection, so triage quality grows with the underlying models because all task knowledge lives in prompts and an output contract rather than in trained weights. One natural-language query over a mission folder returns a ranked shortlist with per-image justifications, editable SVG overlay annotations, and a GPS map of the hits. In a qualitative evaluation on German fire-brigade field data from three real deployments and a live fire exercise, a single query condenses an entire survey mission into a handful of annotated frames that a commander can review at a glance.",
+      "authors": [
+        "Niklas Voigt",
+        "Tim Sibum",
+        "Julien Meine",
+        "Niklas Digakis",
+        "Hartmut Surmann"
+      ],
+      "published": "2026-11-13T17:03:57Z",
+      "updated": "2026-11-13T17:03:57Z",
+      "url": "https://arxiv.org/abs/2611.18813v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-17T21:59:06.130285+00:00"
     }
   },
   "history": {
@@ -2681,6 +2968,145 @@
       "papers": [],
       "synthesis": {},
       "usage": {}
+    },
+    "actions-44185335195": {
+      "created_at": "2026-11-17T21:59:04.922191+00:00",
+      "papers": [
+        {
+          "id": "2611.20648v1",
+          "contribution": "Introduces a rule-guided vision-language-action (VLA) framework integrating symbolic traffic rules into RL policy optimization, improving traffic rule compliance and action accuracy in simulated autonomous driving.",
+          "limitation": "Results shown on simulated UK Highway Code rules; real-world transferability and broader traffic scenarios are not addressed.",
+          "gap": "Need to test symbolic rule feedback with more diverse and complex traffic environments and investigate real-world deployment challenges."
+        },
+        {
+          "id": "2611.20765v1",
+          "contribution": "Proposes Split Temporal Adversary (STA), an adaptive multimodal temporal adversarial attack method evaluating temporal robustness of multimodal RL driving policies, revealing temporal consistency as a critical vulnerability.",
+          "limitation": "Study limited to simulated environments (CARLA) and few RL policies; real-world sensor and communication latencies need assessment.",
+          "gap": "Further research needed on defenses against temporal attacks and robustness generalization in deployed autonomous systems."
+        },
+        {
+          "id": "2611.20011v1",
+          "contribution": "Introduces ReactBench-AD benchmark to evaluate VLAs and World-Action Models' reactions to imminent hazards, revealing weak out-of-the-box reactions but fast fine-tuning improves hazard responsiveness.",
+          "limitation": "Focuses on limited imposed hazards in synthetic composites; broader scenario variety and long-term behavioral effects remain unexplored.",
+          "gap": "Research needed on generalized hazard reaction capabilities and integration of safety-critical long-tail scenarios into VLA training."
+        },
+        {
+          "id": "2611.19184v1",
+          "contribution": "Develops a diagnostic framework exposing that open-source VLMs for driving rely heavily on language priors and biases rather than true visual grounding for safety-critical decisions.",
+          "limitation": "Diagnostic evaluations are based on synthetic perturbations and questions; application to closed-loop autonomous control policies is not shown.",
+          "gap": "Further work required to build visually grounded, robust VLMs for driving with faithful explainability in real-world scenarios."
+        },
+        {
+          "id": "2611.19138v1",
+          "contribution": "Presents SuperGlance, a method converting the VLM hidden state into a fast driving policy scoring candidate trajectories, achieving faster inference with comparable driving and question-answering performance.",
+          "limitation": "Evaluations mainly in simulators; impact of fixed candidate trajectory sets on diverse real-world driving scenarios is not assessed.",
+          "gap": "Extension needed for more dynamic planning spaces and testing on complex real-world conditions to validate efficiency-explainability tradeoffs."
+        },
+        {
+          "id": "2611.19830v1",
+          "contribution": "Introduces AnyR2V, transforming roadside multimodal data into surround-view videos for multiple vehicle perspectives, enhancing autonomous driving training datasets and improving 3D object detection.",
+          "limitation": "Dataset and transformation quality depend on paired roadside and onboard data; real-time applicability and edge cases are not discussed.",
+          "gap": "Need to explore scaling to varied environments and assessing impact on driving behavior understanding and multimodal reasoning."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal perception benefits greatly from fusion of heterogeneous sensors and data modalities for enhanced driving scene understanding and decision making.",
+            "uncertainty": "Effectiveness of fusion under temporal inconsistencies or adverse conditions is still under investigation.",
+            "evidence_ids": [
+              "2611.20765v1",
+              "2611.19830v1",
+              "2611.20648v1"
+            ]
+          },
+          {
+            "finding": "Explainability and grounding in visual evidence remain critical challenges for vision-language models used in driving, as many rely overly on language priors and dataset biases.",
+            "uncertainty": "Extent to which improved grounding affects real-time driving policy safety needs further testing.",
+            "evidence_ids": [
+              "2611.19184v1",
+              "2611.19138v1",
+              "2611.20648v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Rule-guided symbolic reasoning (2611.20648v1) enhances VLA compliance with traffic laws, while diagnostic tests (2611.19184v1) reveal many VLMs lack such rule-grounded reasoning naturally.",
+            "limitation": "Symbolic methods tested mainly in simulation; diagnostic evaluations do not encompass training or policy improvement.",
+            "evidence_ids": [
+              "2611.20648v1",
+              "2611.19184v1"
+            ]
+          },
+          {
+            "comparison": "Temporal adversarial attacks (2611.20765v1) expose vulnerabilities in multimodal RL policies that rely on strict temporal alignment, while ReactBench-AD (2611.20011v1) shows VLAs initially weakly react to hazards but improve quickly with fine-tuning.",
+            "limitation": "Both approaches focus on simulated scenarios; robustness and adaptability in real deployment contexts remain unproven.",
+            "evidence_ids": [
+              "2611.20765v1",
+              "2611.20011v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can symbolic traffic rules be integrated into real-world multimodal autonomous driving VLMs to improve explainable compliance?",
+            "hypothesis": "Combining symbolic rule feedback with multimodal vision-language models enhances explicit rule compliance and provides faithful driving explanations.",
+            "method": "Extend PyReason-based rule encoding to onboard VLM policies, combine with multimodal sensors and language queries for action and explanation outputs.",
+            "datasets": "CARLA-based datasets extended with real-world driving video and language annotations.",
+            "baselines": "Supervised VLA, VLA with only RL, rule-free VLM policies.",
+            "metrics": "Rule compliance rate, action prediction accuracy, explanation faithfulness (human evaluation).",
+            "compute": "Moderate GPU for RL fine-tuning, real-time inference desired on vehicle-grade hardware.",
+            "risk": "Sim-to-real gap reduces compliance gains; explanation quality subjective.",
+            "novelty_check": "Builds on 2611.20648v1 framework, extends to VLMs and real data.",
+            "priority_rationale": "High impact on safe, explainable driving; feasible with current symbolic and multimodal integration.",
+            "evidence_ids": [
+              "2611.20648v1",
+              "2611.19184v1",
+              "2611.19138v1"
+            ]
+          },
+          {
+            "question": "Does temporal adversarial training improve robustness of multimodal autonomous driving models under real-world sensor latencies?",
+            "hypothesis": "Adversarial temporal perturbation training increases temporal consistency and robustness to real sensor delays, reducing collisions.",
+            "method": "Incorporate STA-style adversarial delay perturbations during multimodal RL policy training, evaluate under realistic latency profiles.",
+            "datasets": "CARLA simulator with synthetic latency, real-world datasets with measured sensor timing.",
+            "baselines": "Standard RL training, RL with naive temporal noise.",
+            "metrics": "Collision rate, latency robustness, policy stability.",
+            "compute": "High due to adversarial training loops and simulations.",
+            "risk": "Overfitting to adversarial patterns may reduce nominal performance.",
+            "novelty_check": "Extends 2611.20765v1 adversarial attack work towards defense and robustness training.",
+            "priority_rationale": "Improves safety-critical robustness; feasible using simulation prior to deployment.",
+            "evidence_ids": [
+              "2611.20765v1",
+              "2611.20011v1"
+            ]
+          },
+          {
+            "question": "Can embedding-based vision-language models combined with roadside-to-vehicle data generation enable scalable multimodal driving behavior learning?",
+            "hypothesis": "Using generative roadside data (AnyR2V) combined with compact embedding representations (VISTA) enables efficient training of multimodal driving policies with improved scene understanding and communication efficiency.",
+            "method": "Fuse AnyR2V-generated surround videos with VISTA embedding and language queries for driving decision making and reasoning.",
+            "datasets": "R2V360 roadside and onboard datasets, extended with VISTA semantic annotations.",
+            "baselines": "Real onboard-only multimodal training, roadside data without embedding compression.",
+            "metrics": "Driving policy accuracy, communication bandwidth, runtime latency.",
+            "compute": "Edge-level compute assumptions for embedding extraction and language reasoning.",
+            "risk": "Mismatch between generated and real data distribution affects performance.",
+            "novelty_check": "Combines complementary insights from 2611.19830v1 and 2611.20458v1 for multimodal driving.",
+            "priority_rationale": "Addresses scalability and interpretability in multimodal driving; novel fusion approach; computational feasibility promising.",
+            "evidence_ids": [
+              "2611.19830v1",
+              "2611.20458v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.025491200000000002,
+        "status": "completed",
+        "estimated_cost_usd": 0.005670800000000001,
+        "prompt_tokens": 7673,
+        "completion_tokens": 1626
+      }
     }
   },
   "zotero": {
@@ -2875,9 +3301,33 @@
         "2611.17330": {
           "status": "created",
           "item_key": "KH3RXE4U"
+        },
+        "2611.19138": {
+          "status": "created",
+          "item_key": "WKHNG757"
+        },
+        "2611.19184": {
+          "status": "created",
+          "item_key": "9RXBIDX5"
+        },
+        "2611.19830": {
+          "status": "created",
+          "item_key": "6D6BRQBH"
+        },
+        "2611.20011": {
+          "status": "created",
+          "item_key": "HN3WUVZ5"
+        },
+        "2611.20648": {
+          "status": "created",
+          "item_key": "AEK3AINS"
+        },
+        "2611.20765": {
+          "status": "created",
+          "item_key": "X32BFS25"
         }
       },
-      "not_before": 1794682575.6826978
+      "not_before": 1794952778.6379356
     }
   }
 }

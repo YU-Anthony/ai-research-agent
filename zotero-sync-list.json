@@ -380,6 +380,48 @@
         "url": "https://arxiv.org/abs/2611.17330",
         "zotero_item_key": "KH3RXE4U",
         "status": "created"
+      },
+      {
+        "arxiv_id": "2611.19138",
+        "title": "SuperGlance: Driving at a Glance with a Vision-Language Model",
+        "url": "https://arxiv.org/abs/2611.19138",
+        "zotero_item_key": "WKHNG757",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.19184",
+        "title": "Do VLMs Really Look at the Road? A Diagnostic Evaluation for Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.19184",
+        "zotero_item_key": "9RXBIDX5",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.19830",
+        "title": "Beyond Vehicle-Centric Data: Scaling Autonomous Driving through Roadside-to-Vehicle Generation",
+        "url": "https://arxiv.org/abs/2611.19830",
+        "zotero_item_key": "6D6BRQBH",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.20011",
+        "title": "ReactBench-AD: Do Driving VLAs and World-Action Models React to Imminent Hazards in Their Path?",
+        "url": "https://arxiv.org/abs/2611.20011",
+        "zotero_item_key": "HN3WUVZ5",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.20648",
+        "title": "Competent Autonomous Driving Through Fine Tuning Vision Language Action Models with Symbolic Traffic Rules",
+        "url": "https://arxiv.org/abs/2611.20648",
+        "zotero_item_key": "AEK3AINS",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.20765",
+        "title": "STA: A Split Temporal Adversary Method for Evaluating Robustness of Multimodal RL-based Driving Policies",
+        "url": "https://arxiv.org/abs/2611.20765",
+        "zotero_item_key": "X32BFS25",
+        "status": "created"
       }
     ]
   }
