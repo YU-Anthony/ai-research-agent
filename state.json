@@ -240,6 +240,26 @@
     "2611.19830": {
       "reported_at": "2026-11-17T21:59:04.922191+00:00",
       "version": "2611.19830v1"
+    },
+    "2611.23211": {
+      "reported_at": "2026-11-18T21:40:48.052098+00:00",
+      "version": "2611.23211v1"
+    },
+    "2611.22880": {
+      "reported_at": "2026-11-18T21:40:48.052098+00:00",
+      "version": "2611.22880v1"
+    },
+    "2611.22297": {
+      "reported_at": "2026-11-18T21:40:48.052098+00:00",
+      "version": "2611.22297v1"
+    },
+    "2611.21924": {
+      "reported_at": "2026-11-18T21:40:48.052098+00:00",
+      "version": "2611.21924v1"
+    },
+    "2611.20631": {
+      "reported_at": "2026-11-18T21:40:48.052098+00:00",
+      "version": "2611.20631v1"
     }
   },
   "requests": {
@@ -312,6 +332,13 @@
       "estimated_cost_usd": 0.005670800000000001,
       "prompt_tokens": 7673,
       "completion_tokens": 1626
+    },
+    "actions-44403833569": {
+      "ceiling_usd": 0.02727,
+      "status": "completed",
+      "estimated_cost_usd": 0.006369200000000001,
+      "prompt_tokens": 8803,
+      "completion_tokens": 1780
     }
   },
   "papers": {
@@ -1395,7 +1422,7 @@
       "updated": "2026-11-16T16:07:59Z",
       "url": "https://arxiv.org/abs/2611.21311v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-17T21:59:06.129908+00:00"
+      "retrieved_at": "2026-11-18T21:40:49.274603+00:00"
     },
     "2611.20765": {
       "id": "2611.20765v1",
@@ -1428,7 +1455,7 @@
       "updated": "2026-11-16T07:51:11Z",
       "url": "https://arxiv.org/abs/2611.20686v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-17T21:59:06.129981+00:00"
+      "retrieved_at": "2026-11-18T21:40:49.274661+00:00"
     },
     "2611.20648": {
       "id": "2611.20648v1",
@@ -1459,7 +1486,7 @@
       "updated": "2026-11-16T06:52:38Z",
       "url": "https://arxiv.org/abs/2611.20631v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-17T21:59:06.130025+00:00"
+      "retrieved_at": "2026-11-18T21:40:49.274713+00:00"
     },
     "2611.20458": {
       "id": "2611.20458v1",
@@ -1477,7 +1504,7 @@
       "updated": "2026-11-16T03:26:30Z",
       "url": "https://arxiv.org/abs/2611.20458v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-17T21:59:06.130050+00:00"
+      "retrieved_at": "2026-11-18T21:40:49.274745+00:00"
     },
     "2611.20372": {
       "id": "2611.20372v1",
@@ -1492,7 +1519,7 @@
       "updated": "2026-11-16T01:02:10Z",
       "url": "https://arxiv.org/abs/2611.20372v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-17T21:59:06.130072+00:00"
+      "retrieved_at": "2026-11-18T21:40:49.274771+00:00"
     },
     "2611.20019": {
       "id": "2611.20019v1",
@@ -1507,7 +1534,7 @@
       "updated": "2026-11-15T14:05:02Z",
       "url": "https://arxiv.org/abs/2611.20019v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-17T21:59:06.130096+00:00"
+      "retrieved_at": "2026-11-18T21:40:49.274796+00:00"
     },
     "2611.20011": {
       "id": "2611.20011v1",
@@ -1574,7 +1601,7 @@
       "updated": "2026-11-15T02:25:32Z",
       "url": "https://arxiv.org/abs/2611.19730v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-17T21:59:06.130208+00:00"
+      "retrieved_at": "2026-11-18T21:40:49.274908+00:00"
     },
     "2611.19184": {
       "id": "2611.19184v1",
@@ -1630,7 +1657,165 @@
       "updated": "2026-11-13T17:03:57Z",
       "url": "https://arxiv.org/abs/2611.18813v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-17T21:59:06.130285+00:00"
+      "retrieved_at": "2026-11-18T21:40:49.275019+00:00"
+    },
+    "2611.23211": {
+      "id": "2611.23211v1",
+      "title": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving",
+      "abstract": "Human cognitive state (e.g., distraction, stress), gaze, and behavior interact with the driving environment in subtle ways that AI could use to assist drivers, but ground-truth labels for human cognitive state levels are costly to obtain at scale. We propose a multimodal masked-diffusion autoencoder, ID-MAE, that adds a self-supervised objective to impairment prediction: alongside predicting the impairment label as a masked token, it reconstructs masked gaze and trajectory. To probe the effects of different modalities and types of impairments on model inference, we introduce DIVERT, a driving-simulator dataset containing 103 hours of driving data (n = 109) with ten impairment inductions spanning cognitive, visual, and emotional states, recorded with gaze, vehicle state, and scene video. We demonstrate how ID-MAE affords significant improvements in impairment inference results on both the DIVERT dataset and existing datasets, and enables strong results in additional tasks, such as trajectory and gaze prediction. For location-matched pairs, our model achieves a paired AUC of 0.706 for impairment detection on DIVERT, compared to 0.590 without reconstruction loss, improving over existing baselines. We probe the design space in terms of input modalities, masking scheme, positional encoding, attention mechanism, and decoding. We also investigate the interaction between various impairments in training and inference, demonstrating that visually demanding distractions are separable from cognitive distractions. Code and data will be available upon acceptance.",
+      "authors": [
+        "John Gideon",
+        "Anshul Gupta",
+        "Megan Applegate-Kenton",
+        "Kayli Battel",
+        "Todd J Rowell",
+        "Patricio Reyes Gomez",
+        "Laporsha Dees",
+        "Emily Sumner",
+        "Avinash Balachandran",
+        "Guy Rosman"
+      ],
+      "published": "2026-11-17T18:50:22Z",
+      "updated": "2026-11-17T18:50:22Z",
+      "url": "https://arxiv.org/abs/2611.23211v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274308+00:00"
+    },
+    "2611.23192": {
+      "id": "2611.23192v1",
+      "title": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition",
+      "abstract": "Goal recognition is the task of inferring an agent's intended goal from its observed behavior. Most existing work focuses on high-level symbolic recognition, abstracting away the continuous motion through which agents reach their goal. Methods that do reason over continuous trajectories rely on an explicit dynamics model that is hard to acquire and rarely transfers across settings. Neither approach explicitly learns how agents move toward each candidate goal, limiting accuracy on ambiguous trajectory prefixes where such knowledge is most needed. We present WoRD (Waypoint Recognition with Diffusion), which uses a learned trajectory prior to infer the agent's goal from partial observations. At each step, WoRD runs one warm-started denoising chain per candidate goal, steers each chain toward the observed trajectory through a closed-form log-likelihood gradient, and reweights the resulting samples by Bayes' rule into a calibrated posterior over goals. We evaluate WoRD on simulated robot settings, pedestrian trajectories, and vehicle trajectories using four metrics targeting distinct failure modes. Across all three settings, the same inference procedure preserves calibrated multimodal beliefs through ambiguous prefixes where filter- and classifier-based observers collapse to a single mode or grow overconfident.",
+      "authors": [
+        "Almog Anschel",
+        "Sarah Keren"
+      ],
+      "published": "2026-11-17T18:35:53Z",
+      "updated": "2026-11-17T18:35:53Z",
+      "url": "https://arxiv.org/abs/2611.23192v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274352+00:00"
+    },
+    "2611.22880": {
+      "id": "2611.22880v1",
+      "title": "Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving",
+      "abstract": "Recent progress in integrating vision-language-action (VLA) models with world modeling has significantly advanced end-to-end autonomous driving by allowing systems to reason about imagined futures instead of merely reacting to current observations. However, most world VLA models generate future frames at the pixel level with plenty of dense visual tokens. Although such generated futures can be visually plausible, they preserve many driving-irrelevant appearance details, i.e., only a small portion of the tokens directly encode critical planning-relevant factors, such as agent geometry, motion dynamics, and interactions. This introduces a significant performance bottleneck. An important question thus arises: what world state should a world VLA model reason over to support planning beyond pixel-level prediction? We argue that planning-oriented world modeling should focus on a compact and structured agent-centric latent state that captures the interactions between objects in the driving scene over time. As such, we introduce AgentWorld, an agent-centric VLA world model that uses discrete agent tokens jointly for reasoning and trajectory planning. Each token is dynamically grounded to a surrounding agent associated with its object's state, such as semantic identity, 3D geometry, motion, and interaction context. AgentWorld learns these tokens through three key processes: explicit geometric grounding, reasoning-oriented supervised fine-tuning, and agent-oriented reinforcement learning. Extensive open-loop and closed-loop experiments under diverse driving scenarios show that AgentWorld enhances planning capabilities, fully exploits visual evidence and agent dynamics, and yields interpretable agent-centric world states.",
+      "authors": [
+        "Guoqing Wang",
+        "Pin Tang",
+        "Xiangxuan Ren",
+        "Chao Ma"
+      ],
+      "published": "2026-11-17T14:53:49Z",
+      "updated": "2026-11-17T14:53:49Z",
+      "url": "https://arxiv.org/abs/2611.22880v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274384+00:00"
+    },
+    "2611.22545": {
+      "id": "2611.22545v1",
+      "title": "Automated-Truck Penetration Shapes Human Drivers' Car-Following Margins Near Motorway Ramps: A Driving-Simulator Study",
+      "abstract": "Automated-vehicle dedicated lanes (AVDLs) are proposed as transitional infrastructure for mixed traffic, but their effect near ramps, and that of automated trucks, on the human drivers sharing the road has rarely been observed. In a mixed-design driving-simulator experiment, 63 drivers were assigned to one of four layouts (an AVDL extending beyond, coinciding with, or ending inside a 1.5-km ramp weaving section, or no AVDL) and drove at four automated-truck penetration levels from 20% to 80%. Linear mixed-effects models with participant random effects and multiplicity control were used. Higher penetration reduced the share of car-following time at gaps below 1.5 s from 28.5% to 18.1% (Holm-adjusted p = .006). This was explained by leader composition: drivers spent 8% of following time behind a truck at 20% penetration and 48% at 80%, kept longer gaps behind trucks, and did not change their gaps within leader type. AVDL layout had no detectable effect on safety margins, rear-end conflict rates, travel time or speed (differences bounded within plus or minus 5 s per section) and no significant effect on workload. Between-driver differences accounted for 52% to 77% of the variance in the main outcomes. Mixed-traffic models should therefore represent human car-following as leader-type-dependent and heterogeneous.",
+      "authors": [
+        "Minhao Chen",
+        "Zehao Jiang",
+        "Julius Secadiningrat",
+        "Elnaz Irannezhad"
+      ],
+      "published": "2026-11-17T10:36:04Z",
+      "updated": "2026-11-17T10:36:04Z",
+      "url": "https://arxiv.org/abs/2611.22545v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274413+00:00"
+    },
+    "2611.22297": {
+      "id": "2611.22297v1",
+      "title": "FIRE-Drive: Feasibility-Informed Risk Evaluation for End-to-End Diffusion Planning",
+      "abstract": "Diffusion-based end-to-end autonomous driving models have shown strong potential in generating multimodal planning trajectories. However, their performance still depends heavily on trajectory initialization, mode evaluation, and supervision quality. Weakly constrained noisy initialization may introduce infeasible proposals and increase the burden of denoising. Moreover, selecting the optimal mode remains challenging when candidate trajectories are geometrically similar but differ in safety, interaction risk, and progress. To address these issues, we propose FIRE-Drive, a feasibility-informed risk evaluation framework for end-to-end autonomous driving. FIRE-Drive improves diffusion-based planning through dynamic feasible anchor initialization, candidate-specific bird's-eye-view risk evidence, and compact high-quality candidate supervision with lightweight refinement. This design aligns the initial support, risk-aware scoring, and multimodal supervision of trajectory modes under a unified planning objective. It enables the diffusion decoder to focus on refining plausible trajectories while the scorer distinguishes modes using local risk evidence. Experiments on NAVSIM v1 show that FIRE-Drive achieves a Predictive Driver Model Score of 91.5 with a ResNet34 backbone. Additional closed-loop evaluation on 220 Bench2Drive routes yields a Driving Score of 71.43 and a Success Rate of 42.73%. Component ablations and a scorer comparison under matched candidate inputs support the contributions of feasible initialization, auxiliary supervision, and risk-informed selection. Our code is available at https://github.com/Latte00/FIRE-drive.",
+      "authors": [
+        "Qifeng Xie",
+        "Kai-Yuan Feng",
+        "Wenkang Wan",
+        "Yue Wu",
+        "Maoguo Gong",
+        "Kai Sheng"
+      ],
+      "published": "2026-11-17T06:54:08Z",
+      "updated": "2026-11-17T06:54:08Z",
+      "url": "https://arxiv.org/abs/2611.22297v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274444+00:00"
+    },
+    "2611.22246": {
+      "id": "2611.22246v1",
+      "title": "Multispectral-Polarization-Infrared Multi-Aperture Camouflaged Vehicle Detection",
+      "abstract": "Camouflaged vehicle detection is challenging because camouflage suppresses discriminative cues across sensing modalities. Existing multimodal methods often require precise pixel-level registration and feature-level fusion, creating a trade-off between accuracy and latency. We propose a spectral-polarization-infrared tri-modal detection framework co-designed with a multi-aperture imaging setup to exploit complementary imaging physics. A consensus-guided decision-level fusion strategy combines cross-modal detections within bounded registration tolerances, reducing dependence on precise alignment while maintaining accuracy and real-time performance. We construct a tri-modal camouflaged vehicle dataset containing infrared, polarization, and spectral data. Experiments show that the proposed method achieves 82.7% mean Average Precision (mAP) with an end-to-end latency of 16 ms, outperforming representative feature-level fusion approaches. On the public MID-1K dataset, the framework generalizes to RGB-Depth-Infrared modalities without architectural modification and improves mAP@0.5 by 5.7% over state-of-the-art methods. These results demonstrate the potential of decision-level consensus fusion and multi-aperture sensing for robust and deployable camouflaged vehicle detection.",
+      "authors": [
+        "Shu Wang",
+        "Xiong Lin",
+        "Yuan Song",
+        "Junjie Wang",
+        "Feng Huang",
+        "Wenxi Liu"
+      ],
+      "published": "2026-11-17T05:47:36Z",
+      "updated": "2026-11-17T05:47:36Z",
+      "url": "https://arxiv.org/abs/2611.22246v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274472+00:00"
+    },
+    "2611.21945": {
+      "id": "2611.21945v1",
+      "title": "Benchmarking Deep Learning Models for Wheelchair Configuration Classification in Accessible Automated Vehicle Applications",
+      "abstract": "Making automated vehicles accessible requires consideration of vulnerable road users, including wheelchair users. To offer a more tailored experience that supports independence for this group, vehicle design needs to accommodate the wide range of wheelchair configurations. However, wheelchairs are individualized, varying in frame geometry, propulsion, and visual appearance. Moreover, occupants or accessories may obscure visual cues. Existing mobility-aid datasets only label the presence of a wheelchair, rather than describing its specific configuration. To fill this gap, this paper introduces the Wheelchair Configuration Image Dataset (WCID), comprising 467 face-blurred images across 192 capture groups solely for evaluation. Each image is annotated with (i) a two-class label of manual or powered, (ii) a chair subtype, (iii) occupancy, viewpoint, setting, lighting, occlusion, propulsion, and control, with a 273-image validation split and 194-image test split. Three convolutional neural network backbones and a frozen vision-language probe are trained on an external image dataset and evaluated on WCID to measure cross-dataset generalization, while also testing robustness using Gaussian blur. Convolutional models do well on clean images, but performance drops under strong blur, leaving a gap before deployment. Code, split assignments, labels, trained weights, and the face-blurred images is available at: https://github.com/Mi3-Lab/MAID",
+      "authors": [
+        "Samir Ahmed",
+        "Shaaz Saleem",
+        "Devin Dhami",
+        "Wesley Maia",
+        "Angel Martinez-Sanchez",
+        "Parthib Roy",
+        "Jannatul Ferdous Srabonee",
+        "Ahmed Sabbir Arif",
+        "Ross Greer"
+      ],
+      "published": "2026-11-16T22:08:39Z",
+      "updated": "2026-11-16T22:08:39Z",
+      "url": "https://arxiv.org/abs/2611.21945v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274506+00:00"
+    },
+    "2611.21924": {
+      "id": "2611.21924v1",
+      "title": "GridDriver: On-Board BEV-Based Language Planning and Reasoning",
+      "abstract": "Bird's-Eye-View (BEV)-conditioned large language models (LLMs) enable language-interactive driving, but onboard deployment requires efficient perception and continuous planning alongside autoregressive language generation. We present GridDriver, an efficient BEV-conditioned LLM framework combining trajectory prediction, structured driving indicators, natural-language navigation, driving explanations, and scene question answering. Lightweight spatio-temporal BEV perception and spatially structured tokens provide scene context to a shared LLM, while frame-wise scheduling interleaves trajectory prediction with asynchronous language generation. GridDriver achieves competitive performance on public benchmarks, reaching 87.9% PDMS on NAVSIM and 57.6% accuracy on nuScenes-QA with a shared planning and QA checkpoint. Spatial representation analyses demonstrate improved geometric information retention and trajectory prediction compared with Q-Former compression. The system achieves 32.7 ms standalone planning latency and 9.4 plans/s in an onboard ROS 2 pipeline. We further evaluate planning on our own data recordings and demonstrate open-loop onboard operation on a research vehicle. Across public benchmarks and real-world evaluations, we identify strengths and limitations of the BEV-based approach.",
+      "authors": [
+        "Katharina Winter",
+        "William Engel",
+        "Zain A. Alishammat",
+        "Fabian B. Flohr"
+      ],
+      "published": "2026-11-16T21:39:07Z",
+      "updated": "2026-11-16T21:39:07Z",
+      "url": "https://arxiv.org/abs/2611.21924v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274536+00:00"
+    },
+    "2611.21783": {
+      "id": "2611.21783v1",
+      "title": "Better Calibrated, Better Planned: Uncertainty-Aware Multi-ASV Informative Path Planning for Oil Spill Monitoring",
+      "abstract": "Monitoring oil spills with fleets of Autonomous Surface Vehicles (ASVs) requires mapping a heterogeneous pollutant field from sparse, noisy measurements under tight time and energy budgets. Informative Path Planning (IPP) addresses this problem by coupling a reconstruction model, which infers the field and its uncertainty, with a planner that decides where to sample next. Prior work has focused on planning strategies and has largely relied on Gaussian Processes (GPs), leaving the calibration of the model's uncertainty underexplored. We study how uncertainty calibration conditions multi-vehicle IPP with a fleet of ASVs that coordinates online through a shared uncertainty map. We introduce Evidential Deep Learning (EDL) as an uncertainty-calibrated information model. We benchmark EDL, Monte Carlo Dropout and Deep Ensembles against a GP in closed loop with five planners on physics-based oil spill simulations. Across 60 maps, the choice of model dominates the outcome, explaining 80\\% of the variance of the final reconstruction error, against 1\\% for the planner among the deep models. EDL achieves the lowest error and the highest IoU under every planner, is the best calibrated model and runs at 3.9 ms per step. With 50 cells per vehicle it reconstructs the spill better than MC Dropout and Deep Ensembles with 150. Deep Ensembles become more confident as their error grows, whereas EDL is unaffected. Robustness of the information model to the data its own planner collects is therefore a requirement of uncertainty-aware IPP.",
+      "authors": [
+        "Alejandro Casado-Pérez",
+        "Marija Popović",
+        "Daniel Gutiérrez-Reina",
+        "Sergio L. Toral.",
+        "Samuel Yanes"
+      ],
+      "published": "2026-11-16T19:07:11Z",
+      "updated": "2026-11-16T19:07:11Z",
+      "url": "https://arxiv.org/abs/2611.21783v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-18T21:40:49.274570+00:00"
     }
   },
   "history": {
@@ -3107,6 +3292,152 @@
         "prompt_tokens": 7673,
         "completion_tokens": 1626
       }
+    },
+    "actions-44403833569": {
+      "created_at": "2026-11-18T21:40:48.052098+00:00",
+      "papers": [
+        {
+          "id": "2611.23211v1",
+          "contribution": "Proposes ID-MAE, a multimodal masked-diffusion autoencoder for impairment prediction, reconstructing masked gaze and trajectory. Introduces DIVERT simulator dataset with 103 hours, 109 drivers, 10 impairments. Shows improved impairment detection (AUC 0.706) and separable visual/cognitive distractions.",
+          "limitation": "Effectiveness may depend on simulated data; real-world generalization unclear. Costly ground-truth labels still a challenge. Interaction between various impairments requires further analysis.",
+          "gap": "Real-world deployment studies and scalable label acquisition methods are needed to validate impairment inference and multimodal modeling robustness."
+        },
+        {
+          "id": "2611.22880v1",
+          "contribution": "Introduces AgentWorld, an agent-centric vision-language-action world model for autonomous driving. Focuses on compact agent tokens encoding semantic identity, 3D geometry, dynamics, and interactions for interpretable reasoning and trajectory planning. Demonstrates improvement in open- and closed-loop driving scenarios.",
+          "limitation": "Current model relies on supervised fine-tuning and reinforcement learning; potential generalization to diverse domains is not fully explored.",
+          "gap": "Further research needed on transferability and integration with heterogeneous sensor inputs for robust multimodal driving understanding."
+        },
+        {
+          "id": "2611.22297v1",
+          "contribution": "Presents FIRE-Drive, a feasibility-informed risk evaluation framework for diffusion-based end-to-end autonomous driving planning. Improves trajectory initialization, risk-aware scoring, and candidate mode selection. Achieves high predictive driver model score (91.5) and driving success rate (42.73%) on NAVSIM and Bench2Drive datasets.",
+          "limitation": "Limited closed-loop success rate (42.73%) indicates room for robustness improvement. Evaluations focus on simulation; real-world effectiveness remains untested.",
+          "gap": "Need to validate risk-informed diffusion planning under real-world traffic interactions and incorporate multimodal sensory inputs for behavior understanding."
+        },
+        {
+          "id": "2611.21924v1",
+          "contribution": "Introduces GridDriver, an efficient onboard bird's-eye-view (BEV) conditioned large language model framework for driving. Combines trajectory prediction, structured driving indicators, natural-language navigation, and scene question answering with low planning latency. Demonstrates onboard real-world operation and competitive benchmark performance.",
+          "limitation": "System evaluation highlights some limitations in BEV-based approach; specific failure modes and interpretability under diverse scenarios require more study.",
+          "gap": "Research needed on richer multimodal fusion, improving explanation quality, and human-centered interaction in autonomous driving assistants."
+        },
+        {
+          "id": "2611.20631v1",
+          "contribution": "Develops ADVLAT-Engine to differentiate prospective (pre-action) versus retrospective (post-action) language supervision for driving vision-language-action models. Evaluates navigation apps and fine-tunes VLAs, showing improved maneuver prediction and instruction-following. Provides framework to analyze supervision effect on driving model learning.",
+          "limitation": "Current analyses are pending for retrospective labels. Evaluation focuses on maneuver prediction rather than full trajectory control or real-time driving.",
+          "gap": "Future work should explore robust instruction-following with multimodal fusion and human-like reasoning for explainable driving behavior models."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal approaches combining vision, language, and action signals improve driver state understanding and driving behavior prediction, with datasets capturing eye gaze, vehicle state, and scene context.",
+            "uncertainty": "Effectiveness varies with modality fusion complexity and real-world deployment challenges remain.",
+            "evidence_ids": [
+              "2611.23211v1",
+              "2611.22880v1",
+              "2611.21924v1",
+              "2611.20631v1"
+            ]
+          },
+          {
+            "finding": "Diffusion models and uncertainty-aware frameworks guide autonomous trajectory planning with risk evaluation and candidate selection, improving planning robustness in simulation.",
+            "uncertainty": "Success rates in realistic, noisy environments still moderate; multimodal sensing integration limited.",
+            "evidence_ids": [
+              "2611.22297v1",
+              "2611.23211v1"
+            ]
+          },
+          {
+            "finding": "Language supervision, both prospective and retrospective, plays a crucial role in training vision-language-action driving models, impacting instruction-following and maneuver prediction accuracy.",
+            "uncertainty": "Complete understanding of annotation timing effects and generalization to full control remains open.",
+            "evidence_ids": [
+              "2611.20631v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Agent-centric world modeling (AgentWorld) replaced pixel-level futures in planning with discrete object tokens encoding geometric and semantic info for improved trajectory planning and explainability. This contrasts with GridDriver's BEV-based LLM integrating trajectory and language tasks onboard.",
+            "limitation": "AgentWorld focuses more on agent dynamics; GridDriver emphasizes language-driven interactive planning; their fusion potential is unexplored.",
+            "evidence_ids": [
+              "2611.22880v1",
+              "2611.21924v1"
+            ]
+          },
+          {
+            "comparison": "ID-MAE focuses on modeling impaired human driving states using multimodal self-supervision and reconstruction, while FIRE-Drive uses diffusion and risk evaluation for autonomous planning trajectory selection, targeting different driving behavior aspects.",
+            "limitation": "They address complementary challenges, but integration for combining driver state understanding with planning is unaddressed.",
+            "evidence_ids": [
+              "2611.23211v1",
+              "2611.22297v1"
+            ]
+          },
+          {
+            "comparison": "ADVLAT-Engine differs from GridDriver by specifically separating language supervision timing types (prospective vs retrospective) in vision-language-action data, while GridDriver focuses on real-time onboard multimodal planning and reasoning.",
+            "limitation": "Neither fully addresses end-to-end explainable driving reasoning with comprehensive human-like language interaction.",
+            "evidence_ids": [
+              "2611.20631v1",
+              "2611.21924v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can agent-centric token-based world models combined with BEV-conditioned language models improve explainable driving behavior understanding and planning?",
+            "hypothesis": "Fusion of AgentWorld tokens and GridDriver's BEV-LLM enhances reasoning about agent interactions and natural language explanations.",
+            "method": "Integrate AgentWorld discrete tokens into GridDriver's language input pipeline and jointly fine-tune for trajectory planning and explanation.",
+            "datasets": "Use DIVERT, NAVSIM, and proprietary BEV driving datasets.",
+            "baselines": "AgentWorld alone, GridDriver alone, and no token-latent fusion.",
+            "metrics": "Trajectory prediction accuracy, language-driven task performance, explainability scores, and planning latency.",
+            "compute": "Medium GPUs (e.g., 2-4 A100s), onboard computing for latency testing.",
+            "risk": "Integration complexity and modality misalignment may reduce performance.",
+            "novelty_check": "No prior fusion of agent-centric tokens with BEV-LLMs for multimodal autonomous planning reported.",
+            "priority_rationale": "Addresses multimodal autonomous driving and explainable reasoning directly, with potential for real-time deployment.",
+            "evidence_ids": [
+              "2611.22880v1",
+              "2611.21924v1"
+            ]
+          },
+          {
+            "question": "Does joint multimodal impairment modeling (ID-MAE) enhance risk-aware diffusion planning (FIRE-Drive) under realistic driving conditions?",
+            "hypothesis": "Incorporating driver cognitive and gaze impairments into diffusion-based trajectory sampling improves safety and planning robustness.",
+            "method": "Condition FIRE-Drive candidate trajectory generation on ID-MAE impairment embeddings during planning.",
+            "datasets": "DIVERT for impairment and NAVSIM for planning; create multimodal driving scenarios with simulated impairments.",
+            "baselines": "FIRE-Drive alone, ID-MAE with classical planners.",
+            "metrics": "Driving score, success rate, impairment detection accuracy, and risk evaluation precision.",
+            "compute": "Multi-GPU cluster for diffusion planning and multimodal embedding synthesis.",
+            "risk": "Complexity may hinder real-time planning; domain mismatch possible.",
+            "novelty_check": "Prior works do not combine impairment-aware diffusion planning.",
+            "priority_rationale": "Bridges human driver-state understanding and autonomous planning for safer multimodal driving behavior.",
+            "evidence_ids": [
+              "2611.23211v1",
+              "2611.22297v1"
+            ]
+          },
+          {
+            "question": "How does prospective versus retrospective language supervision influence instruction-following in vision-language-action autonomous driving models?",
+            "hypothesis": "Prospective instructions improve real-time maneuver prediction better than retrospective annotations.",
+            "method": "Fine-tune policies with ADVLAT-Engine data using both supervision types; evaluate on benchmark following tasks.",
+            "datasets": "Navigation app recordings, instruction-labeled driving datasets like ADVLAT-Engine.",
+            "baselines": "Models trained only with one supervision type.",
+            "metrics": "Maneuver accuracy, trajectory error, instruction responsiveness.",
+            "compute": "Standard GPUs (e.g., 1-2 A100 GPUs) for VL model training.",
+            "risk": "Annotations may be inadequate or noisy; instruction ambiguity.",
+            "novelty_check": "Distinction of timing in language supervision is newly systematized in driving VL research.",
+            "priority_rationale": "Clarifies effective language supervision for explainable driving behavior modeling.",
+            "evidence_ids": [
+              "2611.20631v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.02727,
+        "status": "completed",
+        "estimated_cost_usd": 0.006369200000000001,
+        "prompt_tokens": 8803,
+        "completion_tokens": 1780
+      }
     }
   },
   "zotero": {
@@ -3325,9 +3656,29 @@
         "2611.20765": {
           "status": "created",
           "item_key": "X32BFS25"
+        },
+        "2611.20631": {
+          "status": "created",
+          "item_key": "GRZ5I5WP"
+        },
+        "2611.21924": {
+          "status": "created",
+          "item_key": "BV37HQ88"
+        },
+        "2611.22297": {
+          "status": "created",
+          "item_key": "J54N86B3"
+        },
+        "2611.22880": {
+          "status": "created",
+          "item_key": "5RNNF38B"
+        },
+        "2611.23211": {
+          "status": "created",
+          "item_key": "H899MBHV"
         }
       },
-      "not_before": 1794952778.6379356
+      "not_before": 1795038076.2757432
     }
   }
 }

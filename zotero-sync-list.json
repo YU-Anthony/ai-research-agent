@@ -410,6 +410,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.20631",
+        "title": "Instructions Before Actions: Prospective and Retrospective Language Supervision for Driving Vision-Language-Action Data",
+        "url": "https://arxiv.org/abs/2611.20631",
+        "zotero_item_key": "GRZ5I5WP",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.20648",
         "title": "Competent Autonomous Driving Through Fine Tuning Vision Language Action Models with Symbolic Traffic Rules",
         "url": "https://arxiv.org/abs/2611.20648",
@@ -421,6 +428,34 @@
         "title": "STA: A Split Temporal Adversary Method for Evaluating Robustness of Multimodal RL-based Driving Policies",
         "url": "https://arxiv.org/abs/2611.20765",
         "zotero_item_key": "X32BFS25",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.21924",
+        "title": "GridDriver: On-Board BEV-Based Language Planning and Reasoning",
+        "url": "https://arxiv.org/abs/2611.21924",
+        "zotero_item_key": "BV37HQ88",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.22297",
+        "title": "FIRE-Drive: Feasibility-Informed Risk Evaluation for End-to-End Diffusion Planning",
+        "url": "https://arxiv.org/abs/2611.22297",
+        "zotero_item_key": "J54N86B3",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.22880",
+        "title": "Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.22880",
+        "zotero_item_key": "5RNNF38B",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.23211",
+        "title": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving",
+        "url": "https://arxiv.org/abs/2611.23211",
+        "zotero_item_key": "H899MBHV",
         "status": "created"
       }
     ]
