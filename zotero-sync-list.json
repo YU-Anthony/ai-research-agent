@@ -410,6 +410,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.20458",
+        "title": "VISTA: A Framework for Vision-Informed Semantic Traffic Awareness",
+        "url": "https://arxiv.org/abs/2611.20458",
+        "zotero_item_key": "GT5BDF5J",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.20631",
         "title": "Instructions Before Actions: Prospective and Retrospective Language Supervision for Driving Vision-Language-Action Data",
         "url": "https://arxiv.org/abs/2611.20631",
@@ -456,6 +463,55 @@
         "title": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving",
         "url": "https://arxiv.org/abs/2611.23211",
         "zotero_item_key": "H899MBHV",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.23491",
+        "title": "GRID-UAV: Geometry and Ray-depth Integrated Decision-making for Unmanned Aerial Vehicles",
+        "url": "https://arxiv.org/abs/2611.23491",
+        "zotero_item_key": "2Q434DUP",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.24080",
+        "title": "CausalDrive: Causal Decomposition for Data-Efficient End-to-End Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.24080",
+        "zotero_item_key": "QKFX63CN",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.24192",
+        "title": "TrajWAM: Trajectory-Conditioned Future Learning for Vision-Language Driving",
+        "url": "https://arxiv.org/abs/2611.24192",
+        "zotero_item_key": "HV3UP8BC",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.24376",
+        "title": "Teaching VLMs What to Say, Not How to Reason: Rethinking Counterfactual Reasoning in Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.24376",
+        "zotero_item_key": "E784BI4S",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.24719",
+        "title": "DRIFT: Detachable Reasoning for Runtime-Flexible and Efficient End-to-End Driving",
+        "url": "https://arxiv.org/abs/2611.24719",
+        "zotero_item_key": "32FVT6BR",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.24778",
+        "title": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+        "url": "https://arxiv.org/abs/2611.24778",
+        "zotero_item_key": "3D6NX94F",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.24840",
+        "title": "Does the Action Matter? Probing Action-Conditioned Semantic Forecasting as a World Model for Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.24840",
+        "zotero_item_key": "5V67HWXT",
         "status": "created"
       }
     ]

@@ -260,6 +260,38 @@
     "2611.20631": {
       "reported_at": "2026-11-18T21:40:48.052098+00:00",
       "version": "2611.20631v1"
+    },
+    "2611.24840": {
+      "reported_at": "2026-11-19T21:56:38.499597+00:00",
+      "version": "2611.24840v1"
+    },
+    "2611.24376": {
+      "reported_at": "2026-11-19T21:56:38.499597+00:00",
+      "version": "2611.24376v1"
+    },
+    "2611.24778": {
+      "reported_at": "2026-11-19T21:56:38.499597+00:00",
+      "version": "2611.24778v1"
+    },
+    "2611.24719": {
+      "reported_at": "2026-11-19T21:56:38.499597+00:00",
+      "version": "2611.24719v1"
+    },
+    "2611.24192": {
+      "reported_at": "2026-11-19T21:56:38.499597+00:00",
+      "version": "2611.24192v1"
+    },
+    "2611.24080": {
+      "reported_at": "2026-11-19T21:56:38.499597+00:00",
+      "version": "2611.24080v1"
+    },
+    "2611.23491": {
+      "reported_at": "2026-11-19T21:56:38.499597+00:00",
+      "version": "2611.23491v1"
+    },
+    "2611.20458": {
+      "reported_at": "2026-11-19T21:56:38.499597+00:00",
+      "version": "2611.20458v1"
     }
   },
   "requests": {
@@ -339,6 +371,13 @@
       "estimated_cost_usd": 0.006369200000000001,
       "prompt_tokens": 8803,
       "completion_tokens": 1780
+    },
+    "actions-44623680082": {
+      "ceiling_usd": 0.034841199999999996,
+      "status": "completed",
+      "estimated_cost_usd": 0.008415200000000001,
+      "prompt_tokens": 13566,
+      "completion_tokens": 1868
     }
   },
   "papers": {
@@ -1422,7 +1461,7 @@
       "updated": "2026-11-16T16:07:59Z",
       "url": "https://arxiv.org/abs/2611.21311v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274603+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145648+00:00"
     },
     "2611.20765": {
       "id": "2611.20765v1",
@@ -1455,7 +1494,7 @@
       "updated": "2026-11-16T07:51:11Z",
       "url": "https://arxiv.org/abs/2611.20686v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274661+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145699+00:00"
     },
     "2611.20648": {
       "id": "2611.20648v1",
@@ -1504,7 +1543,7 @@
       "updated": "2026-11-16T03:26:30Z",
       "url": "https://arxiv.org/abs/2611.20458v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274745+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145767+00:00"
     },
     "2611.20372": {
       "id": "2611.20372v1",
@@ -1519,7 +1558,7 @@
       "updated": "2026-11-16T01:02:10Z",
       "url": "https://arxiv.org/abs/2611.20372v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274771+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145790+00:00"
     },
     "2611.20019": {
       "id": "2611.20019v1",
@@ -1534,7 +1573,7 @@
       "updated": "2026-11-15T14:05:02Z",
       "url": "https://arxiv.org/abs/2611.20019v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274796+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145813+00:00"
     },
     "2611.20011": {
       "id": "2611.20011v1",
@@ -1601,7 +1640,7 @@
       "updated": "2026-11-15T02:25:32Z",
       "url": "https://arxiv.org/abs/2611.19730v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274908+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145937+00:00"
     },
     "2611.19184": {
       "id": "2611.19184v1",
@@ -1657,7 +1696,7 @@
       "updated": "2026-11-13T17:03:57Z",
       "url": "https://arxiv.org/abs/2611.18813v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.275019+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.146019+00:00"
     },
     "2611.23211": {
       "id": "2611.23211v1",
@@ -1693,7 +1732,7 @@
       "updated": "2026-11-17T18:35:53Z",
       "url": "https://arxiv.org/abs/2611.23192v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274352+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145452+00:00"
     },
     "2611.22880": {
       "id": "2611.22880v1",
@@ -1725,7 +1764,7 @@
       "updated": "2026-11-17T10:36:04Z",
       "url": "https://arxiv.org/abs/2611.22545v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274413+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145499+00:00"
     },
     "2611.22297": {
       "id": "2611.22297v1",
@@ -1761,7 +1800,7 @@
       "updated": "2026-11-17T05:47:36Z",
       "url": "https://arxiv.org/abs/2611.22246v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274472+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145546+00:00"
     },
     "2611.21945": {
       "id": "2611.21945v1",
@@ -1782,7 +1821,7 @@
       "updated": "2026-11-16T22:08:39Z",
       "url": "https://arxiv.org/abs/2611.21945v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274506+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145573+00:00"
     },
     "2611.21924": {
       "id": "2611.21924v1",
@@ -1815,7 +1854,257 @@
       "updated": "2026-11-16T19:07:11Z",
       "url": "https://arxiv.org/abs/2611.21783v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-18T21:40:49.274570+00:00"
+      "retrieved_at": "2026-11-19T21:56:40.145622+00:00"
+    },
+    "2611.24864": {
+      "id": "2611.24864v1",
+      "title": "NereidVLA: Learning to Understand and Navigate the Underwater World",
+      "abstract": "Underwater navigation requires translating visual spatial cues into motion, yet marine vision-language datasets rarely include paired robot trajectories. We present NereidVLA, a vision-language-action model that transfers marine spatial knowledge to language-conditioned 3D navigation. We first train Sea2Know on approximately two million marine examples to learn target grounding, spatial relations, and scene structure without paired robot-motion supervision. We then adapt it using expert trajectories executed under simulated underwater vehicle dynamics. Given RGB histories and a language instruction, NereidVLA predicts discrete motion tokens that decode into local 3D trajectories for closed-loop tracking. Evaluation combines an independent six-dimensional underwater navigation understanding benchmark with offline prediction and closed-loop navigation. Under matched navigation training and execution settings, marine spatial pretraining increases simulation success from 72.4% to 84.4%. Without fine-tuning on the real test environment, NereidVLA achieves 78.75% success in laboratory-pool robot trials, compared with 47.50% for InternVLA-N1. These results show that marine spatial supervision can support downstream motion learning and physical underwater navigation.",
+      "authors": [
+        "Chenjie Zhao",
+        "Zhiliang Zhu",
+        "Quan Chen",
+        "Yuquan Xue",
+        "Xingxue Shi",
+        "Puyue Wang",
+        "Zhiqiang Zhao",
+        "Kangye Zheng",
+        "Boyang Xu",
+        "Mingwei Lin",
+        "Dejun Li"
+      ],
+      "published": "2026-11-18T18:19:00Z",
+      "updated": "2026-11-18T18:19:00Z",
+      "url": "https://arxiv.org/abs/2611.24864v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145040+00:00"
+    },
+    "2611.24840": {
+      "id": "2611.24840v1",
+      "title": "Does the Action Matter? Probing Action-Conditioned Semantic Forecasting as a World Model for Autonomous Driving",
+      "abstract": "World models are increasingly used in autonomous driving to predict how a scene evolves under the ego vehicle's actions, supporting counterfactual reasoning and model-based planning. However, existing evaluations focus on prediction fidelity and planning performance, and rarely verify that the predictions depend on the conditioning action. In this paper, we study action dependence in action-conditioned semantic forecasting, which predicts future semantic segmentation from past segmentations and the ego action. We compare a forecaster with feature-wise and input-level action conditioning against an identical model without action input, and measure action dependence with test-time action interventions scored by standard segmentation metrics. The evaluation is validated in a synthetic environment with known action-dependent dynamics and applied to Cityscapes and BDD100K, both within each dataset and across the two vehicle platforms. Experiments show that the executed action improves mid-term mIoU by at most 2.5 points on Cityscapes and 0.6 points on BDD100K, whereas a wrong action reduces it by up to 23.2 and 7.0 points, below the model without action input. On real data, feature-wise conditioning depends 1.6 times more on the action than input-level conditioning at similar accuracy, whereas both depend on it equally in the synthetic environment, where the history does not determine the action. These results show that an accuracy gain indicates that a driving world model uses its action, but not how strongly its forecasts depend on it. Code is available at https://github.com/binayksingh/does-action-matter.",
+      "authors": [
+        "Binay Kumar Singh",
+        "Niels Da Vitoria Lobo"
+      ],
+      "published": "2026-11-18T18:06:20Z",
+      "updated": "2026-11-18T18:06:20Z",
+      "url": "https://arxiv.org/abs/2611.24840v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145084+00:00"
+    },
+    "2611.24778": {
+      "id": "2611.24778v1",
+      "title": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+      "abstract": "World models operate in a world they cannot fully observe. When a hidden disturbance, such as a current pushing a boat, changes the outcome of an action, a counterfactual question follows: what would have happened under a different action, subject to the same disturbance? Its answer separates bad decisions from bad luck. We prove that world models trained on factual transitions cannot answer it on their own, whatever their data or capacity. For many physical systems, the observed outcome and a simple property of the dynamics suffice: natura non facit saltus, nature makes no leaps. When actions and disturbances act as separate forces, their interaction is second-order in time, so the counterfactual outcome is, to first order, the observed outcome plus the difference between the world model's predictions under the alternative and factual actions. This yields a counterfactual world model with no counterfactual data, extra parameters, or retraining. For transitions of duration $h$, we prove an $O(h^2)$ bound on the counterfactual error relative to the disturbance variance, establish a matching minimax lower bound from unpaired factual data, and characterize failures at discontinuities, coordinate folds, and disturbances that scale the command. We validate these predictions from pixels with JEPA world models on frozen DINOv2 and masked autoencoder (MAE) encoders. On four rendered simulators, our approach improves counterfactual $R^2$ from $38$--$46\\%$ to $86$--$96\\%$ with the same world models; on a fifth, an underwater vehicle, it reaches $90$--$94\\%$ with sixteen times more factual data. Four further frozen encoders, DINOv3, SigLIP~2, CLIP and EVA-02, give $81$--$95\\%$ on the same simulators. In hindsight planning, it finds the action that would have reached the goal in $35$--$69\\%$ of events, against $14$--$23\\%$ for an oracle planner that knows the simulator but not the outcome.",
+      "authors": [
+        "Randall Balestriero",
+        "Yann LeCun",
+        "Kerda Varaku"
+      ],
+      "published": "2026-11-18T17:24:00Z",
+      "updated": "2026-11-18T17:24:00Z",
+      "url": "https://arxiv.org/abs/2611.24778v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145114+00:00"
+    },
+    "2611.24719": {
+      "id": "2611.24719v1",
+      "title": "DRIFT: Detachable Reasoning for Runtime-Flexible and Efficient End-to-End Driving",
+      "abstract": "The integration of vision-language models (VLMs) into end-to-end (E2E) autonomous driving has demonstrated strong potential by providing scene description and reasoning capabilities. However, VLMs are computationally expensive, and switching language reasoning on and off at runtime without hurting closed-loop performance has not been demonstrated, which hinders practical adoption. To address these issues, we propose DRIFT, an E2E autonomous driving framework that integrates a lightweight language model (LM) for visual question answering and action commentary. By efficiently projecting intermediate driving representations into the language embedding space, we demonstrate that a compact LM (<150M parameters) can achieve strong scene description and action commentary. Furthermore, we introduce a runtime-flexible planning module that is trained on surrogate reasoning features distilled from the LM and can be conditioned on either the LM or the surrogate reasoning features at inference. This design enables bypassing the LM entirely when required by deployment constraints, without sacrificing driving performance. With only 255M parameters, DRIFT reaches up to a Driving Score (DS) of 97.03 and a Success Rate of 89.39% (mean over three runs) on Bench2Drive by interleaving its LM and surrogate reasoning at a chosen reasoning rate. This is on par with the strongest non-language models while being far more compact than existing VLM-based models. DRIFT further achieves competitive results on the real-world NAVSIM and AlpaSim benchmarks at significantly lower computational cost than existing VLM-based approaches. Project page: https://drift-e2e.github.io/",
+      "authors": [
+        "Emad Aghajanzadeh",
+        "Bethany Anne Wong",
+        "Leonhard Kunze",
+        "Moritz Thoma",
+        "Maximilian Forstenhäusler",
+        "Nael Fasfous",
+        "Manoj Rohit Vemparala",
+        "Pierpaolo Mori",
+        "Christos Anagnostopoulos",
+        "Daniel Mueller-Gritschneder",
+        "Ulf Schlichtmann"
+      ],
+      "published": "2026-11-18T16:40:13Z",
+      "updated": "2026-11-18T16:40:13Z",
+      "url": "https://arxiv.org/abs/2611.24719v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145146+00:00"
+    },
+    "2611.24376": {
+      "id": "2611.24376v1",
+      "title": "Teaching VLMs What to Say, Not How to Reason: Rethinking Counterfactual Reasoning in Autonomous Driving",
+      "abstract": "End-to-end autonomous driving systems have been shown to suffer from shortcut learning and causal confusion, limiting their ability to generalize robustly under distribution shift. To mitigate these limitations, recent works based on Vision-Language Models (VLMs) have explored incorporating linguistic reasoning capabilities into driving decision-making, reporting improvements in driving performance. In particular, counterfactual (CF) reasoning has been proposed to enable self-reflective, high-level causal understanding. However, it remains unclear whether the language-based reasoning mitigates shortcut learning or merely shifts it from visual representations to linguistic patterns, creating an illusion of causal understanding. Moreover, existing approaches often conflate intervention-based reasoning with CF reasoning, leaving the effects of genuine CF reasoning unexplored. In this work, we examine what CF reasoning actually induces in VLM-based autonomous driving and observe that it shifts the action distribution toward more conservative behaviors while increasing uncertainty in reasoning and decision-making. This effect persists under reinforcement fine-tuning, suggesting that it is not merely a transient artifact. Furthermore, visual attention analysis shows that CF reasoning does not alter visual grounding, while causal intervention experiments reveal that masking causally relevant and non-causal factors in accident scenarios results in comparable decision change rates. Overall, these results suggest that CF reasoning does not induce genuine causal reasoning grounded in visual evidence. Instead, it acts as a linguistic shortcut that reshapes the action distribution, teaching models what to say but not how to reason, highlighting a gap between language-based reasoning and causal understanding in autonomous driving.",
+      "authors": [
+        "Hayeon Oh",
+        "Donghwan Lee"
+      ],
+      "published": "2026-11-18T13:06:24Z",
+      "updated": "2026-11-18T13:06:24Z",
+      "url": "https://arxiv.org/abs/2611.24376v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145171+00:00"
+    },
+    "2611.24327": {
+      "id": "2611.24327v1",
+      "title": "Pixel2Perspective: A Benchmark for Multi-Modal and Multi-View Generalization in Vision-Language Models",
+      "abstract": "Embodied AI systems, such as drones and autonomous vehicles, improve navigation by enhancing perception in environments containing unseen objects. While Visual Language Models (VLMs) offer strong image understanding, their real-world application is underexplored. For effective deployment, open-vocabulary semantic segmentation (OVSS) models, leveraging models like CLIP to assign pixel-level labels from text, must be robust to outdoor conditions, adverse weather, and varying viewpoints. Despite their potential, these models encounter significant challenges in cross-domain generalization, hindering their practical use in embodied AI applications. In this work, we present Pixel2Perspective, a benchmark for multi-angle object localization and open-vocabulary segmentation across both aerial and ground perspectives. This benchmark supports thorough evaluation across different viewpoints and sensor modalities. We assess foundational models like CLIP and advanced OVSS models using a curated dataset that spans varied outdoor conditions, sim-to-real scenarios, and multiple sensors, including infrared, to support the development of robust and generalizable perception systems. We also present a novel framework, Multi-Source RGB-IR Uncertainty Quantification (MSRIQ), which jointly models aleatoric and epistemic uncertainties across RGB and infrared imagery. This approach supports robust evaluation of open-vocabulary segmentation models across diverse environmental conditions. Our work sets a robustness-driven benchmark, providing key insights and laying the foundation for future research in open-world embodied AI perception. The benchmark and project page are available at https://aniruddhsikdar1.github.io/publications/pixel2perspective/",
+      "authors": [
+        "Aditya Gandhamal",
+        "Aniruddh Sikdar",
+        "Arya Kishor",
+        "Suresh Sundaram"
+      ],
+      "published": "2026-11-18T12:29:55Z",
+      "updated": "2026-11-18T12:29:55Z",
+      "url": "https://arxiv.org/abs/2611.24327v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145194+00:00"
+    },
+    "2611.24244": {
+      "id": "2611.24244v1",
+      "title": "CommDreamer: Radio-Geometric World Models for Mapless Cellular-Connected UAV Trajectory Planning",
+      "abstract": "Reliable cellular connectivity and collision-free flight are essential for unmanned aerial vehicle (UAV) operations in low-altitude urban canyons, where dense 3D buildings obstruct flight clearance, shadow serving base stations, and create strong co-channel interference at street intersections. Existing planners either require prior 3D city meshes and channel knowledge maps unavailable onboard, or rely on model-free reinforcement learning with low sample efficiency and poor cross-city generalization. We propose CommDreamer, a mapless radio-geometric world model that fuses raw onboard 3D LiDAR scans, multicell cellular reports, and shift-invariant relative kinematics to jointly infer local obstacle clearance and directional signal-to-interference-plus-noise ratio (SINR) dynamics. Using a categorical recurrent state-space model, CommDreamer compresses multimodal measurement histories into a coordinate-invariant latent belief, enabling the UAV to foresee deep shadow zones and train a lightweight online policy purely via multi-step latent imagination without prior maps or antenna patterns. Zero-shot evaluations across unseen urban morphologies in our open-source ray-tracing simulator, AeroCity-RT, show that CommDreamer converges within 150 episodes where model-free reinforcement learning fails to complete flights, achieving 100.0% mission success with zero collisions while lifting median route SINR to 8.02 dB and cutting effective SINR outage by over 50% relative to radio-blind world-model and reactive LiDAR baselines.",
+      "authors": [
+        "Yuqi Ping",
+        "Tianhao Liang",
+        "Tingting Zhang"
+      ],
+      "published": "2026-11-18T11:22:40Z",
+      "updated": "2026-11-18T11:22:40Z",
+      "url": "https://arxiv.org/abs/2611.24244v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145217+00:00"
+    },
+    "2611.24192": {
+      "id": "2611.24192v1",
+      "title": "TrajWAM: Trajectory-Conditioned Future Learning for Vision-Language Driving",
+      "abstract": "World Action Models (WAMs) connect future scene prediction with action planning for autonomous driving. Each driving record pairs an executed ego trajectory with its observed future, providing a factual outcome for learning this connection. We present TrajWAM, a trajectory-conditioned WAM that improves vision-language driving through auxiliary bird's-eye-view (BEV) future learning. An ego-trajectory query conditions DINOv3-aligned BEV predictions from shared planner representations. Training combines factual reconstruction under the executed trajectory with one-sided feature separation under an unlabeled perturbed trajectory. Together, these objectives train the shared planner to generate driving waypoints. Native inference directly generates waypoints and bypasses the auxiliary future-prediction branch. On all 220 Bench2Drive routes, TrajWAM achieves 91.53 Driving Score and 75.45% Success Rate, exceeding a schedule-matched planning-only fine-tuning baseline by 5.31 Driving Score points and eight successful routes.",
+      "authors": [
+        "Xuerui Fang",
+        "Gulimila Kezierbieke",
+        "Chen Wangxing",
+        "Hui Li"
+      ],
+      "published": "2026-11-18T10:28:56Z",
+      "updated": "2026-11-18T10:28:56Z",
+      "url": "https://arxiv.org/abs/2611.24192v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145240+00:00"
+    },
+    "2611.24080": {
+      "id": "2611.24080v1",
+      "title": "CausalDrive: Causal Decomposition for Data-Efficient End-to-End Autonomous Driving",
+      "abstract": "Efficient use of expert demonstrations is essential for end-to-end autonomous driving. However, directly imitating expert trajectories couples nominal intention, which specifies where the vehicle should go, with multimodal driving styles, which determine how that intention is executed. Different combinations of these factors can yield similar expert trajectories, obscuring their respective causal contributions and forcing the policy to learn both from a single entangled target. This ambiguity limits how effectively the policy can exploit expert demonstrations. We propose CausalDrive, a causal decomposition framework for data-efficient driving policy learning that separates deterministic nominal intention prediction from probabilistic driving style modeling. Specifically, we construct counterfactual nominal trajectories from navigation command, map topology, and ego state by removing style dependent effects, providing a Nominal Intention Planner with supervision independent of expert trajectories. Conditioned on the predicted nominal intention and surrounding agents, a diffusion-based Style Execution Policy models diverse driving styles as a multimodal distribution over residuals between nominal and expert trajectories. This causally structured supervision reduces redundant learning of shared nominal behavior in routine scenarios, directing expert supervision toward informative execution variations and improving data utilization. CausalDrive achieves 91.2 PDMS on NAVSIM v1 and 89.5 EPDMS on NAVSIM v2, matching or surpassing state-of-the-art performance. Further experiments demonstrate strong performance with limited expert data and clear advantages in challenging interactive scenarios.",
+      "authors": [
+        "Xiaobao Wei",
+        "Jingxian Wu",
+        "Lirong Yang",
+        "Qing Han",
+        "Yuan Gao",
+        "Ziwei Yang",
+        "Shuai Yang",
+        "Weiwei Liu",
+        "Chang Huang"
+      ],
+      "published": "2026-11-18T09:07:54Z",
+      "updated": "2026-11-18T09:07:54Z",
+      "url": "https://arxiv.org/abs/2611.24080v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145270+00:00"
+    },
+    "2611.24077": {
+      "id": "2611.24077v1",
+      "title": "AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation",
+      "abstract": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scale and rule-based planners cannot supply reliably. In this paper, we present AeroRSI, a recursive self-improvement framework in which an aerial navigation policy iteratively learns from its own failures. Our key insight is that a failing policy should judge its own repairs by flying on from them. Judged in this way, its sampled actions and even rule-based proposals that hurt it when imitated directly become reliable supervision. Moreover, an episode terminates at its first failure, concealing subsequent failures until the earlier ones are repaired. AeroRSI thus renews its supervision in every round, anchoring the failures of the current policy, verifying repairs by its continuation, and distilling them while keeping its behavior elsewhere. On TravelUAV, three rounds raise the success rate of a supervised 2B-parameter policy from 46.4% to 67.5% and reduce collisions by half, surpassing the previous state of the art by 10.6 points from the same initialization without extra human labels or inference cost. Code and models are available at https://github.com/starsholic/AeroRSI.",
+      "authors": [
+        "Shiwei Wu",
+        "Yuwen Pan",
+        "Zhi Li",
+        "Yaowen Li",
+        "Yan Zhou",
+        "Xuemiao Xu",
+        "Yu Liu"
+      ],
+      "published": "2026-11-18T09:07:04Z",
+      "updated": "2026-11-18T09:07:04Z",
+      "url": "https://arxiv.org/abs/2611.24077v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145296+00:00"
+    },
+    "2611.23930": {
+      "id": "2611.23930v1",
+      "title": "A Hierarchical Onboard Vision-Language-Navigation Framework for Aerial Robots in Complex Environments",
+      "abstract": "Unmanned Aerial Vehicles (UAVs) are expected to achieve semantic reasoning, intelligent decision-making, and long-horizon navigation under strict onboard constraints. While recent foundation-model-driven approaches have shown promising progress toward this goal, existing methods remain limited by challenges in 3D data availability, trajectory feasibility, long-horizon reasoning, and computational efficiency in complex environments. To bridge these gaps, we propose VLN-AR, a hierarchical vision-language-navigation (VLN) framework for aerial robots. VLN-AR decouples multimodal reasoning and low-level control, enabling structured prediction of 3D pose commands and navigation intentions that are translated into dynamically feasible actions. To mitigate data scarcity and domain gaps, we introduce a fully automated 3D Gaussian Splatting (3DGS)-based pipeline to generate scalable photorealistic UAV navigation data. A progressive three-stage training strategy further enhances grounding, scene reasoning, and complex navigation. In addition, a lightweight cognitive agent improves long-horizon reasoning via memory-aware task decomposition. Finally, we design onboard optimization techniques, including token sparsification and model lightweighting, achieving 7.1x-9.4x speedup while maintaining high navigation performance on resource-limited UAV platforms. Experiments show great improvements over existing methods in both simulation and real-world UAV navigation. Project website: https://wyz000.github.io/VLN-AR/",
+      "authors": [
+        "Yuze Wu",
+        "Mo Zhu",
+        "Xingxing Li",
+        "Yuheng Du",
+        "Zhaoqi Wang",
+        "Yuxin Fan",
+        "Wenjun Li",
+        "Kenghou Hoi",
+        "Zhichao Han",
+        "Xin Zhou",
+        "Fei Gao"
+      ],
+      "published": "2026-11-18T06:21:08Z",
+      "updated": "2026-11-18T06:21:08Z",
+      "url": "https://arxiv.org/abs/2611.23930v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145347+00:00"
+    },
+    "2611.23878": {
+      "id": "2611.23878v1",
+      "title": "HETEROVLM: Edge Multi-Request Vision-Language Model Serving on a Heterogeneous Versal SoC with AI Engines and Programmable Logic",
+      "abstract": "Edge devices in vehicles and robots serve concurrent requests with different deadlines to a vision-language model (VLM), each mixing a compute-bound encoder and prefill with a memory-bound decode. GPU serving targets datacenter throughput with per-iteration host scheduling: an urgent request waits for the running iteration, and small-batch decode costs much energy per token. Prior accelerators on Versal AI Engine (AIE) SoCs map one model onto a fixed AIE dataflow graph for one input stream, without decode or request scheduling. HETEROVLM keeps the AIE graph static and makes it schedulable. The AIE array runs the encoder, prefill and attention, and the programmable logic (PL) holds GEMV engines for small decode steps and a scheduler that orders short work units by class and deadline. Concurrent requests share one decode step that reads the weights once. An urgent request preempts at a work-unit boundary, and the paused request resumes from its results in DDR. On an AMD Versal VC1902, text and camera questions get their first tokens in 140 and 303 ms. HETEROVLM decodes a single request 1.3x and 4.0x faster than NVIDIA Tesla T4 and Jetson Orin Nano GPUs, with 61% and 73% of their energy per token, and uses 51% of the energy per token of an NVIDIA GeForce RTX 3090 Ti. The same bitstream serves multiple VLMs by loading their own instruction programs and weights. A demo is available at https://anonymous.4open.science/r/demo heterovlm-EFM2/.",
+      "authors": [
+        "Zhiheng Chen",
+        "Yu-An Chou",
+        "Yifan Zhang",
+        "Ye Qiao",
+        "Saptarshi Mitra",
+        "Sitao Huang"
+      ],
+      "published": "2026-11-18T05:30:36Z",
+      "updated": "2026-11-18T05:30:36Z",
+      "url": "https://arxiv.org/abs/2611.23878v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145375+00:00"
+    },
+    "2611.23491": {
+      "id": "2611.23491v1",
+      "title": "GRID-UAV: Geometry and Ray-depth Integrated Decision-making for Unmanned Aerial Vehicles",
+      "abstract": "Vision-language-action models (VLAs) encode images with 2D encoders that capture little 3D structure. A common approach is to feed the policy estimated depth, but a UAV chooses its own altitude, must judge distances tens of meters away, where monocular depth is less reliable, and must relate its forward and downward views. On long aerial routes, adding depth features directly brings no significant gain (42.5% vs. 42.6% success), so we study how 3D information should be given to the policy. Analyzing flight failures, we find that two forms of 3D grounding fail in opposite ways: explicit 3D lifting of depth collides less on the way but more often fails to finish at the target, while implicit alignment with a 3D geometry model finishes more often but collides more. We propose GRID, which combines both: (1) it lifts monocular depth into ray-corrected 3D positions in the UAV's frame for both cameras, and (2) during training only, it aligns its visual features with a frozen multi-view geometry model, at no inference cost. GRID adding explicit lifting to implicit alignment significantly increases how often the policy reaches the target ($61.5\\% \\rightarrow 69.5\\%$, $p<0.001$), and adding implicit alignment to explicit lifting significantly increases how often it completes the task once there ($57.7\\% \\rightarrow 61.4\\%$, $p<0.05$). On TravelUAV (3,005 test episodes), GRID achieves the best success rate on every split, with relative gains over the state of the art of 9.5% (seen), 17.1% (unseen objects) and 25.4% (unseen map).",
+      "authors": [
+        "Anas Anwarul Haq Khan",
+        "Amrin Kareem",
+        "Muhammad Umer Sheikh",
+        "Biplab Banerjee",
+        "Muhammad Haris Khan"
+      ],
+      "published": "2026-11-17T20:41:30Z",
+      "updated": "2026-11-17T20:41:30Z",
+      "url": "https://arxiv.org/abs/2611.23491v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145400+00:00"
+    },
+    "2611.19839": {
+      "id": "2611.19839v2",
+      "title": "Passable for Whom? Few-Shot Learning for Personal Calibration of Sidewalk Accessibility Perception for Human-Centered Autonomous Driving",
+      "abstract": "Whether a sidewalk is passable depends on who is trying to pass: people who use the same mobility aid disagree about the same image, so one label per scene, or per aid, is wrong for many of them. We introduce few-shot personal accessibility perception: from K answers of a person never seen before, predict their judgment of sidewalk scenes never seen before. PassCal separates a shared description of the scene from the person's interpretation of it. The description comes from the internal state of a frozen vision-language model (VLM) and from barrier type, severity and context properties predicted by a detector trained on 14.9k public audits; the interpretation, a calibration of the person's response style and a weighting of the properties, is fit from their answers. On 8,883 judgments in which each of 135 verified mobility-aid users rated the same 50 sidewalk scenes, with people and scenes both held out, eight answers lower the Brier score from 0.550 to 0.479. The same VLM prompted with those answers reaches 0.562, and the same calibration without the scene 0.521. Conformal risk control turns predictions into passable, blocked or \"depends on you\" statements with a bounded expected rate of wrong statements over people; at 5%, eight answers raise the share of decisive scenes from 27% to 42%. Audit-supervised properties improve all sixteen vision and VLM encoders we test and outperform attributes from a sidewalk navigation VLM.",
+      "authors": [
+        "Wesley Maia",
+        "Angel Martinez-Sanchez",
+        "Maitrayee Keskar",
+        "Ross Greer"
+      ],
+      "published": "2026-11-15T06:42:36Z",
+      "updated": "2026-11-17T20:07:41Z",
+      "url": "https://arxiv.org/abs/2611.19839v2",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-19T21:56:40.145873+00:00"
     }
   },
   "history": {
@@ -3438,6 +3727,172 @@
         "prompt_tokens": 8803,
         "completion_tokens": 1780
       }
+    },
+    "actions-44623680082": {
+      "created_at": "2026-11-19T21:56:38.499597+00:00",
+      "papers": [
+        {
+          "id": "2611.24840v1",
+          "contribution": "Studies action dependence in semantic forecasting for autonomous driving, showing prediction accuracy gain indicates action use but strength of dependence varies with conditioning type and environment.",
+          "limitation": "Action dependence improvements are moderate; uncertain robustness across diverse real-world driving conditions.",
+          "gap": "Lacks exploration of deeper causal reasoning about driving actions beyond action-conditioned predictions."
+        },
+        {
+          "id": "2611.24376v1",
+          "contribution": "Examines counterfactual reasoning in vision-language autonomous driving, finding it shifts action distributions conservatively without genuine causal visual reasoning.",
+          "limitation": "Focuses mainly on language-based CF reasoning; does not provide alternatives for better causal understanding.",
+          "gap": "Leaves open how to achieve faithful causal reasoning grounded in visual evidence for robust autonomous driving."
+        },
+        {
+          "id": "2611.24778v1",
+          "contribution": "Introduces a counterfactual world model approach enabling latent disturbance separation and reasoning about \"what if\" scenarios without counterfactual data; validated on simulators including underwater vehicles.",
+          "limitation": "Fails at discontinuities and disturbance scaling; demonstrated mostly in simulation, limited real-world validation.",
+          "gap": "Extension to real-world multimodal driving data and integration with downstream driving decisions remains unexplored."
+        },
+        {
+          "id": "2611.24719v1",
+          "contribution": "Proposes DRIFT, a lightweight language model integrated end-to-end driving framework enabling runtime-flexible reasoning with surrogate features, achieving competitive driving performance efficiently.",
+          "limitation": "Relies on surrogate reasoning feature training whose fidelity to true reasoning needs further validation.",
+          "gap": "Does not explicitly address explainable or causal reasoning beyond language model integration."
+        },
+        {
+          "id": "2611.24192v1",
+          "contribution": "Presents TrajWAM, a trajectory-conditioned world action model that improves driving performance by learning future BEV scene prediction conditioned on ego trajectories.",
+          "limitation": "Focuses on auxiliary future learning for waypoint generation; explainability and causal interpretation are not emphasized.",
+          "gap": "No exploration on multimodal inputs or explicit reasoning about driving behavior beyond trajectory conditioning."
+        },
+        {
+          "id": "2611.24080v1",
+          "contribution": "Proposes CausalDrive framework that separates deterministic nominal intention from multimodal driving style using causal decomposition for improved data-efficient driving policy learning.",
+          "limitation": "Performance demonstrated on NAVSIM benchmarks; robustness to real-world distribution shifts and multimodal sensing not fully tested.",
+          "gap": "Lacks integration of multimodal inputs and explicit explainability in driving behavior decomposition."
+        },
+        {
+          "id": "2611.23491v1",
+          "contribution": "Introduces GRID, combining explicit 3D depth lifting and implicit multi-view geometry alignment for UAV vision-language navigation, improving success rates significantly in complex aerial environments.",
+          "limitation": "Demonstrated on UAV navigation; applicability to autonomous driving scenarios with varied modalities needs study.",
+          "gap": "Multimodal fusion and language-based explainable driving reasoning are not directly addressed."
+        },
+        {
+          "id": "2611.20458v1",
+          "contribution": "Presents VISTA, a multimodal vision-language framework that uses compact predictive embeddings and small language models for interpretable, communication-efficient traffic situational awareness.",
+          "limitation": "Evaluated mainly in digital twin urban scenarios; real-world deployment and robustness require further validation.",
+          "gap": "Does not deeply explore action prediction or driving behavior understanding, focusing on traffic situation awareness."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Integration of vision-language models into autonomous driving aims to provide interpretable scene understanding and reasoning (2611.24719v1, 2611.20458v1).",
+            "uncertainty": "Efficiency and fidelity of reasoning, and explainability to human operators, vary and need further investigation.",
+            "evidence_ids": [
+              "2611.24719v1",
+              "2611.20458v1"
+            ]
+          },
+          {
+            "finding": "Counterfactual and action-conditioned predictions increasingly examined to improve or verify causal driving behavior understanding (2611.24376v1, 2611.24840v1, 2611.24778v1).",
+            "uncertainty": "True causal reasoning remains elusive; some methods produce conservative or linguistic shortcuts rather than visual causal grounding.",
+            "evidence_ids": [
+              "2611.24376v1",
+              "2611.24840v1",
+              "2611.24778v1"
+            ]
+          },
+          {
+            "finding": "Multimodal 3D grounding and trajectory-conditioned future learning improve driving navigation success (2611.23491v1, 2611.24192v1).",
+            "uncertainty": "Transferability across environments and topologies, as well as integration with language-based explanations, remain open questions.",
+            "evidence_ids": [
+              "2611.23491v1",
+              "2611.24192v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "DRIFT (2611.24719v1) uses lightweight language models for runtime-flexible reasoning; VISTA (2611.20458v1) uses small language models to interpret embeddings for traffic awareness.",
+            "limitation": "Both prioritize efficiency and interpretable communication but do not fully demonstrate causal or multimodal driving behavior understanding beyond scene description.",
+            "evidence_ids": [
+              "2611.24719v1",
+              "2611.20458v1"
+            ]
+          },
+          {
+            "comparison": "Counterfactual reasoning approaches in 2611.24376v1 exhibit more cautious action distributions without true causal visual grounding, while 2611.24778v1 theorizes a principled counterfactual model improving prediction accuracy in simulation.",
+            "limitation": "Discrepancy between theoretical counterfactual models and practical language-based CF reasoning in driving is not resolved.",
+            "evidence_ids": [
+              "2611.24376v1",
+              "2611.24778v1"
+            ]
+          },
+          {
+            "comparison": "GRID (2611.23491v1) combining explicit and implicit 3D grounding outperforms single approach variants; TrajWAM (2611.24192v1) models trajectory-conditioned future learning effectively.",
+            "limitation": "Neither fully integrates language or multimodal fusion for explainable driving behavior reasoning.",
+            "evidence_ids": [
+              "2611.23491v1",
+              "2611.24192v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can counterfactual world models be extended to multimodal autonomous driving data for causally faithful driving behavior prediction?",
+            "hypothesis": "Incorporating visual and proprioceptive modalities into counterfactual models improves driving behavior accuracy and causal interpretability.",
+            "method": "Adapt 2611.24778v1's counterfactual approach to combine vision, lidar, and ego-motion embeddings.",
+            "datasets": "Bench2Drive, NAVSIM datasets with multimodal inputs.",
+            "baselines": "Conventional action-conditioned models (2611.24840v1), CF reasoning with VLMs (2611.24376v1).",
+            "metrics": "Counterfactual prediction R², driving success, causal intervention effects.",
+            "compute": "Moderate GPU cluster; training on multi-modal input; standard memory and time.",
+            "risk": "Complexity may increase without consistent gains; real-world data variability.",
+            "novelty_check": "Extends existing theoretical counterfactual modeling with multimodal real driving data and causal tests.",
+            "priority_rationale": "Bridges gap between theory and practice, enhancing causal understanding for autonomous driving.",
+            "evidence_ids": [
+              "2611.24778v1",
+              "2611.24840v1",
+              "2611.24376v1"
+            ]
+          },
+          {
+            "question": "How can runtime-flexible language reasoning in autonomous driving improve human-centered explainability and intervention?",
+            "hypothesis": "Integrating surrogate reasoning modules with lightweight LMs as in DRIFT enables efficient human-interpretable driving decisions and explanation.",
+            "method": "Build on DRIFT (2611.24719v1) approach adding human-accessible rationale generation and testing user trust.",
+            "datasets": "Bench2Drive, NAVSIM with recorded driving and human feedback.",
+            "baselines": "DRIFT baseline without human explanation interface; non-language models.",
+            "metrics": "Driving performance, explanation fidelity, human trust measures.",
+            "compute": "Standard GPU with LM inference; real-time capable.",
+            "risk": "Assumptions in surrogate reasoning to LM mapping may limit accurate explanations.",
+            "novelty_check": "Aligns runtime-flexible language-based reasoning with human-centered evaluation for real-world usage.",
+            "priority_rationale": "Crucial for safe deployment and acceptance of autonomous systems.",
+            "evidence_ids": [
+              "2611.24719v1"
+            ]
+          },
+          {
+            "question": "Does combining explicit 3D depth lifting and implicit geometry alignment improve multimodal driving behavior understanding and planning in real-world scenarios?",
+            "hypothesis": "Hybrid geometry-based features lead to better spatial grounding and driving performance than either alone.",
+            "method": "Implement GRID-inspired (2611.23491v1) multimodal fusion in autonomous driving with additional language grounding modules.",
+            "datasets": "TravelUAV analogs, extended to vehicle datasets with multimodal sensor suites.",
+            "baselines": "Explicit depth-only, implicit alignment-only, vision-language models without 3D.",
+            "metrics": "Success rate, collision rate, trajectory completion metrics.",
+            "compute": "Standard moderate GPUs; efficient inference preferred.",
+            "risk": "Complex multimodal fusion may increase computational load.",
+            "novelty_check": "Applies UAV robotics fusion methods to ground autonomous driving with explainability focus.",
+            "priority_rationale": "Spatial grounding is critical for robust driving decisions and supporting explanations.",
+            "evidence_ids": [
+              "2611.23491v1",
+              "2611.24192v1",
+              "2611.24719v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.034841199999999996,
+        "status": "completed",
+        "estimated_cost_usd": 0.008415200000000001,
+        "prompt_tokens": 13566,
+        "completion_tokens": 1868
+      }
     }
   },
   "zotero": {
@@ -3676,9 +4131,41 @@
         "2611.23211": {
           "status": "created",
           "item_key": "H899MBHV"
+        },
+        "2611.20458": {
+          "status": "created",
+          "item_key": "GT5BDF5J"
+        },
+        "2611.23491": {
+          "status": "created",
+          "item_key": "2Q434DUP"
+        },
+        "2611.24080": {
+          "status": "created",
+          "item_key": "QKFX63CN"
+        },
+        "2611.24192": {
+          "status": "created",
+          "item_key": "HV3UP8BC"
+        },
+        "2611.24376": {
+          "status": "created",
+          "item_key": "E784BI4S"
+        },
+        "2611.24719": {
+          "status": "created",
+          "item_key": "32FVT6BR"
+        },
+        "2611.24778": {
+          "status": "created",
+          "item_key": "3D6NX94F"
+        },
+        "2611.24840": {
+          "status": "created",
+          "item_key": "5V67HWXT"
         }
       },
-      "not_before": 1795038076.2757432
+      "not_before": 1795125432.5443907
     }
   }
 }
