@@ -403,10 +403,24 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.19839",
+        "title": "Passable for Whom? Few-Shot Learning for Personal Calibration of Sidewalk Accessibility Perception for Human-Centered Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.19839",
+        "zotero_item_key": "28QJTPCA",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.20011",
         "title": "ReactBench-AD: Do Driving VLAs and World-Action Models React to Imminent Hazards in Their Path?",
         "url": "https://arxiv.org/abs/2611.20011",
         "zotero_item_key": "HN3WUVZ5",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.20019",
+        "title": "D'BEAST: Logged Bad Experiences as Explanation for Autonomous Driving Agents",
+        "url": "https://arxiv.org/abs/2611.20019",
+        "zotero_item_key": "PIICIF4G",
         "status": "created"
       },
       {
@@ -473,6 +487,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.23930",
+        "title": "A Hierarchical Onboard Vision-Language-Navigation Framework for Aerial Robots in Complex Environments",
+        "url": "https://arxiv.org/abs/2611.23930",
+        "zotero_item_key": "EFW9D23W",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.24080",
         "title": "CausalDrive: Causal Decomposition for Data-Efficient End-to-End Autonomous Driving",
         "url": "https://arxiv.org/abs/2611.24080",
@@ -512,6 +533,20 @@
         "title": "Does the Action Matter? Probing Action-Conditioned Semantic Forecasting as a World Model for Autonomous Driving",
         "url": "https://arxiv.org/abs/2611.24840",
         "zotero_item_key": "5V67HWXT",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.25474",
+        "title": "TuringPAI: A Foundation for On-Device Physical AI",
+        "url": "https://arxiv.org/abs/2611.25474",
+        "zotero_item_key": "99QF4SC5",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.26242",
+        "title": "FastRoverVLA: Fast Vision-Language-Action Execution for Off-Road Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.26242",
+        "zotero_item_key": "N5ID9I8X",
         "status": "created"
       }
     ]

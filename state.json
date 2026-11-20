@@ -292,6 +292,26 @@
     "2611.20458": {
       "reported_at": "2026-11-19T21:56:38.499597+00:00",
       "version": "2611.20458v1"
+    },
+    "2611.26242": {
+      "reported_at": "2026-11-20T21:39:57.749635+00:00",
+      "version": "2611.26242v1"
+    },
+    "2611.25474": {
+      "reported_at": "2026-11-20T21:39:57.749635+00:00",
+      "version": "2611.25474v1"
+    },
+    "2611.23930": {
+      "reported_at": "2026-11-20T21:39:57.749635+00:00",
+      "version": "2611.23930v1"
+    },
+    "2611.20019": {
+      "reported_at": "2026-11-20T21:39:57.749635+00:00",
+      "version": "2611.20019v1"
+    },
+    "2611.19839": {
+      "reported_at": "2026-11-20T21:39:57.749635+00:00",
+      "version": "2611.19839v2"
     }
   },
   "requests": {
@@ -378,6 +398,13 @@
       "estimated_cost_usd": 0.008415200000000001,
       "prompt_tokens": 13566,
       "completion_tokens": 1868
+    },
+    "actions-44822219602": {
+      "ceiling_usd": 0.0300784,
+      "status": "completed",
+      "estimated_cost_usd": 0.0065636,
+      "prompt_tokens": 10805,
+      "completion_tokens": 1401
     }
   },
   "papers": {
@@ -1461,7 +1488,7 @@
       "updated": "2026-11-16T16:07:59Z",
       "url": "https://arxiv.org/abs/2611.21311v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145648+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205506+00:00"
     },
     "2611.20765": {
       "id": "2611.20765v1",
@@ -1494,7 +1521,7 @@
       "updated": "2026-11-16T07:51:11Z",
       "url": "https://arxiv.org/abs/2611.20686v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145699+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205570+00:00"
     },
     "2611.20648": {
       "id": "2611.20648v1",
@@ -1558,7 +1585,7 @@
       "updated": "2026-11-16T01:02:10Z",
       "url": "https://arxiv.org/abs/2611.20372v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145790+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205679+00:00"
     },
     "2611.20019": {
       "id": "2611.20019v1",
@@ -1573,7 +1600,7 @@
       "updated": "2026-11-15T14:05:02Z",
       "url": "https://arxiv.org/abs/2611.20019v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145813+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205704+00:00"
     },
     "2611.20011": {
       "id": "2611.20011v1",
@@ -1640,7 +1667,7 @@
       "updated": "2026-11-15T02:25:32Z",
       "url": "https://arxiv.org/abs/2611.19730v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145937+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205845+00:00"
     },
     "2611.19184": {
       "id": "2611.19184v1",
@@ -1732,7 +1759,7 @@
       "updated": "2026-11-17T18:35:53Z",
       "url": "https://arxiv.org/abs/2611.23192v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145452+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205271+00:00"
     },
     "2611.22880": {
       "id": "2611.22880v1",
@@ -1764,7 +1791,7 @@
       "updated": "2026-11-17T10:36:04Z",
       "url": "https://arxiv.org/abs/2611.22545v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145499+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205327+00:00"
     },
     "2611.22297": {
       "id": "2611.22297v1",
@@ -1800,7 +1827,7 @@
       "updated": "2026-11-17T05:47:36Z",
       "url": "https://arxiv.org/abs/2611.22246v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145546+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205385+00:00"
     },
     "2611.21945": {
       "id": "2611.21945v1",
@@ -1821,7 +1848,7 @@
       "updated": "2026-11-16T22:08:39Z",
       "url": "https://arxiv.org/abs/2611.21945v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145573+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205419+00:00"
     },
     "2611.21924": {
       "id": "2611.21924v1",
@@ -1854,7 +1881,7 @@
       "updated": "2026-11-16T19:07:11Z",
       "url": "https://arxiv.org/abs/2611.21783v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145622+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205474+00:00"
     },
     "2611.24864": {
       "id": "2611.24864v1",
@@ -1877,7 +1904,7 @@
       "updated": "2026-11-18T18:19:00Z",
       "url": "https://arxiv.org/abs/2611.24864v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145040+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.204820+00:00"
     },
     "2611.24840": {
       "id": "2611.24840v1",
@@ -1959,7 +1986,7 @@
       "updated": "2026-11-18T12:29:55Z",
       "url": "https://arxiv.org/abs/2611.24327v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145194+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.204991+00:00"
     },
     "2611.24244": {
       "id": "2611.24244v1",
@@ -1974,7 +2001,7 @@
       "updated": "2026-11-18T11:22:40Z",
       "url": "https://arxiv.org/abs/2611.24244v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145217+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205018+00:00"
     },
     "2611.24192": {
       "id": "2611.24192v1",
@@ -2030,7 +2057,7 @@
       "updated": "2026-11-18T09:07:04Z",
       "url": "https://arxiv.org/abs/2611.24077v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145296+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205110+00:00"
     },
     "2611.23930": {
       "id": "2611.23930v1",
@@ -2053,12 +2080,12 @@
       "updated": "2026-11-18T06:21:08Z",
       "url": "https://arxiv.org/abs/2611.23930v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145347+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205147+00:00"
     },
     "2611.23878": {
-      "id": "2611.23878v1",
+      "id": "2611.23878v2",
       "title": "HETEROVLM: Edge Multi-Request Vision-Language Model Serving on a Heterogeneous Versal SoC with AI Engines and Programmable Logic",
-      "abstract": "Edge devices in vehicles and robots serve concurrent requests with different deadlines to a vision-language model (VLM), each mixing a compute-bound encoder and prefill with a memory-bound decode. GPU serving targets datacenter throughput with per-iteration host scheduling: an urgent request waits for the running iteration, and small-batch decode costs much energy per token. Prior accelerators on Versal AI Engine (AIE) SoCs map one model onto a fixed AIE dataflow graph for one input stream, without decode or request scheduling. HETEROVLM keeps the AIE graph static and makes it schedulable. The AIE array runs the encoder, prefill and attention, and the programmable logic (PL) holds GEMV engines for small decode steps and a scheduler that orders short work units by class and deadline. Concurrent requests share one decode step that reads the weights once. An urgent request preempts at a work-unit boundary, and the paused request resumes from its results in DDR. On an AMD Versal VC1902, text and camera questions get their first tokens in 140 and 303 ms. HETEROVLM decodes a single request 1.3x and 4.0x faster than NVIDIA Tesla T4 and Jetson Orin Nano GPUs, with 61% and 73% of their energy per token, and uses 51% of the energy per token of an NVIDIA GeForce RTX 3090 Ti. The same bitstream serves multiple VLMs by loading their own instruction programs and weights. A demo is available at https://anonymous.4open.science/r/demo heterovlm-EFM2/.",
+      "abstract": "Vision-language models (VLMs) play a pivotal role in enabling autonomous vehicles and robots to perceive and reason about the physical world. Edge computers in autonomous systems typically serve concurrent VLM inference requests with various deadlines, each mixing a compute-bound encoder and prefill stage with a memory-bound decode stage. GPU serving optimizes for high throughput in datacenters, with per-iteration host scheduling, which can cause an urgent request to wait for a long time, and small-batch decode costs much energy per token. Prior accelerators on Versal AI Engine (AIE) SoCs map one model onto a fixed AIE dataflow graph for one input stream, without decode or request scheduling, which limits their capability in serving multiple requests. We present HETEROVLM, which is optimized for multi-request VLM serving on a resource-constrained heterogeneous platform. It keeps the AIE graph static and makes it schedulable. The AIE array runs the encoder, prefill and attention, and the programmable logic (PL) implements GEMV engines for small decode steps and a scheduler that orders short work units by class and deadline. Concurrent requests share one decode step that reads the weights once. An urgent request preempts at a work-unit boundary, and the paused request resumes from its results in DDR memory. On an AMD Versal VC1902, text and camera questions get their first tokens in 140 and 303 ms. HETEROVLM decodes a single request 1.3x and 4.0x faster than NVIDIA Tesla T4 and Jetson Orin Nano Super GPUs, consuming only 61% and 73% of their energy per token, or 51% of the energy per token of an NVIDIA GeForce RTX 3090 Ti. A single bitstream runs multiple VLMs, switching between them at run time. A demo is available at https://anonymous.4open.science/r/demo heterovlm-EFM2/.",
       "authors": [
         "Zhiheng Chen",
         "Yu-An Chou",
@@ -2068,10 +2095,10 @@
         "Sitao Huang"
       ],
       "published": "2026-11-18T05:30:36Z",
-      "updated": "2026-11-18T05:30:36Z",
-      "url": "https://arxiv.org/abs/2611.23878v1",
+      "updated": "2026-11-19T03:48:44Z",
+      "url": "https://arxiv.org/abs/2611.23878v2",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145375+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205182+00:00"
     },
     "2611.23491": {
       "id": "2611.23491v1",
@@ -2104,7 +2131,87 @@
       "updated": "2026-11-17T20:07:41Z",
       "url": "https://arxiv.org/abs/2611.19839v2",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-19T21:56:40.145873+00:00"
+      "retrieved_at": "2026-11-20T21:39:59.205767+00:00"
+    },
+    "2611.26242": {
+      "id": "2611.26242v1",
+      "title": "FastRoverVLA: Fast Vision-Language-Action Execution for Off-Road Autonomous Driving",
+      "abstract": "Off-road vision-language-action (VLA) models generate scene-conditioned plans, but frequent trajectory updates can repeatedly invoke expensive multimodal inference. Reusing a prediction reduces this demand while leaving its commands exposed to changes in vehicle motion. FastRoverVLA addresses this mismatch by decoupling visual plan generation from motion-conditioned execution. Its training-free interface maintains decoded plans between visual predictions. A speed-curvature action buffer is aligned with measured motion at each update, integrated into a local trajectory, and advanced by consuming the current action. The corrected remainder is written back to the buffer, preserving motion corrections across successive updates. A bounded refresh rule normalizes speed and curvature variations within a newly decoded plan and assigns a short or long reuse budget according to the resulting plan-roughness score. The interface requires neither backbone features nor an additional learned driving policy. Over a 3 s horizon, independent real-request evaluation achieves average displacement error (ADE) and final displacement error (FDE) of 0.328/0.596 m on ORAD-3D and 0.266/0.526 m on RELLIS-3D, reducing FDE by 18.0% and 36.7% at request rates of 6.0% and 4.8%, respectively. These runs retain lower errors across four backbones and both datasets and reduce Qwen3-VL request-processing cost by factors of 16.6 and 20.8 under serial replay, while mechanism and motion-only controls identify persistent state correction as the main source of the observed accuracy benefit. The source code and evaluation materials are publicly available at https://github.com/ADEPT-ORG/FastRoverVLA.",
+      "authors": [
+        "Changtao Zhao",
+        "Yingxue Guan",
+        "Li Wang",
+        "Shijie Zhao",
+        "Yuhang Zhang",
+        "Shengkai Zhang",
+        "Qing Wang",
+        "Ziying Song"
+      ],
+      "published": "2026-11-19T15:23:14Z",
+      "updated": "2026-11-19T15:23:14Z",
+      "url": "https://arxiv.org/abs/2611.26242v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-20T21:39:59.204668+00:00"
+    },
+    "2611.25873": {
+      "id": "2611.25873v1",
+      "title": "WHU-Road3D: A dataset and benchmark towards fine-grained road surface mapping",
+      "abstract": "Accurately extracting and mapping road surface elements is crucial for applications such as high-definition maps, road asset management, and intelligent transportation systems. This study first provides a comprehensive review of the benchmark datasets for extracting and mapping road elements, encompassing overhead-to-perspective data, large-to-local scales, and coarse-to-fine details. Subsequently, we thoroughly review the relevant approaches for extracting road surface elements. However, we argue that existing datasets still require enhancements in semantic richness, data modality diversity, and scenario complexity. To bridge these gaps, this paper presents WHU-Road3D, a large-scale multimodal dataset for fine-grained road surface mapping to address these shortcomings. WHU-Road3D provides approximately 100 km of diverse Chinese highways and urban streets. It features a rich combination of MLS point clouds, associated panoramic images, vehicle trajectories, detailed vectorized annotations, and pointwise instance annotations for road surface elements. The dataset carefully annotates 15 distinct categories of road elements, including common markings like road boundaries, zebra crossings, lane dividers, stop lines, as well as 10 types of direction symbols. To our knowledge, WHU-Road3D stands as the first multimodal dataset for mapping such a comprehensive range of road surface elements, designed to facilitate cutting-edge research in instance segmentation, full-element extraction and mapping on road surfaces. Beyond these immediate applications, WHU-Road3D also provides a valuable source for hierarchical road topology reasoning, map updating, and street scene generation. The dataset, along with the code for our benchmark methods, will be made publicly available at \\href{https://github.com/WHU-USI3DV/WHU-Road3D.git}{https://github.com/WHU-USI3DV/WHU-Road3D.git}.",
+      "authors": [
+        "Xiaoxin Mi",
+        "Zhen Cao",
+        "Chong Liu",
+        "Yuhao Li",
+        "Zhen Dong",
+        "Bisheng Yang",
+        "Yang Jia",
+        "Shengwu Xiong"
+      ],
+      "published": "2026-11-19T10:30:10Z",
+      "updated": "2026-11-19T10:30:10Z",
+      "url": "https://arxiv.org/abs/2611.25873v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-20T21:39:59.204720+00:00"
+    },
+    "2611.25474": {
+      "id": "2611.25474v1",
+      "title": "TuringPAI: A Foundation for On-Device Physical AI",
+      "abstract": "Physical AI requires models that understand spatial relationships and dynamic environments and translate observations into actions under limited onboard compute. We present TuringPAI, a family of models for on-device Physical AI comprising TuringPAI-VL for shared vision-language understanding, TuringPAI-Drive for autonomous driving, and TuringPAI-Embodied for robotic manipulation. TuringPAI-VL is a 0.65B model built on HybridViT-MLQ, which combines convolutional local aggregation with Transformer-based global modeling. Multi-scale Latent Queries integrate spatial features and observation history within the same visual Transformer, providing a compact, structured interface to the language model. Training combines general vision-language data with geometric, cross-view, and temporal supervision. TuringPAI-VL supports general multimodal understanding and improves quantitative geometric perception over Qwen2-VL-2B, while providing a shared initialization for the two downstream VLA models. For autonomous driving, TuringPAI-Drive maintains all evaluated ADE/FDE metrics within 1.2\\% of a full-token HybridViT baseline using the MLQ interface and achieves comparable aggregate scores in an in-house simulation evaluation. Using XPeng Native Runtime (XNRT) on a single NVIDIA Orin-X SoC, TuringPAI-Drive generates trajectories at 12\\,Hz in on-vehicle operation. For robotic manipulation, TuringPAI-Embodied achieves a 96.8\\% average success rate across the four LIBERO suites. These results demonstrate a shared vision-language foundation for driving and robotic manipulation under practical on-device constraints.",
+      "authors": [
+        "Qiman Wu",
+        "Hanlin Chen",
+        "Yuhua Wei",
+        "Mingyuan Wang",
+        "Shaman Tang",
+        "Minghao Li",
+        "Rui Xin",
+        "Xingye Liu",
+        "Zhichao Yang",
+        "Yiqi Yu",
+        "Hongyan Pei",
+        "Xiaowen Tian",
+        "YingYing Liu",
+        "Shiwen Liu",
+        "Jiahui Hu",
+        "Yizhao Wang",
+        "Yuheng Zhang",
+        "Anhua Liu",
+        "Yue He",
+        "Shuang Su",
+        "Da Zhu",
+        "Hua Zhou",
+        "Pengfei Diao",
+        "Haojie Yang",
+        "Weichao Huang",
+        "Hang Zhang",
+        "Honggou Yang",
+        "Xianming Liu"
+      ],
+      "published": "2026-11-19T04:01:34Z",
+      "updated": "2026-11-19T04:01:34Z",
+      "url": "https://arxiv.org/abs/2611.25474v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-20T21:39:59.204781+00:00"
     }
   },
   "history": {
@@ -3893,6 +4000,134 @@
         "prompt_tokens": 13566,
         "completion_tokens": 1868
       }
+    },
+    "actions-44822219602": {
+      "created_at": "2026-11-20T21:39:57.749635+00:00",
+      "papers": [
+        {
+          "id": "2611.26242v1",
+          "contribution": "FastRoverVLA decouples visual planning from motion execution in off-road driving, using a training-free action buffer to reduce expensive multimodal inference with accurate trajectory reuse, improving displacement error and reducing processing cost.",
+          "limitation": "Limited evaluation to off-road datasets and four backbones; potential domain adaptation and generalization limitations not explicitly addressed.",
+          "gap": "Extension to on-road autonomous driving and integration with driving behavior understanding and explainable reasoning remain open."
+        },
+        {
+          "id": "2611.25474v1",
+          "contribution": "TuringPAI proposes a shared vision-language foundation model family enabling multimodal understanding across autonomous driving and robotic manipulation, achieving near-baseline metrics with practical on-device efficiency on NVIDIA Orin-X SoC.",
+          "limitation": "Results rely on in-house simulation for driving evaluation; real-world driving results and broader environment generalization are not detailed.",
+          "gap": "Explainable driving reasoning and human-centered adaptation in complex traffic scenarios need further exploration."
+        },
+        {
+          "id": "2611.23930v1",
+          "contribution": "VLN-AR introduces a hierarchical vision-language-navigation framework for aerial robots that decouples multimodal reasoning and control, employs 3D Gaussian Splatting data augmentation, memory-aware task decomposition, and onboard optimization for efficient long-horizon navigation.",
+          "limitation": "Focuses on UAV navigation rather than ground autonomous driving; effectiveness in diverse on-road driving scenarios is not established.",
+          "gap": "Adaptation of multimodal hierarchical reasoning and memory-aware methods to autonomous driving behavior understanding and explainability remains to be addressed."
+        },
+        {
+          "id": "2611.20019v1",
+          "contribution": "D'BEAST offers a method to explain autonomous driving agent decisions by replaying training logs with variations of bad experiences, showing that bad experiences hold decision-relevant information affecting policy actions and safety failures in CARLA.",
+          "limitation": "Study uses tabular RL agents and fixed training logs; scalability to complex driving models and real-world interpretability is uncertain.",
+          "gap": "Bridging this explanation approach to multimodal perception and high-level driving behavior understanding is unexplored."
+        },
+        {
+          "id": "2611.19839v2",
+          "contribution": "PassCal introduces a few-shot learning framework for personalized sidewalk accessibility perception using vision-language models calibrated via user answers, improving prediction accuracy and providing scenario-aware, human-centered accessibility predictions.",
+          "limitation": "Focused on sidewalk accessibility and human-centered device calibration, not directly on driving.",
+          "gap": "Applying similar personalized calibration and uncertainty modeling techniques to autonomous vehicle driving behavior and interaction understanding is a potential avenue."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal vision-language models are foundational for autonomous systems combining perception and action, emphasizing lightweight on-device operation.",
+            "uncertainty": "Broader applicability to diverse driving environments and integration with human interaction remain to be validated.",
+            "evidence_ids": [
+              "2611.25474v1",
+              "2611.26242v1",
+              "2611.23930v1"
+            ]
+          },
+          {
+            "finding": "Explainable autonomous driving behavior increasingly leverages replay and user-calibrated inference to improve understanding and performance.",
+            "uncertainty": "Scaling explanation methods to complex models and multimodal data is still challenging.",
+            "evidence_ids": [
+              "2611.20019v1",
+              "2611.19839v2"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "FastRoverVLA focuses on efficient trajectory execution decoupling perception and control for off-road driving, while TuringPAI-Drive targets on-device trajectory generation using VL foundations for urban driving.",
+            "limitation": "FastRoverVLA has limited environment diversity evaluation; TuringPAI performance is simulation-based without detailed real-world tests.",
+            "evidence_ids": [
+              "2611.26242v1",
+              "2611.25474v1"
+            ]
+          },
+          {
+            "comparison": "VLN-AR and PassCal both emphasize human-centered and hierarchical reasoning but in different domains: aerial navigation versus pedestrian accessibility perception.",
+            "limitation": "Cross-domain transfer to ground autonomous driving and traffic interaction is not shown.",
+            "evidence_ids": [
+              "2611.23930v1",
+              "2611.19839v2"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can off-road trajectory reuse techniques like FastRoverVLA improve on-road multimodal autonomous driving efficiency without sacrificing accuracy?",
+            "hypothesis": "Decoupling visual plan generation from motion-conditioned execution reduces costly inference while maintaining or improving trajectory accuracy on diverse road driving datasets.",
+            "method": "Extend FastRoverVLA's action buffer and bounded refresh rules to on-road multimodal driving models and evaluate replay request rates and accuracy.",
+            "datasets": "Bridge to on-road datasets like Waymo, nuScenes (unverified).",
+            "baselines": "Standard VLA models without trajectory reuse.",
+            "metrics": "Average displacement error (ADE), final displacement error (FDE), inference cost.",
+            "compute": "Test GPU/SoC latency and throughput with trajectory replay.",
+            "risk": "Limited transfer from off-road to on-road complexity.",
+            "novelty_check": "No prior extension of FastRoverVLA to on-road autonomous driving reported.",
+            "priority_rationale": "Promising efficacy and practical compute reduction may enable real-time deployment.",
+            "evidence_ids": [
+              "2611.26242v1"
+            ]
+          },
+          {
+            "question": "Does personalized few-shot calibration of vision-language models improve autonomous driving behavior prediction and explanation under human-centered settings?",
+            "hypothesis": "User-calibrated VL models provide more accurate, confident, and human-aligned interpretable driving behavior predictions than population-level models.",
+            "method": "Adapt PassCal's calibration framework to driving behavior datasets with human feedback for personalized prediction and explanation.",
+            "datasets": "Behavior datasets with driver annotations; WOMD-Reasoning (unverified).",
+            "baselines": "Uncalibrated VL models, standard driving behavior predictors.",
+            "metrics": "Calibration error, interpretability, prediction accuracy.",
+            "compute": "On-device feasible calibration; low update costs.",
+            "risk": "Data scarcity and noisy user feedback.",
+            "novelty_check": "First known application of few-shot personal calibration to autonomous driving behavior.",
+            "priority_rationale": "Human-centered explanations boost trust and safety, high significance.",
+            "evidence_ids": [
+              "2611.19839v2"
+            ]
+          },
+          {
+            "question": "Can trajectory replay-based explanation methods like D'BEAST be scaled to multimodal driving agents to improve explainable decision reasoning?",
+            "hypothesis": "Replaying training experiences focusing on 'bad' transitions elucidates decision causes in complex multimodal autonomous driving agents similarly to tabular cases.",
+            "method": "Extend D'BEAST to deep multimodal driving models with replay log filtering and ablation diagnostics.",
+            "datasets": "CARLA, Waymo logs (unverified).",
+            "baselines": "Gradient-based and black-box explanation methods.",
+            "metrics": "Explanation fidelity, causal attribution, intervention impact.",
+            "compute": "High compute for replay; offline analysis suitable.",
+            "risk": "Difficulty scaling and validating explanations in complex models.",
+            "novelty_check": "Bridges tabular log replay to multimodal deep driving explanations.",
+            "priority_rationale": "Key for transparent, trustworthy autonomy reasoning, moderate feasibility.",
+            "evidence_ids": [
+              "2611.20019v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.0300784,
+        "status": "completed",
+        "estimated_cost_usd": 0.0065636,
+        "prompt_tokens": 10805,
+        "completion_tokens": 1401
+      }
     }
   },
   "zotero": {
@@ -4163,9 +4398,29 @@
         "2611.24840": {
           "status": "created",
           "item_key": "5V67HWXT"
+        },
+        "2611.19839": {
+          "status": "created",
+          "item_key": "28QJTPCA"
+        },
+        "2611.20019": {
+          "status": "created",
+          "item_key": "PIICIF4G"
+        },
+        "2611.23930": {
+          "status": "created",
+          "item_key": "EFW9D23W"
+        },
+        "2611.25474": {
+          "status": "created",
+          "item_key": "99QF4SC5"
+        },
+        "2611.26242": {
+          "status": "created",
+          "item_key": "N5ID9I8X"
         }
       },
-      "not_before": 1795125432.5443907
+      "not_before": 1795210822.2016087
     }
   }
 }
