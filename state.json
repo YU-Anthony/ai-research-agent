@@ -312,6 +312,34 @@
     "2611.19839": {
       "reported_at": "2026-11-20T21:39:57.749635+00:00",
       "version": "2611.19839v2"
+    },
+    "2611.23192": {
+      "reported_at": "2026-11-21T20:20:00.974682+00:00",
+      "version": "2611.23192v1"
+    },
+    "2611.22545": {
+      "reported_at": "2026-11-21T20:20:00.974682+00:00",
+      "version": "2611.22545v1"
+    },
+    "2611.25873": {
+      "reported_at": "2026-11-21T20:20:00.974682+00:00",
+      "version": "2611.25873v1"
+    },
+    "2611.24327": {
+      "reported_at": "2026-11-21T20:20:00.974682+00:00",
+      "version": "2611.24327v1"
+    },
+    "2611.24077": {
+      "reported_at": "2026-11-21T20:20:00.974682+00:00",
+      "version": "2611.24077v1"
+    },
+    "2611.22246": {
+      "reported_at": "2026-11-21T20:20:00.974682+00:00",
+      "version": "2611.22246v1"
+    },
+    "2611.21311": {
+      "reported_at": "2026-11-21T20:20:00.974682+00:00",
+      "version": "2611.21311v1"
     }
   },
   "requests": {
@@ -405,6 +433,13 @@
       "estimated_cost_usd": 0.0065636,
       "prompt_tokens": 10805,
       "completion_tokens": 1401
+    },
+    "actions-44945661501": {
+      "ceiling_usd": 0.0259092,
+      "status": "completed",
+      "estimated_cost_usd": 0.006026,
+      "prompt_tokens": 8157,
+      "completion_tokens": 1727
     }
   },
   "papers": {
@@ -1488,7 +1523,7 @@
       "updated": "2026-11-16T16:07:59Z",
       "url": "https://arxiv.org/abs/2611.21311v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205506+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124922+00:00"
     },
     "2611.20765": {
       "id": "2611.20765v1",
@@ -1521,7 +1556,7 @@
       "updated": "2026-11-16T07:51:11Z",
       "url": "https://arxiv.org/abs/2611.20686v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205570+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124978+00:00"
     },
     "2611.20648": {
       "id": "2611.20648v1",
@@ -1585,7 +1620,7 @@
       "updated": "2026-11-16T01:02:10Z",
       "url": "https://arxiv.org/abs/2611.20372v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205679+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.125082+00:00"
     },
     "2611.20019": {
       "id": "2611.20019v1",
@@ -1667,7 +1702,7 @@
       "updated": "2026-11-15T02:25:32Z",
       "url": "https://arxiv.org/abs/2611.19730v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205845+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.125237+00:00"
     },
     "2611.19184": {
       "id": "2611.19184v1",
@@ -1759,7 +1794,7 @@
       "updated": "2026-11-17T18:35:53Z",
       "url": "https://arxiv.org/abs/2611.23192v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205271+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124702+00:00"
     },
     "2611.22880": {
       "id": "2611.22880v1",
@@ -1791,7 +1826,7 @@
       "updated": "2026-11-17T10:36:04Z",
       "url": "https://arxiv.org/abs/2611.22545v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205327+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124753+00:00"
     },
     "2611.22297": {
       "id": "2611.22297v1",
@@ -1827,7 +1862,7 @@
       "updated": "2026-11-17T05:47:36Z",
       "url": "https://arxiv.org/abs/2611.22246v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205385+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124809+00:00"
     },
     "2611.21945": {
       "id": "2611.21945v1",
@@ -1848,7 +1883,7 @@
       "updated": "2026-11-16T22:08:39Z",
       "url": "https://arxiv.org/abs/2611.21945v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205419+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124842+00:00"
     },
     "2611.21924": {
       "id": "2611.21924v1",
@@ -1881,7 +1916,7 @@
       "updated": "2026-11-16T19:07:11Z",
       "url": "https://arxiv.org/abs/2611.21783v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205474+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124893+00:00"
     },
     "2611.24864": {
       "id": "2611.24864v1",
@@ -1904,7 +1939,7 @@
       "updated": "2026-11-18T18:19:00Z",
       "url": "https://arxiv.org/abs/2611.24864v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.204820+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124279+00:00"
     },
     "2611.24840": {
       "id": "2611.24840v1",
@@ -1986,7 +2021,7 @@
       "updated": "2026-11-18T12:29:55Z",
       "url": "https://arxiv.org/abs/2611.24327v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.204991+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124449+00:00"
     },
     "2611.24244": {
       "id": "2611.24244v1",
@@ -2001,7 +2036,7 @@
       "updated": "2026-11-18T11:22:40Z",
       "url": "https://arxiv.org/abs/2611.24244v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205018+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124474+00:00"
     },
     "2611.24192": {
       "id": "2611.24192v1",
@@ -2057,7 +2092,7 @@
       "updated": "2026-11-18T09:07:04Z",
       "url": "https://arxiv.org/abs/2611.24077v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205110+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124557+00:00"
     },
     "2611.23930": {
       "id": "2611.23930v1",
@@ -2098,7 +2133,7 @@
       "updated": "2026-11-19T03:48:44Z",
       "url": "https://arxiv.org/abs/2611.23878v2",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.205182+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124621+00:00"
     },
     "2611.23491": {
       "id": "2611.23491v1",
@@ -2171,7 +2206,7 @@
       "updated": "2026-11-19T10:30:10Z",
       "url": "https://arxiv.org/abs/2611.25873v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-20T21:39:59.204720+00:00"
+      "retrieved_at": "2026-11-21T20:20:02.124189+00:00"
     },
     "2611.25474": {
       "id": "2611.25474v1",
@@ -4128,6 +4163,167 @@
         "prompt_tokens": 10805,
         "completion_tokens": 1401
       }
+    },
+    "actions-44945661501": {
+      "created_at": "2026-11-21T20:20:00.974682+00:00",
+      "papers": [
+        {
+          "id": "2611.23192v1",
+          "contribution": "Proposes WoRD, a learned trajectory prior method for continuous motion-based goal recognition, maintaining multimodal calibrated beliefs beyond ambiguous observation prefixes.",
+          "limitation": "Depends on learned trajectory priors which may be context-specific; generalization to diverse driving scenarios is unclear.",
+          "gap": "Need to validate robustness across varied multimodal driving scenarios and dynamic traffic interaction complexities."
+        },
+        {
+          "id": "2611.22545v1",
+          "contribution": "Analyzes human car-following behavior influenced by automated trucks and lane design via simulator, highlighting leader-type-dependent, heterogeneous car-following gaps.",
+          "limitation": "Simulator-based with limited generalizability; focuses mainly on automated truck penetration and lane layouts, ignoring multimodal perception data from vehicles.",
+          "gap": "Integrate multimodal real-time driver behavior data and explainable interaction models to improve human-centered autonomous assistance design."
+        },
+        {
+          "id": "2611.25873v1",
+          "contribution": "Introduces WHU-Road3D, a large multimodal dataset with rich annotations for fine-grained road surface elements, enabling instance segmentation and topology reasoning.",
+          "limitation": "Focused on static road surface mapping, less on dynamic driving behavior or reasoning over temporal traffic interactions.",
+          "gap": "Extend multimodal datasets to capture dynamic vehicle interactions and integrate with driving behavior understanding and decision reasoning."
+        },
+        {
+          "id": "2611.24327v1",
+          "contribution": "Presents Pixel2Perspective, a benchmark assessing multi-angle and multimodal open-vocabulary semantic segmentation models, supporting robustness evaluation in outdoor and adverse conditions.",
+          "limitation": "Benchmarks open-vocabulary segmentation rather than integrated driving behavior reasoning or multimodal interaction inference.",
+          "gap": "Need benchmarks combining multimodal scene understanding with driving behavior prediction and explainability for autonomous driving."
+        },
+        {
+          "id": "2611.24077v1",
+          "contribution": "Proposes AeroRSI, a recursive self-improvement framework enabling UAV navigation policies to iteratively learn from their own failures without extra labels, improving flight success and safety.",
+          "limitation": "Evaluation limited to aerial navigation; applicability to ground autonomous driving and complex traffic interactions remains speculative.",
+          "gap": "Adapt and evaluate self-improvement frameworks for autonomous driving, integrating multimodal perception and driving behavior explanations."
+        },
+        {
+          "id": "2611.22246v1",
+          "contribution": "Develops a spectral-polarization-infrared tri-modal camouflaged vehicle detection framework with decision-level fusion, improving robustness to registration errors and real-time performance.",
+          "limitation": "Focuses primarily on vehicle detection rather than behavior understanding or explainable driving reasoning.",
+          "gap": "Explore integrating multimodal detection frameworks with interpretable driving behavior models and interaction reasoning."
+        },
+        {
+          "id": "2611.21311v1",
+          "contribution": "Provides A2A-UAV, a multimodal air-to-air UAV detection dataset capturing RGB, thermal, panoramic, RF, and radar data, facilitating multimodal fusion detection and identification.",
+          "limitation": "Dataset targets aerial UAV detection, less relevant to ground-based driving behavior and explanation tasks.",
+          "gap": "Incorporate similar multimodal sensing and fusion approaches into ground-based autonomous driving behavioral datasets."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal datasets and benchmarks are emerging, emphasizing rich sensory combinations and robustness across varied environmental conditions.",
+            "uncertainty": "Effectiveness in dynamic traffic behavior understanding and explainable reasoning remains to be explored.",
+            "evidence_ids": [
+              "2611.25873v1",
+              "2611.24327v1",
+              "2611.22246v1",
+              "2611.21311v1"
+            ]
+          },
+          {
+            "finding": "Self-improving and neuro-symbolic approaches are used to enhance autonomous navigation and scenario-aware guidance with limited human labeling.",
+            "uncertainty": "Generalization from aerial or assistive domains to ground autonomous driving is not yet demonstrated.",
+            "evidence_ids": [
+              "2611.24077v1",
+              "2611.20686v1"
+            ]
+          },
+          {
+            "finding": "Goal recognition and driving behavior modeling increasingly use learned trajectory priors and calibrated uncertainty methods to handle ambiguities.",
+            "uncertainty": "Scalability and integration with multimodal perception and explainability in complex urban driving need further work.",
+            "evidence_ids": [
+              "2611.23192v1",
+              "2611.21783v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "WHU-Road3D offers comprehensive static road surface annotations for mapping compared to Pixel2Perspective's focus on viewpoint and sensor robustness in open-vocabulary segmentation.",
+            "limitation": "Neither explicitly addresses dynamic driving behavior understanding or explainable driving decision-making.",
+            "evidence_ids": [
+              "2611.25873v1",
+              "2611.24327v1"
+            ]
+          },
+          {
+            "comparison": "AeroRSI's failure-driven self-improvement contrasts with WoRD's diffusion-based posterior inference for goal recognition; both improve autonomy but target different aspects (navigation vs intent recognition).",
+            "limitation": "Applications largely in aerial or synthetic settings; cross-domain efficacy in complex driving is unverified.",
+            "evidence_ids": [
+              "2611.24077v1",
+              "2611.23192v1"
+            ]
+          },
+          {
+            "comparison": "The behavioral driving simulator study (2611.22545v1) complements datasets and models by empirically identifying human driver heterogeneity and leader-type dependence, grounding multimodal driving behavior modeling.",
+            "limitation": "Limited to simulated data without integrated multimodal sensor inputs or reasoning explanations.",
+            "evidence_ids": [
+              "2611.22545v1",
+              "2611.25873v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can self-improving vision-language-action models enhance multimodal autonomous driving behavior understanding and prediction?",
+            "hypothesis": "Training policies with failure-driven recursive self-improvement (like AeroRSI) on multimodal driving data improves closed-loop navigation success and behavior modeling.",
+            "method": "Adapt AeroRSI framework with urban driving multimodal datasets (WHU-Road3D, Pixel2Perspective) for trajectory prediction and policy improvement.",
+            "datasets": "WHU-Road3D, Pixel2Perspective",
+            "baselines": "Standard supervised models without self-improvement, WoRD for goal recognition",
+            "metrics": "Navigation success rates, collision rates, calibration of behavior prediction",
+            "compute": "High GPU compute for large multimodal data, approx. multiple training rounds, moderate memory",
+            "risk": "Multimodal data complexity may hinder convergence; domain gap in aerial to ground application",
+            "novelty_check": "Combines self-improvement with multimodal driving behavior datasets not previously explored",
+            "priority_rationale": "High significance and novelty in integrative driving behavior model improvement",
+            "evidence_ids": [
+              "2611.24077v1",
+              "2611.25873v1",
+              "2611.24327v1"
+            ]
+          },
+          {
+            "question": "Does integrating neuro-symbolic reasoning with multimodal datasets improve explainable driving decision-making?",
+            "hypothesis": "Scenario-aware neuro-symbolic frameworks (like in 2611.20686v1) applied to multimodal urban road data improve transparent driving behavior reasoning and guidance.",
+            "method": "Implement a neuro-symbolic reasoning layer on WHU-Road3D data, enabling interpretable scenario understanding and driving action rationale.",
+            "datasets": "WHU-Road3D",
+            "baselines": "End-to-end black-box models on the same data",
+            "metrics": "Explainability metrics, decision accuracy, latency, user trust measures",
+            "compute": "Low-to-moderate compute for neuro-symbolic models, feasible on CPUs and edge GPUs",
+            "risk": "Complexity of symbolic modeling in real-world noisy data",
+            "novelty_check": "Novel application of neuro-symbolic reasoning to multimodal road surface and traffic interaction data",
+            "priority_rationale": "Fills key explainability gap in driving reasoning",
+            "evidence_ids": [
+              "2611.25873v1",
+              "2611.20686v1"
+            ]
+          },
+          {
+            "question": "Can calibrated uncertainty modeling enhance multimodal driving behavior predictions and safer autonomous driving?",
+            "hypothesis": "Using evidential deep learning (EDL) uncertainty calibration in multimodal driving models improves robustness and safer planning compared to standard ensembles or dropout.",
+            "method": "Evaluate EDL-based uncertainty models on urban driving datasets (WHU-Road3D) coupled with trajectory behavior modeling for interactive driving scenarios.",
+            "datasets": "WHU-Road3D",
+            "baselines": "Gaussian Processes, MC Dropout, Deep Ensembles",
+            "metrics": "Uncertainty calibration, reconstruction error, safety margin improvements",
+            "compute": "Moderate GPU compute, low latency demands crucial for real-time",
+            "risk": "Calibration may degrade model accuracy if overconservative",
+            "novelty_check": "Extends uncertainty calibration from oil spill monitoring to multimodal driving context",
+            "priority_rationale": "Significant for trust and safety in autonomous driving behavior",
+            "evidence_ids": [
+              "2611.21783v1",
+              "2611.25873v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.0259092,
+        "status": "completed",
+        "estimated_cost_usd": 0.006026,
+        "prompt_tokens": 8157,
+        "completion_tokens": 1727
+      }
     }
   },
   "zotero": {
@@ -4418,9 +4614,37 @@
         "2611.26242": {
           "status": "created",
           "item_key": "N5ID9I8X"
+        },
+        "2611.21311": {
+          "status": "created",
+          "item_key": "2CC852MW"
+        },
+        "2611.22246": {
+          "status": "created",
+          "item_key": "AR3FK7GH"
+        },
+        "2611.22545": {
+          "status": "created",
+          "item_key": "KGZ9TIN3"
+        },
+        "2611.23192": {
+          "status": "created",
+          "item_key": "KKUWDJU6"
+        },
+        "2611.24077": {
+          "status": "created",
+          "item_key": "WXMSCEMD"
+        },
+        "2611.24327": {
+          "status": "created",
+          "item_key": "NWUZU7R2"
+        },
+        "2611.25873": {
+          "status": "created",
+          "item_key": "Z2GKM7NN"
         }
       },
-      "not_before": 1795210822.2016087
+      "not_before": 1795292430.169973
     }
   }
 }

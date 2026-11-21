@@ -452,10 +452,24 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.21311",
+        "title": "A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification",
+        "url": "https://arxiv.org/abs/2611.21311",
+        "zotero_item_key": "2CC852MW",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.21924",
         "title": "GridDriver: On-Board BEV-Based Language Planning and Reasoning",
         "url": "https://arxiv.org/abs/2611.21924",
         "zotero_item_key": "BV37HQ88",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.22246",
+        "title": "Multispectral-Polarization-Infrared Multi-Aperture Camouflaged Vehicle Detection",
+        "url": "https://arxiv.org/abs/2611.22246",
+        "zotero_item_key": "AR3FK7GH",
         "status": "created"
       },
       {
@@ -466,10 +480,24 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.22545",
+        "title": "Automated-Truck Penetration Shapes Human Drivers' Car-Following Margins Near Motorway Ramps: A Driving-Simulator Study",
+        "url": "https://arxiv.org/abs/2611.22545",
+        "zotero_item_key": "KGZ9TIN3",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.22880",
         "title": "Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving",
         "url": "https://arxiv.org/abs/2611.22880",
         "zotero_item_key": "5RNNF38B",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.23192",
+        "title": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition",
+        "url": "https://arxiv.org/abs/2611.23192",
+        "zotero_item_key": "KKUWDJU6",
         "status": "created"
       },
       {
@@ -494,6 +522,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.24077",
+        "title": "AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation",
+        "url": "https://arxiv.org/abs/2611.24077",
+        "zotero_item_key": "WXMSCEMD",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.24080",
         "title": "CausalDrive: Causal Decomposition for Data-Efficient End-to-End Autonomous Driving",
         "url": "https://arxiv.org/abs/2611.24080",
@@ -505,6 +540,13 @@
         "title": "TrajWAM: Trajectory-Conditioned Future Learning for Vision-Language Driving",
         "url": "https://arxiv.org/abs/2611.24192",
         "zotero_item_key": "HV3UP8BC",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.24327",
+        "title": "Pixel2Perspective: A Benchmark for Multi-Modal and Multi-View Generalization in Vision-Language Models",
+        "url": "https://arxiv.org/abs/2611.24327",
+        "zotero_item_key": "NWUZU7R2",
         "status": "created"
       },
       {
@@ -540,6 +582,13 @@
         "title": "TuringPAI: A Foundation for On-Device Physical AI",
         "url": "https://arxiv.org/abs/2611.25474",
         "zotero_item_key": "99QF4SC5",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.25873",
+        "title": "WHU-Road3D: A dataset and benchmark towards fine-grained road surface mapping",
+        "url": "https://arxiv.org/abs/2611.25873",
+        "zotero_item_key": "Z2GKM7NN",
         "status": "created"
       },
       {
