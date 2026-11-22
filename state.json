@@ -340,6 +340,26 @@
     "2611.21311": {
       "reported_at": "2026-11-21T20:20:00.974682+00:00",
       "version": "2611.21311v1"
+    },
+    "2611.20372": {
+      "reported_at": "2026-11-22T20:32:19.002882+00:00",
+      "version": "2611.20372v1"
+    },
+    "2611.24244": {
+      "reported_at": "2026-11-22T20:32:19.002882+00:00",
+      "version": "2611.24244v1"
+    },
+    "2611.21783": {
+      "reported_at": "2026-11-22T20:32:19.002882+00:00",
+      "version": "2611.21783v1"
+    },
+    "2611.20686": {
+      "reported_at": "2026-11-22T20:32:19.002882+00:00",
+      "version": "2611.20686v1"
+    },
+    "2611.23878": {
+      "reported_at": "2026-11-22T20:32:19.002882+00:00",
+      "version": "2611.23878v2"
     }
   },
   "requests": {
@@ -440,6 +460,13 @@
       "estimated_cost_usd": 0.006026,
       "prompt_tokens": 8157,
       "completion_tokens": 1727
+    },
+    "actions-45066918721": {
+      "ceiling_usd": 0.019452800000000003,
+      "status": "completed",
+      "estimated_cost_usd": 0.0040436000000000005,
+      "prompt_tokens": 4213,
+      "completion_tokens": 1474
     }
   },
   "papers": {
@@ -1556,7 +1583,7 @@
       "updated": "2026-11-16T07:51:11Z",
       "url": "https://arxiv.org/abs/2611.20686v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-21T20:20:02.124978+00:00"
+      "retrieved_at": "2026-11-22T20:32:20.308996+00:00"
     },
     "2611.20648": {
       "id": "2611.20648v1",
@@ -1620,7 +1647,7 @@
       "updated": "2026-11-16T01:02:10Z",
       "url": "https://arxiv.org/abs/2611.20372v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-21T20:20:02.125082+00:00"
+      "retrieved_at": "2026-11-22T20:32:20.309155+00:00"
     },
     "2611.20019": {
       "id": "2611.20019v1",
@@ -1883,7 +1910,7 @@
       "updated": "2026-11-16T22:08:39Z",
       "url": "https://arxiv.org/abs/2611.21945v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-21T20:20:02.124842+00:00"
+      "retrieved_at": "2026-11-22T20:32:20.308796+00:00"
     },
     "2611.21924": {
       "id": "2611.21924v1",
@@ -1916,7 +1943,7 @@
       "updated": "2026-11-16T19:07:11Z",
       "url": "https://arxiv.org/abs/2611.21783v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-21T20:20:02.124893+00:00"
+      "retrieved_at": "2026-11-22T20:32:20.308868+00:00"
     },
     "2611.24864": {
       "id": "2611.24864v1",
@@ -1939,7 +1966,7 @@
       "updated": "2026-11-18T18:19:00Z",
       "url": "https://arxiv.org/abs/2611.24864v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-21T20:20:02.124279+00:00"
+      "retrieved_at": "2026-11-22T20:32:20.308010+00:00"
     },
     "2611.24840": {
       "id": "2611.24840v1",
@@ -2036,7 +2063,7 @@
       "updated": "2026-11-18T11:22:40Z",
       "url": "https://arxiv.org/abs/2611.24244v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-21T20:20:02.124474+00:00"
+      "retrieved_at": "2026-11-22T20:32:20.308276+00:00"
     },
     "2611.24192": {
       "id": "2611.24192v1",
@@ -2133,7 +2160,7 @@
       "updated": "2026-11-19T03:48:44Z",
       "url": "https://arxiv.org/abs/2611.23878v2",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-21T20:20:02.124621+00:00"
+      "retrieved_at": "2026-11-22T20:32:20.308489+00:00"
     },
     "2611.23491": {
       "id": "2611.23491v1",
@@ -4324,6 +4351,141 @@
         "prompt_tokens": 8157,
         "completion_tokens": 1727
       }
+    },
+    "actions-45066918721": {
+      "created_at": "2026-11-22T20:32:19.002882+00:00",
+      "papers": [
+        {
+          "id": "2611.20372v1",
+          "contribution": "Introduces VisDrone-ReID, a unified multi-category object re-identification benchmark from UAV sequences across urban environments, enabling study of diverse object types in driving-related aerial views.",
+          "limitation": "Focuses on object Re-ID without explicit driving behavior or trajectory reasoning; tests primarily model retrieval accuracy, not driving decision-making.",
+          "gap": "Needs integration with multimodal scene understanding for autonomous driving behavior and explainable reasoning beyond Re-ID retrieval tasks."
+        },
+        {
+          "id": "2611.24244v1",
+          "contribution": "Presents CommDreamer, a mapless radio-geometric world model fusing 3D LiDAR and cellular data for UAV trajectory planning, enabling mission success and collision avoidance without prior maps.",
+          "limitation": "Application to urban UAV flight; no direct study on road vehicles or driving behavior understanding; specialized to radio and geometric modalities.",
+          "gap": "Extending multimodal sensor fusion and mapless planning to ground autonomous vehicles' behavior understanding and explainability remains unaddressed."
+        },
+        {
+          "id": "2611.21783v1",
+          "contribution": "Introduces uncertainty-aware IPP for oil spill monitoring using Evidential Deep Learning, improving reconstruction accuracy and calibration in multi-ASV planning under uncertainty.",
+          "limitation": "Focuses on aquatic environmental sensing and planning; no explicit driving behavior modeling or interpretation of multimodal driving data.",
+          "gap": "Bridging calibrated uncertainty models with driving behavior understanding and explainable planning in autonomous vehicles is an open question."
+        },
+        {
+          "id": "2611.20686v1",
+          "contribution": "Proposes UbiHearo, a neuro-symbolic mobile agent for scenario-aware and personalized sound guidance aiding Deaf/Hard-of-Hearing users, leveraging intermediate representations for reasoning.",
+          "limitation": "Designed for sound context understanding for DHH users, not directly targeting multimodal driving or autonomous vehicle behavior reasoning.",
+          "gap": "Applying scenario-aware neuro-symbolic reasoning to driving behavior contexts for human-centered assistive driving explanations is unexplored."
+        },
+        {
+          "id": "2611.23878v2",
+          "contribution": "Presents HETEROVLM for efficient multi-request vision-language model serving on heterogeneous hardware, enhancing real-time perception and reasoning in autonomous systems' edge devices.",
+          "limitation": "Focuses on hardware serving optimization, not on driving-specific multimodal data fusion or interpretable reasoning for driving decisions.",
+          "gap": "Integrating fast multimodal VLM serving with explainable driving reasoning and driver-state analysis remains to be explored."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Integration of multimodal data (visual, linguistic, radio, LiDAR) advances navigation and environment understanding across robotics domains.",
+            "uncertainty": "Degree of transferability from UAV and underwater to ground autonomous driving is unclear due to domain-specific challenges.",
+            "evidence_ids": [
+              "2611.24864v1",
+              "2611.24244v1",
+              "2611.21783v1"
+            ]
+          },
+          {
+            "finding": "Neuro-symbolic approaches and intermediate structured representations enable scenario-aware context understanding and personalized assistance.",
+            "uncertainty": "Applicability to real-time driving behavior interpretation and explanation limited by lack of direct vehicle domain testing.",
+            "evidence_ids": [
+              "2611.20686v1"
+            ]
+          },
+          {
+            "finding": "Efficient edge serving of vision-language models on specialized hardware facilitates concurrent multimodal reasoning for autonomous systems.",
+            "uncertainty": "Impact on driving-specific real-time reasoning and interpretability has not been fully investigated.",
+            "evidence_ids": [
+              "2611.23878v2"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Dirigible multimodal world models (CommDreamer) prioritize environment modeling and planning accuracy, while neuro-symbolic agents (UbiHearo) focus on personalized scenario reasoning.",
+            "limitation": "Neither fully combines multimodal sensory fusion with interpretable driving behavior explanations in autonomous vehicles.",
+            "evidence_ids": [
+              "2611.24244v1",
+              "2611.20686v1"
+            ]
+          },
+          {
+            "comparison": "VisDrone-ReID provides object-level visual understanding from aerial views, whereas HETEROVLM accelerates multimodal model serving on edge hardware for onboard computing.",
+            "limitation": "Lack of unified framework combining efficient serving with comprehensive re-ID and behavior understanding limits direct autonomous driving use.",
+            "evidence_ids": [
+              "2611.20372v1",
+              "2611.23878v2"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can neuro-symbolic scenario-aware reasoning (UbiHearo) be applied to multimodal driving behavior understanding for explainable decision-making?",
+            "hypothesis": "Structured intermediate representations conditioned on visual and sensor data improve personalized driving explanation accuracy.",
+            "method": "Integrate neuro-symbolic framework with driving datasets capturing driver states and scene context, evaluate explanation fidelity.",
+            "datasets": "WOMD-Reasoning, naturalistic driving datasets with driver-state annotations (unverified).",
+            "baselines": "End-to-end deep models ignoring intermediate structured reasoning.",
+            "metrics": "Explanation correctness, driver trust scores, reasoning latency.",
+            "compute": "Smartphone-class or onboard automotive edge compute with moderate latency constraints.",
+            "risk": "Complexity of real driving scenarios challenges neuro-symbolic rule design.",
+            "novelty_check": "Unique application of neuro-symbolic methods to explainable driving behavior encouraged by evidence from 2611.20686v1.",
+            "priority_rationale": "Addresses human-centered interpretability gap in autonomous driving.",
+            "evidence_ids": [
+              "2611.20686v1"
+            ]
+          },
+          {
+            "question": "Does fusing mapless radio-geometric models (CommDreamer) with calibrated uncertainty deep learning (EDL) improve autonomous driving trajectory planning under uncertainty?",
+            "hypothesis": "Combining multimodal world models and uncertainty calibration yields safer, more robust driving plans.",
+            "method": "Extend CommDreamer with EDL uncertainty quantification; test in simulated urban driving scenarios.",
+            "datasets": "Simulated 3D urban datasets with cellular and LiDAR input (unverified).",
+            "baselines": "CommDreamer alone, Gaussian Process planners.",
+            "metrics": "Collision rate, success rate, reconstruction error, calibration error.",
+            "compute": "High-performance GPU with real-time constraints.",
+            "risk": "Integration complexity and domain shift from UAV to ground vehicles.",
+            "novelty_check": "Novel fusion of radio-geometric world models with uncertainty-aware deep planning shown effective in 2611.24244v1 and 2611.21783v1.",
+            "priority_rationale": "Advances multimodal autonomous navigation robustness and safety.",
+            "evidence_ids": [
+              "2611.24244v1",
+              "2611.21783v1"
+            ]
+          },
+          {
+            "question": "Can edge-optimized multi-request VLM serving (HETEROVLM) accelerate explainable multimodal driving perception and reasoning in real time?",
+            "hypothesis": "Specialized hardware and decoding scheduling enables multi-agent concurrent driving behavior understanding with energy efficiency.",
+            "method": "Deploy HETEROVLM serving framework on automotive SoC hardware; evaluate latency and energy for driving tasks.",
+            "datasets": "Autonomous driving vision-language interaction tasks (unverified).",
+            "baselines": "Conventional GPU serving of VLMs.",
+            "metrics": "Latency, energy per token, throughput, driving decision accuracy.",
+            "compute": "Automotive SoC (AMD Versal or similar).",
+            "risk": "Hardware mismatch or untested for driving-specific multimodal data.",
+            "novelty_check": "Extends 2611.23878v2's edge-serving optimization to driving use cases.",
+            "priority_rationale": "Enables scalable real-time multimodal reasoning for autonomous driving.",
+            "evidence_ids": [
+              "2611.23878v2"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.019452800000000003,
+        "status": "completed",
+        "estimated_cost_usd": 0.0040436000000000005,
+        "prompt_tokens": 4213,
+        "completion_tokens": 1474
+      }
     }
   },
   "zotero": {
@@ -4642,9 +4804,29 @@
         "2611.25873": {
           "status": "created",
           "item_key": "Z2GKM7NN"
+        },
+        "2611.20372": {
+          "status": "created",
+          "item_key": "KT494KHX"
+        },
+        "2611.20686": {
+          "status": "created",
+          "item_key": "222UQ3JA"
+        },
+        "2611.21783": {
+          "status": "created",
+          "item_key": "5PCFP6EE"
+        },
+        "2611.23878": {
+          "status": "created",
+          "item_key": "CK98EIKD"
+        },
+        "2611.24244": {
+          "status": "created",
+          "item_key": "Z9VZPCED"
         }
       },
-      "not_before": 1795292430.169973
+      "not_before": 1795379564.6983867
     }
   }
 }

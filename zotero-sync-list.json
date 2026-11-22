@@ -424,6 +424,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.20372",
+        "title": "VisDrone-ReID: A Unified Multi-Category Object Re-Identification Benchmark",
+        "url": "https://arxiv.org/abs/2611.20372",
+        "zotero_item_key": "KT494KHX",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.20458",
         "title": "VISTA: A Framework for Vision-Informed Semantic Traffic Awareness",
         "url": "https://arxiv.org/abs/2611.20458",
@@ -445,6 +452,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.20686",
+        "title": "UbiHearo: Bringing Scenario-Aware Sound Guidance to DHH Users with Mobile Agents",
+        "url": "https://arxiv.org/abs/2611.20686",
+        "zotero_item_key": "222UQ3JA",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.20765",
         "title": "STA: A Split Temporal Adversary Method for Evaluating Robustness of Multimodal RL-based Driving Policies",
         "url": "https://arxiv.org/abs/2611.20765",
@@ -456,6 +470,13 @@
         "title": "A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification",
         "url": "https://arxiv.org/abs/2611.21311",
         "zotero_item_key": "2CC852MW",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.21783",
+        "title": "Better Calibrated, Better Planned: Uncertainty-Aware Multi-ASV Informative Path Planning for Oil Spill Monitoring",
+        "url": "https://arxiv.org/abs/2611.21783",
+        "zotero_item_key": "5PCFP6EE",
         "status": "created"
       },
       {
@@ -515,6 +536,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.23878",
+        "title": "HETEROVLM: Edge Multi-Request Vision-Language Model Serving on a Heterogeneous Versal SoC with AI Engines and Programmable Logic",
+        "url": "https://arxiv.org/abs/2611.23878",
+        "zotero_item_key": "CK98EIKD",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.23930",
         "title": "A Hierarchical Onboard Vision-Language-Navigation Framework for Aerial Robots in Complex Environments",
         "url": "https://arxiv.org/abs/2611.23930",
@@ -540,6 +568,13 @@
         "title": "TrajWAM: Trajectory-Conditioned Future Learning for Vision-Language Driving",
         "url": "https://arxiv.org/abs/2611.24192",
         "zotero_item_key": "HV3UP8BC",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.24244",
+        "title": "CommDreamer: Radio-Geometric World Models for Mapless Cellular-Connected UAV Trajectory Planning",
+        "url": "https://arxiv.org/abs/2611.24244",
+        "zotero_item_key": "Z9VZPCED",
         "status": "created"
       },
       {
