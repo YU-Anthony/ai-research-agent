@@ -376,6 +376,26 @@
     "2611.26828": {
       "reported_at": "2026-11-24T01:26:00.083559+00:00",
       "version": "2611.26828v1"
+    },
+    "2611.31240": {
+      "reported_at": "2026-11-24T23:21:00.777892+00:00",
+      "version": "2611.31240v1"
+    },
+    "2611.30438": {
+      "reported_at": "2026-11-24T23:21:00.777892+00:00",
+      "version": "2611.30438v1"
+    },
+    "2611.30389": {
+      "reported_at": "2026-11-24T23:21:00.777892+00:00",
+      "version": "2611.30389v1"
+    },
+    "2611.29947": {
+      "reported_at": "2026-11-24T23:21:00.777892+00:00",
+      "version": "2611.29947v1"
+    },
+    "2611.28509": {
+      "reported_at": "2026-11-24T23:21:00.777892+00:00",
+      "version": "2611.28509v1"
     }
   },
   "requests": {
@@ -490,6 +510,13 @@
       "estimated_cost_usd": 0.0029156000000000004,
       "prompt_tokens": 2709,
       "completion_tokens": 1145
+    },
+    "actions-45509115632": {
+      "ceiling_usd": 0.028863200000000002,
+      "status": "completed",
+      "estimated_cost_usd": 0.0060172,
+      "prompt_tokens": 9651,
+      "completion_tokens": 1348
     }
   },
   "papers": {
@@ -2360,6 +2387,333 @@
       "url": "https://arxiv.org/abs/2611.26828v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-24T01:26:01.094906+00:00"
+    },
+    "2611.31240": {
+      "id": "2611.31240v1",
+      "title": "Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action",
+      "abstract": "Reasoning vision-language-action (VLA) models for autonomous driving use chain-of-thought (CoT) reasoning to guide action generation, but incur substantial memory and computational costs. We study structured pruning for these models, focusing on preserving both scene understanding and trajectory prediction. Our analysis of Taylor importance in Alpamayo-1.5-10B shows that reasoning and trajectory objectives assign different importance to the same vision-language model (VLM) structures. In the action expert, MLP channels exhibit more stable importance rankings across denoising steps than query heads, and a small fraction of channels accounts for most of the measured importance. Based on these findings, we propose MoOP, which combines importance ranks from both objectives for VLM pruning and aggregates stepwise importance to select a fixed subset of expert MLP channels. At 24.0% total parameter reduction, VLM-only pruning with MoOP performs comparably to or slightly better than the strongest baselines in driving, while retaining 94.0% of the dense model's LingoQA score, far above all other methods. At a higher reduction of 30.0%, MoOP degrades much less than every other method, as it is the only one whose reasoning does not collapse. Removing 93.75% of expert MLP channels increases total parameter reduction to 39.4%, with nearly unchanged open-loop errors relative to VLM-only pruning and competitive closed-loop performance. The resulting model achieves a 1.37x end-to-end inference speedup and 36.6% lower peak memory than the dense model, without post-pruning fine-tuning.",
+      "authors": [
+        "Seongchan Kim",
+        "Soowon Son",
+        "Sangoh Kim",
+        "Hyunah Ko",
+        "Eunbeen Hong",
+        "Hyunkoo Lee",
+        "Sanghyun Lee",
+        "WonJun Moon",
+        "Kihong Kim",
+        "Dongyeon Son",
+        "Woongchan Nam",
+        "Seungryong Kim"
+      ],
+      "published": "2026-11-23T18:59:52Z",
+      "updated": "2026-11-23T18:59:52Z",
+      "url": "https://arxiv.org/abs/2611.31240v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.892377+00:00"
+    },
+    "2611.30874": {
+      "id": "2611.30874v1",
+      "title": "Bridging Continuous-Time MAPF and Industrial AGV Fleet Coordination with Lazy Priority-Based Search",
+      "abstract": "Continuous-time multi-agent path finding on roadmaps (MAPF$_R$) offers a principled way to coordinate robot fleets with geometric collision avoidance, yet its deployment on industrial automated guided vehicle (AGV) infrastructures remains challenging, as highly connected and redundant roadmaps amplify both safe-interval reasoning and multi-agent interaction handling. To bridge this gap, we formalize AGV-MAPF$_R$-CTC, a configuration-space variant of MAPF$_R$ with precomputed continuous-time conflicts that enables the reuse of MAPF$_R$ solvers for AGV fleet coordination with minimal changes. We then revisit continuous-time priority-based search (CPBS), identifying the boundary conditions required by its safe interval path planning (SIPP) low-level planner under priority-induced constraints and enabling earlier solution detection. As a central contribution, we analyze the structure of the priority search space, clarifying which agents are affected by each priority refinement and when replanning can be avoided. Building on this analysis, we introduce a novel algorithm, Lazy-CPBS, which materializes high-level nodes lazily: a child's plans are computed only when it is expanded, so siblings that are never expanded cost no low-level search. Experiments on standard MAPF benchmarks and on industrial AGV roadmaps imported from a proprietary digital-twin simulator show that CPBS-based solvers remain effective well beyond the agent counts reachable by optimal MAPF$_R$ solvers, while Lazy-CPBS substantially reduces CPBS overhead and offers the most consistent robustness/runtime trade-off across industrial layouts.",
+      "authors": [
+        "Federico Signorile",
+        "Raffaele Carli",
+        "Alessandro Bertogli",
+        "Roberto Olmi",
+        "Sven Koenig",
+        "Mariagrazia Dotoli"
+      ],
+      "published": "2026-11-23T15:43:31Z",
+      "updated": "2026-11-23T15:43:31Z",
+      "url": "https://arxiv.org/abs/2611.30874v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893465+00:00"
+    },
+    "2611.30836": {
+      "id": "2611.30836v1",
+      "title": "Can Multimodal Fusion MakeSense for Embodied Vision in Degraded Sensing?",
+      "abstract": "Embodied vision systems rely on complementary sensors to perceive and act as conditions change. Even models that accept arbitrary sensor subsets can exhibit negative fusion: adding a sensor increases prediction error. We propose MakeSense, a multimodal fusion framework that preserves sensor-specific evidence in private streams and combines information through shared bottleneck tokens. Training pairs full and subset views of the same degraded observations, penalizing higher error with more sensors. Where geometry permits, the distance readout uses range measurements alone, while the rest of the prediction draws on all available inputs. Paired tests across five datasets reveal helpful and harmful sensor additions. MakeSense reduces negative fusion on MM-Fi. With lightweight adapters and per-dataset training, the same design improves UAV localization on MMAUD, cooperative 3D detection on V2X-Real, few-shot pose transfer to RELI11D, and command prediction on Humanoid-Everyday, where a world model trained on the frozen core's outputs forecasts future fused states more accurately than a linear baseline at longer tested horizons. MakeSense supports embodied sensing across human activity, aerial systems, robotics, and autonomous driving.",
+      "authors": [
+        "Cheng-Ru Chou",
+        "Shih-Yu Lai",
+        "Pei-Lin Chiang",
+        "Shou-Po Tsai",
+        "Jing-Zhe Huang",
+        "Fukuharu Tanaka",
+        "Hirozumi Yamaguchi",
+        "Bing-Yu Chen",
+        "Yu-Lun Liu",
+        "Hsun-Ping Hsieh"
+      ],
+      "published": "2026-11-23T15:20:31Z",
+      "updated": "2026-11-23T15:20:31Z",
+      "url": "https://arxiv.org/abs/2611.30836v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893500+00:00"
+    },
+    "2611.30438": {
+      "id": "2611.30438v1",
+      "title": "ROSE-Drive: Runtime Orchestration and System Evolution for Autonomous Driving",
+      "abstract": "End-to-end driving models have made substantial progress, yet reliable closed-loop driving in complex traffic remains challenging. Beyond improving individual models, system-level orchestration offers a complementary approach by coordinating driving capabilities and computation. We introduce ROSE-Drive (Runtime Orchestration and System Evolution), a model-agnostic framework that jointly orchestrates driving execution and computation. It coordinates frozen driving models with driving skills, perception tools, and feedback controllers. A distilled vision-language model (VLM) proposes driving tasks and scene relations. Shared physical state and persistent tasks support capability composition, task continuity, and adaptive scheduling. The orchestrator combines model and skill outputs across control channels, maintains task responsibility through handover, and uses execution feedback to select controllers, reuse valid motion references, and schedule model inference. Offline revisions use execution records to refine skills and their coordination through a stable task interface. Successive system stages inherit these revisions while model, perception, and VLM weights remain fixed. Evaluations with four driving models on Bench2Drive v0.0.3, Bench2Drive v0.0.4, and Fail2Drive show accumulated capability and transfer before target-benchmark revision. On held-out Longest6, driving score (DS) rises from 25 to 52 for AutoMoT and from 22 to 47 for SimLingo across system stages, while both systems skip new model inference on over 71% of control steps.",
+      "authors": [
+        "Qihang Huang",
+        "Zhidong Wang",
+        "Zirui Li",
+        "YuJie Yan",
+        "Jingsong Liang",
+        "Shiyu Fang",
+        "Collister Chua",
+        "Zhan Chen",
+        "Chen Lv"
+      ],
+      "published": "2026-11-23T10:30:51Z",
+      "updated": "2026-11-23T10:30:51Z",
+      "url": "https://arxiv.org/abs/2611.30438v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893531+00:00"
+    },
+    "2611.30389": {
+      "id": "2611.30389v1",
+      "title": "AgentMoT: An Agentic Mixture-of-Transformers for End-to-End Autonomous Driving",
+      "abstract": "Driving models need to choose which capabilities to use and when to reconsider their decisions. We introduce AgentMoT, a Mixture-of-Transformers with built-in agent reasoning and system scheduling. Combinations of agent, world, and action experts form three jointly trained pathways for direct-action, vision-language-action, and world-action computation. The Router selects a native pathway, while the agent expert supplies reasoning and selects skills. Execution feedback raises wake-up requests, and the agent self-scheduler learns whether to reconsider the task decision or keep it. Mandatory requests invoke the agent directly. The relative-capability principle guides these choices by relating the benefit of additional computation or intervention to its cost. After open-loop initialization, dual-loop evolution trains the Router, agent, and self-scheduler from closed-loop experience while failure-driven updates refine skills and execution feedback. AgentMoT achieves state-of-the-art results on Bench2Drive v0.0.3 and v0.0.4, with 94.48/92.33 driving score and 85.45/82.73% success rate, respectively. With skills disabled, learned routing improves over the strongest fixed pathway by 1.79 driving-score points and 4.09 percentage points of success rate on v0.0.3. Ablation studies further show gains from closed-loop agent learning, two-view queries, and event-triggered wake-up.",
+      "authors": [
+        "Qihang Huang",
+        "Collister Chua",
+        "YuJie Yan",
+        "Shiyu Fang",
+        "Zhan Chen",
+        "Haoran Xu",
+        "Zirui Li",
+        "Chen Lv"
+      ],
+      "published": "2026-11-23T09:50:57Z",
+      "updated": "2026-11-23T09:50:57Z",
+      "url": "https://arxiv.org/abs/2611.30389v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893558+00:00"
+    },
+    "2611.30314": {
+      "id": "2611.30314v1",
+      "title": "SafeRank-ReID: Candidate-Conditioned Re-Ranking under Identity Conflicts for Multimodal Person Re-Identification",
+      "abstract": "Multimodal Person Re-Identification (ReID) exploits complementary identity cues from different sensing modalities to mitigate the performance degradation caused by challenging imaging conditions. Existing methods typically estimate Modality Reliability at the query level, making it difficult to identify conflicting inputs that retain normal visual quality but correspond to an incorrect identity. Such inputs may receive high confidence, promote irrelevant gallery candidates, and lead to negative fusion. To address this issue, we propose SafeRank-ReID, a candidate-conditioned safe re-ranking framework for Multimodal Person Re-Identification (ReID). To capture the varying support of the same modality for different candidates, we introduce a candidate-conditioned evidence arbitration mechanism that integrates unimodal retrieval evidence, input quality, and cross-modal consistency to estimate trust and conflict logits for each modality-candidate pair. Together, these logits contribute to the normalized modality weights, allowing support strength to vary across modalities and candidates while reducing the contribution of potentially unreliable evidence. A candidate-set refinement module subsequently applies self-attention to jointly model candidate representations and predicts residual scores from their competitive relations, thereby refining the initial fused ranking. For fusion results that remain uncertain after refinement, a query-level fallback gate estimates an interpolation coefficient from the overall conflict level and cross-modal uncertainty, adaptively combining the fused scores with those of the most reliable unimodal branch. Experiments on RGBNT201 and MSVR310 show that SafeRank-ReID maintains competitive clean-input retrieval while improving robustness to Identity Conflicts across person and vehicle benchmarks.",
+      "authors": [
+        "Yizhi Wang",
+        "Zixuan Li",
+        "Zhuwen Chen",
+        "Feiwei Qin"
+      ],
+      "published": "2026-11-23T08:58:27Z",
+      "updated": "2026-11-23T08:58:27Z",
+      "url": "https://arxiv.org/abs/2611.30314v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893581+00:00"
+    },
+    "2611.30283": {
+      "id": "2611.30283v1",
+      "title": "AdvMTO: Multimodal and Temporal Adversarial Object Attacks via 2D Gaussian Splatting for BEV-Based 3D Object Detection",
+      "abstract": "Adversarial object attacks pose a threat to BEV-based 3D object detectors in autonomous driving. Existing attacks typically target a single modality, coordinate camera and LiDAR observations at the current timestamp, or model temporal persistence mainly in camera streams. Without a unified construction of current and historical observations, attacks can leave part of the detector's accumulated evidence unsuppressed, limiting their effectiveness. In this paper, we propose AdvMTO, a 2D Gaussian Splatting (2DGS) framework for suppressing detection of persistent adversarial objects. Its oriented surfels encode appearance, geometry, and opacity in one object state, from which camera images and scanline LiDAR returns are generated. AdvMTO then constructs current and historical inputs through detector-native processing, regenerating LiDAR returns in each native source sweep for fusion detectors. We optimize bounded appearance perturbations for each detector, propagating gradients through historical BEV memory for temporal camera detectors. For fusion detectors, bounded geometry refinement along local normals further perturbs both sensing modalities. Experiments on nuScenes demonstrate effective suppression of traffic-cone detection across three BEV detectors. Temporal ablations further highlight the importance of detector-native history modeling for both attack construction and optimization.",
+      "authors": [
+        "Zhiyang Cui",
+        "Hao Tan",
+        "Ruonan Li",
+        "Shibin Wu",
+        "Junjian Zhang",
+        "Hong'an Lin",
+        "Zhaoquan Gu"
+      ],
+      "published": "2026-11-23T08:40:14Z",
+      "updated": "2026-11-23T08:40:14Z",
+      "url": "https://arxiv.org/abs/2611.30283v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893610+00:00"
+    },
+    "2611.30114": {
+      "id": "2611.30114v1",
+      "title": "Thermal-Guided Low-Light UAV Image Enhancement: A Reliability-Aware Guidance Network and a Unified Benchmark",
+      "abstract": "Thermal-guided low-light image enhancement (LLIE) is promising for nighttime unmanned aerial vehicle (UAV) perception because thermal imagery remains informative under severe visible degradation. However, the degraded visible image serves as both the alignment reference and the enhancement target, making thermal guidance uncertain in its spatial correspondence and local utility under low illumination, sensor differences, and UAV motion. Misaligned or unsuitable thermal cues may introduce artifacts, while spatially varying degradation requires region-specific restoration rather than uniform enhancement. To address these challenges, we propose a Reliability-Aware Multi-Strategy Guidance Network (RMGNet) for thermal-guided UAV LLIE under weak optical-thermal alignment. Its Reliability-Aware Guidance Calibration Module (RAGCM) performs coarse-to-fine displacement estimation and jointly evaluates the reliability of aligned thermal guidance and the usability of degraded visible evidence. Based on calibrated guidance, degradation, and reliability cues, the Multi-Strategy Enhancement Routing Module (MSERM) generates candidates for detail preservation, highlight-protected relighting, and thermal compensation, then spatially routes their contributions. We further construct the UAV weakly aligned Optical-Thermal dataset (UWOT), the largest UAV-oriented benchmark to date for weakly aligned optical-thermal low-light enhancement, containing 5,000 triplets. Extensive experiments show that RMGNet outperforms representative single-modal and multimodal state-of-the-art methods in enhancement quality while retaining competitive computational efficiency and greater robustness to practical cross-modal misalignment. The dataset and code will be publicly available at https://github.com/mmic-lcl/Datasets-and-benchmark-code.",
+      "authors": [
+        "Zhicheng Zhao",
+        "Yu Wang",
+        "Jiangong Xu",
+        "Lixiang Xu",
+        "Chenglong Li",
+        "Jin Tang"
+      ],
+      "published": "2026-11-23T06:15:30Z",
+      "updated": "2026-11-23T06:15:30Z",
+      "url": "https://arxiv.org/abs/2611.30114v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893638+00:00"
+    },
+    "2611.29947": {
+      "id": "2611.29947v1",
+      "title": "SAGE-Drive: Benefit-Aware Adaptive Reasoning for Autonomous Driving Planning",
+      "abstract": "Explicit reasoning enables autonomous vehicles (AVs) to interpret complex traffic interactions and support trajectory planning, but introduces additional computational demands. Determining when explicit reasoning can improve planning accuracy remains a key challenge, as its benefits vary across driving scenarios. To address this challenge, this study proposes Scene-Adaptive Gating of Explicit Reasoning for Driving (SAGE-Drive), a benefit-aware adaptive reasoning framework for autonomous driving planning. First, paired planning outcomes with and without explicit reasoning are analyzed to measure the reasoning benefit, i.e., the reduction in planning error achieved by explicit reasoning, which serves as the supervision label. SAGE-Drive then learns to predict these benefits using geometric features of the initial trajectory planned without reasoning and multimodal scene information, and invokes explicit reasoning only for the scenarios with the highest predicted benefits under a predefined reasoning budget. Experiments on 1,497 paired driving scenarios reveal that explicit reasoning improves planning accuracy in 53.5% of cases while degrading it in 46.5%, yielding a near-zero average benefit. On the test set, with a 20% reasoning budget, SAGE-Drive achieves an average displacement error (ADE) of 1.5191 m, compared with 1.5252 m for random selection. At a 35% budget, it achieves an ADE of 1.5148 m, close to the 1.5141 m obtained when reasoning is applied to every scenario. These findings establish the predicted reasoning benefit as an effective criterion for reasoning selection, allowing explicit reasoning to be invoked where it improves planning accuracy at a fraction of its computational cost.",
+      "authors": [
+        "Donglei Rong",
+        "Wenbin Yao",
+        "Congcong Bai",
+        "Xi Gao",
+        "Qiaoqiao Ren",
+        "Sheng Jin",
+        "Cheng Xu"
+      ],
+      "published": "2026-11-23T03:10:09Z",
+      "updated": "2026-11-23T03:10:09Z",
+      "url": "https://arxiv.org/abs/2611.29947v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893667+00:00"
+    },
+    "2611.29753": {
+      "id": "2611.29753v1",
+      "title": "DREAM: Dual-Memory Reasoning for Anticipatory 3D Perception in Autonomous Driving",
+      "abstract": "Autonomous driving systems must not only interpret the current scene but also anticipate perceptual challenges such as occlusions, sparse observations, and recurring failure patterns. However, most existing LiDAR semantic segmentation methods operate in a frame-centric manner, processing each scan independently and discarding past contextual experience, which limits robustness under dynamic scene changes. We propose DREAM, a Dual-memory REAsoning framework for continual LiDAR seMantic segmentation that reframes perception as an experience-driven and anticipatory process. DREAM maintains two complementary memory banks in a strictly online setting: a latent memory that stores compact semantic abstractions of previously observed scenes, and an error memory that records representations associated with uncertain predictions. At each timestep, relevant memory entries are retrieved via cosine similarity and integrated into the feature space through a lightweight modulation mechanism, enabling the model to reinforce consistent semantic patterns while suppressing recurring failure modes. The backbone remains frozen and no past scans are replayed, ensuring computational efficiency and bounded memory growth. Extensive experiments on multiple large-scale LiDAR benchmarks demonstrate that DREAM achieves state-of-the-art performance, with consistent improvements on dynamic and small-scale objects, highlighting the effectiveness of persistent and error-aware memory for robust long-horizon perception.",
+      "authors": [
+        "Sriram Mandalika",
+        "Athira Nambiar"
+      ],
+      "published": "2026-11-22T20:34:27Z",
+      "updated": "2026-11-22T20:34:27Z",
+      "url": "https://arxiv.org/abs/2611.29753v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893688+00:00"
+    },
+    "2611.29293": {
+      "id": "2611.29293v1",
+      "title": "GALILEO: Geometric RoPE with Galilean Key Transport for Dynamic Scenes",
+      "abstract": "Geometry-aware rotary positional encodings, such as RayRoPE, help attention reason about the 3D spatial relationships between tokens and the query camera. However, they implicitly assume a static scene, encoding each key at its observed position regardless of when it was captured. For dynamic scenes with temporally separated input views, this mismatch places the same moving object at a different position in each input frame, so it can be rendered at an inaccurate position. While temporal encodings inform attention when a token was observed, they do not resolve where its content should be at the query time. We introduce a simple and general approach that aligns positional encodings with dynamic scene geometry through Galilean transport. Before positional encoding, each key's 3D position is transported to the query time using its estimated velocity and the temporal offset. By modifying only key positions, our method integrates directly with existing encodings, including RayRoPE and URoPE, without altering their formulations. Velocities can be obtained from arbitrary sources. By default, we estimate them from token correspondences within the network. Integrated into LVSM, our method improves dynamic view synthesis on Syn4D, dynamic Objaverse, and real-world Stereo4D videos over baselines. Ablations show that encoding velocities as token features yields smaller gains, while attention visualizations reveal that our method attends to query-time locations of moving content, unlike RayRoPE. Beyond view synthesis, our method also reduces tracking errors on dynamic objects in a pretrained 3D point tracker and improves moving-vehicle generation in a video generator.",
+      "authors": [
+        "Youngmin Kim",
+        "Seonghyun Jin",
+        "Jong Chul Ye"
+      ],
+      "published": "2026-11-22T07:30:02Z",
+      "updated": "2026-11-22T07:30:02Z",
+      "url": "https://arxiv.org/abs/2611.29293v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893713+00:00"
+    },
+    "2611.29275": {
+      "id": "2611.29275v1",
+      "title": "DriveOddsBench: Are Driving Video World Models Aligned with Real-World Odds?",
+      "abstract": "Video world models predict how a scene will evolve, and their sampled futures are increasingly used in place of the real one, from planning to simulation. These uses assume that the samples are aligned with real-world odds, with each future appearing among them as often as it would follow the same history in reality, yet current evaluations only score how real each sample looks. Testing this assumption on real driving data is hard for three reasons. Each recorded history has only one real future, so the true probabilities are unknown. Physical quantities must be read from video, where reading errors can look like model errors. Finally, the many possible analyses invite selective reporting. We introduce DriveOddsBench, a pre-registered benchmark that addresses all three. First, if the samples follow the real distribution, the rank of the real outcome among them is uniform in every history, so pooled ranks test them without probability labels. Second, one validated instrument reads the same quantities, such as the lead-vehicle gap and the ego motion, from the generated futures and from the real future, which first passes through the world model's autoencoder so that both are read alike. Third, all confirmatory analyses were frozen before any test clip was measured. We test eleven general and driving world models on 200 held-out Argoverse 2 histories in five scenario families, with 35,200 generated futures. None is aligned, and every model underestimates its uncertainty. The real outcome falls outside the range of all 16 samples in 28-61% of cases instead of the 11.8% expected under the real distribution. Five models are significantly skewed, in opposite directions, and the largest errors are in the ego motion. Nine models beat climatology without being aligned, and among these models neither type nor scale predicts which comes closest.",
+      "authors": [
+        "Jiaxi Liu",
+        "Keshu Wu",
+        "Bin Ran",
+        "Xiaopeng Li"
+      ],
+      "published": "2026-11-22T06:46:57Z",
+      "updated": "2026-11-22T06:46:57Z",
+      "url": "https://arxiv.org/abs/2611.29275v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893738+00:00"
+    },
+    "2611.29123": {
+      "id": "2611.29123v1",
+      "title": "Your Diffusion-Based Driving Planner Only Needs a Nudge",
+      "abstract": "Diffusion-based planners capture the multimodality of human driving behavior well, yet covariate shift in closed-loop driving can lead them to generate trajectories that result in collisions or road departures. Reinforcement learning (RL) finetuning offers a promising way to tackle this issue, but applying it to diffusion-based planners is complicated by their iterative denoising process and receding-horizon execution. We find that small adjustments to the planned trajectories can prevent many of these unsafe outcomes. Motivated by this observation, we propose PlanNudge, which preserves the learned planning capabilities of a pretrained diffusion-based planner by freezing it and trains a lightweight policy that we call the nudge policy. At each planning step, the nudge policy outputs a nudge, a two-dimensional adjustment of the speed and curvature of the plan from the frozen planner. The nudge policy is a multilayer perceptron that predicts the nudge in a single forward pass, and both dimensions directly change the motion of the vehicle, so standard off-policy RL can train it in closed-loop simulation. We evaluate PlanNudge on nuPlan, a large-scale autonomous driving benchmark based on real-world driving data. In all six settings, PlanNudge matches or exceeds the final scores of the previous state-of-the-art RL finetuning method while using about one sixth as many environment steps and less than one fifth as much model compute. We also provide guidelines for reward shaping, value learning, and exploration when using off-policy RL to post-train autonomous driving planners. Our results are reported with means and standard deviations over six training runs. Project page: https://zerlinwang.github.io/plannudge/",
+      "authors": [
+        "Zilin Wang",
+        "Guozheng Ma",
+        "Saeed Rahmani",
+        "Jiong Yang",
+        "Antyanta Bangunharcana",
+        "Yiluan Guo",
+        "Jakob Nicolaus Foerster",
+        "Shimon Whiteson"
+      ],
+      "published": "2026-11-22T01:08:48Z",
+      "updated": "2026-11-22T01:08:48Z",
+      "url": "https://arxiv.org/abs/2611.29123v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893766+00:00"
+    },
+    "2611.28800": {
+      "id": "2611.28800v1",
+      "title": "HighwayVerse: A Chain-of-Inspection Benchmark for Highway Infrastructure Anomaly Understanding",
+      "abstract": "Practical highway infrastructure inspection entails progressive diagnostic reasoning from visual perception to maintenance decisions, yet existing benchmarks remain confined to isolated tasks, leaving Multimodal Large Language Models (MLLMs) insufficiently evaluated across sequential inspection stages. Meanwhile, current datasets focus primarily on highway pavement defects, falling short of real-world inspection across diverse infrastructure components such as highway pavements, guardrails, glare screens, and drainage systems. To address these gaps, we formulate the Highway Infrastructure Inspection Progression Chain (HIIP-Chain), spanning Anomaly Detection, Anomaly Recognition, Condition Analysis, and Maintenance Resolution, and introduce HighwayVerse. HighwayVerse comprises 14,143 real-world Ground and Unmanned Aerial Vehicle (UAV) inspection records spanning 100 and 17 anomaly categories, respectively, with 84,858 expert-reviewed question-answer pairs. We evaluate 12 open-source and closed-source MLLMs using the chained metric Final, which credits a correct maintenance decision only when all preceding diagnostic stages are completed correctly. Results show that although models achieve relatively high accuracy when initially judging whether an anomaly is present, their markedly lower Final scores expose struggles across downstream recognition, analysis, and decision-making. This discrepancy indicates that current MLLMs do not fully comprehend specific highway anomaly patterns beyond superficial initial judgments. Furthermore, we propose LaneRAG, a training-free retrieval-augmented framework that provides hierarchical reference guidance achieving consistent performance improvements across diverse MLLMs. Our dataset, evaluation benchmark, and source code will be publicly released.",
+      "authors": [
+        "Junyi Yang",
+        "Zheng Si",
+        "Yilin Zhai",
+        "Pengpeng Ouyang",
+        "Hongxi Wang",
+        "Kangze Li",
+        "Mo Chen",
+        "Sicong Zhang",
+        "Hua Wang",
+        "Dongyuan Wu",
+        "Dong Chen",
+        "Mingliang Xu"
+      ],
+      "published": "2026-11-21T13:36:41Z",
+      "updated": "2026-11-21T13:36:41Z",
+      "url": "https://arxiv.org/abs/2611.28800v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893797+00:00"
+    },
+    "2611.28720": {
+      "id": "2611.28720v1",
+      "title": "Data-Driven Trajectory Prediction via Probabilistic Modes and Constrained Optimization",
+      "abstract": "Predicting the future trajectories of surrounding agents is a fundamental requirement for safe autonomous driving. Since agent intent is inherently uncertain, multimodal prediction is essential to account for the full range of plausible future behaviors. We introduce Probabilistic Modes and Constrained Optimization trajectory prediction (ProMo-CoOp), a two-stage data-driven framework. At design time, trajectories are clustered into behavioral modes and a Gaussian Mixture Model (GMM) provides probabilistic mode assignments. At prediction time, a candidate trajectory is generated for each mode by solving a convex optimization problem that enforces consistency with the observed trajectory and uses the precomputed mode assignments to guide prediction toward the selected behavioral mode. The framework also supports Signal Temporal Logic (STL)-derived behavioral constraints, with predicate satisfaction probabilities estimated using Conditional Flow Matching (CFM). Experiments show that ProMo-CoOp outperforms state-of-the-art baselines, and that STL-based constraints can further improve performance when the predicted predicate satisfactions are reliable.",
+      "authors": [
+        "Danyang Li",
+        "Ana Theodora Balaci",
+        "Matthew Cleaveland",
+        "Roberto Tron"
+      ],
+      "published": "2026-11-21T10:25:49Z",
+      "updated": "2026-11-21T10:25:49Z",
+      "url": "https://arxiv.org/abs/2611.28720v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893817+00:00"
+    },
+    "2611.28545": {
+      "id": "2611.28545v1",
+      "title": "Reconstruction-Guided Dual-Branch Learning for LiDAR Anomalous Object Detection",
+      "abstract": "Detecting unexpected objects is essential for autonomous driving safety. Most existing LiDAR anomaly detectors rely on semantic discrimination, which primarily captures category-discriminative features but may overlook deviations from broader feature relationships in normal scenes. Reconstruction offers a complementary perspective by assessing consistency with learned normal patterns. However, pointwise reconstruction errors alone struggle to distinguish anomalies from normal variability in complex outdoor point clouds. We propose Structured Residual Reasoning (SRR) to extract additional anomaly evidence from residual structure across feature channels, time sequences, and geometric space. We further establish that semantic discrimination and normal-pattern reconstruction capture fundamentally different yet complementary anomaly evidence: category compatibility and consistency with learned normal patterns, respectively. At matched background false-positive rates, SRR recovers more objects missed entirely by the semantic branch while producing fewer false positives in normal-only scenes. Building on this finding, we propose Reconstruction-Guided Dual-Branch (RGDB) learning, in which SRR-derived normal-pattern consistency cues guide a semantic-conditioned anomaly decoder to complement reconstruction-based predictions during training. At inference, the two branches jointly exploit their complementary anomaly evidence. Experiments show that standalone SRR establishes a strong reconstruction-based baseline without semantic labels from the target-scene training data, while RGDB achieves state-of-the-art performance on the STU validation set.",
+      "authors": [
+        "Guanyu Jiang",
+        "Junjie Cao",
+        "Jinshan Pan",
+        "Zhixun Su"
+      ],
+      "published": "2026-11-21T04:08:06Z",
+      "updated": "2026-11-21T04:08:06Z",
+      "url": "https://arxiv.org/abs/2611.28545v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893849+00:00"
+    },
+    "2611.28509": {
+      "id": "2611.28509v1",
+      "title": "AlpaSafe: Risk-Aware Trajectory Selection for Vision-Language-Action Models in Autonomous Driving",
+      "abstract": "Reasoning-based driving vision-language-action (VLA) models propose multiple candidate trajectories at each decision, yet only one is executed. Standard evaluation scores the best candidate, assuming an oracle selector that deployment lacks, and leaves the risk of the executed candidate unexamined. Existing online evaluators typically close this gap with a purpose-trained scene or world model, often rolling out each candidate through it at inference time. We introduce AlpaSafe, a risk-aware trajectory selector that reuses the scene representation a frozen driving VLA computes while proposing its candidates. AlpaSafe reads the last hidden token of the VLA's prompt prefill. A lightweight head, trained on the closed-loop simulation outcomes of the candidates, fuses this token with each candidate trajectory and predicts a relative score and collision/offroad logits. A fixed rule removes candidates dominated on the two risk logits and selects the highest-scoring candidate among those remaining, adding neither rollouts nor VLA training. Experiments on 525 AlpaSim scenes show that AlpaSafe outperforms Alpamayo's default first-sample rule and uniform random selection in selected regret and top-1 agreement, and reduces the collision-at-fault or offroad rate from 6.41% and 6.10% to 4.93%. The selector has 1.7M parameters and takes 0.75 ms per decision.",
+      "authors": [
+        "Qiren Wang",
+        "Mingyu Guo",
+        "Weisong Shi"
+      ],
+      "published": "2026-11-21T02:54:46Z",
+      "updated": "2026-11-21T02:54:46Z",
+      "url": "https://arxiv.org/abs/2611.28509v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.893870+00:00"
+    },
+    "2611.28129": {
+      "id": "2611.28129v1",
+      "title": "Urban State Representation for Autonomous Mobility: A Survey of Multimodal Perception, Architectures, Datasets, and Benchmarks",
+      "abstract": "Cities are sensed by many platforms at once: on-board cameras, LiDAR and radar on autonomous vehicles, roadside units at intersections, drones and satellites overhead, and the GNSS traces of millions of trips. Yet most learned representations are built for one platform, one city, and one task. We survey this fragmented landscape through a single lens, the Urban State Representation (USR): a georeferenced, layered, time-varying, uncertainty-aware state that any sensing platform can write to and any downstream task can read from. We (i) formalize USR and five desiderata for it, and relate it to bird's-eye-view (BEV) features, occupancy, vectorized maps, neural fields and 3D Gaussians, scene graphs, road-network graphs, language tokens, and world-model latents; (ii) organize sensing platforms, cross-view (ground-aerial) matching, fusion operators, 3D geometric foundation models, end-to-end and vision-language-action models, and generative world models and data engines in one taxonomy that spans sensors to decisions; (iii) compile 26 urban datasets and simulators across ego, cooperative (V2X), aerial, trajectory, and language settings, with a metric glossary, a cross-benchmark results snapshot, a trend analysis, and a platform-coverage gap analysis; and (iv) review applications and propose, as an outlook, USR-5, a five-test protocol with explicit references and one aggregate score for measuring whether a state is shared, together with a research agenda of six open problems covering cross-city and cross-sensor transfer, uncertainty, efficiency, sim-to-real evaluation, and governance. This survey is an entry point for computer vision, autonomous driving, transportation, and urban computing researchers; the paper list, datasets, and USR-5 code are at https://github.com/binayksingh/Awesome-Urban-State-Representation.",
+      "authors": [
+        "Binay Kumar Singh",
+        "Niels Da Vitoria Lobo"
+      ],
+      "published": "2026-11-18T15:53:58Z",
+      "updated": "2026-11-18T15:53:58Z",
+      "url": "https://arxiv.org/abs/2611.28129v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T23:21:01.894191+00:00"
     }
   },
   "history": {
@@ -4677,6 +5031,134 @@
         "prompt_tokens": 2709,
         "completion_tokens": 1145
       }
+    },
+    "actions-45509115632": {
+      "created_at": "2026-11-24T23:21:00.777892+00:00",
+      "papers": [
+        {
+          "id": "2611.31240v1",
+          "contribution": "Identifies importance of vision-language model (VLM) parts for reasoning and trajectory prediction; proposes MoOP pruning method preserving driving performance and reasoning scores while reducing parameters and increasing efficiency.",
+          "limitation": "Focuses on model pruning without evaluation of explainability in driving reasoning; pruning effects beyond tested reductions are unclear.",
+          "gap": "Broader generalization of pruning across diverse driving tasks and impact on explainability remain unexplored."
+        },
+        {
+          "id": "2611.30438v1",
+          "contribution": "Introduces ROSE-Drive, a model-agnostic orchestration framework coordinating driving models, perception, and controllers with vision-language model-driven task proposals, enhancing execution and adaptive scheduling.",
+          "limitation": "Relies on fixed pretrained weights and offline revisions; real-time adaptation to unseen scenarios is not addressed.",
+          "gap": "Integration of more explicit multimodal reasoning and explainable decision-making in orchestration is needed for human-centered driving assistance."
+        },
+        {
+          "id": "2611.30389v1",
+          "contribution": "Proposes AgentMoT, a mixture-of-transformers framework with agent reasoning and task scheduling that dynamically selects vision-language-action pathways, improving closed-loop driving performance and enabling self-scheduling.",
+          "limitation": "Evaluation mainly on Bench2Drive benchmarks; explainability of agent decisions and human trustworthiness remain to be assessed.",
+          "gap": "Further studies on multimodal interpretability and driver-behavior understanding from agent reasoning are required."
+        },
+        {
+          "id": "2611.29947v1",
+          "contribution": "Presents SAGE-Drive, an adaptive framework that predicts when explicit reasoning benefits trajectory planning, enabling computational savings by selectively invoking reasoning based on predicted gains.",
+          "limitation": "Benefit prediction uses handcrafted geometric features; integration with multimodal scene understanding is not detailed.",
+          "gap": "Bridging multimodal perception with adaptive reasoning invocation for driving behavior under complex interactions is open."
+        },
+        {
+          "id": "2611.28509v1",
+          "contribution": "Develops AlpaSafe, a risk-aware trajectory selector reusing frozen vision-language-action model features to predict candidate trajectory risk, improving failure rates without additional model rollouts or training.",
+          "limitation": "Focuses on risk estimation for candidate selection, not on generating interpretable explanations to human users.",
+          "gap": "Extending risk-aware selection to generate faithful, grounded driving explanations for explainable autonomous behavior is unexplored."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Vision-language models (VLMs) enable integrated reasoning and action for autonomous driving but face trade-offs between computational efficiency and reasoning robustness.",
+            "uncertainty": "Generalization of pruning and orchestration methods across diverse sensors and scenarios remains to be validated.",
+            "evidence_ids": [
+              "2611.31240v1",
+              "2611.30438v1",
+              "2611.30389v1"
+            ]
+          },
+          {
+            "finding": "Adaptive invocation of explicit reasoning can improve driving planning efficiency by avoiding unnecessary computation.",
+            "uncertainty": "How well such adaptive approaches generalize to multimodal, complex traffic behaviors is uncertain.",
+            "evidence_ids": [
+              "2611.29947v1",
+              "2611.28509v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "AgentMoT dynamically routes among multiple expert pathways including vision-language-action to balance reasoning and execution, compared to ROSE-Drive's fixed orchestration of frozen models.",
+            "limitation": "AgentMoT emphasizes learning from closed-loop experience; ROSE-Drive focuses on stable task orchestration but less on dynamic agent reasoning.",
+            "evidence_ids": [
+              "2611.30389v1",
+              "2611.30438v1"
+            ]
+          },
+          {
+            "comparison": "MoOP pruning balances importance for both reasoning and trajectory objectives, unlike standard pruning methods targeting a single task.",
+            "limitation": "Effect on human-understandable explanations during driving reasoning after pruning is not analyzed.",
+            "evidence_ids": [
+              "2611.31240v1",
+              "2611.28509v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can pruning VLM components preserve explainable reasoning while accelerating inference?",
+            "hypothesis": "MoOP pruning maintaining reasoning importance ranks retains faithful explainable components and driving performance.",
+            "method": "Evaluate explanation fidelity and driving accuracy pre/post MoOP pruning using LingoQA and interpretability metrics.",
+            "datasets": "Bench2Drive, Alpamayo datasets (unverified)",
+            "baselines": "Dense VLM models, standard pruning techniques",
+            "metrics": "Driving score, explanation faithfulness scores, inference time, memory usage",
+            "compute": "GPU with at least 16GB VRAM, moderate training time for fine-tuning, multiple seeds",
+            "risk": "Interpretability may degrade despite reasoning score retention",
+            "novelty_check": "Based on 2611.31240v1's pruning and reasoning analysis",
+            "priority_rationale": "Combines efficiency with explainable driving reasoning, critical for real deployment",
+            "evidence_ids": [
+              "2611.31240v1"
+            ]
+          },
+          {
+            "question": "Does adaptive explicit reasoning invocation improve driving behavior understanding with integrated multimodal perception?",
+            "hypothesis": "Multimodal-based benefit prediction leads to better reasoning invocation decisions than geometric-only features, enhancing planning and efficiency.",
+            "method": "Replace geometric features in SAGE-Drive with multimodal embeddings; compare reasoning benefit prediction accuracy and planning metrics.",
+            "datasets": "Bench2Drive, nuScenes (unverified)",
+            "baselines": "Original SAGE-Drive, always-reasoning",
+            "metrics": "Average displacement error, reasoning invocation rate, computational cost",
+            "compute": "Moderate GPU compute, real-time simulation environment",
+            "risk": "Multimodal fusion may complicate benefit prediction",
+            "novelty_check": "Extends 2611.29947v1 with multimodal inputs for reasoning gating",
+            "priority_rationale": "Enhances adaptive reasoning with multimodal scene understanding for behavior-aware planning",
+            "evidence_ids": [
+              "2611.29947v1"
+            ]
+          },
+          {
+            "question": "Can risk-aware trajectory selection be augmented to generate explainable and faithful grounded driving explanations?",
+            "hypothesis": "AlpaSafe features can be extended with interpretable modules to produce grounded risk explanations alongside trajectory selection.",
+            "method": "Augment AlpaSafe with an explanation module trained on closed-loop simulation data to generate textual/modal explanations linked to risk features.",
+            "datasets": "Simulated driving scenarios and Alpamayo (unverified)",
+            "baselines": "Original AlpaSafe selection without explanation, heuristic explainability methods",
+            "metrics": "Collision/offroad rate, explanation fidelity and user trust metrics",
+            "compute": "Low-latency inference on embedded GPU, lightweight explanation module",
+            "risk": "Explanation quality may lag behind selection performance",
+            "novelty_check": "Builds on 2611.28509v1 risk-aware selection with new explainability layer",
+            "priority_rationale": "Addresses human-centered trust by combining risk selection with explicit explanations in autonomous driving",
+            "evidence_ids": [
+              "2611.28509v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.028863200000000002,
+        "status": "completed",
+        "estimated_cost_usd": 0.0060172,
+        "prompt_tokens": 9651,
+        "completion_tokens": 1348
+      }
     }
   },
   "zotero": {
@@ -5031,9 +5513,29 @@
         "2611.27804": {
           "status": "created",
           "item_key": "N5U78VM4"
+        },
+        "2611.28509": {
+          "status": "created",
+          "item_key": "6XJ5C3VR"
+        },
+        "2611.29947": {
+          "status": "created",
+          "item_key": "H96VP3FM"
+        },
+        "2611.30389": {
+          "status": "created",
+          "item_key": "AZEDR3PH"
+        },
+        "2611.30438": {
+          "status": "created",
+          "item_key": "NHM3B2XH"
+        },
+        "2611.31240": {
+          "status": "created",
+          "item_key": "4Q2BMZFR"
         }
       },
-      "not_before": 1795483585.4086084
+      "not_before": 1795562488.942887
     }
   }
 }
