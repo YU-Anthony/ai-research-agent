@@ -613,6 +613,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.24864",
+        "title": "NereidVLA: Learning to Understand and Navigate the Underwater World",
+        "url": "https://arxiv.org/abs/2611.24864",
+        "zotero_item_key": "W9I9XU58",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.25474",
         "title": "TuringPAI: A Foundation for On-Device Physical AI",
         "url": "https://arxiv.org/abs/2611.25474",
@@ -631,6 +638,27 @@
         "title": "FastRoverVLA: Fast Vision-Language-Action Execution for Off-Road Autonomous Driving",
         "url": "https://arxiv.org/abs/2611.26242",
         "zotero_item_key": "N5ID9I8X",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.26828",
+        "title": "Graph-XGB: A Hybrid GNN Framework for Outdoor-to-Indoor 5G Signal Reconstruction via Aerial-Only UAV RF Sensing",
+        "url": "https://arxiv.org/abs/2611.26828",
+        "zotero_item_key": "BS386FNF",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.26842",
+        "title": "3D Open-Vocabulary Detection via Visual Alignment and Generative Captions",
+        "url": "https://arxiv.org/abs/2611.26842",
+        "zotero_item_key": "UVSSJDBN",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.27804",
+        "title": "Generalist Action Critic: Harnessing Frontier Models in Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.27804",
+        "zotero_item_key": "N5U78VM4",
         "status": "created"
       }
     ]

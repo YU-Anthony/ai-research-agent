@@ -360,6 +360,22 @@
     "2611.23878": {
       "reported_at": "2026-11-22T20:32:19.002882+00:00",
       "version": "2611.23878v2"
+    },
+    "2611.27804": {
+      "reported_at": "2026-11-24T01:26:00.083559+00:00",
+      "version": "2611.27804v1"
+    },
+    "2611.26842": {
+      "reported_at": "2026-11-24T01:26:00.083559+00:00",
+      "version": "2611.26842v1"
+    },
+    "2611.24864": {
+      "reported_at": "2026-11-24T01:26:00.083559+00:00",
+      "version": "2611.24864v1"
+    },
+    "2611.26828": {
+      "reported_at": "2026-11-24T01:26:00.083559+00:00",
+      "version": "2611.26828v1"
     }
   },
   "requests": {
@@ -467,6 +483,13 @@
       "estimated_cost_usd": 0.0040436000000000005,
       "prompt_tokens": 4213,
       "completion_tokens": 1474
+    },
+    "actions-45304930416": {
+      "ceiling_usd": 0.016894,
+      "status": "completed",
+      "estimated_cost_usd": 0.0029156000000000004,
+      "prompt_tokens": 2709,
+      "completion_tokens": 1145
     }
   },
   "papers": {
@@ -1966,7 +1989,7 @@
       "updated": "2026-11-18T18:19:00Z",
       "url": "https://arxiv.org/abs/2611.24864v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-22T20:32:20.308010+00:00"
+      "retrieved_at": "2026-11-24T01:26:01.095033+00:00"
     },
     "2611.24840": {
       "id": "2611.24840v1",
@@ -2274,6 +2297,69 @@
       "url": "https://arxiv.org/abs/2611.25474v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-20T21:39:59.204781+00:00"
+    },
+    "2611.27804": {
+      "id": "2611.27804v1",
+      "title": "Generalist Action Critic: Harnessing Frontier Models in Autonomous Driving",
+      "abstract": "Frontier models have demonstrated remarkable general-purpose reasoning capabilities, opening new possibilities for intelligent decision making in the physical world. In autonomous driving, many recent approaches seek to leverage these capabilities through additional adaptation for action output, particularly in scenarios where existing models underperform. We introduce Generalist Action Critic (GAC), a zero-shot framework that combines frontier models' general-purpose reasoning with the planning competence of specialized driving models through an inference-time harness. In GAC, specialized planners generate multiple candidate trajectories and make an initial selection, while a frozen frontier model serves as an action critic that assesses the selected trajectory against scene evidence and either retains it or reselects from the available candidates. The harness combines camera images with spatial overlays, provides driving context and reasoning principles through textual instructions, and regulates the information available at each stage to support trajectory assessment and reselection. On HUGSIM, GAC raises DrivoR's HD-Score to 43.2, achieving state-of-the-art performance among methods trained without additional simulation data. GAC also consistently improves closed-loop driving safety across three planners, with relative HD-Score gains of up to 32.1%. Experiments on NAVSIM v1 further reveal how GAC improves planning performance by correcting up to 52.13% of eligible unsafe trajectory selections while introducing new failures in only 0.67% of originally high-quality selections. These results demonstrate the potential of harnessing frontier models to improve driving safety through inference-time cooperation with specialized planners.",
+      "authors": [
+        "Yun Yan",
+        "Shizhi Hu",
+        "Zhichao Li",
+        "Yang Guan",
+        "Shiqi Liu",
+        "Jiaxin Gao",
+        "Xiangteng Zhang",
+        "Wenbo Ding",
+        "Jiuhua Zhao",
+        "Hui Guo",
+        "Xintao Yan",
+        "Keqiang Li",
+        "Shengbo Eben Li"
+      ],
+      "published": "2026-11-20T16:32:53Z",
+      "updated": "2026-11-20T16:32:53Z",
+      "url": "https://arxiv.org/abs/2611.27804v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T01:26:01.094831+00:00"
+    },
+    "2611.26842": {
+      "id": "2611.26842v1",
+      "title": "3D Open-Vocabulary Detection via Visual Alignment and Generative Captions",
+      "abstract": "Open-vocabulary 3D object detection remains a significant challenge for outdoor scenes, with existing methods often struggling to effectively transfer the rich semantic knowledge from powerful 2D Vision-Language Models (VLMs) into a 3D context. We propose a novel, two-part framework for this task. First, we introduce a direct, object-level distillation method. We generate class-agnostic 3D proposals to source regions from the entire scene, without relying on any manual labels. We leverage a spatially-aware VLM to extract a semantic embedding from each proposal's projected 2D bounding box and supervise our 3D model to predict this embedding on a per-instance basis. Second, to enhance zero-shot capability and inject domain-specific information, we employ a powerful Multimodal Large Language Model (MLLM) as an image captioner to generate rich textual captions for each of these proposals. These captions are integrated into the training objective to directly align the 3D features with these rich semantics, creating a composite loss that combines direct feature distillation with caption-based semantic enrichment. Our experiments validate the effectiveness of our approach, establishing a new state of the art in 3D open-vocabulary detection on the Waymo Open Dataset and nuScenes.",
+      "authors": [
+        "Thomas E. Huang",
+        "Alex Zihao Zhu",
+        "Hao Xiang",
+        "Tianyi Cai",
+        "Jingwei Ji",
+        "Yuliang Zou",
+        "Jiafan Yu",
+        "Xin Huang",
+        "Mingxing Tan"
+      ],
+      "published": "2026-11-19T21:53:41Z",
+      "updated": "2026-11-19T21:53:41Z",
+      "url": "https://arxiv.org/abs/2611.26842v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T01:26:01.094876+00:00"
+    },
+    "2611.26828": {
+      "id": "2611.26828v1",
+      "title": "Graph-XGB: A Hybrid GNN Framework for Outdoor-to-Indoor 5G Signal Reconstruction via Aerial-Only UAV RF Sensing",
+      "abstract": "Delivering robust In-Building Coverage (IBC) is critically impeded by severe Outdoor-to-Indoor (O2I) attenuation, a constraint that intensifies as deployments move from 5G mid-band towards mmWave and prospective 6G sub-THz carriers, where losses of 60-80 dB have been reported across modern building envelopes. While Unmanned Aerial Vehicles (UAVs) offer scalable exterior RF sensing platforms, a fundamental inversion problem persists: interior 3D signal states cannot be directly sampled from constrained exterior flight paths. This paper proposes Graph-XGB, a hybrid inference framework that decouples spatial topology reasoning from non-linear signal regression to resolve this challenge. A modified SpiderGNN encoder, operating on a topology-aware graph constructed with a physically grounded Floor-Aware 3D Distance metric and Bridge Edge Guarantees, propagates UAV boundary measurements into 128-dimensional indoor embeddings. Principal Component Analysis (PCA) compresses these into a 10-dimensional manifold retaining 96.6% of embedding variance, fused with raw spatial features and decoded by independent, physics-tailored XGBoost regressors. This decoupling mitigates the optimization conflict between smoothly decaying path-loss signals and volatile interference-dependent metrics. Evaluated on a real-world 5G NR dataset of 613 verified nodes spanning the 10 floors of a single building, Graph-XGB attains the strongest accuracy among the architectures compared, with $R^2$ of 0.759 (RSSI) and 0.770 (RSRP), improvements of 35.5% and 64.9% over the SimpleGNN baseline, using no interior RF measurement as a model input; indoor observations enter only as training supervision, with evaluation on held-out internal nodes. Interference-dependent targets (RSRQ, SNR and CQI) remain bounded well below the path-loss metrics, delimiting the reach of purely spatial inference.",
+      "authors": [
+        "David Hason Rudd",
+        "Eunkwang Shin",
+        "Nithiwat Pattrapong",
+        "Huan Huo",
+        "Xiangmeng Wang"
+      ],
+      "published": "2026-11-19T21:22:24Z",
+      "updated": "2026-11-19T21:22:24Z",
+      "url": "https://arxiv.org/abs/2611.26828v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-24T01:26:01.094906+00:00"
     }
   },
   "history": {
@@ -4486,6 +4572,111 @@
         "prompt_tokens": 4213,
         "completion_tokens": 1474
       }
+    },
+    "actions-45304930416": {
+      "created_at": "2026-11-24T01:26:00.083559+00:00",
+      "papers": [
+        {
+          "id": "2611.27804v1",
+          "contribution": "Introduces Generalist Action Critic, a zero-shot framework combining frontier models' reasoning with specialized driving planners, improving trajectory safety and planning performance.",
+          "limitation": "Performance gains are demonstrated on simulated datasets; real-world application robustness and generalization to diverse environments remain uncertain.",
+          "gap": "Unclear how the framework handles edge cases with rare or ambiguous driving scenes and the interpretability of action critic decisions in real driving contexts."
+        },
+        {
+          "id": "2611.26842v1",
+          "contribution": "Presents a novel two-part framework for 3D open-vocabulary detection by distilling semantic embeddings from 2D perspective and enriching with multimodal captions, improving detection on large-scale driving datasets.",
+          "limitation": "Focuses on detection accuracy without explicit integration of temporal or behavioral driving data; zero-shot capability tested primarily on object detection, not behavior understanding.",
+          "gap": "Lacks exploration of how enriched semantic features contribute to explainable driving reasoning or interactive driving behaviors."
+        },
+        {
+          "id": "2611.24864v1",
+          "contribution": "Proposes NereidVLA, a vision-language-action model for underwater 3D navigation combining marine spatial knowledge and language-conditioned trajectory prediction, achieving high success in simulated and real underwater scenarios.",
+          "limitation": "Targeted at underwater navigation with specific sensor and environmental characteristics; applicability to multimodal autonomous driving or urban traffic scenarios is limited.",
+          "gap": "Does not address multimodal driving behavior understanding or explainability in terrestrial autonomous driving contexts."
+        },
+        {
+          "id": "2611.26828v1",
+          "contribution": "Introduces Graph-XGB, a hybrid GNN-XGBoost framework using UAV RF data and topology-aware graphs to reconstruct indoor 5G signals from outdoor sensing, achieving strong reconstruction accuracy.",
+          "limitation": "Focused on RF signal inference rather than driving behavior or decision reasoning; relevance to multimodal autonomous driving is indirect and limited.",
+          "gap": "Does not engage with action planning, driving behavior understanding, or interpretable driving decisions in autonomous systems."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Leveraging frontier and large-scale pretrained models to enhance autonomous driving safety and planning.",
+            "uncertainty": "Transfer to real-world urban driving scenarios and handling rare or complex driving conditions require further validation.",
+            "evidence_ids": [
+              "2611.27804v1"
+            ]
+          },
+          {
+            "finding": "Utilizing multimodal language and vision alignment to improve semantic understanding in 3D object detection for driving environments.",
+            "uncertainty": "Effectiveness in bridging object detection with behavioral prediction or explainable reasoning is not established.",
+            "evidence_ids": [
+              "2611.26842v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "2611.27804v1 integrates frontier reasoning models and specialized planners for driving trajectory planning, improving safety; 2611.26842v1 focuses on semantic object detection enhancement without explicit behavior reasoning.",
+            "limitation": "No direct comparison of behavior understanding or explainability; their contributions target different autonomous driving subproblems.",
+            "evidence_ids": [
+              "2611.27804v1",
+              "2611.26842v1"
+            ]
+          },
+          {
+            "comparison": "2611.24864v1 presents a vision-language-action model for underwater navigation leveraging spatial knowledge and language, differing in domain and modalities from terrestrial autonomous driving models like 2611.27804v1.",
+            "limitation": "Domain gaps limit relevance; cross-application insights remain speculative.",
+            "evidence_ids": [
+              "2611.27804v1",
+              "2611.24864v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can frontier models' reasoning be enhanced with multimodal semantic cues for explainable driving behavior prediction?",
+            "hypothesis": "Integrating 3D semantic embeddings and textual captions improves reasoning and explanation of driving behaviors over trajectory scoring alone.",
+            "method": "Combine frameworks from 2611.27804v1 and 2611.26842v1 to fuse planning, vision-language semantic features, and text instructions for trajectory assessment.",
+            "datasets": "HUGSIM, NAVSIM v1, Waymo Open Dataset (unverified).",
+            "baselines": "Generalist Action Critic, standard specialized planners, and open-vocabulary 3D detectors.",
+            "metrics": "Driving safety scores, planning accuracy, semantic alignment accuracy, explanation faithfulness.",
+            "compute": "Moderate GPU for real-time multimodal inference; several runs with fixed seeds.",
+            "risk": "Complex integration may introduce latency or instability; alignment of modalities challenging.",
+            "novelty_check": "Unexplored combination of frontier reasoning with semantic 3D and linguistic context for explainable behavior.",
+            "priority_rationale": "High relevance to multimodal explainable driving behavior; leverages existing state-of-the-art models.",
+            "evidence_ids": [
+              "2611.27804v1",
+              "2611.26842v1"
+            ]
+          },
+          {
+            "question": "How can language-conditioned trajectory prediction be adapted from underwater to multimodal urban autonomous driving?",
+            "hypothesis": "Pretraining on spatial-language tasks supports downstream language-conditioned 3D navigation in urban driving scenarios with diverse modalities.",
+            "method": "Adapt NereidVLA's marine spatial pretraining to autonomous driving with RGB-D and LiDAR inputs conditioned on natural language commands.",
+            "datasets": "Simulated urban driving datasets with paired language instructions (unverified).",
+            "baselines": "Hierarchical navigation policies without language grounding.",
+            "metrics": "Navigation success, trajectory prediction accuracy, instruction adherence.",
+            "compute": "Simulation clusters, moderate GPUs, several seeds.",
+            "risk": "Domain shift from underwater to urban may limit transfer; language grounding complexity in traffic scenarios.",
+            "novelty_check": "Language-conditioned navigation with learned spatial grounding adapted to urban autonomous driving multimodal data.",
+            "priority_rationale": "Relevant to human-centered driving assistants and explainable behavior under language control.",
+            "evidence_ids": [
+              "2611.24864v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.016894,
+        "status": "completed",
+        "estimated_cost_usd": 0.0029156000000000004,
+        "prompt_tokens": 2709,
+        "completion_tokens": 1145
+      }
     }
   },
   "zotero": {
@@ -4824,9 +5015,25 @@
         "2611.24244": {
           "status": "created",
           "item_key": "Z9VZPCED"
+        },
+        "2611.24864": {
+          "status": "created",
+          "item_key": "W9I9XU58"
+        },
+        "2611.26828": {
+          "status": "created",
+          "item_key": "BS386FNF"
+        },
+        "2611.26842": {
+          "status": "created",
+          "item_key": "UVSSJDBN"
+        },
+        "2611.27804": {
+          "status": "created",
+          "item_key": "N5U78VM4"
         }
       },
-      "not_before": 1795379564.6983867
+      "not_before": 1795483585.4086084
     }
   }
 }
