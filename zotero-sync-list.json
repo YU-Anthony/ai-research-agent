@@ -669,6 +669,13 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.29123",
+        "title": "Your Diffusion-Based Driving Planner Only Needs a Nudge",
+        "url": "https://arxiv.org/abs/2611.29123",
+        "zotero_item_key": "WP3ZPFTV",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.29947",
         "title": "SAGE-Drive: Benefit-Aware Adaptive Reasoning for Autonomous Driving Planning",
         "url": "https://arxiv.org/abs/2611.29947",
@@ -694,6 +701,55 @@
         "title": "Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action",
         "url": "https://arxiv.org/abs/2611.31240",
         "zotero_item_key": "4Q2BMZFR",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.31797",
+        "title": "A Generative AI Agent to Emulate Interactive Human-driven Vehicles for Automated Driving Testing in Urban Areas",
+        "url": "https://arxiv.org/abs/2611.31797",
+        "zotero_item_key": "EFP2G2D4",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.31952",
+        "title": "VLG-Drive: Unifying Vision-Language and Geometric Priors for Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.31952",
+        "zotero_item_key": "IIKK55WZ",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.32209",
+        "title": "XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.32209",
+        "zotero_item_key": "MB8V72A9",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.32216",
+        "title": "NativeDrive: Native Multimodal Foundations for Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.32216",
+        "zotero_item_key": "N2J4RBWB",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.32510",
+        "title": "GeoVLDrive: Geometry-Grounded Vision-Language Reasoning for Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.32510",
+        "zotero_item_key": "9JBSD6E5",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.32588",
+        "title": "CoReQ: Condition-Aware Cross-Modal Repair and Quality-Guided Robust Collaborative Perception",
+        "url": "https://arxiv.org/abs/2611.32588",
+        "zotero_item_key": "4RJ3ZFUF",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.32964",
+        "title": "Benchmarking Evidence Sufficiency in Vision-Language Models for Autonomous Driving",
+        "url": "https://arxiv.org/abs/2611.32964",
+        "zotero_item_key": "RISG6VVZ",
         "status": "created"
       }
     ]

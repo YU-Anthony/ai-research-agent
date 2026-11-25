@@ -396,6 +396,38 @@
     "2611.28509": {
       "reported_at": "2026-11-24T23:21:00.777892+00:00",
       "version": "2611.28509v1"
+    },
+    "2611.32964": {
+      "reported_at": "2026-11-25T22:53:28.075910+00:00",
+      "version": "2611.32964v1"
+    },
+    "2611.32588": {
+      "reported_at": "2026-11-25T22:53:28.075910+00:00",
+      "version": "2611.32588v1"
+    },
+    "2611.32510": {
+      "reported_at": "2026-11-25T22:53:28.075910+00:00",
+      "version": "2611.32510v1"
+    },
+    "2611.32216": {
+      "reported_at": "2026-11-25T22:53:28.075910+00:00",
+      "version": "2611.32216v1"
+    },
+    "2611.32209": {
+      "reported_at": "2026-11-25T22:53:28.075910+00:00",
+      "version": "2611.32209v1"
+    },
+    "2611.31952": {
+      "reported_at": "2026-11-25T22:53:28.075910+00:00",
+      "version": "2611.31952v1"
+    },
+    "2611.31797": {
+      "reported_at": "2026-11-25T22:53:28.075910+00:00",
+      "version": "2611.31797v1"
+    },
+    "2611.29123": {
+      "reported_at": "2026-11-25T22:53:28.075910+00:00",
+      "version": "2611.29123v1"
     }
   },
   "requests": {
@@ -517,6 +549,13 @@
       "estimated_cost_usd": 0.0060172,
       "prompt_tokens": 9651,
       "completion_tokens": 1348
+    },
+    "actions-45716885186": {
+      "ceiling_usd": 0.0308504,
+      "status": "completed",
+      "estimated_cost_usd": 0.007262000000000001,
+      "prompt_tokens": 10691,
+      "completion_tokens": 1866
     }
   },
   "papers": {
@@ -2428,7 +2467,7 @@
       "updated": "2026-11-23T15:43:31Z",
       "url": "https://arxiv.org/abs/2611.30874v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893465+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.867826+00:00"
     },
     "2611.30836": {
       "id": "2611.30836v1",
@@ -2450,7 +2489,7 @@
       "updated": "2026-11-23T15:20:31Z",
       "url": "https://arxiv.org/abs/2611.30836v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893500+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.867866+00:00"
     },
     "2611.30438": {
       "id": "2611.30438v1",
@@ -2507,7 +2546,7 @@
       "updated": "2026-11-23T08:58:27Z",
       "url": "https://arxiv.org/abs/2611.30314v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893581+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.867952+00:00"
     },
     "2611.30283": {
       "id": "2611.30283v1",
@@ -2526,7 +2565,7 @@
       "updated": "2026-11-23T08:40:14Z",
       "url": "https://arxiv.org/abs/2611.30283v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893610+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.867979+00:00"
     },
     "2611.30114": {
       "id": "2611.30114v1",
@@ -2544,7 +2583,7 @@
       "updated": "2026-11-23T06:15:30Z",
       "url": "https://arxiv.org/abs/2611.30114v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893638+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.868006+00:00"
     },
     "2611.29947": {
       "id": "2611.29947v1",
@@ -2577,7 +2616,7 @@
       "updated": "2026-11-22T20:34:27Z",
       "url": "https://arxiv.org/abs/2611.29753v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893688+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.868057+00:00"
     },
     "2611.29293": {
       "id": "2611.29293v1",
@@ -2592,7 +2631,7 @@
       "updated": "2026-11-22T07:30:02Z",
       "url": "https://arxiv.org/abs/2611.29293v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893713+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.868083+00:00"
     },
     "2611.29275": {
       "id": "2611.29275v1",
@@ -2608,7 +2647,7 @@
       "updated": "2026-11-22T06:46:57Z",
       "url": "https://arxiv.org/abs/2611.29275v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893738+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.868112+00:00"
     },
     "2611.29123": {
       "id": "2611.29123v1",
@@ -2628,7 +2667,7 @@
       "updated": "2026-11-22T01:08:48Z",
       "url": "https://arxiv.org/abs/2611.29123v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893766+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.868144+00:00"
     },
     "2611.28800": {
       "id": "2611.28800v1",
@@ -2652,7 +2691,7 @@
       "updated": "2026-11-21T13:36:41Z",
       "url": "https://arxiv.org/abs/2611.28800v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893797+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.868179+00:00"
     },
     "2611.28720": {
       "id": "2611.28720v1",
@@ -2668,7 +2707,7 @@
       "updated": "2026-11-21T10:25:49Z",
       "url": "https://arxiv.org/abs/2611.28720v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893817+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.868201+00:00"
     },
     "2611.28545": {
       "id": "2611.28545v1",
@@ -2684,7 +2723,7 @@
       "updated": "2026-11-21T04:08:06Z",
       "url": "https://arxiv.org/abs/2611.28545v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-24T23:21:01.893849+00:00"
+      "retrieved_at": "2026-11-25T22:53:29.869238+00:00"
     },
     "2611.28509": {
       "id": "2611.28509v1",
@@ -2714,6 +2753,176 @@
       "url": "https://arxiv.org/abs/2611.28129v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-24T23:21:01.894191+00:00"
+    },
+    "2611.32964": {
+      "id": "2611.32964v1",
+      "title": "Benchmarking Evidence Sufficiency in Vision-Language Models for Autonomous Driving",
+      "abstract": "Reliable driving VLMs must do more than answer correctly or localize relevant scene actors: they must determine whether the available visual evidence is sufficient to support an answer. Existing evaluations largely treat grounding and answerability as separate measurements, making it difficult to distinguish well-supported predictions from those localized to relevant but insufficient evidence. We introduce DriveAnswer, a benchmark of 20,151 questions across seven reasoning families, that operationalizes this distinction using matched strong- and weak-evidence configurations. Each pair preserves the underlying scene fact and semantic answer while changing whether the observations support answering, making abstention the appropriate response under weak evidence. On the six-family evaluation, the strongest zero-shot baseline reaches 67.31% strong-evidence accuracy, yet only 21.55% of matched questions satisfy both answer-abstain behavior and complete grounding. With controlled adaptation, Gemma-4-12B reaches 63.29% on this joint capability, nearly tripling its zero-shot performance. Qwen3-VL-8B exhibits the same broad improvement in evidence-sensitive answering and grounding. These results show that semantic correctness, evidence sufficiency, and grounding are distinct capabilities that should be evaluated jointly.",
+      "authors": [
+        "Nhat Ha Nguyen",
+        "Sudipta Chowdhury",
+        "Lokesh Das"
+      ],
+      "published": "2026-11-24T17:01:37Z",
+      "updated": "2026-11-24T17:01:37Z",
+      "url": "https://arxiv.org/abs/2611.32964v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867498+00:00"
+    },
+    "2611.32588": {
+      "id": "2611.32588v1",
+      "title": "CoReQ: Condition-Aware Cross-Modal Repair and Quality-Guided Robust Collaborative Perception",
+      "abstract": "Multi-vehicle collaborative perception can use observations from different perspectives to alleviate the problems of occlusion and limited sensing range. However, missing echoes and false echoes caused by bad weather will reduce the quality of single-vehicle features and affect collaborative detection. LiDAR provides richer geometric information, and 4D Radar has strong weather adaptability. The complementarity of the two provides the possibility to improve perception under degraded observations. However, how to adjust cross-modal repair according to the current observation conditions and how to reasonably integrate multi-vehicle features whose reliability still differs after repair are still problems that need to be solved. To this end, we propose CoReQ, a condition-aware repair and quality-guided collaborative perception framework. For the former, the condition-guided bidirectional cross-modal repair module (CBCR) extracts vehicle-level observation conditions from point cloud occupancy, density and feature statistics, and adjusts the bidirectional correction of LiDAR and Radar features accordingly. For the latter, we combine local reliability assessment with collaborative weighting: first, the task-aware quality estimation module (TaQE) uses the classification and positioning information of the EMA teacher to construct a supervision target and predict the spatial quality of the repaired features; then, the condition and quality guided fusion module (CoQF) matches the quality information with the content, and the observation conditions of both parties are jointly used for multi-vehicle feature weighted fusion. Experiments on V2X-R and V2X-Radar-C show that the framework is competitive under a variety of observation conditions, achieving significant gains in AP@0.7 on V2X-R under snowy conditions, and achieving the highest AP among the compared V2X-Radar-C methods.",
+      "authors": [
+        "Ziwei Guo",
+        "Lingzhi Li",
+        "Jin Wang",
+        "Yunjiang Xu",
+        "Yupeng Ouyang",
+        "Benyuan Yang",
+        "Yujun Shi"
+      ],
+      "published": "2026-11-24T13:26:48Z",
+      "updated": "2026-11-24T13:26:48Z",
+      "url": "https://arxiv.org/abs/2611.32588v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867565+00:00"
+    },
+    "2611.32510": {
+      "id": "2611.32510v1",
+      "title": "GeoVLDrive: Geometry-Grounded Vision-Language Reasoning for Autonomous Driving",
+      "abstract": "Vision-language-action (VLA) planners inherit semantic knowledge from pretrained vision-language models, but their reasoning is rarely grounded in 3D scene structure and its evolution over time. We introduce GeoVLDrive, a geometry-grounded VLA framework for 3D spatiotemporal reasoning and planning. Multi-layer features from a 3D foundation model augment the vision-language backbone through gated cross-attention. A structured latent chain of thought (CoT) organizes future scene geometry, key-agent motion, and meta-actions into ordered, separately supervised latent states. An action expert generates trajectory proposals from these states and multi-layer scene features, and ranks them using scene-grounded, interacting score tokens. We also introduce NAVSIM 3DQA to train and evaluate metric 3D spatial and motion understanding. GeoVLDrive achieves 91.8 PDMS on NAVSIM v1 and 90.9 EPDMS on NAVSIM v2. On NAVSIM 3DQA, the geometry-grounded backbone scores 89.2% overall, 4.6 percentage points above the fine-tuned Qwen3-VL-2B baseline. On LingoQA, the backbone achieves 68.6% Lingo-Judge accuracy.",
+      "authors": [
+        "JiaHui Huang",
+        "Songyan Zhang",
+        "Hanbing Li",
+        "Hanchao Leng",
+        "Kuiyuan Yang",
+        "Guang Chen",
+        "Hangjun Ye",
+        "Chen Lv"
+      ],
+      "published": "2026-11-24T12:41:13Z",
+      "updated": "2026-11-24T12:41:13Z",
+      "url": "https://arxiv.org/abs/2611.32510v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867595+00:00"
+    },
+    "2611.32493": {
+      "id": "2611.32493v1",
+      "title": "CoFiNav: VLM-Guided Coarse-to-Fine Semantic Navigation for Open-Ended Last-Mile UAV Delivery",
+      "abstract": "Unmanned aerial vehicle (UAV) delivery is an important application of the low-altitude economy, enhancing the flexibility and accessibility of last-mile logistics. Existing UAV delivery methods generally rely on precise terminal coordinates, predefined terminal specifications, or task-specific localization procedures, limiting the scope and flexibility of delivery. As UAV logistics becomes more intelligent, open-ended semantic descriptions offer a new paradigm for specifying terminal destinations. However, conventional aerial navigation methods have limited ability to generalize to delivery scenarios that require open-vocabulary terminal navigation. To enable this broader delivery paradigm, we propose CoFiNav, a VLM-guided coarse-to-fine UAV semantic navigation framework that progressively grounds relation-defined terminal destinations through hierarchical semantic search and active 3D observation. Given a task description, a coarse prior map from OpenStreetMap (OSM), and accumulated observations, CoFiNav uses a vision-language model (VLM) to determine which unresolved entity or spatial relation should be verified next. A geometry-aware module converts the semantic observation request into feasible viewpoints using RGB images and LiDAR, while conventional motion planning handles safe execution. Experiments across multiple urban environments show that CoFiNav outperforms representative adapted baselines in success rate while requiring shorter flight paths and fewer observations.",
+      "authors": [
+        "Xuanpu Wang",
+        "Shun Hu",
+        "Bing Li",
+        "Rongqing Zhang"
+      ],
+      "published": "2026-11-24T12:22:18Z",
+      "updated": "2026-11-24T12:22:18Z",
+      "url": "https://arxiv.org/abs/2611.32493v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867622+00:00"
+    },
+    "2611.32216": {
+      "id": "2611.32216v1",
+      "title": "NativeDrive: Native Multimodal Foundations for Autonomous Driving",
+      "abstract": "Autonomous driving requires semantic understanding and fine-grained scene perception for precise action prediction. Vision-language-action models (VLAs) inherit semantic priors, but low-dimensional action labels provide limited structural supervision. Some studies extend VLAs with visual generation tasks or adopt video-based world-action models (WAMs), but both approaches introduce appearance-reconstruction overhead, which is less relevant to planning. Native multimodal models offer an alternative to unify understanding and generation within one backbone. On this basis, we propose NativeDrive, a native encoder-free multimodal driving framework adapting the unified backbone for policy learning and introduce a dense supervision task tailored to driving. The Native Action Interface reuses the understanding expert's token-prediction interface for the discrete policy and adapts the generation expert for continuous policy. Driving Semantic Editing reuses the generation expert's editing capability for dense scene-structure supervision during training, while inference runs only the selected planning policy. NativeDrive achieves competitive planning performance among unified understanding-and-generation models on NAVSIM v1 and v2, with ablations validating its components' effectiveness. Code will be released.",
+      "authors": [
+        "Zehua Fan",
+        "Qi Jiang",
+        "Wei Li",
+        "Kai Tang",
+        "Yue Jiang",
+        "Yujian Li",
+        "Bailin Li",
+        "Feng Gao",
+        "Yan Wang",
+        "Kun Zhan"
+      ],
+      "published": "2026-11-24T08:59:01Z",
+      "updated": "2026-11-24T08:59:01Z",
+      "url": "https://arxiv.org/abs/2611.32216v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867652+00:00"
+    },
+    "2611.32209": {
+      "id": "2611.32209v1",
+      "title": "XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving",
+      "abstract": "Memory-augmented large language model (LLM) driving agents can reuse past experience, yet previously learned corrections often fail to transfer when traffic conditions change. A key limitation is that existing memories mainly record observed outcomes, providing little evidence about alternative actions. We introduce XMind, a training-free framework that enables LLM-based driving to \"Think Twice\" through cross-memory reasoning. XMind integrates working memory of recent traffic states with episodic memory of critical risk events. The agent first makes an initial decision from the current context and then cross-checks it against retrieved historical experience. If a conflict arises, it makes a second decision guided by the retrieved evidence. To construct reliable episodic memory, XMind evaluates alternative actions through counterfactual rollouts under perturbed traffic conditions and stores the verified outcomes as structured risk capsules. These capsules are retrieved by jointly matching spatial risk patterns and scenario semantics. Across closed-loop highway simulations, XMind achieves success rates of 83.3-93.3%, exceeding the strong baseline by 6.6 percentage points on average. Evaluation on K-Risk further demonstrates lower decision risk on unseen real-world high-risk interactions. Ablation studies confirm the complementary benefits of working memory, risk-text retrieval, and counterfactual verification. Code is available at https://github.com/xiangxiangliuwo/XMind",
+      "authors": [
+        "Zuyi Guo",
+        "Xianjie Dai",
+        "Lei Yang",
+        "Xiaocong Zhao",
+        "Jingguang Li",
+        "Kitae Jang",
+        "Heye Huang"
+      ],
+      "published": "2026-11-24T08:55:02Z",
+      "updated": "2026-11-24T08:55:02Z",
+      "url": "https://arxiv.org/abs/2611.32209v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867680+00:00"
+    },
+    "2611.31952": {
+      "id": "2611.31952v1",
+      "title": "VLG-Drive: Unifying Vision-Language and Geometric Priors for Autonomous Driving",
+      "abstract": "A driving planner needs both scene semantics, which vision-language models (VLMs) provide, and spatial structure, which geometric foundation models recover from visual history. We present VLG-Drive, which keeps both models frozen and trains only a fusion interface and a planner from trajectory labels. At each camera-grid cell, the interface fuses the paired VLM and geometry features into one joint token through a geometry-anchored residual, and a command-conditioned planner reads these tokens to predict the ego trajectory. VLG-Drive achieves 31.78 EPDMS on NavHard under perturbed initial states, the highest among the compared methods, and 88.27 PDMS on NavTest from cameras alone. Pointwise fusion outperforms independent VLM and geometry streams on both benchmarks. In closed-loop driving on 420 HUGSIM scenarios, VLG-Drive outperforms all compared planners. These results indicate that a lightweight planner trained on fused features of frozen vision-language and geometric foundation models is an effective alternative to adapting either model for planning.",
+      "authors": [
+        "Junge Zhang",
+        "Jie Zhu",
+        "Yanqi Jia",
+        "Xiangyu Xu",
+        "Zixun Huang",
+        "Wenbin He",
+        "Xin Li",
+        "Jiachen Li",
+        "Liu Ren"
+      ],
+      "published": "2026-11-24T04:57:54Z",
+      "updated": "2026-11-24T04:57:54Z",
+      "url": "https://arxiv.org/abs/2611.31952v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867707+00:00"
+    },
+    "2611.31802": {
+      "id": "2611.31802v1",
+      "title": "Modeling Lunar Power Harvesting and Battery Recharging In The Presence of Random Pointing Error",
+      "abstract": "In our work, we establish a lunar power beaming environment between a low-lunar orbiter and a circular solar panel mounted on top of a lunar vehicle located at the Lunar South Pole. Due to the random nature of the pointing errors, various upper bounds reflecting the severity of these errors are considered. Although harvested power is modelled stochastically in the literature, we extend this randomness to battery-storage analysis by deriving PDFs of state of charge, accumulated battery capacity and energy, and end-to-end efficiency for both battery charging modes. Then, our derivations are verified with extensive Monte Carlo simulations. Hence, our derivations provide a mathematical model that enables prediction and helps us understand the randomness of the corresponding variables. For the given pointing error levels, we quantify the differences between charging modes in these battery metrics. Our work explains the stochastic nature of these battery metrics in a realistic lunar environment. Regarding the end-to-end efficiency metric, which is the ratio of the stored electrical energy to the transmitted electrical energy, we observed that slow-charging efficiency is immune to pointing errors, and this mode can utilize only one-sixth of what the link can deliver under a mild pointing error.",
+      "authors": [
+        "Barış Dönmez",
+        "Yanni Jiwan-Mercier",
+        "Julien Magné",
+        "Guillaume Blanchette",
+        "Paolo Pino",
+        "Sébastien Loranger",
+        "Güneş Karabulut Kurt"
+      ],
+      "published": "2026-11-24T01:53:40Z",
+      "updated": "2026-11-24T01:53:40Z",
+      "url": "https://arxiv.org/abs/2611.31802v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867737+00:00"
+    },
+    "2611.31797": {
+      "id": "2611.31797v1",
+      "title": "A Generative AI Agent to Emulate Interactive Human-driven Vehicles for Automated Driving Testing in Urban Areas",
+      "abstract": "Realistic modeling of human-driven vehicle (HDV) interactions is essential for automated driving safety testing in urban areas. Existing methods struggle to reproduce realistic safety-critical interactions involving high collision risk for the following reasons: they often assume full observability, overlooking interactions arising from occlusion. Driving styles are mainly characterized by vehicle maneuvers, limiting the diversity of safety-critical interaction behaviors. Moreover, learning signals from safety-critical interactions can be diluted by non-critical driving behaviors. To address these issues, we propose a generative AI agent to emulate interactive HDVs. The agent incorporates field-of-view modeling to account for driver visibility under occlusion and characterizes the interaction process using five metrics spanning its initial, intermediate, and final stages. It automatically learns diverse interaction styles through a dynamic mixture-of-experts network. Through residual reinforcement learning, the agent further refines generated trajectories to match the real-world distributions of safety-critical interaction characteristics. Experiments on the INTERACTION dataset show that our method reduces Jensen--Shannon divergence (JSD) by 39.9\\%--87.1\\% across five interaction characteristics compared with a state-of-the-art baseline. Our method achieves greater improvements of up to 87.1\\% in final-stage interaction metrics, suggesting that it can reduce error accumulation in long-horizon trajectory generation. Ablation studies confirm the effectiveness of each proposed component, particularly highlighting the importance of residual refinement. Generalization experiments show that our method approaches the performance of full training on unseen intersections with only one epoch of fine-tuning.",
+      "authors": [
+        "Jia Hu",
+        "Changjian Yu",
+        "Panqu Wang",
+        "Jaehyun So",
+        "Yang Chang",
+        "Xuerun Yan",
+        "Jintao Lai"
+      ],
+      "published": "2026-11-24T01:51:31Z",
+      "updated": "2026-11-24T01:51:31Z",
+      "url": "https://arxiv.org/abs/2611.31797v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-25T22:53:29.867767+00:00"
     }
   },
   "history": {
@@ -5159,6 +5368,174 @@
         "prompt_tokens": 9651,
         "completion_tokens": 1348
       }
+    },
+    "actions-45716885186": {
+      "created_at": "2026-11-25T22:53:28.075910+00:00",
+      "papers": [
+        {
+          "id": "2611.32964v1",
+          "contribution": "Introduces DriveAnswer benchmark distinguishing semantic correctness, evidence sufficiency, and grounding in driving VLMs. Shows controlled adaptation improves joint capability over zero-shot baselines.",
+          "limitation": "Strongest zero-shot baseline achieves only 21.55% joint answer-abstain and grounding, indicating challenging task; joint evaluation complexity not detailed.",
+          "gap": "Integration of evidence sufficiency and grounding for real-time autonomous driving planning remains to be explored beyond benchmark setting."
+        },
+        {
+          "id": "2611.32588v1",
+          "contribution": "Proposes CoReQ framework combining LiDAR and Radar with condition-aware cross-modal repair and quality-guided fusion for robust multi-vehicle perception in adverse weather conditions.",
+          "limitation": "Focused on specific sensors (LiDAR, Radar) and multi-vehicle fusion; applicability to other modalities or single-vehicle scenarios is uncertain.",
+          "gap": "Generalization of condition-aware repair and quality estimation to diverse sensor modalities and varying driving environments is unaddressed."
+        },
+        {
+          "id": "2611.32510v1",
+          "contribution": "Develops GeoVLDrive, a geometry-grounded vision-language-action planner using 3D scene structure and latent chain-of-thought for spatiotemporal reasoning in autonomous driving.",
+          "limitation": "Evaluation limited to NAVSIM benchmarks; transferability to complex real-world scenarios not demonstrated.",
+          "gap": "Bridging from 3D spatial reasoning to human-understandable explainable decisions remains to be elucidated."
+        },
+        {
+          "id": "2611.32216v1",
+          "contribution": "Presents NativeDrive, an encoder-free multimodal framework integrating unified backbone for driving policy learning with dense scene structure supervision via driving semantic editing.",
+          "limitation": "Introduces dense supervision task tailored for driving but details on natural language explainability and multimodal fusion limited.",
+          "gap": "Extension toward interpretable driving decisions and human-centered explanations is not explicit."
+        },
+        {
+          "id": "2611.32209v1",
+          "contribution": "Introduces XMind, a training-free LLM-based driving framework using cross-memory reasoning with episodic memory of risk events and counterfactual rollouts for safer decisions.",
+          "limitation": "Reliance on accurate risk pattern retrieval and counterfactual generation may limit generalization; tested in simulation only.",
+          "gap": "Integration of multimodal sensory inputs and real-world sensor uncertainties in the LLM reasoning framework is unexplored."
+        },
+        {
+          "id": "2611.31952v1",
+          "contribution": "Proposes VLG-Drive fusion of frozen vision-language and geometric foundation models via geometry-anchored residuals and lightweight planner for improved trajectory prediction.",
+          "limitation": "Frozen model fusion approach may not adapt to evolving scenarios requiring model finetuning or incremental learning.",
+          "gap": "Incorporation of temporal dynamics and interactive behavior understanding for multimodal autonomous driving needs further study."
+        },
+        {
+          "id": "2611.31797v1",
+          "contribution": "Designs generative AI agent emulating interactive human-driven vehicles with field-of-view modeling and dynamic mixture-of-experts for diverse, safety-critical behaviors in urban driving.",
+          "limitation": "Focuses on HDV behavior emulation; direct integration with autonomous driving planners or explainability not addressed.",
+          "gap": "Bridging generated interactive behavior models with explainable planning and decision-making modules remains open."
+        },
+        {
+          "id": "2611.29123v1",
+          "contribution": "Proposes PlanNudge, a reinforcement learning method finetuning diffusion-based driving planners via lightweight trajectory adjustments to reduce unsafe outcomes efficiently.",
+          "limitation": "Focuses on closed-loop RL finetuning; explainability of adjustments and multimodal input integration are not discussed.",
+          "gap": "Extending the nudge policy to multimodal driving behavior understanding and explainable reasoning is an open avenue."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Integration of multimodal sensory data with structured spatiotemporal reasoning enhances autonomous driving perception and planning.",
+            "uncertainty": "Most models validated on benchmarks; real-world generalizability and deployment not fully evaluated.",
+            "evidence_ids": [
+              "2611.32510v1",
+              "2611.31952v1",
+              "2611.32588v1"
+            ]
+          },
+          {
+            "finding": "Memory-augmented and evidence-aware reasoning frameworks improve driving decision safety and robustness against uncertain or conflicting inputs.",
+            "uncertainty": "Reliance on simulated environments and limited modalities; applicability to real sensor noise and human behavior is uncertain.",
+            "evidence_ids": [
+              "2611.32209v1",
+              "2611.32964v1"
+            ]
+          },
+          {
+            "finding": "Post-planning refinement and multimodal fusion methods can effectively reduce unsafe behaviors while maintaining planning capabilities.",
+            "uncertainty": "Explainability and integration of these refinements within interpretable pipelines is underdeveloped.",
+            "evidence_ids": [
+              "2611.29123v1",
+              "2611.31952v1",
+              "2611.32216v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Vision-language models extended with 3D geometric grounding (GeoVLDrive) outperform purely semantic VLMs for spatial reasoning tasks.",
+            "limitation": "Limited evaluation datasets; real-world operationalization not shown.",
+            "evidence_ids": [
+              "2611.32510v1",
+              "2611.32964v1"
+            ]
+          },
+          {
+            "comparison": "Cross-modal repair and quality-guided fusion (CoReQ) achieves robustness in sensor degradation, complementing frozen multimodal fusion approaches (VLG-Drive).",
+            "limitation": "CoReQ requires sensor condition estimation, whereas VLG-Drive relies on frozen feature fusion; combination potential unexplored.",
+            "evidence_ids": [
+              "2611.32588v1",
+              "2611.31952v1"
+            ]
+          },
+          {
+            "comparison": "XMind's episodic memory reasoning differs from statistical fusion approaches by explicit risk event recall and counterfactual evaluation for decision making.",
+            "limitation": "XMind is simulation-based and LLM-centered, while fusion models focus on sensor data integration; cross-modal grounding in XMind unaddressed.",
+            "evidence_ids": [
+              "2611.32209v1",
+              "2611.32588v1",
+              "2611.31952v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can evidence sufficiency benchmarks be integrated with memory-augmented LLM reasoning to improve autonomous driving explainability?",
+            "hypothesis": "Joint training on evidence sufficiency and episodic risk memories enables LLMs to abstain when evidence is lacking, enhancing decision reliability.",
+            "method": "Augment LLM training with DriveAnswer-like datasets and memory modules for evidence-grounded decision abstention.",
+            "datasets": "DriveAnswer benchmark and episodic risk memory datasets, simulation environments.",
+            "baselines": "XMind without evidence sufficiency training, standard LLM planners.",
+            "metrics": "Accuracy of evidence-sensitive decisions, abstention rate, downstream driving safety.",
+            "compute": "Moderate GPU for LLM fine-tuning, memory retrieval modules, multiple seeds for stability.",
+            "risk": "Complex integration may overfit; evidence sufficiency may not transfer to LLM reasoning easily.",
+            "novelty_check": "No prior integration of evidence sufficiency with LLM memory reasoning identified.",
+            "priority_rationale": "Combines two complementary advancements for trustworthy, explainable driving planning.",
+            "evidence_ids": [
+              "2611.32964v1",
+              "2611.32209v1"
+            ]
+          },
+          {
+            "question": "Does condition-aware multimodal fusion improve ROS-driven planning robustness in adverse real-world driving scenarios?",
+            "hypothesis": "Adaptive cross-modal repair and quality-guided fusion significantly reduce perception errors from sensor degradation, improving planner accuracy.",
+            "method": "Deploy CoReQ fusion with VLG-Drive planning on real-world datasets with adverse conditions; compare with fixed fusion models.",
+            "datasets": "V2X-Radar-C, real adverse-weather and occlusion datasets, NavTest scenarios.",
+            "baselines": "VLG-Drive frozen fusion without repair, standard LiDAR-only detection.",
+            "metrics": "AP@0.7, planner EPDMS, robustness in degraded conditions.",
+            "compute": "High compute for multimodal fusion and planner evaluation, real-time constraints tested.",
+            "risk": "Condition estimation may fail under novel conditions; real-time overhead.",
+            "novelty_check": "Condition-guided repair plus fused frozen model planning untested.",
+            "priority_rationale": "Enhances real-world applicability of multimodal perception and planning fusion.",
+            "evidence_ids": [
+              "2611.32588v1",
+              "2611.31952v1"
+            ]
+          },
+          {
+            "question": "Can lightweight RL finetuning policies augment diffusion-based multimodal planners for safer, more explainable trajectory generation?",
+            "hypothesis": "Training a nudge policy conditioned on multimodal fused features improves closed-loop safety and allows interpretable correction signals.",
+            "method": "Combine PlanNudge RL policy with VLG-Drive multimodal embeddings as input; analyze interpretability of learned nudges.",
+            "datasets": "nuPlan, NavTest, HUGSIM datasets adapted for multimodal inputs.",
+            "baselines": "PlanNudge with unimodal input, diffusion planner without finetuning.",
+            "metrics": "Collision rate, planning score, interpretability of nudges.",
+            "compute": "Moderate RL training compute, multiple seeds for robustness.",
+            "risk": "Increased input complexity may slow training or obscure explainability.",
+            "novelty_check": "RL-based nudge with multimodal fused features unexplored.",
+            "priority_rationale": "Bridges safe multimodal planning and human-understandable refinement.",
+            "evidence_ids": [
+              "2611.29123v1",
+              "2611.31952v1",
+              "2611.32216v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.0308504,
+        "status": "completed",
+        "estimated_cost_usd": 0.007262000000000001,
+        "prompt_tokens": 10691,
+        "completion_tokens": 1866
+      }
     }
   },
   "zotero": {
@@ -5533,9 +5910,41 @@
         "2611.31240": {
           "status": "created",
           "item_key": "4Q2BMZFR"
+        },
+        "2611.29123": {
+          "status": "created",
+          "item_key": "WP3ZPFTV"
+        },
+        "2611.31797": {
+          "status": "created",
+          "item_key": "EFP2G2D4"
+        },
+        "2611.31952": {
+          "status": "created",
+          "item_key": "IIKK55WZ"
+        },
+        "2611.32209": {
+          "status": "created",
+          "item_key": "MB8V72A9"
+        },
+        "2611.32216": {
+          "status": "created",
+          "item_key": "N2J4RBWB"
+        },
+        "2611.32510": {
+          "status": "created",
+          "item_key": "9JBSD6E5"
+        },
+        "2611.32588": {
+          "status": "created",
+          "item_key": "4RJ3ZFUF"
+        },
+        "2611.32964": {
+          "status": "created",
+          "item_key": "RISG6VVZ"
         }
       },
-      "not_before": 1795562488.942887
+      "not_before": 1795647247.0462627
     }
   }
 }
