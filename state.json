@@ -428,6 +428,38 @@
     "2611.29123": {
       "reported_at": "2026-11-25T22:53:28.075910+00:00",
       "version": "2611.29123v1"
+    },
+    "2611.34614": {
+      "reported_at": "2026-11-26T22:43:30.432639+00:00",
+      "version": "2611.34614v1"
+    },
+    "2611.34698": {
+      "reported_at": "2026-11-26T22:43:30.432639+00:00",
+      "version": "2611.34698v1"
+    },
+    "2611.33621": {
+      "reported_at": "2026-11-26T22:43:30.432639+00:00",
+      "version": "2611.33621v1"
+    },
+    "2611.33581": {
+      "reported_at": "2026-11-26T22:43:30.432639+00:00",
+      "version": "2611.33581v1"
+    },
+    "2611.28720": {
+      "reported_at": "2026-11-26T22:43:30.432639+00:00",
+      "version": "2611.28720v1"
+    },
+    "2611.29275": {
+      "reported_at": "2026-11-26T22:43:30.432639+00:00",
+      "version": "2611.29275v1"
+    },
+    "2611.29293": {
+      "reported_at": "2026-11-26T22:43:30.432639+00:00",
+      "version": "2611.29293v1"
+    },
+    "2611.28545": {
+      "reported_at": "2026-11-26T22:43:30.432639+00:00",
+      "version": "2611.28545v1"
     }
   },
   "requests": {
@@ -556,6 +588,13 @@
       "estimated_cost_usd": 0.007262000000000001,
       "prompt_tokens": 10691,
       "completion_tokens": 1866
+    },
+    "actions-45906514789": {
+      "ceiling_usd": 0.0279652,
+      "status": "completed",
+      "estimated_cost_usd": 0.006646,
+      "prompt_tokens": 8975,
+      "completion_tokens": 1910
     }
   },
   "papers": {
@@ -2467,7 +2506,7 @@
       "updated": "2026-11-23T15:43:31Z",
       "url": "https://arxiv.org/abs/2611.30874v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.867826+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.416898+00:00"
     },
     "2611.30836": {
       "id": "2611.30836v1",
@@ -2489,7 +2528,7 @@
       "updated": "2026-11-23T15:20:31Z",
       "url": "https://arxiv.org/abs/2611.30836v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.867866+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.416926+00:00"
     },
     "2611.30438": {
       "id": "2611.30438v1",
@@ -2546,7 +2585,7 @@
       "updated": "2026-11-23T08:58:27Z",
       "url": "https://arxiv.org/abs/2611.30314v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.867952+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417007+00:00"
     },
     "2611.30283": {
       "id": "2611.30283v1",
@@ -2565,7 +2604,7 @@
       "updated": "2026-11-23T08:40:14Z",
       "url": "https://arxiv.org/abs/2611.30283v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.867979+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417033+00:00"
     },
     "2611.30114": {
       "id": "2611.30114v1",
@@ -2583,7 +2622,7 @@
       "updated": "2026-11-23T06:15:30Z",
       "url": "https://arxiv.org/abs/2611.30114v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.868006+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417060+00:00"
     },
     "2611.29947": {
       "id": "2611.29947v1",
@@ -2616,7 +2655,7 @@
       "updated": "2026-11-22T20:34:27Z",
       "url": "https://arxiv.org/abs/2611.29753v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.868057+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417111+00:00"
     },
     "2611.29293": {
       "id": "2611.29293v1",
@@ -2631,7 +2670,7 @@
       "updated": "2026-11-22T07:30:02Z",
       "url": "https://arxiv.org/abs/2611.29293v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.868083+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417135+00:00"
     },
     "2611.29275": {
       "id": "2611.29275v1",
@@ -2647,7 +2686,7 @@
       "updated": "2026-11-22T06:46:57Z",
       "url": "https://arxiv.org/abs/2611.29275v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.868112+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417164+00:00"
     },
     "2611.29123": {
       "id": "2611.29123v1",
@@ -2691,7 +2730,7 @@
       "updated": "2026-11-21T13:36:41Z",
       "url": "https://arxiv.org/abs/2611.28800v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.868179+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417225+00:00"
     },
     "2611.28720": {
       "id": "2611.28720v1",
@@ -2707,7 +2746,7 @@
       "updated": "2026-11-21T10:25:49Z",
       "url": "https://arxiv.org/abs/2611.28720v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.868201+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417247+00:00"
     },
     "2611.28545": {
       "id": "2611.28545v1",
@@ -2723,7 +2762,7 @@
       "updated": "2026-11-21T04:08:06Z",
       "url": "https://arxiv.org/abs/2611.28545v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.869238+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.417271+00:00"
     },
     "2611.28509": {
       "id": "2611.28509v1",
@@ -2822,7 +2861,7 @@
       "updated": "2026-11-24T12:22:18Z",
       "url": "https://arxiv.org/abs/2611.32493v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.867622+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.416692+00:00"
     },
     "2611.32216": {
       "id": "2611.32216v1",
@@ -2903,7 +2942,7 @@
       "updated": "2026-11-24T01:53:40Z",
       "url": "https://arxiv.org/abs/2611.31802v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-25T22:53:29.867737+00:00"
+      "retrieved_at": "2026-11-26T22:43:31.416811+00:00"
     },
     "2611.31797": {
       "id": "2611.31797v1",
@@ -2923,6 +2962,75 @@
       "url": "https://arxiv.org/abs/2611.31797v1",
       "source": "https://export.arxiv.org/api/query",
       "retrieved_at": "2026-11-25T22:53:29.867767+00:00"
+    },
+    "2611.34698": {
+      "id": "2611.34698v1",
+      "title": "A Failure-Driven Data Flywheel for Post-Training Vision-Language-Action Models",
+      "abstract": "Pretrained vision-language-action (VLA) models rarely satisfy all behavioral requirements of a new platform, and teams without a large deployed fleet lack the data to address the resulting failures. We propose a failure-driven data flywheel for post-training such models. It constructs target scenarios absent from the available data by inserting task-relevant entities into reconstructed real-world scenes, and evaluates the model against each behavioral requirement of the target task. Failure rates form a failure map across task conditions and difficulty levels, which is re-evaluated after each round and assigns larger data generation quotas to conditions where the model still fails. We instantiate the framework in autonomous driving for occluded-pedestrian emergence and yielding at stop-sign-controlled intersections, and evaluate it on two VLA models and one non-VLA planner in simulation and on a real vehicle. For occluded-pedestrian emergence, five rounds of post-training improve the critical-phase collision-free rate on the sealed test set from 0.261 to 0.579 for AutoVLA and from 0.390 to 0.765 for ReCogDrive, while the unnecessary braking rate in paired control scenarios never exceeds 0.013. On a full-scale vehicle without real-world training, post-trained ReCogDrive achieves 4 of 5 safe passages, versus 1 of 5 for the base model. Fine-grained evaluation reveals a pattern obscured by the collision-free rate alone: both VLA models learn anticipatory deceleration before reaching the occluding vehicle, while braking after pedestrian emergence remains limited. For stop-sign yielding, the stop-before-line rate rises from 0.100 to 0.897 for AutoVLA and from 0.000 to 0.667 for ReCogDrive. With sequential training from the pedestrian-capability models, it reaches 0.599 and 0.358, respectively, while the pedestrian collision-free rate decreases by at most 0.032.",
+      "authors": [
+        "Yuhao Luo",
+        "Zihao Sheng",
+        "Zilin Huang",
+        "Zhengyang Wan",
+        "Boyue Wang",
+        "Ruolin Yang",
+        "Shuai Wang",
+        "Sikai Chen"
+      ],
+      "published": "2026-11-25T16:54:15Z",
+      "updated": "2026-11-25T16:54:15Z",
+      "url": "https://arxiv.org/abs/2611.34698v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-26T22:43:31.416457+00:00"
+    },
+    "2611.34614": {
+      "id": "2611.34614v1",
+      "title": "Commit2Drive: Perception-Grounded Language Decisions as Commitments for Trajectory Planning in Vision-Language-Action Driving Models",
+      "abstract": "Vision-Language-Action (VLA) models introduce language reasoning into end-to-end autonomous driving. They output a language decision together with a trajectory, which makes the planner more interpretable. However, in existing methods the language decision is either an independent output or an index that selects among similar candidate trajectories, and its annotations are not verified against the trajectory. As a result, the language decision and the trajectory are often inconsistent in closed-loop driving. To address this, we propose Commit2Drive, a framework that imposes the language decision as a consistency constraint on trajectory planning. The decision is a commitment, a maneuver class with a continuous parameter that one deterministic rule reads from any trajectory, and it is grounded in facts reported by the perception of the model itself. A Maneuver Bank maps the commitment to a code with a kinematic meaning, and consistency losses train the planner to execute every admissible decision of a scene, so that the trajectory follows the decision. An automatic data pipeline supplies the supervision. Decisions are labeled from the future motion of the expert, counterfactual executions train the decision and the trajectory together, and rule-based functions with a Vision-Language Model (VLM) generate, review and refine the language annotations. The code is a lookup that involves no hidden state of the language model, so Commit2Drive is extensible to rule-based decisions, which the same planner executes without retraining. Commit2Drive uses a 0.5B language model and runs closed-loop inference online on a single consumer graphics card. On Bench2Drive, Commit2Drive reaches a Driving Score (DS) of 78.50 and a Success Rate (SR) of 55.91% with a lightweight model, which is competitive with the state of the art, and greatly reduces the language-action inconsistency. Code will be released soon.",
+      "authors": [
+        "Zikai Zhang",
+        "Hubert P. Shum",
+        "Toby Breckon"
+      ],
+      "published": "2026-11-25T16:01:47Z",
+      "updated": "2026-11-25T16:01:47Z",
+      "url": "https://arxiv.org/abs/2611.34614v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-26T22:43:31.416502+00:00"
+    },
+    "2611.33621": {
+      "id": "2611.33621v1",
+      "title": "Greedy Decoding Hides Good Plans: Sample-and-Verify Planning for Vision-Language Driving Models",
+      "abstract": "Vision-language models (VLMs) are increasingly adopted for end-to-end driving planning, yet their performance is typically evaluated based on a single greedily decoded trajectory. However, greedy decoding may overlook better trajectories within the model's output distribution. Experiments on WOD-E2E and NAVSIM reveal a consistent performance gap between greedily decoded trajectories and the best sampled candidates, showing that planning errors can arise from trajectory selection, rather than trajectory generation alone. On WOD-E2E, when the ego vehicle should start moving, the model often assigns probability to different possible start times, causing greedy decoding to repeatedly favor waiting and produce a stationary plan even though moving trajectories are available. Motivated by these findings, we propose Sample-and-Verify (SaV), which keeps the VLM planner frozen and samples multiple candidate trajectories. A lightweight verifier is trained from ground-truth futures to estimate the relative quality of these candidates. It uses trajectory kinematics, candidate-set agreement and likelihood, and ego-motion features to select the final trajectory. On WOD-E2E, SaV reduces ADE and FDE by approximately 15% across three VLM planners on the validation set. Changes in RFS are smaller: two planners show slight decreases on val-456, while Alpamayo-1.5 improves from 7.74 to 7.81 RFS on the official test set as ADE@5s decreases by 11%. On NAVSIM, SaV reduces ADE@4s by 10-24% across three VLM planners, while PDMS changes are less consistent. These results show that trajectory selection can substantially improve displacement accuracy without additional planner training. The code is publicly available at https://github.com/hzxbzp/sample-and-verify.",
+      "authors": [
+        "Zhipeng Bao",
+        "Wenjie Zhao",
+        "Yiping Li",
+        "Haohua Que",
+        "Qianwen Li"
+      ],
+      "published": "2026-11-25T01:52:34Z",
+      "updated": "2026-11-25T01:52:34Z",
+      "url": "https://arxiv.org/abs/2611.33621v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-26T22:43:31.416549+00:00"
+    },
+    "2611.33581": {
+      "id": "2611.33581v1",
+      "title": "Evaluating Strategies for Multimodal Bidirectional Interactions between Pedestrians and AVs",
+      "abstract": "Autonomous Vehicles (AVs) share spaces with Vulnerable Road Users (VRUs) in encounters where driver cues are absent. This can leave people uncertain whether the vehicle has noticed them and understood their request. Existing research has studied how AVs communicate with pedestrians through external human-machine interfaces. This work investigates bidirectional multimodal VRU-AV interactions combining Augmented Reality (AR), speech, and gestures. The study follows four stages: literature synthesis of interactions, a survey with 124 participants, interaction loop implementation, and feasibility evaluation. Participants preferred AR cues that made vehicle motion or warnings explicit, high-level voice commands, and conventional gestures. Prototype measurements revealed a trade-off between faster local processing and more accurate infrastructure-assisted processing. The demonstration shows bidirectional interaction using AR wearables and vehicular communications, while leaving decision-making to the AV. Together, the results support treating AV-VRU interaction as a closed loop of intent expression, recognition, vehicle decision, and feedback.",
+      "authors": [
+        "André Clérigo",
+        "Maximilian Schrapel",
+        "Pedro Rito",
+        "Susana Sargento",
+        "Alexey Vinel"
+      ],
+      "published": "2026-11-25T00:46:57Z",
+      "updated": "2026-11-25T00:46:57Z",
+      "url": "https://arxiv.org/abs/2611.33581v1",
+      "source": "https://export.arxiv.org/api/query",
+      "retrieved_at": "2026-11-26T22:43:31.416575+00:00"
     }
   },
   "history": {
@@ -5536,6 +5644,172 @@
         "prompt_tokens": 10691,
         "completion_tokens": 1866
       }
+    },
+    "actions-45906514789": {
+      "created_at": "2026-11-26T22:43:30.432639+00:00",
+      "papers": [
+        {
+          "id": "2611.34614v1",
+          "contribution": "Proposes Commit2Drive, a framework enforcing consistency between language decisions and trajectories in Vision-Language-Action driving models, improving interpretability and reducing decision-trajectory mismatches.",
+          "limitation": "Focuses on maneuver classes as commitments, may have limited granularity; tested on specific dataset Bench2Drive, generalization uncertain.",
+          "gap": "Does not explore how richer language explanations could enhance multi-agent or pedestrian interaction reasoning in driving tasks."
+        },
+        {
+          "id": "2611.34698v1",
+          "contribution": "Introduces a failure-driven data flywheel for post-training VLA models in autonomous driving, improving model behavior on occluded pedestrian emergence and stop-sign yielding without real-world training.",
+          "limitation": "Relies on simulated data with inserted entities; transferability to highly complex real-world failures needs further validation.",
+          "gap": "Post-training focuses on isolated scenarios; integration with reasoning or multimodal driver state understanding is not addressed."
+        },
+        {
+          "id": "2611.33621v1",
+          "contribution": "Identifies limitations in greedy decoding for VLM driving models and proposes Sample-and-Verify (SaV) to select better trajectories from samples using a learned verifier, improving displacement accuracy.",
+          "limitation": "SaV requires additional verification model and sampling cost; impact on closed-loop safety metrics is less clear.",
+          "gap": "Does not integrate language explanation or behavior understanding; trajectory selection improvement is orthogonal to interpretability or multimodal fusion."
+        },
+        {
+          "id": "2611.33581v1",
+          "contribution": "Investigates bidirectional multimodal interactions between pedestrians and AVs combining AR, speech, and gestures, proposing a closed-loop interaction model with user preferences and technological trade-offs.",
+          "limitation": "Focuses on VRU-AV intent communication, with limited algorithmic modeling of driver behavior or decision-making.",
+          "gap": "Does not address autonomous driving model behavior or explainability but provides human-centered interaction insights relevant to driving behavior understanding."
+        },
+        {
+          "id": "2611.28720v1",
+          "contribution": "Proposes ProMo-CoOp, a two-stage trajectory prediction framework combining probabilistic behavioral modes via Gaussian Mixture Models with constrained optimization respecting temporal logic constraints.",
+          "limitation": "Depends on accurate mode clustering and STL constraints; applicability to open-ended multimodal input or explanations is not discussed.",
+          "gap": "Focuses on behavior prediction from data-driven modes but does not incorporate multimodal perception inputs or explainable reasoning for driving decisions."
+        },
+        {
+          "id": "2611.29275v1",
+          "contribution": "Establishes DriveOddsBench, evaluating alignment of driving video world models to real-world outcome probabilities, revealing consistent uncertainty underestimation and misalignment in ego motion prediction.",
+          "limitation": "Benchmark analysis rather than proposing new models; explains failure modes but no solution synthesis provided.",
+          "gap": "Highlights challenges in probabilistic driving behavior modeling and model calibration but does not provide multimodal or explanation methods for driving behavior understanding."
+        },
+        {
+          "id": "2611.29293v1",
+          "contribution": "Introduces GALILEO, aligning positional encodings in vision-language models for dynamic scenes by transporting keys based on estimated velocities, improving dynamic view synthesis and trajectory tracking.",
+          "limitation": "Primarily focused on visual encoding and view synthesis; the role in driving behavior prediction or reasoning is indirect.",
+          "gap": "Enhances dynamic perception representations but does not address multimodal fusion with language or driving decision explanations explicitly."
+        },
+        {
+          "id": "2611.28545v1",
+          "contribution": "Proposes SRR and RGDB methods combining reconstruction and semantic discrimination for LiDAR-based anomaly detection, improving detection of unexpected objects critical for autonomous driving safety.",
+          "limitation": "Focuses on point cloud anomaly detection without multimodal fusion or interpretability of driving decisions.",
+          "gap": "Addresses sensing-level anomaly detection but does not integrate with behavior understanding or explainable autonomous driving models."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Vision-Language-Action (VLA) models integration with reasoning and consistency constraints improves trajectory planning interpretability and reliability.",
+            "uncertainty": "True scalability and generalization of such frameworks across diverse driving tasks and environments require further validation.",
+            "evidence_ids": [
+              "2611.34614v1",
+              "2611.34698v1",
+              "2611.33621v1"
+            ]
+          },
+          {
+            "finding": "Multimodal interactions involving external cues (e.g., AR, gestures) highlight human-centered AV interaction needs but remain loosely connected to autonomous driving model reasoning and explainability.",
+            "uncertainty": "Bridging human-AV interaction studies with autonomous driving model explainability remains underexplored.",
+            "evidence_ids": [
+              "2611.33581v1"
+            ]
+          },
+          {
+            "finding": "Advances in dynamic scene representation and uncertainty quantification reveal persistent gaps in probabilistic alignment and perception quality, affecting safe behavior prediction.",
+            "uncertainty": "Addressing these gaps requires integrating multimodal perception fusion with reliable predictive modeling and behavioral reasoning.",
+            "evidence_ids": [
+              "2611.29275v1",
+              "2611.29293v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Commit2Drive explicitly enforces language-action consistency for interpretable trajectory decisions, whereas Sample-and-Verify improves trajectory choice via sampling and verification without language explanation.",
+            "limitation": "Commit2Drive limitations in decision complexity and domain scope; SaV adds computational cost and verification dependence.",
+            "evidence_ids": [
+              "2611.34614v1",
+              "2611.33621v1"
+            ]
+          },
+          {
+            "comparison": "Failure-driven data flywheel post-training targets specific behavioral failures in VLA models improving safety-critical scenarios while ProMo-CoOp focuses on trajectory prediction with probabilistic modes.",
+            "limitation": "Flywheel tailored to certain tasks; ProMo-CoOp does not incorporate visual-linguistic inputs or scene understanding.",
+            "evidence_ids": [
+              "2611.34698v1",
+              "2611.28720v1"
+            ]
+          },
+          {
+            "comparison": "Bidirectional multimodal interaction studies emphasize human-in-the-loop feedback with AVs, complementing autonomous model development which focuses on perception and trajectory planning but lacks human interaction modeling.",
+            "limitation": "Cross-over integration between human-centered studies and autonomous driving models is absent.",
+            "evidence_ids": [
+              "2611.33581v1",
+              "2611.34614v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can integrating language-consistent trajectory commitments enhance multimodal autonomous driving behavior prediction?",
+            "hypothesis": "Embedding trajectory plans grounded in perception as language commitments improves consistency and interpretability versus decoupled prediction models.",
+            "method": "Extend Commit2Drive with Gaussian Mixture-based behavior modes (ProMo-CoOp) and failure-driven data recalls.",
+            "datasets": "Bench2Drive, WOD-E2E, augmented failure-driven datasets",
+            "baselines": "Commit2Drive, ProMo-CoOp, SaV",
+            "metrics": "Driving Score, Success Rate, trajectory ADE/FDE, language-action consistency metrics",
+            "compute": "Consumer GPUs for VLA training and inference; ~moderate memory and time for sampling and language decoding",
+            "risk": "Increased model complexity may reduce real-time performance; consistency gains need quantification.",
+            "novelty_check": "Combines grounded language commitments with probabilistic mode prediction and post-training data cycles, uniting key ideas.",
+            "priority_rationale": "Addresses core challenges in driving behavior understanding, interpretability, and robustness with multimodal grounding.",
+            "evidence_ids": [
+              "2611.34614v1",
+              "2611.28720v1",
+              "2611.34698v1"
+            ]
+          },
+          {
+            "question": "How can multimodal AV-pedestrian bidirectional interaction be integrated into autonomous driving behavior models?",
+            "hypothesis": "Incorporating human action recognition and AR-based communication cues into driving models improves behavior understanding and human-centered explanations.",
+            "method": "Combine multimodal perception with AR-gesture-speech signals to form closed-loop behavior understanding and explainable reasoning.",
+            "datasets": "Customized VRU-AV interaction datasets, possibly extensions of HighwayVerse or new data collections",
+            "baselines": "AV perception-only driving models, Commit2Drive without interaction data",
+            "metrics": "Interaction success rates, user feedback, safety metrics, explanation fidelity",
+            "compute": "Real-time multimodal processing on embedded platforms; moderate memory",
+            "risk": "Data collection complexity, uncertain model gains for driving tasks.",
+            "novelty_check": "Bridges human-centered interaction and autonomous driving behavior modeling, currently separate domains.",
+            "priority_rationale": "Enhances trustworthiness and safe adoption of AVs in mixed traffic by including human behaviors explicitly.",
+            "evidence_ids": [
+              "2611.33581v1",
+              "2611.34614v1",
+              "2611.28800v1"
+            ]
+          },
+          {
+            "question": "Can temporal and geometric dynamic representations improve multimodal reasoning for explainable driving decision-making?",
+            "hypothesis": "Applying geometric transport position encodings and dynamic memory modules improves alignment of perception outputs with future scene predictions and reasoning transparency.",
+            "method": "Integrate GALILEO dynamic positional encoding with dual-memory semantic and error reasoning (DREAM) in VLA context.",
+            "datasets": "nuScenes, WOD, Argoverse 2, plus synthetic dynamic scene benchmarks",
+            "baselines": "DREAM, GALILEO alone, baseline VLA models",
+            "metrics": "Semantic segmentation IoU, prediction accuracy, explanation interpretability scores",
+            "compute": "High compute for 3D and temporal models; TPU/GPU clusters recommended",
+            "risk": "Increased model complexity; requires velocity estimation and memory management.",
+            "novelty_check": "Combines recent advances in dynamic positional encoding and anticipatory memory for robust, explainable multimodal driving reasoning.",
+            "priority_rationale": "Addresses temporal-spatial perception challenges imperative for safe explainable autonomous driving.",
+            "evidence_ids": [
+              "2611.29293v1",
+              "2611.29753v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.0279652,
+        "status": "completed",
+        "estimated_cost_usd": 0.006646,
+        "prompt_tokens": 8975,
+        "completion_tokens": 1910
+      }
     }
   },
   "zotero": {
@@ -5942,9 +6216,41 @@
         "2611.32964": {
           "status": "created",
           "item_key": "RISG6VVZ"
+        },
+        "2611.28545": {
+          "status": "created",
+          "item_key": "J8CB3NHB"
+        },
+        "2611.28720": {
+          "status": "created",
+          "item_key": "858I7FNR"
+        },
+        "2611.29275": {
+          "status": "created",
+          "item_key": "A9C9667J"
+        },
+        "2611.29293": {
+          "status": "created",
+          "item_key": "AVB6PA37"
+        },
+        "2611.33581": {
+          "status": "created",
+          "item_key": "4SUDSQ5D"
+        },
+        "2611.33621": {
+          "status": "created",
+          "item_key": "DAQJVNHC"
+        },
+        "2611.34614": {
+          "status": "created",
+          "item_key": "634JVW8K"
+        },
+        "2611.34698": {
+          "status": "created",
+          "item_key": "T8XA5UH2"
         }
       },
-      "not_before": 1795647247.0462627
+      "not_before": 1795733044.9259968
     }
   }
 }

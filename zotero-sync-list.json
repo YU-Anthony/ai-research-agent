@@ -669,10 +669,38 @@
         "status": "created"
       },
       {
+        "arxiv_id": "2611.28545",
+        "title": "Reconstruction-Guided Dual-Branch Learning for LiDAR Anomalous Object Detection",
+        "url": "https://arxiv.org/abs/2611.28545",
+        "zotero_item_key": "J8CB3NHB",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.28720",
+        "title": "Data-Driven Trajectory Prediction via Probabilistic Modes and Constrained Optimization",
+        "url": "https://arxiv.org/abs/2611.28720",
+        "zotero_item_key": "858I7FNR",
+        "status": "created"
+      },
+      {
         "arxiv_id": "2611.29123",
         "title": "Your Diffusion-Based Driving Planner Only Needs a Nudge",
         "url": "https://arxiv.org/abs/2611.29123",
         "zotero_item_key": "WP3ZPFTV",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.29275",
+        "title": "DriveOddsBench: Are Driving Video World Models Aligned with Real-World Odds?",
+        "url": "https://arxiv.org/abs/2611.29275",
+        "zotero_item_key": "A9C9667J",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.29293",
+        "title": "GALILEO: Geometric RoPE with Galilean Key Transport for Dynamic Scenes",
+        "url": "https://arxiv.org/abs/2611.29293",
+        "zotero_item_key": "AVB6PA37",
         "status": "created"
       },
       {
@@ -750,6 +778,34 @@
         "title": "Benchmarking Evidence Sufficiency in Vision-Language Models for Autonomous Driving",
         "url": "https://arxiv.org/abs/2611.32964",
         "zotero_item_key": "RISG6VVZ",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.33581",
+        "title": "Evaluating Strategies for Multimodal Bidirectional Interactions between Pedestrians and AVs",
+        "url": "https://arxiv.org/abs/2611.33581",
+        "zotero_item_key": "4SUDSQ5D",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.33621",
+        "title": "Greedy Decoding Hides Good Plans: Sample-and-Verify Planning for Vision-Language Driving Models",
+        "url": "https://arxiv.org/abs/2611.33621",
+        "zotero_item_key": "DAQJVNHC",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.34614",
+        "title": "Commit2Drive: Perception-Grounded Language Decisions as Commitments for Trajectory Planning in Vision-Language-Action Driving Models",
+        "url": "https://arxiv.org/abs/2611.34614",
+        "zotero_item_key": "634JVW8K",
+        "status": "created"
+      },
+      {
+        "arxiv_id": "2611.34698",
+        "title": "A Failure-Driven Data Flywheel for Post-Training Vision-Language-Action Models",
+        "url": "https://arxiv.org/abs/2611.34698",
+        "zotero_item_key": "T8XA5UH2",
         "status": "created"
       }
     ]
