@@ -460,6 +460,26 @@
     "2611.28545": {
       "reported_at": "2026-11-26T22:43:30.432639+00:00",
       "version": "2611.28545v1"
+    },
+    "2611.29753": {
+      "reported_at": "2026-11-27T22:26:49.390262+00:00",
+      "version": "2611.29753v1"
+    },
+    "2611.30283": {
+      "reported_at": "2026-11-27T22:26:49.390262+00:00",
+      "version": "2611.30283v1"
+    },
+    "2611.30836": {
+      "reported_at": "2026-11-27T22:26:49.390262+00:00",
+      "version": "2611.30836v1"
+    },
+    "2611.32493": {
+      "reported_at": "2026-11-27T22:26:49.390262+00:00",
+      "version": "2611.32493v1"
+    },
+    "2611.30314": {
+      "reported_at": "2026-11-27T22:26:49.390262+00:00",
+      "version": "2611.30314v1"
     }
   },
   "requests": {
@@ -595,6 +615,13 @@
       "estimated_cost_usd": 0.006646,
       "prompt_tokens": 8975,
       "completion_tokens": 1910
+    },
+    "actions-46076634249": {
+      "ceiling_usd": 0.0211064,
+      "status": "completed",
+      "estimated_cost_usd": 0.0043748,
+      "prompt_tokens": 4973,
+      "completion_tokens": 1491
     }
   },
   "papers": {
@@ -2506,7 +2533,7 @@
       "updated": "2026-11-23T15:43:31Z",
       "url": "https://arxiv.org/abs/2611.30874v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.416898+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419234+00:00"
     },
     "2611.30836": {
       "id": "2611.30836v1",
@@ -2528,7 +2555,7 @@
       "updated": "2026-11-23T15:20:31Z",
       "url": "https://arxiv.org/abs/2611.30836v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.416926+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419260+00:00"
     },
     "2611.30438": {
       "id": "2611.30438v1",
@@ -2585,7 +2612,7 @@
       "updated": "2026-11-23T08:58:27Z",
       "url": "https://arxiv.org/abs/2611.30314v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.417007+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419333+00:00"
     },
     "2611.30283": {
       "id": "2611.30283v1",
@@ -2604,7 +2631,7 @@
       "updated": "2026-11-23T08:40:14Z",
       "url": "https://arxiv.org/abs/2611.30283v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.417033+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419357+00:00"
     },
     "2611.30114": {
       "id": "2611.30114v1",
@@ -2622,7 +2649,7 @@
       "updated": "2026-11-23T06:15:30Z",
       "url": "https://arxiv.org/abs/2611.30114v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.417060+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419383+00:00"
     },
     "2611.29947": {
       "id": "2611.29947v1",
@@ -2655,7 +2682,7 @@
       "updated": "2026-11-22T20:34:27Z",
       "url": "https://arxiv.org/abs/2611.29753v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.417111+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419431+00:00"
     },
     "2611.29293": {
       "id": "2611.29293v1",
@@ -2730,7 +2757,7 @@
       "updated": "2026-11-21T13:36:41Z",
       "url": "https://arxiv.org/abs/2611.28800v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.417225+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419546+00:00"
     },
     "2611.28720": {
       "id": "2611.28720v1",
@@ -2861,7 +2888,7 @@
       "updated": "2026-11-24T12:22:18Z",
       "url": "https://arxiv.org/abs/2611.32493v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.416692+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419047+00:00"
     },
     "2611.32216": {
       "id": "2611.32216v1",
@@ -2942,7 +2969,7 @@
       "updated": "2026-11-24T01:53:40Z",
       "url": "https://arxiv.org/abs/2611.31802v1",
       "source": "https://export.arxiv.org/api/query",
-      "retrieved_at": "2026-11-26T22:43:31.416811+00:00"
+      "retrieved_at": "2026-11-27T22:26:50.419149+00:00"
     },
     "2611.31797": {
       "id": "2611.31797v1",
@@ -5810,6 +5837,141 @@
         "prompt_tokens": 8975,
         "completion_tokens": 1910
       }
+    },
+    "actions-46076634249": {
+      "created_at": "2026-11-27T22:26:49.390262+00:00",
+      "papers": [
+        {
+          "id": "2611.29753v1",
+          "contribution": "Proposes DREAM, a dual-memory framework for continual LiDAR segmentation that uses latent and error memories to anticipate failures and improve robustness in dynamic scenes without replaying past scans.",
+          "limitation": "Focuses on LiDAR semantic segmentation; applicability to multimodal fusion or human-centered reasoning is not detailed.",
+          "gap": "Does not address fusion with other modalities or explainable reasoning; memory mechanism's impact on multi-sensor integration is unclear."
+        },
+        {
+          "id": "2611.30283v1",
+          "contribution": "Introduces AdvMTO, a 2D Gaussian splatting adversarial attack suppressing persistent detection by encoding multimodal (camera and LiDAR) appearance and geometry for BEV-based 3D object detectors in autonomous driving.",
+          "limitation": "Targets attack scenarios rather than defenses or explainability; emphasis on attack effectiveness limits insights on model robustness or driver behavior understanding.",
+          "gap": "No exploration of how such attacks impact driving reasoning or human-centered models; lacks methods to explain or interpret multimodal fusion vulnerabilities."
+        },
+        {
+          "id": "2611.30836v1",
+          "contribution": "Presents MakeSense, a multimodal fusion framework mitigating negative fusion in embodied vision by preserving private-stream features and combining them with shared tokens, improving robustness under degraded sensing.",
+          "limitation": "Evaluation spans multiple domains; the direct application to autonomous driving or detailed driving behavior understanding is not specified.",
+          "gap": "Does not explicitly address driving-specific fusion challenges or explainability; the framework's effectiveness for driving scenario multimodal data remains to be tested."
+        },
+        {
+          "id": "2611.32493v1",
+          "contribution": "Proposes CoFiNav, a VLM-guided UAV navigation framework that progressively grounds open-vocabulary semantic tasks via hierarchical search and 3D observation, achieving efficient last-mile delivery navigation.",
+          "limitation": "Focuses on UAV semantic navigation; multimodal fusion is limited to vision and LiDAR for navigation, without emphasis on driving behavior or explainable reasoning.",
+          "gap": "Does not cover detailed driving behavior understanding or human-centered interpretation; mainly addresses navigation efficiency in UAV context."
+        },
+        {
+          "id": "2611.30314v1",
+          "contribution": "SafeRank-ReID offers candidate-conditioned re-ranking for multimodal person Re-ID, dynamically weighting modalities per candidate to reduce identity conflicts and improve robustness in retrieval.",
+          "limitation": "Application is primarily in person and vehicle Re-ID, not direct autonomous driving context or behavior understanding.",
+          "gap": "Does not investigate driving behavior or explainable reasoning; fusion focuses on reliability estimation, which may extend to driving scenarios but is not addressed."
+        }
+      ],
+      "synthesis": {
+        "trends": [
+          {
+            "finding": "Multimodal fusion frameworks increasingly address negative fusion by adaptive weighting or preserving modality-specific features to enhance robustness under degraded or conflicting inputs.",
+            "uncertainty": "Effectiveness across diverse driving behaviors and explanation tasks remains largely unexplored outside specific domains like Re-ID and embodied vision.",
+            "evidence_ids": [
+              "2611.30836v1",
+              "2611.30314v1"
+            ]
+          },
+          {
+            "finding": "Memory-based methods that incorporate past contextual experience and error awareness improve robustness and anticipation in dynamic autonomous driving perception tasks.",
+            "uncertainty": "Their extension to multimodal fusion or interactive driving behavior understanding is not yet demonstrated.",
+            "evidence_ids": [
+              "2611.29753v1"
+            ]
+          },
+          {
+            "finding": "Adversarial attacks now target multimodal BEV-based 3D object detectors by jointly manipulating camera and LiDAR data temporally, highlighting vulnerabilities specific to driving perception stacks.",
+            "uncertainty": "Defensive strategies or explainability insights against such attacks remain underexplored.",
+            "evidence_ids": [
+              "2611.30283v1"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "comparison": "Both SafeRank-ReID and MakeSense implement adaptive multimodal fusion to handle modality conflicts or degraded inputs, but SafeRank-ReID focuses on identity conflict resolution in retrieval, while MakeSense addresses sensor addition impact on embodied vision fusion.",
+            "limitation": "Neither directly targets autonomous driving behavior understanding or interpretable reasoning.",
+            "evidence_ids": [
+              "2611.30314v1",
+              "2611.30836v1"
+            ]
+          },
+          {
+            "comparison": "DREAM uniquely integrates dual-memory reasoning to anticipate perceptual failures in LiDAR semantic segmentation, contrasting with other papers focusing on navigation, fusion, or attacks without explicit memory mechanisms.",
+            "limitation": "DREAM lacks exploration of multimodal fusion or external knowledge integration seen in VLM-guided navigation or fusion frameworks.",
+            "evidence_ids": [
+              "2611.29753v1",
+              "2611.32493v1"
+            ]
+          }
+        ],
+        "ideas": [
+          {
+            "question": "Can dual-memory mechanisms improve multimodal fusion robustness and explanation in autonomous driving perception?",
+            "hypothesis": "Incorporating latent and error memories into multimodal perception enhances robustness and enables error-aware explanations.",
+            "method": "Extend DREAM to fuse camera, LiDAR, and other modalities with memory retrieval and modulation; analyze explanations of errors via memory activations.",
+            "datasets": "nuScenes and other multimodal driving datasets.",
+            "baselines": "Standard multimodal fusion without memory, MakeSense, SafeRank-ReID fusion.",
+            "metrics": "Segmentation accuracy, fusion robustness, explanation faithfulness.",
+            "compute": "GPU with memory overhead for retrieval; moderate runtime increase.",
+            "risk": "Complex fusion may increase model complexity; uncertain impact on explanation quality.",
+            "novelty_check": "Novel in combining memory with multimodal fusion and explainable reasoning in driving domain.",
+            "priority_rationale": "Addresses robustness and human-centered explanation gaps, leveraging demonstrated memory benefits.",
+            "evidence_ids": [
+              "2611.29753v1",
+              "2611.30836v1",
+              "2611.30314v1"
+            ]
+          },
+          {
+            "question": "How can adversarial attacks inform explainable vulnerabilities in multimodal driving perception?",
+            "hypothesis": "Studying AdvMTO attacks reveals modality-specific weaknesses and guides design of interpretable defenses.",
+            "method": "Analyze attack effects on multimodal perception modules; develop explanation mechanisms highlighting vulnerable features.",
+            "datasets": "nuScenes and other BEV-based perception benchmarks.",
+            "baselines": "Unprotected perception models, standard attack detection methods.",
+            "metrics": "Detection accuracy degradation, explanation quality, defense effectiveness.",
+            "compute": "High compute for adversarial optimization and explainability evaluation.",
+            "risk": "Adversarial modeling is complex; interpretability may not directly translate to defense.",
+            "novelty_check": "Extends attack literature to explainable vulnerability analysis within multimodal fusion for driving.",
+            "priority_rationale": "Bridges attack understanding with user-trust through explanations, crucial for safe driving systems.",
+            "evidence_ids": [
+              "2611.30283v1"
+            ]
+          },
+          {
+            "question": "Can large vision-language models improve explainable semantic navigation and behavior understanding in autonomous driving scenarios?",
+            "hypothesis": "VLM-guided coarse-to-fine semantic grounding facilitates interpretable destination understanding and decision making in driving navigation tasks.",
+            "method": "Adapt CoFiNav framework with enhanced VLMs integrating driving scene semantics and relations, incorporating explainable planning modules.",
+            "datasets": "Driving simulation datasets with semantic annotations, open-vocabulary navigation tasks.",
+            "baselines": "Standard navigation without VLM guidance, traditional geometric planners.",
+            "metrics": "Navigation success rate, path efficiency, explanation satisfaction.",
+            "compute": "Moderate to high due to VLM computations and planning.",
+            "risk": "VLMs may be task-biased; semantic generalization uncertain.",
+            "novelty_check": "Novel in applying VLM-guided coarse-to-fine semantic reasoning to driving navigation and explanation.",
+            "priority_rationale": "Promotes human-centered understanding of navigation decisions, enhancing trust and behavior explanation.",
+            "evidence_ids": [
+              "2611.32493v1"
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "ceiling_usd": 0.0211064,
+        "status": "completed",
+        "estimated_cost_usd": 0.0043748,
+        "prompt_tokens": 4973,
+        "completion_tokens": 1491
+      }
     }
   },
   "zotero": {
@@ -6248,9 +6410,29 @@
         "2611.34698": {
           "status": "created",
           "item_key": "T8XA5UH2"
+        },
+        "2611.29753": {
+          "status": "created",
+          "item_key": "IRXUBMNH"
+        },
+        "2611.30283": {
+          "status": "created",
+          "item_key": "S8AV63ZJ"
+        },
+        "2611.30314": {
+          "status": "created",
+          "item_key": "TNH2GRZ9"
+        },
+        "2611.30836": {
+          "status": "created",
+          "item_key": "HDAKZSIA"
+        },
+        "2611.32493": {
+          "status": "created",
+          "item_key": "H2SN774M"
         }
       },
-      "not_before": 1795733044.9259968
+      "not_before": 1795818442.0198507
     }
   }
 }
